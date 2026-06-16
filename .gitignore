@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.local
+.env.production
+*-backup*
+stripe_backup_code.txt
+.claude-flow/
+.claude/
+.mcp.json
+*.log
+.DS_Store
+Thumbs.db
+.netlify/
+supabase/DEPLOY_SUPABASE.sql

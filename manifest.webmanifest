@@ -1,0 +1,22 @@
+{
+  "name": "THYMOS — Gestion MMA",
+  "short_name": "THYMOS",
+  "description": "Plateforme de gestion pour coachs et salles de MMA : suivi physique et mental, alertes, planning et combats.",
+  "lang": "fr",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#080808",
+  "theme_color": "#0a0a0a",
+  "categories": ["sports", "productivity", "business"],
+  "icons": [
+    {
+      "src": "favicon-v2.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

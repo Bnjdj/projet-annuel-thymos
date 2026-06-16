@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Combats — THYMOS Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body class="dashboard-body">
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="ic-sword"         viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><path d="M12 2l-3 5h6z" fill="currentColor" stroke="none"/><line x1="9" y1="20" x2="15" y2="20"/></symbol>
+  <symbol id="ic-menu"          viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+  <symbol id="ic-home"          viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="ic-users"         viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="ic-bell"          viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></symbol>
+  <symbol id="ic-calendar"      viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+  <symbol id="ic-shuffle"       viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></symbol>
+  <symbol id="ic-award"         viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></symbol>
+  <symbol id="ic-cpu"           viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+  <symbol id="ic-settings"      viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+  <symbol id="ic-chevron-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+  <symbol id="ic-plus"          viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+  <symbol id="ic-map-pin"       viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="ic-alert"         viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+  <symbol id="ic-trending-up"   viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></symbol>
+  <symbol id="ic-video"         viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></symbol>
+  <symbol id="ic-activity"      viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+  <symbol id="ic-target"        viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="ic-clock"         viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+</svg>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__logo">
+      <span class="logo-icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-sword"/></svg></span>
+      <span class="logo-text">THYMOS</span>
+    </div>
+    <nav class="sidebar__nav">
+      <div class="nav-group">
+        <span class="nav-group-label">Principal</span>
+        <a href="dashboard.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-home"/></svg><span>Dashboard</span></a>
+        <a href="combattants.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-users"/></svg><span>Combattants</span><span class="nav-badge">—</span></a>
+        <a href="alertes.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-bell"/></svg><span>Alertes IA</span><span class="nav-badge nav-badge--red">—</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Gestion</span>
+        <a href="planning.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-calendar"/></svg><span>Planning</span></a>
+        <a href="sparring.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-shuffle"/></svg><span>Sparring IA</span></a>
+        <a href="combats.html" class="nav-item active"><svg class="icon" aria-hidden="true"><use href="#ic-award"/></svg><span>Combats</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">IA</span>
+        <a href="dashboard.html#ia-coach" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-cpu"/></svg><span>IA Coach</span><span class="nav-badge nav-badge--gold">Bientôt</span></a>
+      </div>
+    </nav>
+    <div class="sidebar__footer">
+      <div class="sidebar__salle">
+        <div class="salle-avatar">—</div>
+        <div class="salle-info"><div class="salle-name">Ma Salle</div><div class="salle-plan">Plan Pro</div></div>
+        <a href="#" class="salle-settings"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-settings"/></svg></a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="dashboard-main">
+    <header class="topbar">
+      <div class="topbar__left">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu">
+          <svg class="icon icon--md" aria-hidden="true"><use href="#ic-menu"/></svg>
+        </button>
+        <div class="topbar__breadcrumb">
+          <a href="dashboard.html" class="breadcrumb-gym">Ma Salle</a>
+          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-page">Combats</span>
+        </div>
+      </div>
+      <div class="topbar__right">
+        <div class="topbar__date" id="current-date"></div>
+        <button class="btn btn--primary btn--sm">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-plus"/></svg>
+          Programmer un combat
+        </button>
+      </div>
+    </header>
+
+    <div class="dashboard-content" id="main" role="main">
+
+      <!-- KPI STATS SALLE -->
+      <div class="kpi-row">
+        <div class="kpi-card kpi-card--red">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-award"/></svg></div>
+          <div class="kpi-body"><div class="kpi-value" id="cbKpi1">0</div><div class="kpi-label">Combats à venir</div></div>
+          <div class="kpi-trend" id="cbKpi1Sub">&mdash;</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-trending-up"/></svg></div>
+          <div class="kpi-body"><div class="kpi-value" id="cbKpi2">&mdash;</div><div class="kpi-label">Record saison</div></div>
+          <div class="kpi-trend" id="cbKpi2Sub">&mdash;</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-activity"/></svg></div>
+          <div class="kpi-body"><div class="kpi-value" id="cbKpi3">&mdash;</div><div class="kpi-label">Taux de finish</div></div>
+          <div class="kpi-trend" id="cbKpi3Sub">&mdash;</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-target"/></svg></div>
+          <div class="kpi-body"><div class="kpi-value" id="cbKpi4">0</div><div class="kpi-label">Combats cette saison</div></div>
+          <div class="kpi-trend" id="cbKpi4Sub">&mdash;</div>
+        </div>
+      </div>
+
+      <!-- PROCHAINS COMBATS -->
+      <div class="panel">
+        <div class="panel__header">
+          <div class="panel__title">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-clock"/></svg>
+            Prochains combats
+            <span class="panel-count panel-count--red" id="upcomingCount">—</span>
+          </div>
+        </div>
+        <div class="panel__body" id="upcomingCombats" style="padding: 0.5rem 0;">
+          <div style="text-align:center;padding:2.5rem;color:var(--muted);font-size:0.82rem;">Chargement des combats...</div>
+        </div>
+      </div>
+
+      <!-- HISTORIQUE + STATS -->
+      <div class="main-row main-row--equal">
+
+        <!-- HISTORIQUE -->
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__title" id="historyTitle">Historique</div>
+            <span class="panel-sub" id="historySub">&mdash;</span>
+          </div>
+          <div class="panel__body" id="combatHistory" style="padding: 0.5rem 0;">
+            <div style="text-align:center;padding:2rem;color:var(--muted);font-size:0.8rem;">Chargement...</div>
+          </div>
+          <div class="panel__footer" id="historyFooter" style="display:none;">
+            <span id="historyCount"></span>
+          </div>
+        </div>
+
+        <!-- STATS SALLE -->
+        <div style="display:flex;flex-direction:column;gap:1.25rem;">
+          <div class="panel">
+            <div class="panel__header">
+              <div class="panel__title">Statistiques saison</div>
+            </div>
+            <div class="panel__body" id="combatStats" style="padding:1.1rem;">
+              <div style="text-align:center;padding:1.5rem;color:var(--muted);font-size:0.8rem;">Chargement...</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.50.0" crossorigin="anonymous" defer></script>
+  <script src="js/security.js" defer></script>
+<script src="js/supabase-config.js" defer></script>
+  <script src="js/sidebar-badges.js" defer></script>
+  <script src="js/auth-guard.js" defer></script>
+  <script src="js/settings-loader.js" defer></script>
+  <script src="js/toast.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/modal-combat.js" defer></script>
+  <script src="js/plan-guard.js" defer></script>
+  <script>
+    document.querySelector('.topbar__right .btn--primary')?.addEventListener('click', () => {
+      openCombatModal(() => location.reload());
+    });
+
+    function removeCombat(id) {
+      confirmModal('Supprimer ce combat ?', async () => {
+        const r = await deleteCombat(id);
+        if (r.success) { toast('Combat supprime', 'warning'); location.reload(); }
+        else toast('Erreur', 'error');
+      });
+    }
+
+    function recordResult(id) {
+      const overlay = document.createElement('div');
+      overlay.className = 'combat-modal-overlay';
+      overlay.setAttribute('role', 'dialog');
+      overlay.setAttribute('aria-modal', 'true');
+      overlay.setAttribute('aria-labelledby', 'resultModalTitle');
+      overlay.innerHTML = `
+        <div class="combat-modal" style="max-width:400px;">
+          <div class="modal-header">
+            <h3 class="modal-title" id="resultModalTitle">Enregistrer le resultat</h3>
+            <button class="modal-close" onclick="this.closest('.combat-modal-overlay').remove()">&times;</button>
+          </div>
+          <form class="modal-form" id="resultForm">
+            <div class="modal-field">
+              <label>Resultat</label>
+              <select id="resResult" required>
+                <option value="win">Victoire</option>
+                <option value="loss">Defaite</option>
+                <option value="draw">Egalite</option>
+                <option value="nc">No Contest</option>
+              </select>
+            </div>
+            <div class="modal-row">
+              <div class="modal-field">
+                <label>Methode</label>
+                <select id="resMethod">
+                  <option value="">—</option>
+                  <option value="KO">KO</option>
+                  <option value="TKO">TKO</option>
+                  <option value="Soumission">Soumission</option>
+                  <option value="Decision unanime">Decision unanime</option>
+                  <option value="Decision partagee">Decision partagee</option>
+                </select>
+              </div>
+              <div class="modal-field">
+                <label>Round</label>
+                <select id="resRound">
+                  <option value="">—</option>
+                  <option value="1">R1</option>
+                  <option value="2">R2</option>
+                  <option value="3">R3</option>
+                  <option value="4">R4</option>
+                  <option value="5">R5</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-field">
+              <label>Temps (ex: 3:42)</label>
+              <input type="text" id="resTime" placeholder="3:42" />
+            </div>
+            <div class="modal-actions">
+              <button type="button" class="btn btn--ghost" onclick="this.closest('.combat-modal-overlay').remove()">Annuler</button>
+              <button type="submit" class="btn btn--primary">Enregistrer</button>
+            </div>
+          </form>
+        </div>`;
+      document.body.appendChild(overlay);
+      requestAnimationFrame(() => overlay.classList.add('open'));
+      setTimeout(() => { document.getElementById('resResult').focus(); }, 50);
+      overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
+
+      document.getElementById('resultForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const updates = {
+          result: document.getElementById('resResult').value,
+          method: document.getElementById('resMethod').value || null,
+          round: parseInt(document.getElementById('resRound').value) || null,
+          time: document.getElementById('resTime').value.trim() || null,
+        };
+
+        // Update record on fighter
+        const combat = await updateCombat(id, updates);
+        if (combat.error) { toast('Erreur', 'error'); return; }
+
+        // Update fighter win/loss
+        if (combat.data && combat.data.combattant_id) {
+          const fighter = await getCombattant(combat.data.combattant_id);
+          if (fighter) {
+            const upd = {};
+            if (updates.result === 'win') upd.record_wins = (fighter.record_wins || 0) + 1;
+            if (updates.result === 'loss') upd.record_losses = (fighter.record_losses || 0) + 1;
+            if (updates.result === 'draw') upd.record_draws = (fighter.record_draws || 0) + 1;
+            if (Object.keys(upd).length) await updateCombattant(fighter.id, upd);
+          }
+        }
+
+        overlay.remove();
+        toast('Resultat enregistre', 'success');
+        location.reload();
+      });
+    }
+
+    function renderCombatCard(c) {
+      const f = c.combattants || {};
+      const days = daysUntil(c.fight_date);
+      const urgent = days !== null && days <= 7;
+      const initF = getInitials(f.first_name, f.last_name);
+      const oppInit = (c.opponent_name || '??').split(' ').map(w => w[0] || '').join('').toUpperCase().substring(0,2);
+      const readiness = c.readiness_score || 0;
+      const rColor = readiness >= 80 ? '#4a9e5c' : readiness >= 60 ? '#D4A017' : 'var(--red)';
+      const rClass = readiness >= 80 ? 'ok' : readiness >= 60 ? 'warn' : '';
+
+      return `<div class="combat-card${urgent ? ' combat-card--urgent' : ''}">
+        <div class="cc-countdown${urgent ? '' : ' cc-countdown--normal'}">
+          <div class="cc-j">J</div>
+          <div class="cc-num">${days >= 0 ? '-' : '+'}${Math.abs(days)}</div>
+        </div>
+        <div class="cc-fighters">
+          <div class="cc-fighter">
+            <div class="cc-av" style="background:${escapeHtml(f.avatar_color || '#333')}">${escapeHtml(initF)}</div>
+            <div>
+              <div class="cc-name">${escapeHtml(getFullName(f))}</div>
+              <div class="cc-cat">${escapeHtml(f.weight_category || '')} ${f.style ? '· ' + escapeHtml(STYLE_LABELS[f.style] || f.style) : ''}</div>
+            </div>
+          </div>
+          <div class="cc-sep">VS</div>
+          <div class="cc-fighter cc-fighter--opponent">
+            <div class="cc-av" style="background:#1e1e1e">${escapeHtml(oppInit)}</div>
+            <div>
+              <div class="cc-name">${escapeHtml(c.opponent_name || '?')}</div>
+              <div class="cc-cat">Adversaire ${f.weight_category ? '· ' + escapeHtml(f.weight_category) : ''}</div>
+            </div>
+          </div>
+        </div>
+        <div class="cc-meta">
+          <div class="cc-event">${escapeHtml(c.event_name || '')}</div>
+          <div class="cc-location">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-map-pin"/></svg>
+            ${escapeHtml(c.event_location || '')}
+          </div>
+          <div class="cc-date">${formatDate(c.fight_date)}</div>
+        </div>
+        <div class="cc-readiness">
+          <div class="cc-r-label">Preparation</div>
+          <div class="cc-r-ring">
+            <svg viewBox="0 0 36 36" style="width:52px;height:52px;transform:rotate(-90deg)">
+              <circle cx="18" cy="18" r="15.9" fill="none" stroke="var(--border)" stroke-width="2.5"/>
+              <circle cx="18" cy="18" r="15.9" fill="none" stroke="${rColor}" stroke-width="2.5" stroke-dasharray="${readiness} 100" stroke-linecap="round"/>
+            </svg>
+            <span class="cc-r-val ${rClass}">${readiness}%</span>
+          </div>
+          <div style="display:flex;gap:0.35rem;margin-top:0.5rem;flex-wrap:wrap;">
+            <a href="combattant.html?id=${c.combattant_id || ''}" class="btn btn--ghost btn--sm">Fiche</a>
+            <button class="btn btn--ghost btn--sm" onclick="recordResult('${c.id}')" style="color:#4a9e5c;border-color:rgba(74,158,92,0.3);">Resultat</button>
+            <button class="btn btn--ghost btn--sm" onclick="removeCombat('${c.id}')" style="color:var(--subtle);">Supprimer</button>
+          </div>
+        </div>
+      </div>`;
+    }
+
+    (async function loadCombatsPage() {
+      const salle = await getCurrentSalle();
+      if (!salle) return;
+
+      const [upcoming, all] = await Promise.all([
+        getCombats(salle.id, { upcoming: true }),
+        getCombats(salle.id)
+      ]);
+
+      // Past combats = those with result
+      const past = all.filter(c => c.result && c.result !== 'pending');
+      const wins = past.filter(c => c.result === 'win').length;
+      const losses = past.filter(c => c.result === 'loss').length;
+      const total = past.length;
+      const isFinishMethod = (m) => {
+        if (!m) return false;
+        const v = String(m).toLowerCase();
+        return v.includes('ko') || v.includes('soumission') || v.includes('submission');
+      };
+      const finishes = past.filter(c => isFinishMethod(c.method)).length;
+
+      // KPI
+      document.getElementById('cbKpi1').textContent = upcoming.length;
+      document.getElementById('upcomingCount').textContent = upcoming.length;
+      if (upcoming.length) {
+        const nearest = daysUntil(upcoming[0].fight_date);
+        document.getElementById('cbKpi1Sub').textContent = 'Prochain J-' + Math.abs(nearest);
+      }
+      document.getElementById('cbKpi2').innerHTML = wins + '<span class="kpi-unit">V</span> — ' + losses + '<span class="kpi-unit">D</span>';
+      if (total) document.getElementById('cbKpi2Sub').textContent = Math.round(wins / total * 100) + '% victoires';
+      if (total) {
+        document.getElementById('cbKpi3').innerHTML = Math.round(finishes / total * 100) + '<span class="kpi-unit">%</span>';
+        document.getElementById('cbKpi3Sub').textContent = 'KO/TKO/Soumission';
+      }
+      document.getElementById('cbKpi4').textContent = total;
+
+      // Upcoming panel count badge
+      const countBadge = document.querySelector('.panel-count--red');
+      if (countBadge) countBadge.textContent = upcoming.length;
+
+      // Upcoming combats
+      const upEl = document.getElementById('upcomingCombats');
+      if (!upcoming.length) {
+        upEl.innerHTML = '<div style="text-align:center;padding:2.5rem;color:var(--muted);font-size:0.82rem;">Aucun combat programme</div>';
+      } else {
+        upEl.innerHTML = upcoming.map(renderCombatCard).join('');
+      }
+
+      // History
+      const histEl = document.getElementById('combatHistory');
+      document.getElementById('historyTitle').textContent = 'Historique ' + new Date().getFullYear();
+      if (!past.length) {
+        histEl.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--muted);font-size:0.8rem;">Aucun historique</div>';
+        document.getElementById('historySub').textContent = '';
+      } else {
+        document.getElementById('historySub').textContent = total + ' combats · ' + wins + 'V ' + losses + 'D';
+        const shown = past.slice(0, 6);
+        histEl.innerHTML = shown.map(c => {
+          const f = c.combattants || {};
+          const isWin = c.result === 'win';
+          const method = c.method || 'decision';
+          const isFinish = isFinishMethod(c.method);
+          return `<div class="history-fight">
+            <div class="hf-result ${isWin ? 'hf-result--win' : 'hf-result--loss'}">${isWin ? 'V' : 'D'}</div>
+            <div class="hf-info">
+              <div class="hf-name"><strong>${escapeHtml(getFullName(f))}</strong> vs ${escapeHtml(c.opponent_name || '?')}</div>
+              <div class="hf-detail">${escapeHtml(method)}${c.round ? ' · R' + escapeHtml(String(c.round)) : ''}${c.time ? ' · ' + escapeHtml(c.time) : ''}${c.event_name ? ' — ' + escapeHtml(c.event_name) : ''}</div>
+              <div class="hf-meta">${formatDate(c.fight_date)} · ${escapeHtml(f.weight_category || '')}</div>
+            </div>
+            <div class="hf-tags">
+              ${isFinish ? '<span class="hf-tag hf-tag--finish">' + escapeHtml(method) + '</span>' : '<span class="hf-tag">Decision</span>'}
+            </div>
+          </div>`;
+        }).join('');
+        if (past.length > 6) {
+          const footer = document.getElementById('historyFooter');
+          footer.style.display = '';
+          document.getElementById('historyCount').textContent = '6 sur ' + past.length + ' resultats affiches';
+        }
+      }
+
+      // Stats panel
+      const statsEl = document.getElementById('combatStats');
+      if (!past.length) {
+        statsEl.innerHTML = '<div style="text-align:center;padding:1.5rem;color:var(--muted);font-size:0.8rem;">Pas de donnees</div>';
+        return;
+      }
+      const winPct = total ? Math.round(wins / total * 100) : 0;
+      const lossPct = 100 - winPct;
+      const koCount = past.filter(c => { const v = String(c.method || '').toLowerCase(); return v.includes('ko'); }).length;
+      const subCount = past.filter(c => { const v = String(c.method || '').toLowerCase(); return v.includes('soumission') || v.includes('submission'); }).length;
+      const decCount = past.filter(c => !isFinishMethod(c.method)).length;
+      const maxMethod = Math.max(koCount, subCount, decCount, 1);
+
+      // Fighter stats
+      const fighterStats = {};
+      past.forEach(c => {
+        const fid = c.combattant_id;
+        if (!fighterStats[fid]) fighterStats[fid] = { fighter: c.combattants, wins: 0, losses: 0, total: 0 };
+        fighterStats[fid].total++;
+        if (c.result === 'win') fighterStats[fid].wins++;
+        else fighterStats[fid].losses++;
+      });
+      const topFighters = Object.values(fighterStats).sort((a, b) => b.total - a.total).slice(0, 3);
+
+      statsEl.innerHTML = `
+        <div class="stat-block">
+          <div class="stat-title">Bilan victoires / defaites</div>
+          <div class="stat-wr">
+            <div class="wr-bar">
+              <div class="wr-wins" style="width:${winPct}%">${wins}V</div>
+              <div class="wr-losses" style="width:${lossPct}%">${losses}D</div>
+            </div>
+            <div class="wr-pct">${winPct}% victoires</div>
+          </div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-title">Methode de victoire</div>
+          <div class="stat-rows">
+            <div class="stat-row-item">
+              <span>KO / TKO</span>
+              <div class="stat-mini-bar"><div class="stat-mini-fill" style="width:${koCount / maxMethod * 100}%"></div></div>
+              <span>${koCount}</span>
+            </div>
+            <div class="stat-row-item">
+              <span>Soumission</span>
+              <div class="stat-mini-bar"><div class="stat-mini-fill stat-mini-fill--alt" style="width:${subCount / maxMethod * 100}%"></div></div>
+              <span>${subCount}</span>
+            </div>
+            <div class="stat-row-item">
+              <span>Decision</span>
+              <div class="stat-mini-bar"><div class="stat-mini-fill stat-mini-fill--grey" style="width:${decCount / maxMethod * 100}%"></div></div>
+              <span>${decCount}</span>
+            </div>
+          </div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-title">Combattants les plus actifs</div>
+          <div class="stat-fighters-rank">
+            ${topFighters.map(s => {
+              const f = s.fighter || {};
+              return `<div class="sfr-item">
+                <div class="sfr-av" style="background:${escapeHtml(f.avatar_color || '#333')}">${escapeHtml(getInitials(f.first_name, f.last_name))}</div>
+                <div class="sfr-info">
+                  <div class="sfr-name">${escapeHtml(getFullName(f))}</div>
+                  <div class="sfr-record"><span class="rw">${s.wins}V</span> <span class="rl">${s.losses}D</span></div>
+                </div>
+                <div class="sfr-events">${s.total} combats</div>
+              </div>`;
+            }).join('')}
+          </div>
+        </div>`;
+    })();
+  </script>
+  <style>
+    /* COMBAT CARDS */
+    .combat-card {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 1.1rem 1.25rem;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      transition: background 0.15s;
+    }
+    .combat-card:last-child { border-bottom: none; }
+    .combat-card:hover { background: rgba(255,255,255,0.02); }
+    .combat-card--urgent { border-left: 3px solid var(--red); padding-left: calc(1.25rem - 3px); background: rgba(193,18,31,0.02); }
+
+    .cc-countdown {
+      text-align: center;
+      min-width: 52px;
+      flex-shrink: 0;
+    }
+    .cc-j { font-family: var(--font-display); font-size: 0.55rem; color: var(--red); letter-spacing: 0.1em; }
+    .cc-num { font-family: var(--font-display); font-size: 1.8rem; font-weight: 900; color: var(--red); line-height: 1; }
+    .cc-countdown--normal .cc-j  { color: var(--subtle); }
+    .cc-countdown--normal .cc-num { color: var(--muted); font-size: 1.5rem; }
+
+    .cc-fighters {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      min-width: 0;
+    }
+    .cc-fighter { display: flex; align-items: center; gap: 0.65rem; flex: 1; min-width: 0; }
+    .cc-fighter--opponent { opacity: 0.7; }
+    .cc-av {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 700;
+      flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .cc-name { font-size: 0.84rem; font-weight: 600; }
+    .cc-cat  { font-size: 0.68rem; color: var(--muted); margin-top: 0.1rem; }
+    .cc-sep {
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: var(--subtle);
+      flex-shrink: 0;
+    }
+
+    .cc-meta {
+      flex-shrink: 0;
+      text-align: right;
+      min-width: 160px;
+    }
+    .cc-event { font-size: 0.75rem; font-weight: 600; margin-bottom: 0.2rem; }
+    .cc-location { font-size: 0.68rem; color: var(--muted); display: flex; align-items: center; gap: 0.25rem; justify-content: flex-end; margin-bottom: 0.1rem; }
+    .cc-date { font-size: 0.66rem; color: var(--subtle); }
+
+    .cc-readiness {
+      flex-shrink: 0;
+      text-align: center;
+      min-width: 72px;
+    }
+    .cc-r-label { font-size: 0.6rem; color: var(--subtle); margin-bottom: 0.25rem; }
+    .cc-r-ring { position: relative; display: inline-block; }
+    .cc-r-val {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 900;
+      color: var(--white);
+    }
+    .cc-r-val.warn { color: #D4A017; }
+    .cc-r-val.ok   { color: #4a9e5c; }
+
+    /* HISTORY FIGHTS */
+    .history-fight {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.8rem 1.25rem;
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+      transition: background 0.15s;
+    }
+    .history-fight:last-child { border-bottom: none; }
+    .history-fight:hover { background: rgba(255,255,255,0.02); }
+
+    .hf-result {
+      width: 32px; height: 32px;
+      border-radius: var(--r);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .hf-result--win  { background: rgba(74,158,92,0.15); border: 1px solid rgba(74,158,92,0.3); color: #4a9e5c; }
+    .hf-result--loss { background: var(--red-dim); border: 1px solid var(--red-border); color: var(--red); }
+
+    .hf-info { flex: 1; min-width: 0; }
+    .hf-name { font-size: 0.8rem; margin-bottom: 0.15rem; }
+    .hf-detail { font-size: 0.7rem; color: var(--muted); margin-bottom: 0.1rem; }
+    .hf-meta { font-size: 0.64rem; color: var(--subtle); }
+
+    .hf-tags { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+    .hf-tag {
+      font-size: 0.6rem;
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      background: var(--surface3);
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .hf-tag--finish { background: var(--red-dim); border-color: var(--red-border); color: var(--red); }
+    .hf-tag--video  { background: rgba(74,158,92,0.08); border-color: rgba(74,158,92,0.2); color: #4a9e5c; }
+
+    /* STATS */
+    .stat-block { margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+    .stat-block:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .stat-title { font-family: var(--font-display); font-size: 0.62rem; letter-spacing: 0.1em; color: var(--subtle); margin-bottom: 0.75rem; }
+
+    .wr-bar { display: flex; height: 24px; border-radius: var(--r); overflow: hidden; margin-bottom: 0.4rem; }
+    .wr-wins {
+      background: rgba(74,158,92,0.3);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      color: #4a9e5c;
+      font-weight: 700;
+    }
+    .wr-losses {
+      background: var(--red-dim);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      color: var(--red);
+      font-weight: 700;
+    }
+    .wr-pct { font-size: 0.72rem; color: var(--muted); text-align: center; }
+
+    .stat-rows { display: flex; flex-direction: column; gap: 0.55rem; }
+    .stat-row-item { display: flex; align-items: center; gap: 0.65rem; font-size: 0.72rem; color: var(--muted); }
+    .stat-row-item span:first-child { min-width: 90px; }
+    .stat-row-item span:last-child { min-width: 16px; text-align: right; font-weight: 600; color: var(--white); }
+    .stat-mini-bar { flex: 1; height: 4px; background: var(--surface3); border-radius: 2px; overflow: hidden; }
+    .stat-mini-fill { height: 100%; background: var(--red); border-radius: 2px; }
+    .stat-mini-fill--alt  { background: #4a9e5c; }
+    .stat-mini-fill--grey { background: var(--muted); opacity: 0.4; }
+
+    .stat-fighters-rank { display: flex; flex-direction: column; gap: 0.65rem; }
+    .sfr-item { display: flex; align-items: center; gap: 0.7rem; }
+    .sfr-av { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.58rem; font-weight: 700; flex-shrink: 0; border: 1px solid rgba(255,255,255,0.08); }
+    .sfr-info { flex: 1; }
+    .sfr-name { font-size: 0.78rem; font-weight: 500; }
+    .sfr-record { font-size: 0.65rem; margin-top: 0.1rem; }
+    .rw { color: #4a9e5c; font-weight: 700; }
+    .rl { color: var(--red); font-weight: 700; }
+    .sfr-events { font-size: 0.65rem; color: var(--muted); white-space: nowrap; }
+
+    /* RESPONSIVE COMBATS */
+    @media (max-width: 1024px) {
+      .combat-card { flex-wrap: wrap; gap: 0.75rem; }
+      .cc-meta { text-align: left; min-width: auto; width: 100%; }
+      .cc-location { justify-content: flex-start; }
+      .cc-readiness { display: flex; align-items: center; gap: 0.75rem; width: 100%; text-align: left; }
+      .cc-readiness .btn { margin-top: 0 !important; }
+    }
+    @media (max-width: 768px) {
+      .cc-fighters { flex-wrap: wrap; gap: 0.5rem; }
+      .cc-countdown { min-width: 40px; }
+      .cc-num { font-size: 1.3rem; }
+      .history-fight { flex-wrap: wrap; gap: 0.5rem; }
+      .hf-tags { width: 100%; }
+    }
+    @media (max-width: 480px) {
+      .combat-card { padding: 0.85rem 1rem; }
+      .cc-fighters { flex-direction: column; align-items: flex-start; }
+      .cc-sep { align-self: center; }
+    }
+  </style>
+</body>
+</html>

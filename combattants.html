@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Combattants — THYMOS Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body class="dashboard-body">
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="ic-sword"         viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><path d="M12 2l-3 5h6z" fill="currentColor" stroke="none"/><line x1="9" y1="20" x2="15" y2="20"/></symbol>
+  <symbol id="ic-menu"          viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+  <symbol id="ic-home"          viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="ic-users"         viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="ic-bell"          viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></symbol>
+  <symbol id="ic-calendar"      viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+  <symbol id="ic-shuffle"       viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></symbol>
+  <symbol id="ic-award"         viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></symbol>
+  <symbol id="ic-cpu"           viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+  <symbol id="ic-settings"      viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+  <symbol id="ic-brain"         viewBox="0 0 24 24"><path d="M12 4.5C9 4.5 7 7 7 9.5c0 1 .4 2 1 2.7-.7.7-1 1.6-1 2.6 0 2 1.6 3.7 3.6 3.7h2.8c2 0 3.6-1.7 3.6-3.7 0-1-.3-1.9-1-2.6.6-.7 1-1.7 1-2.7C17 7 15 4.5 12 4.5z"/><line x1="12" y1="4.5" x2="12" y2="7.5"/><line x1="9.5" y1="10" x2="14.5" y2="10"/></symbol>
+  <symbol id="ic-activity"      viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+  <symbol id="ic-alert"         viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+  <symbol id="ic-chevron-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+  <symbol id="ic-plus"          viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+  <symbol id="ic-search"        viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+  <symbol id="ic-filter"        viewBox="0 0 24 24"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></symbol>
+  <symbol id="ic-map-pin"       viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="ic-trending-up"   viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></symbol>
+  <symbol id="ic-user"          viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="ic-edit"          viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></symbol>
+</svg>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__logo">
+      <span class="logo-icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-sword"/></svg></span>
+      <span class="logo-text">THYMOS</span>
+    </div>
+    <nav class="sidebar__nav">
+      <div class="nav-group">
+        <span class="nav-group-label">Principal</span>
+        <a href="dashboard.html" class="nav-item">
+          <svg class="icon" aria-hidden="true"><use href="#ic-home"/></svg><span>Dashboard</span>
+        </a>
+        <a href="combattants.html" class="nav-item active">
+          <svg class="icon" aria-hidden="true"><use href="#ic-users"/></svg><span>Combattants</span>
+          <span class="nav-badge">—</span>
+        </a>
+        <a href="alertes.html" class="nav-item">
+          <svg class="icon" aria-hidden="true"><use href="#ic-bell"/></svg><span>Alertes IA</span>
+          <span class="nav-badge nav-badge--red">—</span>
+        </a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Gestion</span>
+        <a href="planning.html" class="nav-item">
+          <svg class="icon" aria-hidden="true"><use href="#ic-calendar"/></svg><span>Planning</span>
+        </a>
+        <a href="sparring.html" class="nav-item">
+          <svg class="icon" aria-hidden="true"><use href="#ic-shuffle"/></svg><span>Sparring IA</span>
+        </a>
+        <a href="combats.html" class="nav-item">
+          <svg class="icon" aria-hidden="true"><use href="#ic-award"/></svg><span>Combats</span>
+        </a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">IA</span>
+        <a href="dashboard.html#ia-coach" class="nav-item">
+          <svg class="icon" aria-hidden="true"><use href="#ic-cpu"/></svg><span>IA Coach</span>
+          <span class="nav-badge nav-badge--gold">Bientôt</span>
+        </a>
+      </div>
+    </nav>
+    <div class="sidebar__footer">
+      <div class="sidebar__salle">
+        <div class="salle-avatar">—</div>
+        <div class="salle-info">
+          <div class="salle-name">Ma Salle</div>
+          <div class="salle-plan">Plan Pro</div>
+        </div>
+        <a href="parametres.html" class="salle-settings" title="Paramètres">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-settings"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="dashboard-main">
+
+    <header class="topbar">
+      <div class="topbar__left">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu">
+          <svg class="icon icon--md" aria-hidden="true"><use href="#ic-menu"/></svg>
+        </button>
+        <div class="topbar__breadcrumb">
+          <a href="dashboard.html" class="breadcrumb-gym">Ma Salle</a>
+          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-page">Combattants</span>
+        </div>
+      </div>
+      <div class="topbar__right">
+        <div class="topbar__date" id="current-date"></div>
+        <button class="btn btn--primary btn--sm" id="addFighterBtn">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-plus"/></svg>
+          Ajouter un combattant
+        </button>
+      </div>
+    </header>
+
+    <div class="dashboard-content" id="main" role="main">
+
+      <!-- KPI -->
+      <div class="kpi-row">
+        <div class="kpi-card kpi-card--red">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-award"/></svg></div>
+          <div class="kpi-body">
+            <div class="kpi-value">—</div>
+            <div class="kpi-label">En camp actif</div>
+          </div>
+          <div class="kpi-trend"></div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-activity"/></svg></div>
+          <div class="kpi-body">
+            <div class="kpi-value">—</div>
+            <div class="kpi-label">En entraînement</div>
+          </div>
+          <div class="kpi-trend"></div>
+        </div>
+        <div class="kpi-card kpi-card--alert">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-alert"/></svg></div>
+          <div class="kpi-body">
+            <div class="kpi-value">—</div>
+            <div class="kpi-label">Blessé</div>
+          </div>
+          <div class="kpi-trend"></div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-brain"/></svg></div>
+          <div class="kpi-body">
+            <div class="kpi-value">—</div>
+            <div class="kpi-label">Score mental moyen</div>
+          </div>
+          <div class="kpi-trend"></div>
+        </div>
+      </div>
+
+      <!-- TABLE COMPLÈTE -->
+      <div class="panel">
+        <div class="panel__header">
+          <div class="panel__title">
+            Tous les combattants
+            <span class="panel-count">12</span>
+          </div>
+          <div class="panel__actions">
+            <label for="filterStatus" class="sr-only">Filtrer par statut</label>
+            <select class="filter-select" id="filterStatus">
+              <option value="all">Tous les statuts</option>
+              <option value="camp">Camp actif</option>
+              <option value="training">Entraînement</option>
+              <option value="rest">Repos</option>
+              <option value="injured">Blessé</option>
+            </select>
+            <label for="filterCat" class="sr-only">Filtrer par catégorie</label>
+            <select class="filter-select" id="filterCat">
+              <option value="all">Toutes catégories</option>
+              <option value="-52 kg">-52 kg</option>
+              <option value="-57 kg">-57 kg</option>
+              <option value="-61 kg">-61 kg</option>
+              <option value="-66 kg">-66 kg</option>
+              <option value="-70 kg">-70 kg</option>
+              <option value="-77 kg">-77 kg</option>
+              <option value="-84 kg">-84 kg</option>
+              <option value="-93 kg">-93 kg</option>
+              <option value="-120 kg">-120 kg</option>
+              <option value="+120 kg">+120 kg</option>
+            </select>
+            <input type="search" class="search-input" placeholder="Rechercher..." id="fighterSearch" />
+          </div>
+        </div>
+        <div class="panel__body">
+          <table class="fighters-table">
+            <thead>
+              <tr>
+                <th>Combattant</th>
+                <th>Catégorie</th>
+                <th>Style</th>
+                <th>Statut</th>
+                <th><span class="th-icon"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-activity"/></svg>Physique</span></th>
+                <th><span class="th-icon"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-brain"/></svg>Mental</span></th>
+                <th>Prochain combat</th>
+                <th>Record</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Dynamic content loaded by page-combattants.js -->
+            </tbody>
+          </table>
+        </div>
+        <div class="panel__footer">
+          <span class="showing-count"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.50.0" crossorigin="anonymous" defer></script>
+  <script src="js/security.js" defer></script>
+<script src="js/supabase-config.js" defer></script>
+  <script src="js/sidebar-badges.js" defer></script>
+  <script src="js/auth-guard.js" defer></script>
+  <script src="js/settings-loader.js" defer></script>
+  <script src="js/toast.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/plan-guard.js" defer></script>
+  <script src="js/modal-fighter.js" defer></script>
+  <script src="js/page-combattants.js" defer></script>
+  <style>
+    .style-tag { font-size: 0.68rem; color: var(--muted); }
+    .record-inline { font-size: 0.72rem; font-family: var(--font-display); letter-spacing: 0.04em; }
+    .rw { color: #4a9e5c; font-weight: 700; }
+    .rl { color: var(--red); font-weight: 700; }
+  </style>
+</body>
+</html>

@@ -1,0 +1,954 @@
+================================================================================
+MMA TECHNIQUES KNOWLEDGE BASE - COMPLETE ENCYCLOPEDIA
+================================================================================
+This document is an exhaustive reference of Mixed Martial Arts techniques covering
+striking, wrestling, Brazilian Jiu-Jitsu, clinch work, and MMA-specific tactics.
+================================================================================
+
+
+################################################################################
+## STRIKING
+################################################################################
+
+================================================================================
+### BOXING FUNDAMENTALS
+================================================================================
+
+--- JAB (Lead Hand Straight Punch) ---
+
+Mechanics: The jab is thrown from the lead hand. Start in fighting stance with hands up, chin tucked. Extend the lead hand straight out, rotating the fist so the palm faces down at full extension. Push off the rear foot slightly, transferring minimal weight forward. Snap the hand back to guard position immediately. The shoulder rises to protect the chin.
+
+Variants:
+- Speed Jab: Minimal hip rotation, fast snap, used for range finding and disruption. Thrown with just arm extension and shoulder turn. Low power but difficult to time.
+- Power Jab: Step forward with the lead foot as you throw, adding body weight. More hip rotation. Used to establish dominance and create damage.
+- Body Jab: Bend knees, drop level slightly, target the solar plexus or floating ribs. Changes the opponent's eye line.
+- Up Jab: Thrown with a slight upward trajectory from a low hand position, useful against opponents who lean forward.
+- Flicker Jab: Lazy, pawing motion thrown from a low guard (like Thomas Hearns style), used to disrupt rhythm and measure distance.
+- Double/Triple Jab: Repeated jabs to back opponent up, create rhythm, or set up the cross.
+
+Setups: Feint a level change then jab high. Use lateral movement then jab when the angle opens. After a pull-back defense, counter jab. Jab after a slip (the slip loads the lead side).
+
+Common Mistakes: Dropping the rear hand when jabbing. Leaning too far forward (overcommitting). Telegraphing by pulling the hand back before throwing. Not returning hand to guard. Flaring the elbow out.
+
+When to Use: Opening punch of nearly every combination. Use to measure distance, blind the opponent, set up power shots, disrupt timing, score points at range, keep aggressive fighters at bay.
+
+Counters to the Jab: Slip outside and counter cross. Parry and counter. Catch and return. Pull back and counter. Time with a lead hook over the top.
+
+--- CROSS (Rear Hand Straight Punch) ---
+
+Mechanics: Driven by rotation of the rear hip and pivot of the rear foot. The rear hand travels in a straight line from guard to target. Full hip rotation generates power—the hip turns over completely. Weight transfers from rear foot to front foot. Shoulder protects chin. The lead hand stays up or pulls back to guard.
+
+Setups: Almost always preceded by a jab (the classic 1-2). Set up with feints, body jabs, or jab-to-the-body then cross upstairs. Can be thrown after a slip to the outside (the slip loads the rear hand).
+
+Common Mistakes: Dropping the lead hand. Pushing the punch instead of rotating. Feet too wide (kills rotation). Not sitting down on the punch. Over-rotating and losing balance. Telegraphing by winding up.
+
+When to Use: Primary power punch for orthodox fighters. Use after the jab opens the guard. Counter-cross when opponent jabs (slip outside, cross). Finish combinations. Against retreating opponents.
+
+Counters: Slip inside and throw lead hook. Block and return with hook. Pull and counter.
+
+--- HOOK (Lead and Rear) ---
+
+Lead Hook (Head):
+Mechanics: Rotate the lead hip, pivot on the lead foot ball. The arm stays bent at approximately 90 degrees. The punch travels on a horizontal arc. Power comes from hip rotation and core twist, NOT from swinging the arm. Keep elbow at shoulder height. The fist can be either horizontal (palm down) or vertical (thumb up).
+
+Rear Hook (Head):
+Mechanics: Same as lead hook but from the rear side. Requires more rotation to generate power. Less common in boxing, more common after a cross when the rear hip is already loaded.
+
+Body Hook:
+Mechanics: Same rotation but drop the level by bending the knees. Target the floating ribs or liver (left hook to the body on an orthodox opponent). The angle comes from bending at the knees, NOT from bending at the waist.
+
+Liver Shot: The left hook to the body targeting the liver (located on the opponent's right side). Devastating when landed clean. Drop level, rotate fully, drive the fist slightly upward into the floating ribs. A perfect liver shot causes involuntary collapse regardless of toughness.
+
+Short Hook vs. Long Hook: Short hook (tight elbow) for pocket fighting. Long hook (wider arc) for mid-range but more telegraphed. The shorter the hook, the harder to see coming.
+
+Setups: Jab-cross-hook (the classic 1-2-3). After slipping inside a cross, the lead hook is loaded. Double jab then lead hook. Feint the cross, throw hook. Body hook to bring hands down, then hook upstairs.
+
+Common Mistakes: Winding up (pulling the arm back before throwing). Dropping the opposite hand. Arm-punching without hip rotation. Hooking too wide (looping). Chicken-winging the elbow above shoulder height.
+
+--- UPPERCUT ---
+
+Mechanics: Bend the knees to dip slightly, then drive upward using the legs. The fist travels on a vertical arc from below. Rotate the hip on the same side as the punching hand. Palm faces you at the point of impact. Short, compact motion—not a huge wind-up from the floor.
+
+Lead Uppercut: Quick, used in close range. Effective against opponents who lean forward or duck into punches.
+
+Rear Uppercut: More power, generated by driving up from the rear leg and rotating the rear hip.
+
+Setups: After opponent ducks a hook (they duck into the uppercut). In the clinch. After jabbing to the body (bring their head down). When opponent bends at the waist to avoid shots. Double jab, opponent shells up, uppercut between the gloves.
+
+Common Mistakes: Telegraphing by dropping the hand low before throwing. Leaning back. Not staying tight (looping uppercut is slow). Throwing from too far out (uppercut is a close-range weapon).
+
+--- OVERHAND RIGHT (or Overhand Rear) ---
+
+Mechanics: A looping power shot thrown in a semi-circular arc over the opponent's guard. Similar starting position to the cross but the hand travels up and over in an arc. The body drops level during the throw, making it part punch, part dive. Weight commits forward. Maximum power, high risk.
+
+When to Use: Against jabbers (loop over the jab). Against southpaws (overhand right lands over their lead shoulder). When opponent is retreating. In combination after a feint or jab. When closing distance explosively.
+
+Setups: Jab high then overhand. Level change feint (looks like a takedown entry). Slip to the outside then throw. After a check hook draws them forward.
+
+Common Mistakes: Over-committing and falling off balance. Leaving the chin exposed. Becoming predictable (loading up every time). Missing and being out of position for follow-up.
+
+--- BODY SHOTS (General Principles) ---
+
+Targets: Solar plexus (center of upper abdomen), liver (right side under ribs), spleen (left side), floating ribs (both sides), kidneys (rear body in clinch).
+
+Principles: Always change levels to throw body shots—don't just aim low from a high stance. Bending at the knees keeps posture intact and protects the chin. Body work accumulates over rounds—slows opponents, drops their hands, makes them shell up. Mix body and head shots constantly.
+
+Body Jab: Step in, bend knees, jab to solar plexus.
+Body Cross: Full rotation into floating ribs or solar plexus.
+Body Hook: The most damaging body shot. Lever shot to the liver is fight-ending.
+Body Uppercut: Dig upward under the ribs. Effective in close range/clinch.
+
+================================================================================
+### MUAY THAI TECHNIQUES
+================================================================================
+
+--- TEEP (Front Push Kick) ---
+
+Mechanics: Chamber the knee (like a regular front kick chamber), then extend the foot forward in a pushing motion, striking with the ball of the foot or the flat of the foot. Hip drives forward for maximum range. Can be thrown from lead or rear leg.
+
+Lead Teep: Faster, used for distance management, like a jab with the legs. Less power.
+Rear Teep: More power, used to push opponents off or stop their forward pressure. More telegraphed.
+
+Uses: Keep opponents at range. Push them against the cage. Stop forward pressure. Set up combinations (teep to body, then punch to head as they lower hands). Off-balance opponents.
+
+Defensive Teep: Time an opponent stepping in, catch them mid-step with the teep.
+
+--- ROUNDHOUSE KICK ---
+
+Muay Thai roundhouse differs from other martial arts: the kick swings through the target like a baseball bat. The shin is the striking surface. The kicking hip turns OVER completely. The standing foot pivots nearly 180 degrees. Arms swing in opposite direction for counterbalance.
+
+Low Kick (Calf Kick / Thigh Kick):
+- Calf Kick: Targets the calf muscle below the knee. Extremely effective in modern MMA. Chips away at mobility. Can dead-leg opponents quickly.
+- Outside Low Kick: Targets the outside of the thigh (quadriceps/IT band). Cumulative damage limits movement.
+- Inside Low Kick: Chops at the inside of the lead thigh. Off-balances and damages the groin/inner thigh area.
+- Mechanics: Short range, hip doesn't need to turn over as much. Often thrown without much setup in exchanges.
+
+Mid Kick (Body Kick):
+- Targets the ribcage, floating ribs, or abdomen. The kicking leg swings fully through the target. Full hip turnover. Standing foot pivots. Can break ribs or cause liver/spleen damage. The most point-scoring kick in Muay Thai.
+- Setup: Behind a jab-cross. After catching opponent throwing a same-side punch (their side is exposed). When they move laterally into the kick.
+
+High Kick (Head Kick):
+- Same mechanics as mid kick but elevated trajectory. Targets the temple, jaw, or neck. Potential knockout with every throw. Requires flexibility and proper setup (rarely lands without a setup).
+- Setups: Jab-cross then high kick (hands go up from punches, body exposed... feint body kick, then go high). Low kicks to make them drop hand to check, then go high. Inside low kick then high kick same leg.
+
+Switch Kick: Switch the stance (hop-switch) then immediately kick with what was the rear leg (now the lead leg). Generates power from the switch. Disguises which leg is kicking.
+
+--- QUESTION MARK KICK ---
+
+Mechanics: Start the kick as though throwing a low or mid kick (chamber low, trajectory initially heading to the body). At the last moment, redirect the knee upward and the shin snaps over and down toward the head. The trajectory looks like a "?" shape. Extremely deceptive. The initial motion draws the opponent's guard down, then the kick arcs up over the guard to the head.
+
+Setup: Establish body kicks first, make them expect body shots. Then the same starting motion goes upstairs.
+
+--- OBLIQUE KICK (Chasse Bas) ---
+
+Mechanics: A stomping/pushing kick directed at the opponent's lead knee or thigh. Thrown like a teep but angled downward at the knee joint. The foot pushes into the knee area to hyperextend or damage the joint, or simply stop forward movement.
+
+Uses: Range management against aggressive fighters. Injures the lead leg over time. Slows pressure fighters. Discourages forward movement.
+
+--- KNEES ---
+
+Straight Knee: Grab the collar tie or clinch, pull opponent's head down while driving the knee straight up into the face, chest, or solar plexus. Full hip extension. The most common knee in Muay Thai clinch.
+
+Curved Knee: Comes from an angle, whipping the knee in a slight arc. Targets the sides of the body or head from the clinch.
+
+Flying Knee: Explosive knee thrown while leaping forward. The rear leg drives up as you jump off the lead foot. Can be devastatingly powerful. Used as a gap-closer or finish move. Setup by establishing forward pressure, feinting takedowns, or catching opponents moving forward.
+
+Knee from Clinch: Control head with collar tie, pull down, drive knee up. Alternate left-right knees. Target body and head. When opponent tries to posture up, follow with a pull-down knee.
+
+Knee to Body in Clinch: Shorter knees driven into the floating ribs and abdomen while controlling opponent's posture.
+
+--- ELBOWS ---
+
+The elbow is the sharpest bone in the body—cuts are extremely common from elbow strikes.
+
+Horizontal Elbow: Swing the elbow across horizontally, striking with the point of the elbow. Like a hook but with the elbow. Targets temple, jaw, orbital bone.
+
+Slashing Elbow (12-6 diagonal): Comes downward at a 45-degree angle, like slashing with a knife. Targets the forehead, eyebrow, or bridge of the nose. Primary cutting elbow.
+
+Uppercut Elbow: Drives upward, similar trajectory to an uppercut punch. Under the chin or into the nose.
+
+Spinning Elbow: Spin on the lead foot, the rear elbow whips around with the rotation. Massive power. High risk/high reward. Can end fights instantly but leaves you turned away if missed.
+
+Elbow from Clinch: Short elbows while in collar tie or over-under. Slashing elbows during clinch breaks.
+
+Setup Elbows: Jab-cross, close distance, elbow. Duck under a hook and return with upward elbow. Catch a kick and elbow as they hop on one foot.
+
+================================================================================
+### KICKBOXING COMBINATIONS
+================================================================================
+
+Classic Combinations:
+- 1-2-Low Kick (Jab-Cross-Rear Low Kick): The bread and butter of MMA striking. The 1-2 draws the guard up, the low kick attacks the now-undefended legs.
+- 1-2-3-Low Kick (Jab-Cross-Hook-Low Kick): The hook occupies the opponent's attention high, then the low kick comes.
+- 1-Body Kick: Jab to occupy the hands then immediate body kick.
+- 1-2-Head Kick: 1-2 gets hands up and occupied, head kick follows.
+- Low Kick-Cross-Hook: Start with the leg attack then follow with hands.
+- Lead Hook-Rear Body Kick: The hook turns the body, loading the rear kick.
+- Jab-Rear Teep: Jab occupies hands, teep pushes them back.
+- Switch Kick-Cross-Hook-Low Kick: Mix levels and tools.
+- 1-1-2-Lead Body Kick: Double jab creates rhythm, cross splits guard, body kick finishes.
+- Overhand Right-Left Hook-Right Low Kick: Power combination for pressure fighters.
+
+Head Movement + Counter Kicks: Slip the jab, counter with body kick (slipping loads the kicking hip). Pull from cross, counter with teep. Duck under hook, return with body kick from opposite side.
+
+================================================================================
+### DISTANCE MANAGEMENT
+================================================================================
+
+Fighting at Range (Outside):
+- Long jab, teep, front kicks maintain distance. Use lateral movement to stay at preferred range. Side kicks and oblique kicks punish entry attempts. Snapping kicks (no full commitment). This is the counter-fighter's range. Can see everything coming.
+
+Mid-Range:
+- Full combinations available: punches and kicks. Most action happens here. Both fighters can hit each other. Combinations flow: hands to kicks to hands. Angles matter most here—pivoting out after exchanges.
+
+Pocket Fighting (Close Range):
+- Hooks, uppercuts, short elbows, knees. Tight guard essential. Shoulder rolls, head movement critical. Underhooks and framing prevent clinch or takedown. Short compact punches. Body work. Dirty boxing territory.
+
+Cutting Off the Ring/Cage:
+- Angle off, don't chase directly. Cut the cage by moving laterally toward where they're going, not where they are. Use jab to herd them toward the fence. Feint to get them moving in your desired direction.
+
+================================================================================
+### FEINTS AND SETUPS
+================================================================================
+
+Types of Feints:
+- Hand feint: Twitch the jab hand without fully committing. Makes opponent react, reveals their defensive habits.
+- Level change feint: Dip the level as if shooting a takedown. In MMA, this is devastatingly effective because opponents must respect the takedown.
+- Foot stomp feint: Step forward aggressively without throwing. Triggers defensive reactions.
+- Shoulder feint: Roll the shoulder as if throwing a cross. Minimal energy expenditure.
+- Eye feint: Glance at a target (like the leg) then attack elsewhere.
+- Kick feint: Chamber the knee as if kicking, draw the hands down or check, then punch.
+
+Setting Up Power Shots:
+- Establish a pattern (jab-jab-cross repeated), then break the pattern (jab-jab-overhand).
+- Use volume to hide the power shot within the flow.
+- Attack the body to bring hands down, then go upstairs.
+- Low kick repeatedly to make them check, then when they lift to check, punch.
+- Feint a takedown, opponent drops hands, throw overhand or uppercut.
+
+================================================================================
+### DEFENSIVE STRIKING
+================================================================================
+
+Head Movement:
+- Slip: Move head off the center line. Slip OUTSIDE the jab (head goes to your right against orthodox). Slip INSIDE the cross. Small movement—just enough to make the punch miss. Keeps you in counter position.
+- Bob and Weave (Roll): Duck under hooks by bending at the knees and moving in a U-shape under the punch. Come up on the other side in position to counter. Essential for infighting.
+- Pull/Lean Back: Pull the head straight back from a punch. Quick but temporary—must follow with a counter or footwork exit. Dangerous if overdone (no base).
+- Duck: Simply drop level under a high punch by bending knees.
+
+Blocks and Parries:
+- High Block: Glove pressed to temple/forehead, elbow tight. Absorbs hooks.
+- Catch: Catch jabs and crosses in the open palm.
+- Parry: Deflect straight punches with a small swat of the hand. Redirects force rather than absorbing it.
+- Body Block: Elbow tight to body, absorb body shots on the arm/elbow.
+- Shoulder Roll (Philly Shell): Turn the lead shoulder up to deflect the cross, roll under the hook. Counter immediately.
+- Check (Leg Kicks): Lift the shin to meet the incoming kick. The hard shin bone meeting the kicker's shin or foot causes damage to the kicker. Turn the checking knee slightly outward.
+
+Footwork:
+- Lateral Movement: Step to the side to create angles. Don't cross feet. Move lead foot first when going forward, rear foot first when going back.
+- Pivot: Plant the lead foot and swing the rear foot to create a new angle. Used after landing combinations to exit at an angle. Used defensively to make opponents miss and end up beside you.
+- Circle Out: Move laterally along the cage or ring perimeter. Circle away from the opponent's power hand (circle to your left against orthodox opponents).
+- Level Change + Angle: Dip and step to the side simultaneously. Combines defensive movement with offensive positioning.
+- Switch Stance: Change from orthodox to southpaw or vice versa. Creates new angles and confuses opponents' timing.
+
+================================================================================
+### CLINCH STRIKING
+================================================================================
+
+Dirty Boxing:
+- Short punches (hooks, uppercuts) while controlling the opponent with one hand on the collar, bicep, or wrist. Frame with one hand, punch with the other. Alternate. Use head position (forehead on their chest or shoulder) to control and punch.
+- Common in cage fighting: one arm controls (underhook or collar tie), the other delivers short hooks to the body or uppercuts to the chin.
+- Shoulder strikes: Drive the shoulder into the opponent's chin/face. Legal in MMA. Khabib-style shoulder pressure from clinch against cage.
+
+Elbows in Clinch: When in collar tie, release one hand to throw short elbows. Slash elbows on clinch breaks. Uppercut elbows from underhook position. Spinning elbows when disengaging.
+
+Knees in Clinch: Control head with double collar tie (Thai plum), pull head down, alternate knees to body and head. Single collar tie with opposite hand on bicep—drive knee up. Inside knee (curved trajectory) when in single collar tie.
+
+Collar Tie Details: Grip behind the head, fingers interlocked or palm-on-palm. Pull the head down, break their posture. When they try to posture up, follow with knee or elbow. Use to snap head down then uppercut.
+
+
+################################################################################
+## WRESTLING / TAKEDOWNS
+################################################################################
+
+================================================================================
+### SINGLE LEG TAKEDOWN
+================================================================================
+
+--- High Crotch ---
+Mechanics: Penetration step (drop level, step lead foot between opponent's legs). Head goes to the INSIDE (against their chest). Grab around the thigh high near the hip (crotch area). Stand up with the leg, corner them to the cage or trip.
+Finishes: Lift and dump, run the pipe (drive forward forcing them to hop), trip the standing leg, transition to double.
+
+--- Low Single ---
+Mechanics: Deep level change—nearly on one knee. Grab the ankle/lower shin. Head stays on the OUTSIDE. Quick snatch and pull the foot toward you while driving shoulder into the knee.
+Finishes: Ankle pick finish, pull foot between your legs and topple them, transition to a high crotch.
+
+--- Sweep Single ---
+Mechanics: From a neutral position, quickly reach down and grab the lead ankle without a full penetration step. More of a snatch than a shot. Pull the ankle toward you while pushing at the shoulder or head with the other hand.
+
+--- Running the Pipe ---
+Mechanics: Once you have the single leg secured, drive your shoulder into their thigh. March forward in a straight line, driving them backward. They can only hop on one foot. Eventually they fall or hit the cage. Keep your head tight against their hip, pressure forward.
+
+--- Finish Variations ---
+- Lift and trip: Elevate the leg, use your outside foot to trip their standing leg.
+- Dump: Lift leg high, dump them sideways.
+- Shelf: Put their leg on your thigh (shelf it), then drive through or trip.
+- Run to the cage and grind them down.
+- Transition to back take: If they turn to face away while defending, take the back.
+
+================================================================================
+### DOUBLE LEG TAKEDOWN
+================================================================================
+
+--- Blast Double ---
+Mechanics: Explosive penetration step—drop level, step deep between their legs. Both arms wrap behind both knees/thighs. Head on one side (preferably against their chest/hip). DRIVE through them using leg drive. Don't lift—run through. Pop up from the shot with maximum explosion.
+
+--- Penetration Step Double ---
+More technical entry. Change level, step the lead foot deep between their feet. Rear knee drops to the mat near their lead foot. Arms wrap behind the knees. Drive on an angle (diagonally) not straight through. Turn the corner.
+
+--- Misdirection Double ---
+Fake high (jab, feint), opponent's hands go up, then shoot low for the double. Or fake a single leg one side, when they defend that side, switch to a double.
+
+Key Principles: Head MUST be on the inside or at least to one side against their hip—never head down in the middle (guillotine risk). Drive on an ANGLE, not straight. Turn the corner to take them down. Grip behind the knees, NOT around the waist (behind waist = they sprawl and you're stuck underneath).
+
+================================================================================
+### BODY LOCK TAKEDOWNS
+================================================================================
+
+--- Over-Under Body Lock ---
+From clinch with one overhook and one underhook: clasp hands behind their back (Gable grip or S-grip). Use the grip to lift or twist them down. Trip with inside or outside trip while holding the lock. Or arch backward and throw (suplex).
+
+--- Rear Body Lock ---
+From behind: Lock hands around their waist. Lift them off the mat and dump them to one side. Mat return—arch back and slam. Trip the legs while pulling them backward. Transition to a suplex. Key detail: lock grip below their belly button for maximum leverage.
+
+--- Front Body Lock ---
+Control from the front with arms locked around their torso. Drive forward, trip legs, or snap them down. Can transition to knee tap or inside trip.
+
+================================================================================
+### TRIPS AND SWEEPS
+================================================================================
+
+--- Inside Trip ---
+Mechanics: From clinch (usually over-under or double underhooks). Step your foot inside and behind their lead or rear leg. Hook your calf behind their calf. Pull/push them over your leg using upper body control. They fall over your tripping leg.
+
+--- Outside Trip ---
+Step your foot OUTSIDE and behind their leg. Use upper body to push them backward over your leg. Common from collar tie position—snap head down while sweeping the leg.
+
+--- Foot Sweep (Deashi Barai) ---
+Timing-based technique. When opponent steps or shifts weight to one foot, sweep that foot at the ankle/lower shin. Requires precise timing—catch them mid-step when weight is transferring. Use hands (push/pull) to off-balance them INTO the sweep direction.
+
+================================================================================
+### THROWS
+================================================================================
+
+--- Hip Toss (O-Goshi) ---
+Step in close, get your hip below their center of gravity. Grab around their back/belt with one hand, control their arm with the other. Turn your back partially, load them onto your hip, throw them over by rotating and pulling.
+
+--- Arm Drag to Back Take ---
+Control their wrist, pull it across their body while stepping around to their back. From the back: mat return, rear body lock takedown, trip, or suplex.
+
+--- Suplex ---
+Body lock from behind or side. Arch backward, lifting them off the mat and slamming them behind/beside you. Extremely high-amplitude throw. Risk: you can end up underneath if poorly executed.
+
+--- Harai Goshi (Sweeping Hip Throw) ---
+Similar to hip toss but the throwing leg sweeps their leg as you rotate them over your hip. Powerful rotational throw.
+
+--- Uchi Mata (Inner Thigh Throw) ---
+Your leg hooks/sweeps their inner thigh as you pull them forward and rotate. Upper body pulls them over while your leg sweeps their support.
+
+================================================================================
+### CAGE WRESTLING
+================================================================================
+
+--- Single Leg Against Cage ---
+Drive opponent to the cage with the single leg. Use the cage to prevent their escape. Work the leg while they can't sprawl (cage props them up). Options: run the pipe along the cage, lift the leg, inside trip, transition to double.
+
+--- Double Leg Against Cage ---
+Pin them against the cage. Use the wall to prevent them from sprawling or circling away. Drive diagonally, trip legs, or lift and dump from the cage.
+
+--- Body Lock Against Cage ---
+Over-under clinch against the cage. Grind them against the wall. Work for inside trips, outside trips, or lift-and-dump. Wear them out with chest pressure while looking for takedown.
+
+================================================================================
+### TAKEDOWN DEFENSE
+================================================================================
+
+--- Sprawl ---
+When opponent shoots: kick your legs back and away, driving your hips DOWN onto their back/head. Flatten them to the mat. Hands go to their head/shoulders, pushing down. Don't just kick back—you must get your hips heavy on their upper body.
+
+--- Whizzer (Overhook) ---
+When opponent gets in on a single leg: wrap your arm OVER their arm (overhook) and cinch tight. Pull their arm up and away, rotate your hips away from them. Use the whizzer to create space and free your leg. Can also use the whizzer to throw them (whizzer kick) or take the back.
+
+--- Underhook Defense ---
+When opponent shoots or clinches: fight for underhooks. An underhook gives you leverage to prevent the takedown and potentially reverse position. Pummel (swim your arms inside) to get underhooks. Underhook + head position = dominant clinch position.
+
+--- Cage Walking ---
+When taken against the cage: get your back flat against the cage. Walk your feet up under you. Use hand fighting and frames to create space. Stand up using the cage for support. Once standing, turn off the cage or pummel for underhooks.
+
+================================================================================
+### CHAIN WRESTLING
+================================================================================
+
+- Single to Double: If the single leg is defended (whizzer, hopping away), switch your grip to both legs for a double.
+- Single to Back Take: If opponent turns to face away when you have their leg, let the leg go and take the back (rear body lock or seatbelt).
+- Failed Shot to Front Headlock: If your shot is stuffed and they sprawl, snap their head down and lock up a front headlock. From there: guillotine, anaconda, darce, or spin to the back.
+- Level Change to Knee Tap: Fake a double leg, when they base out, tap the knee and push the shoulder for a quick trip.
+- Fake Single to High Crotch: Attack one leg, when they defend, shift to the other side.
+- Double to Single: If double is defended by sprawl on one side, isolate the other leg for a single.
+
+
+################################################################################
+## BRAZILIAN JIU-JITSU
+################################################################################
+
+================================================================================
+### GUARD POSITIONS
+================================================================================
+
+--- Closed Guard ---
+Full guard with legs locked around opponent's waist. The bottom fighter controls distance and can attack with submissions and sweeps.
+Attacks: Armbar (control arm, pivot hips, throw leg over face, extend arm against elbow). Triangle (control one arm in, one arm out, lock legs around head+arm). Omoplata (isolate arm, swing legs over the shoulder, sit up for shoulder lock). Guillotine (wrap head, lock hands, squeeze/pull guard). Kimura (control wrist, figure-4 grip, rotate shoulder). Hip bump sweep to mount. Cross-collar choke (in gi). Submissions chain: armbar-triangle-omoplata can flow between each other.
+Sweeps: Hip bump sweep, scissor sweep, flower sweep (pendulum), elevator sweep.
+Retention: Keep hips active, break opponent's posture with grips (head, arm, collar). Legs heavy on their hips. Don't let them posture up or they can strike.
+
+--- Half Guard ---
+One of opponent's legs trapped between yours.
+
+Underhook Half Guard: Get the underhook on the trapped-leg side. This is THE most important detail in half guard. The underhook lets you get to your side, take the back, or sweep.
+- Old School sweep: Underhook, get to your side, reach under their far leg, sweep them over you.
+- Back take: Underhook, come up to your knees, drag them or spin to their back.
+
+Lockdown (Eddie Bravo): Lock their leg with your legs in a figure-4 (triangle your legs around their leg with your feet hooking their calf). Combine with whip-up to off-balance and sweep. Electric chair from lockdown.
+
+Knee Shield (Z-Guard): Place your knee across their chest/hip. Creates a frame that prevents them from smashing you flat. Use to create space for recovering full guard or attacking.
+
+Deep Half Guard: Thread yourself underneath them, head between their legs. Their weight goes over you. Sweep by elevating with your legs and coming up. Can take the back from deep half.
+
+--- Butterfly Guard ---
+Seated guard with both feet/hooks between opponent's legs (your insteps against their inner thighs).
+Primary Sweep: Butterfly sweep—control an arm/collar, elevate with one hook (instep under their thigh), fall to the opposite side, and sweep them over you.
+Also: Arm drag from butterfly to back take. Guillotine from butterfly. Overhead sweep using both hooks.
+
+--- X-Guard ---
+Under opponent with one hook behind their knee, the other foot on their hip, and legs forming an "X" shape on one of their legs. Excellent sweep position. Sweep by extending legs and knocking them over or standing up (technical stand-up while controlling their leg).
+
+--- De La Riva Guard ---
+Hook your outside foot around their lead leg (behind the knee), grab the ankle of that same leg with your hand. The hook and grip control their lead leg while your other foot plays on their hip or bicep. Sweeps: balloon sweep, taking the back by inverting, berimbolo.
+
+--- Reverse De La Riva ---
+Hook inside their lead leg from the outside with your outside leg. Control their far leg or pants. Sweeps: kiss of the dragon (invert under them and take the back), deep DLR sweeps.
+
+--- Spider Guard ---
+(Gi-dependent) Grip their sleeves and place your feet on their biceps, extending and pushing. Controls their arms and posture. Sweeps and triangle setups.
+
+--- Rubber Guard ---
+(Eddie Bravo system) From closed guard, bring one leg very high over opponent's shoulder and neck, holding your own shin with your hand (mission control position).
+- Mission Control: Shin across the back of their neck, hold your own shin.
+- Crackhead: Pull the shin higher across the neck.
+- New York: Overhook their arm while in rubber guard, triangling the body.
+- Submissions: Omoplata, triangle, gogoplata (shin across throat from rubber guard).
+
+--- Worm Guard ---
+(Gi-dependent) Using the lapel threaded through the legs to control and off-balance. Keenan Cornelius innovation.
+
+--- Z-Guard ---
+Knee shield variation where the bottom shin is across opponent's body, knee up. Creates a frame and allows for attacks (kimura from bottom, sweeps, transitions to other guards).
+
+================================================================================
+### GUARD PASSING
+================================================================================
+
+--- Pressure Passing ---
+
+Headquarters Position: One knee up between opponent's legs, one knee back. Stable base for initiating passes. Can go either direction.
+
+Over-Under Pass: One arm under their leg (scoop it up), one arm over the other leg (cross-face or underhook). Drive forward, smashing their legs to one side while your head cross-faces. Walk around to side control.
+
+Smash Pass: From half guard or when one leg is trapped. Use your weight to flatten them, drive their trapped leg down while cross-facing. Walk to the side. Pressure with your shoulder on their face/chest.
+
+Half Guard Pressure Pass: Cross-face (underhook their head), sprawl your hips heavy on their trapped leg, free your foot by pumping (windshield wiper), clear to side control.
+
+--- Speed Passing ---
+
+Toreando (Bullfighter Pass): Grip both knees/pants, push their legs to one side while you step around to the other side. Quick, explosive movement. Land in side control.
+
+Leg Drag: Control one of their legs and drag it across your body. Step over their legs and pin the dragged leg to the mat with your hip. Settle into side control.
+
+Knee Slice (Knee Cut): From headquarters, slice your lead knee across their thigh, cutting through any guard. Drive your knee to the mat on the far side. Underhook their far arm to prevent them from turning into you. Slice through to side control.
+
+--- Float Passing ---
+Stay light on your feet, don't commit weight. React to their guard movements, passing when openings appear. Use speed and timing rather than pressure. Backstep pass (spin behind when they open guard).
+
+================================================================================
+### SUBMISSIONS (From Every Position)
+================================================================================
+
+--- From Mount ---
+
+Armbar: Control their arm, step foot by their head, swing other leg over their face, fall back extending the arm against the elbow joint. Hips high, squeeze knees, pinch against their arm.
+
+Americana (Keylock): Pin their wrist to the mat with a figure-4 grip (same side as the wrist you're attacking). Rotate their shoulder by driving the hand toward the hip. Paint brush motion away from the head.
+
+Cross Collar Choke (gi): Cross grips on the collar, drive fists into the neck. Squeeze and pull.
+
+Mounted Triangle: Isolate one arm in, one arm out. Step one foot over their neck, lock the triangle from the top. Squeeze.
+
+Ezekiel Choke: From mount—arm behind their neck, other hand threads through the sleeve opening (or uses the wrist/fist). Squeeze forearm across the throat.
+
+Arm Triangle (Head and Arm): Drive their arm across their face. Wrap your arm around their head AND their arm together. Clasp hands (gable grip). Move to the side of the trapped arm, drive shoulder down, squeeze. They choke against their own arm.
+
+--- From Back Control ---
+
+Rear Naked Choke (RNC): The king of submissions. Seatbelt grip (one arm over shoulder, one under armpit). Slide choking arm under the chin. Lock it: palm-to-palm (short choke) or grab your own bicep with the choking hand, put the other hand behind their head. Squeeze elbows together and expand chest. Cuts off blood to the brain (blood choke).
+- Short Choke: Palm to palm behind the head, quick finish.
+- Full RNC: Bicep grip, hand behind head, squeeze.
+- Body triangle: Lock legs as a body triangle (figure-4 with legs around waist) to maintain back control while working the choke.
+
+Armbar from Back: Control one arm, thread your leg over their face, extend the arm while holding back position.
+
+Bow and Arrow Choke (gi): Grip the collar behind their neck, grab their far knee/pants. Extend your body diagonally, pulling the collar tight across the throat.
+
+--- From Side Control ---
+
+Kimura: From side control, isolate their near arm. Grab their wrist, figure-4 your hands (your other hand grabs your own wrist behind their arm). Sit up/rotate, drive the hand behind their back, rotating the shoulder joint.
+
+Americana: Similar to mount americana. Pin the near wrist, figure-4, paint brush away from their head.
+
+Arm Triangle: Push their near arm across their face with your head/shoulder pressure. Lock the head-and-arm triangle (your arms around their head + their own arm). Move to the choking side, drop shoulder, squeeze.
+
+North-South Choke: From north-south position (head-to-head). Wrap your arm around their neck from the side, sprawl your weight down, squeeze the neck between your arm and your chest. Slow but effective choke.
+
+Paper Cutter Choke (gi): Grip the far collar with your cross-side hand deep behind the neck. Use your near arm to block their near arm/hip. Drive your elbow down to the mat while pulling up on the collar. Slicing choke.
+
+--- From Guard (Bottom) ---
+
+Triangle Choke: Control one arm in and one arm out. Throw your leg over the back of their neck while the in-arm is trapped inside. Lock figure-4 with your legs (ankle behind the knee of the leg on their neck). Squeeze knees, angle your body perpendicular to them. Pull the head down.
+
+Armbar from Guard: Control one arm with both hands. Place foot on their hip (same side as the arm you're attacking). Pivot your body perpendicular, throw the far leg over their head. Pinch knees, extend hips up, pull the arm for the break.
+
+Omoplata: From guard, swim your leg over their shoulder (the arm is isolated between your thighs). Sit up, lean forward. The rotation and pressure attacks the shoulder. Can also be used as a sweep.
+
+Guillotine: Wrap one or both arms around their neck (when they duck their head). Arch your back, squeeze and pull the forearm/wrist into the neck while extending your hips. Can be high-elbow (arm in) or chin strap style.
+- Arm-in Guillotine: Their arm is trapped inside the choke. More control, harder to escape.
+- High Elbow Guillotine: Elbow flares up, creating extreme angle on the neck.
+
+Gogoplata: From rubber guard or high guard—place your shin across the opponent's throat, pull the head down onto the shin. Very flexible-dependent.
+
+--- From Top Half Guard ---
+
+Kimura: When they have the underhook, grab their wrist, peel the underhook, figure-4, and finish.
+
+Darce Choke: When they reach for the underhook, thread your arm under their neck and through (under their arm). Lock figure-4 (your other arm grabs your own bicep). Squeeze while sprawling. Head-and-arm choke variant.
+
+Anaconda Choke: Similar to darce but arm goes the opposite direction—over the arm and under the neck. Lock and roll (gator roll) to finish.
+
+Arm Triangle from Half: Drive their arm across their face, lock head-and-arm, clear half guard, finish on the side.
+
+--- Leg Locks ---
+
+Straight Ankle Lock (Achilles Lock): Control their leg (usually from ashi garami/single leg X position). Wrist blade goes across the Achilles tendon. Clasp hands together, arch back while driving hips forward. Hyperextends the ankle.
+
+Heel Hook (Inside/Outside):
+- Inside Heel Hook: Control the leg, cup the heel. Your forearm rotates inward (toward their other leg) while controlling above the knee to prevent them from turning. Attacks the knee ligaments (MCL/LCL/ACL). Extremely dangerous submission.
+- Outside Heel Hook: Rotate outward. Also attacks knee ligaments. The most dangerous submission in grappling.
+
+Kneebar: Trap their leg between your legs (like an armbar but on the leg). Hips against the back of their knee, arch back to hyperextend the knee joint.
+
+Toe Hold: Grip the foot (figure-4 around the toes/ball of foot). Twist and rotate the foot laterally, attacking the ankle and knee. Kimura grip on the foot essentially.
+
+Calf Slicer: Your shin drives into the back of their calf while their leg is folded. The pressure crushes the calf muscle against the bone. Pain compliance or muscle damage.
+
+Leg Lock Positions:
+- Ashi Garami (Single Leg X): One leg hooks across their hip, other hooks their inner thigh. Their foot is trapped.
+- 50/50: Both fighters have each other's leg entangled symmetrically. Heel hook battles.
+- Saddle/Inside Sankaku (411/Honeyhole): Both your legs triangled around one of their legs with inside position. Maximum control for heel hooks.
+- Outside Ashi: Control from the outside. Straight ankle lock primary.
+
+================================================================================
+### SWEEPS
+================================================================================
+
+Hip Bump Sweep: From closed guard, sit up explosively (bump your hips into them), push them over to one side while posting your hand on the mat behind you. End in mount.
+
+Scissor Sweep: From closed guard, open guard, put one shin across their stomach (knee shield), other leg on the mat. Pull them forward with your arms, cut the legs (top leg pushes, bottom leg hooks and pulls their knee). They roll over and you end in mount.
+
+Flower Sweep (Pendulum Sweep): From closed guard, control one arm, grab the same-side leg/pants. Open guard, swing your leg up high (pendulum motion) while pulling their arm and sweeping their base leg. Roll them over your body to mount.
+
+Butterfly Sweep: From butterfly guard (seated, hooks in). Control an arm and their collar/head. Elevate one hook dramatically while falling to the opposite side. Their weight goes over the elevating hook. Land in top position.
+
+Overhead Sweep: From butterfly guard or when they drive forward. Both hooks in, grab behind their arms. Fall back and extend both legs, launching them over your head. Somersault them over you.
+
+X-Guard Sweep: From X-guard, extend both legs (one behind knee, one on hip). Stand up while controlling their trapped leg. Or dump them sideways/backward by shifting your hips.
+
+Hook Sweep: From open guard—use a butterfly hook to elevate while pulling them into the sweep direction. Can be single or double hook.
+
+================================================================================
+### ESCAPES
+================================================================================
+
+--- Mount Escape ---
+
+Trap and Roll (Upa): Trap one of their arms (overhook it). Trap their same-side foot with your foot. Bridge explosively to that side (up and over your shoulder). They can't post because arm and leg are trapped. End in their guard.
+
+Elbow-Knee Escape (Shrimp): Frame on their hip/thigh. Shrimp your hips out (move hips away from them). Get your knee/shin inside the space you created. Recover half guard, then full guard. Repeat if necessary.
+
+Heel Drag: When they have high mount—reach down, grab your own ankle and drag it up so your heel catches their foot. Creates enough space to recover half guard.
+
+--- Side Control Escape ---
+
+Frame and Shrimp: Create frames (forearm on their neck, other hand on their hip). Shrimp your hips away. Create space, get your knee in. Recover guard.
+
+Underhook Escape: Get the underhook on their far side. Use it to come up to your knees. Transition to single leg or get back to standing.
+
+Granby Roll: When they pressure forward, invert (roll backward over your shoulder) to recover guard. Timing-dependent.
+
+--- Back Escape ---
+
+Fight the Hands: Priority one—don't let them get the choke. Grip-fight their choking hand. Two-on-one their hand to your chest. Chin tucked.
+
+Turn into Guard: Once you've defended the choke, work to turn toward them and get your back to the mat. Slide down (hips drop below their hooks) and turn into their guard. Get your shoulders to the mat.
+
+Strip the Hooks: Clear the hooks (their feet) one at a time to escape back control. Once hooks are cleared, turn into them.
+
+================================================================================
+### TRANSITIONS AND SCRAMBLES
+================================================================================
+
+Guard to Mount: From top closed guard—open their guard, pressure pass to side control, then knee slide to mount. Or stack pass to side control to mount.
+
+Side Control to Mount: From side control, walk your knee up. Slide the near knee over their hip into mount. Or step over (swing far leg over). Keep pressure on their upper body to prevent the knee shield.
+
+Mount to Back: From mount when they turn to their side to escape—slide your hooks in and take the back. Let them turn but maintain seatbelt grip as you transition.
+
+Scramble Awareness: In transitions, whoever gets their hips under them first usually wins the position. Fight for underhooks. Get your base. Stay heavy on your opponent. Don't give up position chasing a submission.
+
+
+################################################################################
+## CLINCH WORK
+################################################################################
+
+================================================================================
+### THAI CLINCH CONTROL
+================================================================================
+
+Double Collar Tie (Plum): Both hands behind the head, elbows tight against their collarbones. Pull their head down, breaking posture. From here: knees to the body and head. Snap the head down then knee. Twist them off-balance.
+
+Swim Moves: When opponent has inside position (underhooks or collar tie), swim your arms inside—circle your arm under theirs and pop up for the underhook or collar tie. Constant pummeling battle.
+
+Single Collar Tie: One hand behind the head, one hand on bicep/arm. Use to snap their head, throw knees, set up elbows, or take angles.
+
+Control Principles: Whoever controls the head, controls the clinch. Posture is everything—stay upright, force them to break posture. Heavy elbows on their collarbones/shoulders to tire them.
+
+================================================================================
+### OVER-UNDER CLINCH AND PUMMELING
+================================================================================
+
+Over-Under Position: One arm is an overhook (over their arm), the other is an underhook (under their arm). Standard wrestling clinch.
+
+Pummeling: The act of fighting for underhooks. Swim your arms inside repeatedly. The fighter with double underhooks has the dominant position. Pummel in practice to develop instinct for inside position.
+
+Underhook Dominance: Double underhooks = you control the clinch. Can hit body lock takedowns, drive to cage, or separate and strike. Never let opponent have both underhooks.
+
+================================================================================
+### BODY LOCK POSITIONS
+================================================================================
+
+Front Body Lock: Hands clasped around their torso from the front (below their arms). Drive forward for takedowns, lift, or snap down.
+
+Rear Body Lock: Hands clasped behind their back from behind. Lift and dump, suplex, trip from behind.
+
+================================================================================
+### CAGE CLINCH (Offense and Defense)
+================================================================================
+
+Offense (with opponent against cage):
+- Use the cage to prevent escape. Grind them with chest pressure. Work for takedowns (inside trip, outside trip, body lock dump). Dirty boxing (short punches to body and head). Shoulder strikes to the face. Knees to the thigh/body.
+
+Defense (back against cage):
+- Hand fighting: control their wrists and biceps, break their grips. Frame with forearms. Pummel for underhooks. Hip movement to create space.
+- Wall walk to standing: Feet under you, use cage as support, work back to feet.
+- Turn off: Pummel for underhook, use it to turn them into the cage (reverse positions).
+- Separate: Frame, push off, create distance back to striking range.
+
+================================================================================
+### CLINCH BREAKS
+================================================================================
+
+Frame and Push: Forearm in their neck/chest, push off to create distance. Follow with a strike as you separate.
+
+Level Change Break: Duck your level and pull away. Can be combined with a shot (turn defense to offense).
+
+Elbow Push: Drive elbow into their chest/collar bone while pumping hips away.
+
+Snap Down and Circle: Snap their head down while circling out to the side.
+
+
+################################################################################
+## MMA-SPECIFIC TECHNIQUES
+################################################################################
+
+================================================================================
+### GROUND AND POUND
+================================================================================
+
+GnP from Guard (Opponent has you in their guard):
+- Posture up: Hands on their hips/thighs, sit up straight. Create distance.
+- Short punches from postured position: Downward elbows, short hooks.
+- Open their guard: Push on knee, slip to half guard—better GnP position.
+- Avoid: Getting broken down (they pull your head to their chest), getting submitted.
+
+GnP from Mount:
+- High mount is ideal (hips high on their chest). Walk the hands up.
+- Posture up, rain down punches: Crosses, hammerfists, elbows.
+- If they turn to escape, take the back.
+- Mix in submission threats to open up strikes (and vice versa).
+- Grapevine their legs for stability.
+
+GnP from Half Guard (Top):
+- Cross-face to control their head position. Underhook their head.
+- Short elbows and hammer fists with the cross-face arm.
+- Posture up for bigger shots when base allows.
+- Work to advance to mount or side control for better GnP.
+
+GnP from Side Control:
+- Knee-on-belly for punching platform (pop up to knee on belly, punch down, return to side control).
+- Short elbows to the face from tight side control.
+- North-south punches (move to north-south, punch down to the body).
+- Use strikes to force reactions that open up submissions.
+
+================================================================================
+### WALL WALKING (Standing Up Against the Cage)
+================================================================================
+
+Technique: When taken down near the cage or opponent is trying to hold you down against the cage.
+1. Get your back against the cage wall.
+2. Frame on their shoulders/head with your hands.
+3. Walk your feet up underneath you (use the cage's friction to aid you).
+4. Stand up by using the cage as support while maintaining frames.
+5. Once standing: pummel for underhooks, separate with a frame, or reverse position.
+
+Key Details: Head up, posture up. Don't accept being bent over. Get your hips under you. Fight the hands to prevent them from grabbing your legs again.
+
+================================================================================
+### CAGE GRINDING
+================================================================================
+
+Purpose: Use the cage to control the opponent, tire them out, accumulate damage, maintain dominant position.
+
+Method: Press them against the cage (standing or from a takedown). Maintain chest-to-chest pressure. Work for underhooks or body lock. Deny them space. Short strikes (dirty boxing, knees, shoulders). Don't be content to hold—always be working (advancing position, striking, or threatening submissions).
+
+Energy Management: The fighter on top/pressing should use LESS energy than the fighter defending. Use leverage and the cage rather than pure strength.
+
+================================================================================
+### TRANSITION FIGHTING
+================================================================================
+
+Striking to Grappling:
+- Level change off a combination (1-2 then shoot). The strikes set up the takedown.
+- Clinch after landing a hook (close the distance while they're hurt).
+- Throw a knee then clinch. Elbow then clinch.
+- FEINT the takedown to get their hands down, then strike (and vice versa—feint strikes to shoot).
+
+Grappling to Striking:
+- Get top position, posture up, start striking.
+- Use a wall walk to stand up, immediately throw strikes.
+- Stuff a takedown (sprawl), pop back up, throw strikes on their way up.
+- Scramble back to feet, immediately close distance with strikes before they reset.
+
+The Threat of Both: An MMA fighter's biggest weapon is the ability to do both. If they fear your takedown, their hands drop (head kicks and punches land). If they fear your striking, they're easier to take down (shooting when they flinch). MIXING threats is the highest-level MMA skill.
+
+================================================================================
+### DEFENSIVE WRESTLING IN MMA (Stuffing Takedowns While Striking)
+================================================================================
+
+Sprawl and Strike: When they shoot, sprawl. As they're on their knees recovering, throw knees, uppercuts, or guillotine.
+
+Check Hook and Circle: When they rush in for a takedown, throw a check hook while pivoting away. They miss the takedown and eat a punch.
+
+Underhook and Disengage: Get the underhook when they clinch, frame and push off, immediately resume striking.
+
+Knee on the Entry: Time a knee as they shoot. If they duck in, the knee meets their face. High risk but fight-ending.
+
+Frame and Pummel: If they get the clinch, frame on their head/shoulders, pummel for inside position, then separate back to striking range.
+
+
+################################################################################
+## COMBINATIONS AND GAME PLANS
+################################################################################
+
+================================================================================
+### ORTHODOX VS SOUTHPAW ADJUSTMENTS
+================================================================================
+
+Lead Foot Dominance: Both fighters try to place their lead foot OUTSIDE the opponent's lead foot. This creates the angle for the straight rear hand.
+
+Orthodox Attacking Southpaw:
+- Straight right hand lands clean (their lead hand is on the same side as your rear hand—open line).
+- Low kick to the calf/thigh of their lead leg (lead leg is closer and exposed).
+- Left hook to the body (their right side is open due to stance mismatch).
+- Jab to the body stepping outside their lead foot, then right hand upstairs.
+
+Southpaw Attacking Orthodox:
+- Straight left hand is the money punch.
+- Left low kick to the orthodox fighter's lead leg.
+- Right hook follows the left straight.
+
+General Adjustments: Angles matter more. Circle to your left (toward their back) against a southpaw (if you're orthodox). The jab is less effective (both jabs clash). Rear straights become the primary weapon.
+
+================================================================================
+### PRESSURE FIGHTING STYLE
+================================================================================
+
+Philosophy: Relentless forward movement, high volume, cardio-dependent. Back the opponent to the cage, give them no space to operate, overwhelm with output.
+
+Key Techniques: Jab to close distance. Hooks and uppercuts in the pocket. Body work to slow them down. Clinch when close (dirty boxing, takedowns). Low kicks to limit their movement. Cut off the cage with angles (don't chase straight).
+
+Defense for Pressure Fighters: Tight guard, take shots to give shots. Use a high guard while walking forward. Roll with punches. Accept some damage to stay in range. Cardio must be elite.
+
+Examples of Style: Nate Diaz, Max Holloway, Justin Gaethje, Khabib Nurmagomedov (pressure + wrestling).
+
+================================================================================
+### COUNTER FIGHTING STYLE
+================================================================================
+
+Philosophy: Let the opponent lead, exploit their openings. Fight on the back foot, use timing and precision. Make them miss, make them pay.
+
+Key Techniques: Slip + counter (slip jab, counter cross). Pull counter (lean back from cross, counter with own cross). Check hook (hook while pivoting away from their charge). Intercepting knee/teep. Catch kicks and counter. Reading patterns and timing.
+
+Defensive Foundation: Excellent head movement, quick feet, ring/cage awareness (don't get trapped on the fence). Parries and blocks to set up return fire.
+
+Risk: Can lose rounds by inactivity if opponent doesn't lead. Must make counters count with power.
+
+Examples: Anderson Silva, Israel Adesanya, Lyoto Machida, Petr Yan.
+
+================================================================================
+### POINT FIGHTING / OUTFIGHTING STYLE
+================================================================================
+
+Philosophy: Win rounds by accumulation—jab, leg kicks, movement. Never stay in one position long enough to get hit clean. Control distance absolutely. Win decisions on volume and accuracy.
+
+Key Techniques: Long jab, teep, front kicks. Circle constantly. Engage for brief exchanges then disengage. Low kicks from the outside. Feints to draw reactions without committing. Use range as defense.
+
+Movement Patterns: In-and-out (dart in with combos, dart out before they respond). Lateral pivots after combinations. Never move straight back (circle).
+
+Risk: Can be pressured against the cage by aggressive fighters. One big shot can negate rounds of outpointing. Judges may favor aggression over outfighting.
+
+Examples: GSP (combined with wrestling), Valentina Shevchenko, Sean O'Malley (early career).
+
+================================================================================
+### WRESTLING-HEAVY GAMEPLAN
+================================================================================
+
+Philosophy: Take the fight to the ground and dominate from top position. Neutralize the opponent's striking by clinching and taking them down. Control where the fight takes place.
+
+Key Elements:
+- Close distance safely (jab, level change feints, hands up while shooting)
+- Chain wrestling to get the takedown (if first shot fails, follow with another technique)
+- Top control: heavy hips, ride them, deny space
+- Ground and pound to damage and open submissions
+- If they stand up, take them down again
+- Use cage for control (grind them, tire them)
+
+Setting Up Takedowns:
+- 1-2 then level change and shoot (strikes occupy their hands)
+- Body lock from clinch against cage
+- Reactive takedown (counter their strike by shooting under it)
+- Snap down to front headlock, then go behind
+
+Maintaining Top Position: Heavy hips, cross-face, underhook. Don't let them frame. If they shrimp, follow hips. If they turn, take the back.
+
+Examples: Khabib Nurmagomedov, Kamaru Usman, Colby Covington, Islam Makhachev.
+
+================================================================================
+### SUBMISSION HUNTING GAMEPLAN
+================================================================================
+
+Philosophy: Win by submission. All actions funnel toward getting a tap—striking opens grappling entries, top position creates submission opportunities, bottom position is used offensively.
+
+Key Elements:
+- Use guard actively (submit from bottom—don't just survive)
+- From top: transition to mount or back for highest-percentage subs
+- Chain submissions: if one fails, immediately transition to the next
+- Sacrifice position for submission opportunity (risky but necessary for sub hunters)
+- Threaten sweeps to open submissions (and vice versa)
+
+Submission Chains:
+- Armbar attempt → they pull arm out → triangle (their posture broke and arm is out)
+- Triangle → they posture → omoplata
+- Kimura → they defend → take the back (using kimura grip to rotate them)
+- RNC → they defend → armbar from back → RNC again
+- Guillotine attempt → failed → darce/anaconda transition
+
+From Guard (Bottom): Be active. Don't accept being held down passively. Threaten constantly: armbars, triangles, guillotines, sweeps. Make top fighters afraid to be in your guard.
+
+Examples: Charles Oliveira, Demian Maia, Ryan Hall, Alexei Oleinik.
+
+================================================================================
+### GROUND AND POUND GAMEPLAN
+================================================================================
+
+Philosophy: Win by taking down and beating up the opponent with strikes from top position. The ground-and-pound specialist uses wrestling to get on top and striking to finish.
+
+Key Elements:
+- Takedown (blast double, body lock against cage, any entry)
+- Pass guard quickly to improve position (can't GnP well from inside closed guard)
+- From side control, mount, or back: posture and strike
+- Use strikes to force reactions, then either submit or continue striking
+- Knee-on-belly as a striking platform
+- Mix elbows and punches from top—elbows cut, punches concuss
+- If they give the back trying to turtle up, take it and finish with RNC or GnP from back
+
+Striking from Top: Short elbows from tight positions (side control). Big punches from mount (posture up, rain down). Hammerfists from half guard. Body shots from side control.
+
+Philosophy of Damage: The accumulation of unanswered strikes from top position causes referee stoppages (TKO). You don't always need the knockout—just constant damage they can't answer.
+
+Examples: Khabib Nurmagomedov, Jon Jones, Tito Ortiz, Mark Coleman (pioneer).
+
+
+################################################################################
+## ADVANCED CONCEPTS
+################################################################################
+
+================================================================================
+### TIMING AND RHYTHM
+================================================================================
+
+Rhythm Breaking: Every fighter has a rhythm. Learn it, then break it. Change your tempo mid-combination. Throw when they don't expect it (half-beat timing). Disrupt their rhythm with feints and level changes.
+
+Counter Timing: The three times to counter—before (intercept them as they start), during (slip and counter simultaneously), and after (block/dodge then immediately return).
+
+Broken Rhythm: Throw a combination with inconsistent timing. 1... 2.3 (pause then fast double). Or fast-fast-slow-FAST. Keeps opponents from predicting the next strike.
+
+================================================================================
+### ENERGY MANAGEMENT AND CARDIO TACTICS
+================================================================================
+
+Body Work: Body shots drain cardio more than anything. Liver and solar plexus strikes kill gas tanks. Body kicks accumulate damage round after round.
+
+Pace Control: Don't match an opponent's pace if they have better cardio. Use clinch to slow them. Use threatening position to make them work without expending your energy. Cage grinding to tire wrestler-heavy opponents out.
+
+Breathing: Exhale on every strike. Don't hold breath during grappling. Controlled breathing during scrambles and rest moments in the clinch.
+
+================================================================================
+### CAGE AWARENESS
+================================================================================
+
+Using the Cage Offensively: Cut off the cage with angles. Herd opponents to the fence with jabs and feints. Once they're on the cage, clinch up or throw power shots. Against the cage they can't retreat—your punches have more effect.
+
+Defensive Cage Awareness: Always know where the cage is. Don't let yourself get backed into it. Circle before you get close. If you do get put on the cage, work immediately to get off (don't accept the position).
+
+================================================================================
+### FIGHT IQ AND TACTICAL ADJUSTMENTS
+================================================================================
+
+Reading Patterns: Within a fight, notice what the opponent does repeatedly. Do they always circle left? Always jab before the low kick? Drop their right hand when throwing the left hook? Exploit patterns once identified.
+
+Between-Round Adjustments: If losing the fight, change something. Switch stance. Increase pace. Go to wrestling. Go to the body. Something must change if the current approach isn't working.
+
+Damage Assessment: If one weapon is working (e.g., calf kicks are accumulating damage), keep going back to it. Don't abandon what's working. But also be aware if they've adjusted (started checking the kicks).
+
+Threatening Multiple Things: The highest-level MMA is threatening strikes, takedowns, and submissions all at once. The opponent cannot defend everything. If they defend the takedown, they get hit. If they defend strikes, they get taken down. This "MMA chess" is what separates elite fighters from good ones.
+
+================================================================================
+END OF KNOWLEDGE BASE
+================================================================================

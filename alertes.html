@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alertes IA — THYMOS Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body class="dashboard-body">
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="ic-sword"         viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><path d="M12 2l-3 5h6z" fill="currentColor" stroke="none"/><line x1="9" y1="20" x2="15" y2="20"/></symbol>
+  <symbol id="ic-menu"          viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+  <symbol id="ic-home"          viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="ic-users"         viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="ic-bell"          viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></symbol>
+  <symbol id="ic-calendar"      viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+  <symbol id="ic-shuffle"       viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></symbol>
+  <symbol id="ic-award"         viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></symbol>
+  <symbol id="ic-cpu"           viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+  <symbol id="ic-settings"      viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+  <symbol id="ic-brain"         viewBox="0 0 24 24"><path d="M12 4.5C9 4.5 7 7 7 9.5c0 1 .4 2 1 2.7-.7.7-1 1.6-1 2.6 0 2 1.6 3.7 3.6 3.7h2.8c2 0 3.6-1.7 3.6-3.7 0-1-.3-1.9-1-2.6.6-.7 1-1.7 1-2.7C17 7 15 4.5 12 4.5z"/><line x1="12" y1="4.5" x2="12" y2="7.5"/><line x1="9.5" y1="10" x2="14.5" y2="10"/></symbol>
+  <symbol id="ic-activity"      viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+  <symbol id="ic-alert"         viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+  <symbol id="ic-check"         viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="ic-chevron-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+  <symbol id="ic-x"             viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+  <symbol id="ic-send"          viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+  <symbol id="ic-droplet"       viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></symbol>
+  <symbol id="ic-trending-down" viewBox="0 0 24 24"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></symbol>
+  <symbol id="ic-clock"         viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="ic-refresh"       viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></symbol>
+  <symbol id="ic-plus"          viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+</svg>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__logo">
+      <span class="logo-icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-sword"/></svg></span>
+      <span class="logo-text">THYMOS</span>
+    </div>
+    <nav class="sidebar__nav">
+      <div class="nav-group">
+        <span class="nav-group-label">Principal</span>
+        <a href="dashboard.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-home"/></svg><span>Dashboard</span></a>
+        <a href="combattants.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-users"/></svg><span>Combattants</span><span class="nav-badge">—</span></a>
+        <a href="alertes.html" class="nav-item active"><svg class="icon" aria-hidden="true"><use href="#ic-bell"/></svg><span>Alertes IA</span><span class="nav-badge nav-badge--red">—</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Gestion</span>
+        <a href="planning.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-calendar"/></svg><span>Planning</span></a>
+        <a href="sparring.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-shuffle"/></svg><span>Sparring IA</span></a>
+        <a href="combats.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-award"/></svg><span>Combats</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">IA</span>
+        <a href="dashboard.html#ia-coach" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-cpu"/></svg><span>IA Coach</span><span class="nav-badge nav-badge--gold">Bientôt</span></a>
+      </div>
+    </nav>
+    <div class="sidebar__footer">
+      <div class="sidebar__salle">
+        <div class="salle-avatar">—</div>
+        <div class="salle-info"><div class="salle-name">Ma Salle</div><div class="salle-plan">Plan Pro</div></div>
+        <a href="#" class="salle-settings"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-settings"/></svg></a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="dashboard-main">
+    <header class="topbar">
+      <div class="topbar__left">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu">
+          <svg class="icon icon--md" aria-hidden="true"><use href="#ic-menu"/></svg>
+        </button>
+        <div class="topbar__breadcrumb">
+          <a href="dashboard.html" class="breadcrumb-gym">Ma Salle</a>
+          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-page">Alertes IA</span>
+        </div>
+      </div>
+      <div class="topbar__right">
+        <div class="topbar__date" id="current-date"></div>
+        <button class="btn btn--ghost btn--sm" id="markAllRead">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+          Tout marquer résolu
+        </button>
+      </div>
+    </header>
+
+    <div class="dashboard-content" id="main" role="main">
+
+      <!-- KPI -->
+      <div class="kpi-row">
+        <div class="kpi-card kpi-card--red">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-alert"/></svg></div>
+          <div class="kpi-body"><div class="kpi-value" id="alKpi1">0</div><div class="kpi-label">Critique</div></div>
+          <div class="kpi-trend" id="alKpi1Sub">&mdash;</div>
+        </div>
+        <div class="kpi-card kpi-card--alert">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-clock"/></svg></div>
+          <div class="kpi-body"><div class="kpi-value" id="alKpi2">0</div><div class="kpi-label">Attention requise</div></div>
+          <div class="kpi-trend" id="alKpi2Sub">&mdash;</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-activity"/></svg></div>
+          <div class="kpi-body"><div class="kpi-value" id="alKpi3">0</div><div class="kpi-label">Suivi</div></div>
+          <div class="kpi-trend" id="alKpi3Sub">&mdash;</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-check"/></svg></div>
+          <div class="kpi-body"><div class="kpi-value" id="alKpi4">0</div><div class="kpi-label">Résolues ce mois</div></div>
+          <div class="kpi-trend" id="alKpi4Sub">&mdash;</div>
+        </div>
+      </div>
+
+      <!-- FILTRES TABS + ALERTES -->
+      <div class="main-row main-row--sidebar-md">
+
+        <div>
+          <!-- TABS FILTRE -->
+          <div class="alert-filter-tabs" id="alertFilterTabs">
+            <button class="afil-btn active" data-filter="all">Toutes <span class="afil-count" id="filterAll">0</span></button>
+            <button class="afil-btn" data-filter="critical">Critique <span class="afil-count afil-count--red" id="filterCritical">0</span></button>
+            <button class="afil-btn" data-filter="warning">Attention <span class="afil-count afil-count--orange" id="filterWarning">0</span></button>
+            <button class="afil-btn" data-filter="info">Suivi <span class="afil-count" id="filterInfo">0</span></button>
+          </div>
+
+          <!-- ALERTES LIST -->
+          <div class="alerts-list" id="alertsList">
+            <div style="text-align:center;padding:2.5rem;color:var(--muted);font-size:0.82rem;">Chargement des alertes...</div>
+          </div>
+        </div>
+
+        <!-- SIDEBAR RESUME IA -->
+        <div>
+          <div class="panel">
+            <div class="panel__header">
+              <div class="panel__title">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-cpu"/></svg>
+                Analyse IA globale
+              </div>
+              <span class="ia-status"><span class="ia-status-dot"></span>En ligne</span>
+            </div>
+            <div class="panel__body p-panel" id="iaSidebar">
+              <div style="text-align:center;padding:1.5rem;color:var(--muted);font-size:0.75rem;">Chargement...</div>
+            </div>
+          </div>
+
+          <!-- MINI CHAT -->
+          <div class="ia-mini" style="margin-top:1.25rem">
+            <div class="ia-mini__header">
+              <span>THYMOS · IA Coach</span>
+              <span class="ia-status"><span class="ia-status-dot"></span>En ligne</span>
+            </div>
+            <div class="ia-mini__body" id="chatMessages">
+              <div class="ia-mini__msg ai">Bienvenue. Posez-moi une question sur vos combattants ou vos alertes.</div>
+            </div>
+            <div class="ia-mini__input">
+              <input type="text" id="chatInput" placeholder="Poser une question..." />
+              <button id="chatSend" class="btn btn--primary btn--sm">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-send"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.50.0" crossorigin="anonymous" defer></script>
+  <script src="js/security.js" defer></script>
+<script src="js/supabase-config.js" defer></script>
+  <script src="js/sidebar-badges.js" defer></script>
+  <script src="js/auth-guard.js" defer></script>
+  <script src="js/settings-loader.js" defer></script>
+  <script src="js/toast.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/plan-guard.js" defer></script>
+  <script>
+    const LEVEL_CLASSES = {
+      critical: 'alert-full--critical',
+      warning: 'alert-full--warning',
+      info: 'alert-full--info'
+    };
+    const LEVEL_TAG_CLASSES = {
+      critical: 'af-tag--red',
+      warning: 'af-tag--orange',
+      info: ''
+    };
+
+    function timeAgo(dateStr) {
+      if (!dateStr) return '';
+      const diff = Date.now() - new Date(dateStr).getTime();
+      const mins = Math.floor(diff / 60000);
+      if (mins < 60) return 'Il y a ' + mins + ' min';
+      const hours = Math.floor(mins / 60);
+      if (hours < 24) return 'Il y a ' + hours + 'h';
+      const days = Math.floor(hours / 24);
+      return 'Il y a ' + days + ' jours';
+    }
+
+    function renderAlertCard(a) {
+      const f = a.combattants || {};
+      const level = a.level || 'info';
+      const recos = (a.recommendations || []).filter(r => r && r.trim());
+
+      return `<div class="alert-full ${LEVEL_CLASSES[level] || ''}" data-level="${level}" data-id="${a.id}">
+        <div class="alert-full__header">
+          <div class="alert-full__left">
+            <div class="af-avatar" style="background:${escapeHtml(f.avatar_color || '#333')}">${escapeHtml(getInitials(f.first_name, f.last_name))}</div>
+            <div class="af-meta">
+              <div class="af-name">${escapeHtml(getFullName(f))}</div>
+              <div class="af-tags">
+                <span class="af-tag ${LEVEL_TAG_CLASSES[level] || ''}">${escapeHtml(a.category || '')} · ${level === 'critical' ? 'Critique' : level === 'warning' ? 'Attention' : 'Suivi'}</span>
+              </div>
+            </div>
+          </div>
+          <div class="alert-full__right">
+            <span class="af-time">${timeAgo(a.created_at)}</span>
+            <button class="af-resolve" title="Marquer resolu" onclick="handleResolve(this, '${a.id}')">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="alert-full__body">
+          <div class="af-message">${escapeHtml(a.message || '')}</div>
+          ${recos.length ? `<div class="af-ia-reco">
+            <div class="af-reco-label"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-cpu"/></svg> Recommandations IA</div>
+            <ul class="af-reco-list">${recos.map(r => '<li>' + escapeHtml(r) + '</li>').join('')}</ul>
+          </div>` : ''}
+        </div>
+        <div class="alert-full__actions">
+          <a href="combattant.html?id=${a.combattant_id || ''}" class="alert-btn">Voir le profil</a>
+          <button class="alert-btn alert-btn--primary" onclick="toast('Action enregistree', 'info')">Consulter l'IA</button>
+        </div>
+      </div>`;
+    }
+
+    async function handleResolve(btn, alertId) {
+      const card = btn.closest('.alert-full');
+      const result = await resolveAlerte(alertId);
+      if (result.success) {
+        card.style.opacity = '0.35';
+        card.style.pointerEvents = 'none';
+        toast('Alerte marquee comme resolue', 'success');
+      } else {
+        toast('Erreur lors de la resolution', 'error');
+      }
+    }
+
+    function setupFilters() {
+      const btns = document.querySelectorAll('.afil-btn');
+      const items = document.querySelectorAll('.alert-full');
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          btns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const f = btn.getAttribute('data-filter');
+          items.forEach(item => {
+            item.style.display = (f === 'all' || item.getAttribute('data-level') === f) ? '' : 'none';
+          });
+        });
+      });
+    }
+
+    (async function loadAlertesPage() {
+      const salle = await getCurrentSalle();
+      if (!salle) return;
+
+      const [activeAlertes, resolvedAlertes] = await Promise.all([
+        getAlertes(salle.id, { resolved: false }),
+        getAlertes(salle.id, { resolved: true })
+      ]);
+
+      const critical = activeAlertes.filter(a => a.level === 'critical');
+      const warning = activeAlertes.filter(a => a.level === 'warning');
+      const info = activeAlertes.filter(a => a.level === 'info');
+
+      // KPI
+      document.getElementById('alKpi1').textContent = critical.length;
+      document.getElementById('alKpi1Sub').textContent = critical.length ? 'Action immediate' : 'Aucune';
+      document.getElementById('alKpi2').textContent = warning.length;
+      document.getElementById('alKpi2Sub').textContent = warning.length ? 'Sous 24-48h' : 'Aucune';
+      document.getElementById('alKpi3').textContent = info.length;
+      document.getElementById('alKpi3Sub').textContent = info.length ? 'Surveillance reguliere' : 'Aucune';
+
+      // Resolved this month
+      const now = new Date();
+      const monthStart = new Date(now.getFullYear(), now.getMonth(), 1).toISOString();
+      const resolvedThisMonth = resolvedAlertes.filter(a => a.resolved_at && a.resolved_at >= monthStart);
+      document.getElementById('alKpi4').textContent = resolvedThisMonth.length;
+
+      // Filter counts
+      document.getElementById('filterAll').textContent = activeAlertes.length;
+      document.getElementById('filterCritical').textContent = critical.length;
+      document.getElementById('filterWarning').textContent = warning.length;
+      document.getElementById('filterInfo').textContent = info.length;
+
+      // Alerts list
+      const listEl = document.getElementById('alertsList');
+      if (!activeAlertes.length) {
+        listEl.innerHTML = '<div style="text-align:center;padding:2.5rem;color:var(--muted);font-size:0.82rem;">Aucune alerte active — tout va bien</div>';
+      } else {
+        listEl.innerHTML = activeAlertes.map(renderAlertCard).join('');
+        setupFilters();
+      }
+
+      // IA Sidebar
+      const iaEl = document.getElementById('iaSidebar');
+      if (!activeAlertes.length) {
+        iaEl.innerHTML = '<div class="ia-summary-msg"><p>Aucune alerte active. Tous les combattants sont en bonne forme.</p></div>';
+      } else {
+        const riskItems = activeAlertes.map(a => {
+          const f = a.combattants || {};
+          const name = (f.first_name || '') + ' ' + ((f.last_name || '')[0] || '') + '.';
+          const level = a.level || 'info';
+          const riskClass = level === 'critical' ? 'irs-item--high' : level === 'warning' ? 'irs-item--med' : 'irs-item--low';
+          const riskLabel = level === 'critical' ? '<span class="warn">Eleve</span>' : level === 'warning' ? '<span>Moyen</span>' : '<span class="ok">Faible</span>';
+          const barWidth = level === 'critical' ? 90 : level === 'warning' ? 50 : 25;
+          return `<div class="irs-item ${riskClass}">
+            <div class="irs-bar" style="width:${barWidth}%"></div>
+            <div class="irs-label"><span>${escapeHtml(name)}</span>${riskLabel}</div>
+          </div>`;
+        }).join('');
+
+        const topAlert = critical[0] || warning[0] || activeAlertes[0];
+        const topF = topAlert?.combattants || {};
+
+        iaEl.innerHTML = `
+          <div class="ia-summary-msg">
+            <p>${critical.length ? '<strong>' + escapeHtml(getFullName(topF)) + '</strong> est le cas le plus urgent cette semaine.' : 'Aucune alerte critique active.'}</p>
+            <p>${activeAlertes.length} alerte${activeAlertes.length > 1 ? 's' : ''} active${activeAlertes.length > 1 ? 's' : ''} au total.</p>
+          </div>
+          <div class="ia-risk-summary">
+            <div class="irs-title">Risques identifies</div>
+            ${riskItems}
+          </div>`;
+      }
+
+      // Mark all resolved button
+      document.getElementById('markAllRead')?.addEventListener('click', async () => {
+        for (const a of activeAlertes) {
+          await resolveAlerte(a.id);
+        }
+        toast('Toutes les alertes marquees comme resolues', 'success');
+        location.reload();
+      });
+    })();
+  </script>
+  <style>
+    .p-panel { padding: 1rem; }
+    /* ALERT FULL */
+    .alerts-list { display: flex; flex-direction: column; gap: 1rem; }
+    .alert-full {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      transition: opacity 0.3s;
+    }
+    .alert-full--critical { border-left-color: var(--red); }
+    .alert-full--warning  { border-left-color: #D4A017; }
+    .alert-full--info     { border-left-color: var(--subtle); }
+
+    .alert-full__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 1rem 1.1rem 0.75rem;
+      gap: 0.75rem;
+    }
+    .alert-full__left { display: flex; align-items: flex-start; gap: 0.8rem; flex: 1; }
+    .af-avatar {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 700;
+      flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .af-name { font-size: 0.88rem; font-weight: 600; margin-bottom: 0.35rem; }
+    .af-tags { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+    .af-tag {
+      font-size: 0.62rem;
+      padding: 0.15rem 0.45rem;
+      border-radius: 3px;
+      background: var(--surface3);
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .af-tag--red    { background: var(--red-dim); border-color: var(--red-border); color: var(--red); }
+    .af-tag--orange { background: rgba(212,160,23,0.1); border-color: rgba(212,160,23,0.25); color: #D4A017; }
+
+    .alert-full__right { display: flex; align-items: center; gap: 0.65rem; flex-shrink: 0; }
+    .af-time { font-size: 0.66rem; color: var(--subtle); white-space: nowrap; }
+    .af-resolve {
+      width: 26px; height: 26px;
+      border-radius: var(--r);
+      background: var(--surface3);
+      border: 1px solid var(--border);
+      color: var(--subtle);
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.18s;
+    }
+    .af-resolve:hover { background: rgba(74,158,92,0.15); border-color: rgba(74,158,92,0.3); color: #4a9e5c; }
+
+    .alert-full__body { padding: 0 1.1rem 0.75rem; }
+    .af-message {
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 0.85rem;
+    }
+    .af-message strong { color: var(--white); }
+
+    .af-ia-reco {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 0.75rem;
+    }
+    .af-reco-label {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-display);
+      font-size: 0.58rem;
+      letter-spacing: 0.1em;
+      color: var(--subtle);
+      margin-bottom: 0.6rem;
+    }
+    .af-reco-list { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+    .af-reco-list li {
+      font-size: 0.74rem;
+      color: var(--muted);
+      line-height: 1.45;
+      display: flex;
+      gap: 0.4rem;
+      align-items: flex-start;
+    }
+    .af-reco-list li::before { content: '→'; color: var(--red); flex-shrink: 0; }
+
+    .alert-full__actions {
+      padding: 0.75rem 1.1rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      background: var(--surface2);
+    }
+
+    /* FILTER TABS */
+    .alert-filter-tabs {
+      display: flex;
+      gap: 0.35rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .afil-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 0.9rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      color: var(--muted);
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: all 0.18s;
+    }
+    .afil-btn:hover { color: var(--white); border-color: var(--muted); }
+    .afil-btn.active { color: var(--white); background: var(--red-dim); border-color: var(--red-border); }
+    .afil-count {
+      font-size: 0.6rem;
+      padding: 0.08rem 0.35rem;
+      border-radius: 3px;
+      background: var(--surface3);
+      color: var(--subtle);
+    }
+    .afil-count--red    { background: var(--red-dim); color: var(--red); }
+    .afil-count--orange { background: rgba(212,160,23,0.1); color: #D4A017; }
+
+    /* IA RISK SUMMARY */
+    .ia-summary-msg { font-size: 0.76rem; color: var(--muted); line-height: 1.6; margin-bottom: 1.1rem; }
+    .ia-summary-msg p { margin-bottom: 0.65rem; }
+    .ia-summary-msg p:last-child { margin-bottom: 0; }
+    .ia-summary-msg strong { color: var(--white); }
+
+    .ia-risk-summary { border-top: 1px solid var(--border); padding-top: 0.9rem; }
+    .irs-title { font-family: var(--font-display); font-size: 0.6rem; letter-spacing: 0.1em; color: var(--subtle); margin-bottom: 0.75rem; }
+    .irs-item { margin-bottom: 0.65rem; }
+    .irs-bar {
+      height: 3px;
+      border-radius: 2px;
+      margin-bottom: 0.3rem;
+    }
+    .irs-item--high .irs-bar  { background: var(--red); }
+    .irs-item--med .irs-bar   { background: #D4A017; }
+    .irs-item--low .irs-bar   { background: #4a9e5c; }
+    .irs-label { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--muted); }
+    .warn { color: var(--red); font-weight: 600; }
+    .ok   { color: #4a9e5c; font-weight: 600; }
+
+    /* RESPONSIVE ALERTES */
+    @media (max-width: 768px) {
+      .alert-full__header { flex-direction: column; gap: 0.5rem; }
+      .alert-full__right { align-self: flex-end; }
+      .alert-full__actions { justify-content: stretch; }
+      .alert-full__actions .alert-btn { flex: 1; text-align: center; justify-content: center; }
+      .alert-filter-tabs { flex-wrap: wrap; }
+    }
+    @media (max-width: 480px) {
+      .af-tags { gap: 0.25rem; }
+      .af-tag { font-size: 0.56rem; padding: 0.1rem 0.3rem; }
+      .af-message { font-size: 0.74rem; }
+      .af-reco-list li { font-size: 0.7rem; }
+    }
+  </style>
+</body>
+</html>

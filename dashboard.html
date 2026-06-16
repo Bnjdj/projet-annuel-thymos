@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — THYMOS Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <style>
+    /* Vue d'ensemble de la salle — graphes de synthese */
+    #salleOverview { margin-bottom: 1.5rem; }
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      align-items: start;
+    }
+    .overview-chart { margin: 0; display: flex; flex-direction: column; gap: 0.75rem; }
+    .overview-chart__title {
+      font-family: var(--font-display);
+      font-size: 0.66rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    /* Hauteur bornee : Chart.js (maintainAspectRatio:false) remplit ce conteneur */
+    .overview-chart__canvas { position: relative; height: 240px; }
+    .overview-empty {
+      padding: 2.5rem 1rem;
+      text-align: center;
+      color: var(--subtle);
+      font-size: 0.85rem;
+    }
+
+    /* Premiers pas — checklist d'onboarding */
+    #onboardingChecklist { margin-bottom: 1.5rem; }
+    .onboarding[hidden], .onboarding-done[hidden] { display: none; }
+    .onboarding-intro {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .onboarding-progress {
+      font-family: var(--font-body);
+      font-size: 0.66rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--gold-light);
+      background: var(--gold-dim);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .onboarding-track {
+      height: 6px;
+      background: var(--surface3);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 1.1rem;
+    }
+    .onboarding-track__fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      border-radius: 999px;
+      transition: width 0.45s ease;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .onboarding-track__fill { transition: none; }
+    }
+    .onboarding-list { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
+    .onboarding-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.65rem 0.8rem;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+    }
+    .onboarding-item__dot {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--subtle);
+      color: #fff;
+      transition: background 0.18s, border-color 0.18s;
+    }
+    .onboarding-item__dot svg { width: 13px; height: 13px; opacity: 0; }
+    .onboarding-item--done .onboarding-item__dot {
+      background: #3a7d44;          /* vert succes deja utilise (mini-fill.good) */
+      border-color: #3a7d44;
+    }
+    .onboarding-item--done .onboarding-item__dot svg { opacity: 1; }
+    .onboarding-item__main { flex: 1 1 auto; min-width: 0; }
+    .onboarding-item__label { font-size: 0.85rem; color: var(--white); font-weight: 500; }
+    .onboarding-item__hint { font-size: 0.72rem; color: var(--subtle); margin-top: 0.1rem; }
+    .onboarding-item--done .onboarding-item__label {
+      color: var(--muted);
+      text-decoration: line-through;
+      text-decoration-color: var(--subtle);
+    }
+    .onboarding-item__action {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--red);
+      white-space: nowrap;
+      transition: color 0.18s;
+    }
+    .onboarding-item__action:hover { color: var(--gold-light); }
+    .onboarding-item__action svg { width: 14px; height: 14px; }
+    .onboarding-item__check { flex-shrink: 0; font-size: 0.72rem; color: #3a7d44; font-weight: 600; }
+
+    /* Bandeau « tout est pret » */
+    .onboarding-done { margin-bottom: 1.5rem; }
+    .onboarding-done__body {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+    .onboarding-done__icon {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #3a7d44;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .onboarding-done__text { font-size: 0.85rem; color: var(--white); font-weight: 500; flex: 1 1 auto; }
+    .onboarding-done__close {
+      flex-shrink: 0;
+      background: none;
+      border: none;
+      color: var(--subtle);
+      cursor: pointer;
+      padding: 0.2rem;
+      line-height: 0;
+      transition: color 0.18s;
+    }
+    .onboarding-done__close:hover { color: var(--white); }
+
+    @media (max-width: 560px) {
+      .onboarding-item { flex-wrap: wrap; }
+      .onboarding-item__action, .onboarding-item__check { width: 100%; padding-left: calc(22px + 0.75rem); }
+    }
+</style>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body class="dashboard-body">
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<!-- SVG SPRITE -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="ic-sword"       viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><path d="M12 2l-3 5h6z" fill="currentColor" stroke="none"/><line x1="9" y1="20" x2="15" y2="20"/></symbol>
+  <symbol id="ic-menu"        viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+  <symbol id="ic-home"        viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="ic-users"       viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="ic-bell"        viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></symbol>
+  <symbol id="ic-calendar"    viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+  <symbol id="ic-shuffle"     viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></symbol>
+  <symbol id="ic-award"       viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></symbol>
+  <symbol id="ic-cpu"         viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+  <symbol id="ic-settings"    viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+  <symbol id="ic-users-sm"    viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></symbol>
+  <symbol id="ic-brain"       viewBox="0 0 24 24"><path d="M12 4.5C9 4.5 7 7 7 9.5c0 1 .4 2 1 2.7-.7.7-1 1.6-1 2.6 0 2 1.6 3.7 3.6 3.7h2.8c2 0 3.6-1.7 3.6-3.7 0-1-.3-1.9-1-2.6.6-.7 1-1.7 1-2.7C17 7 15 4.5 12 4.5z"/><line x1="12" y1="4.5" x2="12" y2="7.5"/><line x1="9.5" y1="10" x2="14.5" y2="10"/></symbol>
+  <symbol id="ic-activity"    viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+  <symbol id="ic-alert"       viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+  <symbol id="ic-check"       viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="ic-arrow-right" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="ic-chevron-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+  <symbol id="ic-plus"        viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+  <symbol id="ic-refresh"     viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></symbol>
+  <symbol id="ic-send"        viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+  <symbol id="ic-map-pin"     viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="ic-filter"      viewBox="0 0 24 24"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></symbol>
+  <symbol id="ic-search"      viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+</svg>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__logo">
+      <span class="logo-icon">
+        <svg class="icon icon--md" aria-hidden="true"><use href="#ic-sword"/></svg>
+      </span>
+      <span class="logo-text">THYMOS</span>
+    </div>
+
+    <nav class="sidebar__nav">
+      <div class="nav-group">
+        <span class="nav-group-label">Principal</span>
+        <a href="dashboard.html" class="nav-item active">
+          <svg class="icon" aria-hidden="true"><use href="#ic-home"/></svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="combattants.html" class="nav-item">
+          <svg class="icon" aria-hidden="true"><use href="#ic-users"/></svg>
+          <span>Combattants</span>
+          <span class="nav-badge">—</span>
+        </a>
+        <a href="alertes.html" class="nav-item">
+          <svg class="icon" aria-hidden="true"><use href="#ic-bell"/></svg>
+          <span>Alertes IA</span>
+          <span class="nav-badge nav-badge--red">—</span>
+        </a>
+      </div>
+
+      <div class="nav-group">
+        <span class="nav-group-label">Gestion</span>
+        <a href="planning.html" class="nav-item">
+          <svg class="icon" aria-hidden="true"><use href="#ic-calendar"/></svg>
+          <span>Planning</span>
+        </a>
+        <a href="sparring.html" class="nav-item">
+          <svg class="icon" aria-hidden="true"><use href="#ic-shuffle"/></svg>
+          <span>Sparring IA</span>
+        </a>
+        <a href="combats.html" class="nav-item">
+          <svg class="icon" aria-hidden="true"><use href="#ic-award"/></svg>
+          <span>Combats</span>
+        </a>
+      </div>
+
+      <div class="nav-group">
+        <span class="nav-group-label">IA</span>
+        <a href="#ia-coach" class="nav-item">
+          <svg class="icon" aria-hidden="true"><use href="#ic-cpu"/></svg>
+          <span>IA Coach</span>
+          <span class="nav-badge nav-badge--gold">Bientôt</span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="sidebar__footer">
+      <div class="sidebar__salle">
+        <div class="salle-avatar">—</div>
+        <div class="salle-info">
+          <div class="salle-name">Ma Salle</div>
+          <div class="salle-plan">Plan Pro</div>
+        </div>
+        <a href="parametres.html" class="salle-settings" title="Paramètres">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-settings"/></svg>
+        </a>
+      </div>
+      <button class="sidebar-logout" onclick="logout()" title="Deconnexion">
+        <svg viewBox="0 0 24 24" class="icon icon--sm" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        <span>Deconnexion</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="dashboard-main">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="topbar__left">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu">
+          <svg class="icon icon--md" aria-hidden="true"><use href="#ic-menu"/></svg>
+        </button>
+        <div class="topbar__breadcrumb">
+          <span class="breadcrumb-gym">Ma Salle</span>
+          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-page">Dashboard</span>
+        </div>
+      </div>
+      <div class="topbar__right">
+        <div class="topbar__date" id="current-date"></div>
+        <a href="#ia-coach" class="btn btn--primary btn--sm">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-cpu"/></svg>
+          IA Coach
+        </a>
+        <a class="btn btn--ghost btn--sm" id="addFighterBtn" style="cursor:pointer">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-plus"/></svg>
+          Ajouter
+        </a>
+      </div>
+    </header>
+
+    <div class="dashboard-content" id="main" role="main">
+
+      <!-- PREMIERS PAS — checklist d'onboarding dynamique (remplie par page-dashboard.js) -->
+      <div class="panel onboarding" id="onboardingChecklist" hidden>
+        <div class="panel__header">
+          <div class="panel__title">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-award"/></svg>
+            Premiers pas
+          </div>
+          <span class="onboarding-progress" id="onboardingProgress" aria-live="polite">—</span>
+        </div>
+        <div class="panel__body p-lg">
+          <p class="onboarding-intro">Quelques étapes pour configurer votre salle et tirer le meilleur de THYMOS.</p>
+          <div class="onboarding-track" aria-hidden="true">
+            <div class="onboarding-track__fill" id="onboardingTrackFill" style="width:0%"></div>
+          </div>
+          <ul class="onboarding-list" id="onboardingList"></ul>
+        </div>
+      </div>
+
+      <!-- Message « tout est prêt » (affiché quand la checklist est complétée, fermable) -->
+      <div class="panel onboarding-done" id="onboardingDone" hidden>
+        <div class="panel__body p-lg onboarding-done__body">
+          <span class="onboarding-done__icon" aria-hidden="true">
+            <svg class="icon icon--sm"><use href="#ic-check"/></svg>
+          </span>
+          <span class="onboarding-done__text">Tout est prêt — bon entraînement&nbsp;!</span>
+          <button type="button" class="onboarding-done__close" id="onboardingDoneClose" aria-label="Fermer">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- KPI ROW -->
+      <div class="kpi-row">
+        <div class="kpi-card">
+          <div class="kpi-icon">
+            <svg class="icon" aria-hidden="true"><use href="#ic-users"/></svg>
+          </div>
+          <div class="kpi-body">
+            <div class="kpi-value">—</div>
+            <div class="kpi-label">Combattants actifs</div>
+          </div>
+          <div class="kpi-trend"></div>
+        </div>
+
+        <div class="kpi-card kpi-card--red">
+          <div class="kpi-icon">
+            <svg class="icon" aria-hidden="true"><use href="#ic-award"/></svg>
+          </div>
+          <div class="kpi-body">
+            <div class="kpi-value">—</div>
+            <div class="kpi-label">Combats à venir</div>
+          </div>
+          <div class="kpi-trend"></div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-icon">
+            <svg class="icon" aria-hidden="true"><use href="#ic-brain"/></svg>
+          </div>
+          <div class="kpi-body">
+            <div class="kpi-value">—</div>
+            <div class="kpi-label">Score mental moyen</div>
+          </div>
+          <div class="kpi-trend"></div>
+        </div>
+
+        <div class="kpi-card kpi-card--alert">
+          <div class="kpi-icon">
+            <svg class="icon" aria-hidden="true"><use href="#ic-alert"/></svg>
+          </div>
+          <div class="kpi-body">
+            <div class="kpi-value">—</div>
+            <div class="kpi-label">Alertes actives</div>
+          </div>
+          <div class="kpi-trend"></div>
+        </div>
+      </div>
+
+      <!-- VUE D'ENSEMBLE DE LA SALLE -->
+      <div class="panel" id="salleOverview">
+        <div class="panel__header">
+          <div class="panel__title">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-activity"/></svg>
+            Vue d'ensemble de la salle
+          </div>
+        </div>
+        <div class="panel__body p-lg" id="salleOverviewBody">
+          <div class="overview-grid">
+            <figure class="overview-chart">
+              <figcaption class="overview-chart__title">Répartition par statut</figcaption>
+              <div class="overview-chart__canvas">
+                <canvas id="statusChart" role="img" aria-label="Répartition des combattants par statut"></canvas>
+              </div>
+            </figure>
+            <figure class="overview-chart">
+              <figcaption class="overview-chart__title">Score moyen physique vs mental</figcaption>
+              <div class="overview-chart__canvas">
+                <canvas id="scoresChart" role="img" aria-label="Score moyen physique et mental de la salle"></canvas>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROW 2 : TABLE + ALERTES -->
+      <div class="main-row">
+
+        <!-- FIGHTERS TABLE -->
+        <div class="panel panel--large" id="combattants">
+          <div class="panel__header">
+            <div class="panel__title">
+              Mes combattants
+              <span class="panel-count">—</span>
+            </div>
+            <div class="panel__actions">
+              <label for="filterStatus" class="sr-only">Filtrer par statut</label>
+              <select class="filter-select" id="filterStatus">
+                <option value="all">Tous les statuts</option>
+                <option value="camp">Camp actif</option>
+                <option value="training">Entraînement</option>
+                <option value="rest">Repos</option>
+                <option value="injured">Blessé</option>
+              </select>
+              <input type="search" class="search-input" placeholder="Rechercher..." id="fighterSearch" />
+            </div>
+          </div>
+          <div class="panel__body">
+            <table class="fighters-table" id="fightersTable">
+              <thead>
+                <tr>
+                  <th>Combattant</th>
+                  <th>Catégorie</th>
+                  <th>Statut</th>
+                  <th>
+                    <span class="th-icon">
+                      <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-activity"/></svg>
+                      Physique
+                    </span>
+                  </th>
+                  <th>
+                    <span class="th-icon">
+                      <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-brain"/></svg>
+                      Mental
+                    </span>
+                  </th>
+                  <th>Prochain combat</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content loaded by page-dashboard.js -->
+              </tbody>
+            </table>
+          </div>
+          <div class="panel__footer">
+            <span class="showing-count"></span>
+            <a href="combattants.html" class="link-all">
+              Voir tous
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-chevron-right"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ALERTES IA -->
+        <div class="panel panel--side" id="alertes">
+          <div class="panel__header">
+            <div class="panel__title">
+              Alertes IA
+              <span class="panel-count panel-count--red" id="dashAlertCount">0</span>
+            </div>
+          </div>
+          <div class="panel__body" id="dashAlertesBody">
+            <div style="padding:2rem;text-align:center;color:var(--subtle);">Chargement...</div>
+          </div>
+
+          <!-- IA COACH MINI -->
+          <div class="ia-mini" id="ia-coach">
+            <div class="ia-mini__header">
+              <span>THYMOS · IA Coach</span>
+              <span class="badge-soon">Bientôt</span>
+            </div>
+            <div class="ia-mini__body">
+              <div class="soon-banner">L'IA Coach arrive bientôt — suivi et analyses assistés par IA en préparation.</div>
+            </div>
+            <div class="ia-mini__input soon-locked">
+              <input type="text" id="chatInput" placeholder="Bientôt disponible…" disabled />
+              <button id="chatSend" class="btn btn--primary btn--sm" aria-label="Envoyer" disabled>
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-send"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ROW 3 : COMBATS + SPARRING -->
+      <div class="main-row main-row--equal" id="combats">
+
+        <!-- PROCHAINS COMBATS -->
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__title">Prochains combats</div>
+            <a href="combats.html" class="btn btn--ghost btn--sm">Voir tout</a>
+          </div>
+          <div class="panel__body" id="dashCombatsBody">
+            <div style="padding:2.5rem;text-align:center;color:var(--subtle);">Chargement...</div>
+          </div>
+        </div>
+
+        <!-- SPARRING IA -->
+        <div class="panel" id="sparring">
+          <div class="panel__header">
+            <div class="panel__title">Suggestions Sparring IA</div>
+            <a href="sparring.html" class="btn btn--ghost btn--sm">Voir tout</a>
+          </div>
+          <div class="panel__body" id="dashSparringBody">
+            <div style="padding:2.5rem;text-align:center;color:var(--subtle);">Chargement...</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.50.0" crossorigin="anonymous" defer></script>
+  <script src="js/security.js" defer></script>
+<script src="js/supabase-config.js" defer></script>
+  <script src="js/sidebar-badges.js" defer></script>
+  <script src="js/auth-guard.js" defer></script>
+  <script src="js/settings-loader.js" defer></script>
+  <script src="js/toast.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/modal-combat.js" defer></script>
+  <script src="js/plan-guard.js" defer></script>
+  <script src="js/modal-fighter.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer crossorigin="anonymous"></script>
+  <script src="js/page-dashboard.js" defer></script>
+</body>
+</html>

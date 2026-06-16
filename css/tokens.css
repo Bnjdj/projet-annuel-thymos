@@ -1,0 +1,241 @@
+/* ═══════════════════════════════════════════
+   THYMOS — DESIGN TOKENS v3
+   Direction : Dark Prestige / Magazine guerrier
+   Fonts : Fraunces · JetBrains Mono · Inter · Cinzel
+   Palette : ink · bone · blood · brass
+════════════════════════════════════════════ */
+
+/* ─── PALETTE ──────────────────────────────── */
+:root {
+  /* Fonds — warm ink */
+  --ink-0: #0A0907;
+  --ink-1: #100E0C;
+  --ink-2: #15120F;
+  --ink-3: #1C1917;
+  --ink-4: #24211D;
+  --ink-5: #2D2925;
+
+  /* Hairlines */
+  --rule: #232019;
+  --rule-soft: #1A1815;
+
+  /* Ivoire — texte */
+  --bone-0: #F5F1EA;
+  --bone-1: #E8E3DA;
+  --bone-2: #CFC9BD;
+  --bone-3: #A8A197;
+  --bone-4: #78726A;
+  --bone-5: #4E4943;
+
+  /* Blood — accent principal */
+  --blood: #A8141E;
+  --blood-soft: rgba(168, 20, 30, 0.08);
+  --blood-line: rgba(168, 20, 30, 0.35);
+  --blood-glow: rgba(168, 20, 30, 0.12);
+
+  /* Brass — accent secondaire */
+  --brass: #A8854A;
+  --brass-light: #C4A571;
+  --brass-soft: rgba(168, 133, 74, 0.08);
+
+  /* Utilitaires */
+  --forest: #3A4A3C;
+  --amber: #B8893A;
+
+  /* ─── LEGACY COMPAT ─────────────────────── */
+  /* Ancien tokens mappes pour ne pas casser le JS existant */
+  --bg: var(--ink-1);
+  --surface: var(--ink-3);
+  --surface2: var(--ink-4);
+  --surface3: var(--ink-5);
+  --border: var(--rule);
+  --border-soft: var(--rule-soft);
+  --red: var(--blood);
+  --red-dim: var(--blood-soft);
+  --red-border: var(--blood-line);
+  --gold: var(--brass);
+  --gold-light: var(--brass-light);
+  --gold-dim: var(--brass-soft);
+  --white: var(--bone-0);
+  --muted: var(--bone-3);
+  --subtle: var(--bone-5);
+}
+
+/* ─── TYPOGRAPHIE ──────────────────────────── */
+:root {
+  --font-display: 'Fraunces', 'Cinzel', serif;
+  --font-brand: 'Cinzel', serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+  --font-body: 'Inter', -apple-system, sans-serif;
+
+  /* Tailles display */
+  --fs-monumental: clamp(64px, 10vw, 156px);
+  --fs-display-xl: clamp(42px, 6vw, 96px);
+  --fs-display-lg: clamp(32px, 4.5vw, 72px);
+  --fs-display-md: clamp(26px, 3.5vw, 48px);
+  --fs-display-sm: clamp(20px, 2.5vw, 32px);
+
+  /* Tailles body */
+  --fs-body: 15px;
+  --fs-body-sm: 13px;
+  --fs-body-xs: 11px;
+
+  /* Tailles mono */
+  --fs-eyebrow: 10px;
+  --fs-data: 12px;
+  --fs-code: 11px;
+
+  /* Letter spacing */
+  --ls-display: -0.025em;
+  --ls-display-sm: -0.02em;
+  --ls-brand: 0.32em;
+  --ls-eyebrow: 0.22em;
+  --ls-data: 0.04em;
+  --ls-body: -0.003em;
+}
+
+/* ─── ESPACEMENT ───────────────────────────── */
+:root {
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+  --space-4xl: 140px;
+}
+
+/* ─── RADIUS ───────────────────────────────── */
+:root {
+  --r-xs: 2px;
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 10px;
+  /* Jamais au-dela de 10px */
+}
+
+/* ─── LAYOUT ───────────────────────────────── */
+:root {
+  --container: 1320px;
+  --container-pad: 60px;
+  --container-pad-mobile: 20px;
+  --grid-cols: 12;
+  --grid-gap: 24px;
+  --sidebar-w: 240px;
+}
+
+/* ─── OMBRES ───────────────────────────────── */
+:root {
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.4);
+  /* Pas d'ombre coloree — noir uniquement */
+}
+
+/* ─── EASING ───────────────────────────────── */
+:root {
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.45, 0, 0.15, 1);
+  --dur-fast: 150ms;
+  --dur-base: 300ms;
+  --dur-slow: 500ms;
+  --dur-reveal: 1000ms;
+}
+
+/* ─── TRANSITIONS ──────────────────────────── */
+:root {
+  --transition-base: var(--dur-base) var(--ease-editorial);
+  --transition-fast: var(--dur-fast) var(--ease-editorial);
+  --transition-slow: var(--dur-slow) var(--ease-editorial);
+}
+
+/* ═══ RESET ════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--ink-1);
+  color: var(--bone-0);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  letter-spacing: var(--ls-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; font-family: inherit; }
+input, select, textarea { font-family: inherit; }
+
+/* ─── GRAIN OVERLAY ────────────────────────── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px;
+}
+
+/* ─── SELECTION ─────────────────────────────── */
+::selection {
+  background: var(--blood);
+  color: var(--bone-0);
+}
+
+/* ─── CONTAINER ────────────────────────────── */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--container-pad-mobile);
+  }
+}
+
+/* ─── GRID 12 COLONNES ─────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  gap: var(--grid-gap);
+}
+
+.col-1  { grid-column: span 1; }
+.col-2  { grid-column: span 2; }
+.col-3  { grid-column: span 3; }
+.col-4  { grid-column: span 4; }
+.col-5  { grid-column: span 5; }
+.col-6  { grid-column: span 6; }
+.col-7  { grid-column: span 7; }
+.col-8  { grid-column: span 8; }
+.col-9  { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-11 { grid-column: span 11; }
+.col-12 { grid-column: span 12; }
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  [class*="col-"] { grid-column: span 1; }
+}
+
+/* ─── PREFERS REDUCED MOTION ───────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,236 @@
+## ANALYSE TACTIQUE AVANCEE
+
+### Comment construire un gameplan contre un wrestler
+- Rester en dehors de la zone de takedown (distance mi-longue)
+- Utiliser les teeps et front kicks pour maintenir la distance
+- Jab au corps pour le faire se pencher puis uppercut
+- Si pris contre la cage: underhook immediat, hanche contre la sienne, pivot
+- Garder les mains basses = danger, garder les mains au menton
+- Quand il shoot: sprawl + guillotine en defense, ou sprawl + crossface
+- Sanction des shots rates: genou montant si timing parfait, ou hammer fist derriere la tete (illegal) -> elbow sur le dos (legal)
+- Travail des hanches: ne jamais avoir les hanches face a lui quand il est proche, tourner les hanches
+- Cage walking: se lever en utilisant la cage, underhook + frame sur la hanche
+
+### Comment construire un gameplan contre un striker
+- Couper la distance avec feintes + level changes
+- Ne pas rester a distance de frappe sans objectif
+- Utiliser le jab pour masquer l'entree en lutte
+- Double leg sur la jambe arriere (plus stable = plus dur, mais moins de mobilite pour sprawl)
+- Quand il lance des kicks: single leg en attrapant le kick (catch kick -> single)
+- Contre un southpaw striker: rentrer sur le cote gauche (son cote fort) pour eviter le cross gauche, body lock
+- Cage pressure: le pousser contre la cage avec jab-jab-level change-double
+- Au sol: pression par le GnP, ne pas le laisser se relever (ride time)
+
+### Comment battre un combattant de JJB
+- Ne PAS aller au sol volontairement
+- Si au sol: posture immediatement, ne pas se laisser enfermer en closed guard
+- Passer la garde avec pression (over-under pass) plutot que speed pass (risque de triangle)
+- GnP depuis la demi-garde en maintenant la pression
+- Sprawl agressif s'il tire guard
+- Debout: boxing + low kicks, il a souvent un striking inferieur
+- S'il attrape une jambe: whizzer fort + spin pour reprendre la position debout
+- Attention aux transitions: il va tenter des submissions sur les transitions (guillotine sur les shoots mal executes)
+
+### Gestion des rounds strategiquement
+- R1: Imposer le rythme, tester les reactions, executer le plan A
+- R2: Si plan A marche, continuer. Si non, ajuster (switch de stance, changer level)
+- R3: Si mene aux cartes, augmenter l'intensite. Si en avance, gerer la distance
+- R4: L'adversaire fatigue? Presser. Il revient? Gerer
+- R5: Championship round. Celui qui veut le plus gagne. Cardio et mental
+
+### Gestion de l'adrenaline dump
+- Arrive souvent en R1 chez les debutants ou apres un long layoff
+- Symptomes: explosion des 2 premieres minutes puis fatigue extreme
+- Prevention: warmup long (30-40min), commencer le combat a 70% pas 100%
+- En combat: si vous sentez l'adrenaline, respirez, ne forcez pas, ralentissez volontairement 20 secondes
+- Technique > force. Plus vous forcez sous adrenaline, plus vous vous videz
+
+## BIOMECANIQUE DU STRIKING
+
+### Generation de puissance (punch)
+- La puissance vient des hanches et du sol, PAS des bras
+- Sequence: ancrage au sol -> rotation hanches -> rotation epaules -> extension bras
+- Le poids se transfere de la jambe arriere vers la jambe avant (cross)
+- Contact au moment ou les hanches sont completement tournees
+- Erreur #1: armer le coup (telegraphe)
+- Erreur #2: lever le coude (hook telegraphe)
+- Erreur #3: se pencher en arriere pour frapper plus fort (desequilibre)
+
+### Generation de puissance (kick)
+- La hanche tourne AVANT la jambe
+- Point d'impact: le tibia (2/3 du chemin vers le pied pour les low kicks, milieu tibia pour body/head)
+- La jambe d'appui pivote (talon pointe vers la cible a l'impact)
+- Le bras oppose balaye vers le bas (contrepoids)
+- Follow through: ne pas stopper le mouvement a l'impact (traverser la cible)
+- Low kick: viser le muscle (vaste externe) pas l'os, angle 45 degres descendant
+- Calf kick: viser le perone lateral, juste sous le genou
+
+### Distance fighting
+- Jab range: la distance ou seul votre jab touche (bras tendu)
+- Punching range: les deux fighters peuvent toucher
+- Clinch range: poitrine contre poitrine
+- Kicking range: au-dela du jab, les kicks atteignent
+- Le fighter qui controle la distance gagne generalement
+- Avancer: small steps, pas de grands pas (desequilibre)
+- Reculer: pivoter plutot que reculer en ligne droite
+
+## STRATEGIE DE CAGE
+
+### Utiliser la cage offensivement
+- Press quelqu'un contre la cage = avantage de position
+- Dirty boxing depuis la cage: underhook + uppercuts courts
+- Single leg facilite quand l'adversaire est contre la cage (moins de recul)
+- Body lock lifts contre la cage (slam)
+- Ground and pound contre la cage: l'adversaire ne peut pas rouler pour s'echapper
+
+### Utiliser la cage defensivement
+- Wall walking pour se relever (main sur la cage = illegal, dos contre la cage = legal)
+- Technique: cadrer avec le coude sur la hanche adverse, slider le dos le long de la cage, se lever
+- Underhook fight contre la cage: celui qui a l'underhook controle
+- Si plaque contre la cage: frames au cou/epaule, creer de l'espace, pivoter
+
+## STYLES DE COMBAT MODERNES EN MMA (2020-2025)
+
+### Le nouveau wrestling offensif (Khabib school)
+- Chain wrestling + GnP: takedown -> passage -> controle -> frappe -> submission si ouverture
+- Cage wrestling systématique: presser, body lock, trip
+- Sambo influence: throws, trips, leg entanglements
+- Representants: Khabib, Islam Makhachev, Merab Dvalishvili, Belal Muhammad
+
+### Le precision striker (Adesanya school)
+- Counter striking: attendre, lire, punir
+- Feintes multiples avant chaque attaque (3-4 feintes pour 1 vrai coup)
+- Footwork lateral, ne jamais etre sur une ligne droite
+- Distance management parfait: toujours juste hors de portee
+- Representants: Adesanya, Wonderboy Thompson, Sean O'Malley, Ilia Topuria
+
+### Le pressure fighter (Gaethje school)
+- Avancer constamment, couper la cage
+- Low kicks pour limiter la mobilite
+- Hooks au body pour baisser la garde puis headhunting
+- Accepter de prendre des coups pour en donner
+- Representants: Gaethje, Chandler, Colby Covington, Max Holloway
+
+### Le complete MMA fighter (Jones school)
+- Capable de gagner dans CHAQUE aspect du jeu
+- Adapte le style a l'adversaire (wrestler contre striker, striker contre wrestler)
+- Uses range (long limbs) pour controler la distance
+- Representants: Jon Jones, GSP, Volkanovski, Charles Oliveira
+
+## PSYCHOLOGIE DU COMBAT
+
+### Les 4 phases emotionnelles d'un combat
+1. Pre-fight (avant la cage): anxiete, excitation, doute -> gerer avec routine
+2. Round 1: rush d'adrenaline, surexcitation -> canaliser, respirer
+3. Milieu de combat: fatigue + lucidite -> decision-making, gameplan adjustments
+4. Fin de combat: soit explosion finale soit abandon mental -> willpower, conditioning
+
+### Signes qu'un combattant va craquer mentalement
+- Il baisse les mains apres avoir ete touche (resignation)
+- Il regarde le coin avec des yeux "sortez-moi de la"
+- Il tourne le dos (flight response)
+- Il se met en boule au sol sans tenter de se relever ou s'echapper
+- Il commence a faire des fautes (desespoir: eye poke, fence grab)
+
+### Construire un "killer instinct"
+- Reconnaitre le moment ou l'adversaire est hurt -> FINIR
+- Pas de compassion dans la cage. La compassion c'est APRES
+- Entrainement: sparring sessions ou le coaching crie "FINISH" sur un timer aleatoire
+- Visualiser le finish: voir le ref arreter le combat, sentir la victoire
+
+## NUTRITION AVANCEE POUR FIGHTERS
+
+### Periodisation nutritionnelle
+- Off-season: surplus leger (+200-300kcal), focus masse musculaire
+- Pre-camp (4 semaines avant): retour a maintenance, clean eating
+- Camp debut: maintenance ou leger deficit si au-dessus du poids de forme
+- Camp fin: deficit modere (-300 a -500kcal), garder les proteines hautes
+- Fight week: protocole coupe (voir coaching-preparation.txt)
+
+### Timing des nutriments pour la performance
+- 3h avant entrainement: repas complet (riz + poulet + legumes)
+- 1h avant: snack (banane + cafe si cardio, banane + beurre cacahuete si force)
+- Pendant (>90min): 30g carbs/h (boisson isotonique)
+- Apres (0-30min): whey + banane (glycogene + synthese proteique)
+- Apres (1-2h): repas complet (ratio 3:1 carbs:proteines)
+
+### Hydratation
+- Off: 3-4L/jour minimum
+- En camp: 4-5L/jour (transpiration augmentee)
+- Indicateur: urine claire = bien hydrate, jaune fonce = deshydrate
+- Electrolytes: ajouter du sel (sodium) et potassium si entrainement >1h dans la chaleur
+- Post-entrainement: peser avant/apres, boire 1.5x le poids perdu en eau
+
+### Supplements detailles
+- Creatine monohydrate: 3-5g/jour, tous les jours, meme hors camp. Augmente force, puissance, recuperation. PAS un steroide. Stopper 14 jours avant pesee (retention d'eau).
+- Beta-alanine: 3.2-6.4g/jour (split en 2 doses). Buffer l'acidite musculaire. Picotements normaux.
+- Cafeine: 3-6mg/kg, 30-60min avant. Ne pas en prendre tous les jours (tolerance). Cycler: 5 jours on, 2 off.
+- Omega-3 (EPA/DHA): 2-3g/jour. Anti-inflammatoire naturel. Aide les articulations.
+- Vitamine D3: 2000-4000 IU/jour si pas d'exposition soleil. Influence testosterone et immunite.
+- Magnesium (bisglycinate): 300-400mg avant le coucher. Aide au sommeil et recuperation musculaire.
+- Zinc: 15-30mg/jour. Testosterone, immunite. Surtout si vous transpirez beaucoup (perte par sueur).
+- Tart cherry juice: 30ml concentre, 2x/jour. Reduit les courbatures (DOMS). Prouve scientifiquement.
+
+## CONNAISSANCE DES ORGANISATIONS
+
+### UFC (Ultimate Fighting Championship)
+- Fondee en 1993 par Art Davie et Rorion Gracie
+- Rachetee par Zuffa (Fertitta + Dana White) en 2001 pour 2M$
+- Vendue a WME-IMG (Endeavor) en 2016 pour 4 milliards $
+- PDG: Dana White
+- Diffusion: ESPN+ (USA), RMC Sport (France), TNT Sports (UK)
+- Events: ~40 par an (PPV numerotes + Fight Nights)
+- Cage: octogone de 30 pieds (9.1m) de diametre
+
+### Bellator MMA / PFL
+- Bellator fonde en 2008 par Bjorn Rebney
+- Rachete par PFL en 2023
+- Format PFL: saison reguliere + playoffs + finale (1M$ au gagnant)
+- Champions notables actuels: Patricio Pitbull, Cris Cyborg
+
+### ONE Championship
+- Base a Singapour, marche asiatique
+- Particularite: pesee le matin du combat (hydratation controlee, pas de coupe extreme)
+- Inclut aussi du kickboxing et muay thai pur
+- Champions notables: Adriano Moraes, Stamp Fairtex
+
+### ARES Fighting Championship (France)
+- Fondee en 2020 (juste apres la legalisation du MMA en France)
+- Basee a Paris
+- Events dans des salles parisiennes (Zenith, etc.)
+- Diffusion: RMC Sport
+- Plusieurs combattants ont ensuite signe a l'UFC (pipeline)
+- Style: events spectacle avec production haut de gamme
+
+### MMA en France — Historique
+- Interdit jusqu'en janvier 2020
+- Legalise par la commission Auroux (Ministere des Sports)
+- FMMAF (Federation Francaise de MMA) creee
+- Premiere competition officielle: 2020
+- Explosion du nombre de licencies: 30,000+ en 2024
+- Figures: Ciryl Gane (premier Francais champion UFC), Benoit Saint-Denis, Nassourdine Imavov, Manon Fiorot, Morgan Charriere, Taylor Lapilus, Fares Ziam
+
+## ANTI-DOPAGE ET REGLES USADA
+
+### Substances interdites courantes en MMA
+- Steroïdes anabolisants (testosterone, nandrolone, stanozolol, trenbolone)
+- EPO (erythropoietine) - endurance
+- HGH (hormone de croissance)
+- Diuretiques (masquants, mais aussi pour coupe de poids)
+- Stimulants (amphetamines, cocaine en competition)
+- SARMs (ostarine, ligandrol) - nouvelle generation, tres detectes
+- THC (cannabis): seuil de 150ng/mL en competition seulement
+
+### Comment fonctionne USADA en UFC
+- Tests aleatoires hors competition (n'importe quand, n'importe ou)
+- Tests en competition (pre et post combat)
+- WhereAbouts: les fighters doivent declarer leur localisation 3 mois a l'avance (1h/jour)
+- Sanctions: 2 ans premiere infraction, 4 ans recidive, a vie si 3eme
+- TUE (Therapeutic Use Exemption): certains produits autorises avec justification medicale (ex: TRT pour Vitor Belfort... revoque)
+
+### Fighters suspendus celebres
+- Jon Jones: 2017 (turinabol), 2019 (pico-grammes)
+- TJ Dillashaw: 2019 (EPO), 2 ans de suspension
+- Anderson Silva: 2015 (drostanolone + androsterone)
+- Brock Lesnar: 2016 (clomiphene)
+- Paulo Costa: clearance USADA mais suspecte par la communaute

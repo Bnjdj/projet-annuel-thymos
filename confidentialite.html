@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité — THYMOS Platform</title>
+  <meta name="description" content="Politique de confidentialité et RGPD de THYMOS Platform, plateforme SaaS de gestion de salle MMA." />
+  <link rel="canonical" href="https://thymos-mma.fr/confidentialite.html" />
+  <meta property="og:title" content="Politique de confidentialité — THYMOS Platform" />
+  <meta property="og:description" content="Politique de confidentialité et RGPD de THYMOS Platform, plateforme SaaS de gestion de salle MMA." />
+  <meta property="og:url" content="https://thymos-mma.fr/confidentialite.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://thymos-mma.fr/assets/og-image.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <style>
+    .legal-nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(20, 20, 20, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .legal-nav__logo {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-family: var(--font-display);
+      font-size: 1.1rem; font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+    .legal-nav__back {
+      font-size: 0.82rem; color: var(--muted);
+      transition: color 0.2s;
+    }
+    .legal-nav__back:hover { color: var(--red); }
+
+    .legal-page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 7rem 2rem 4rem;
+    }
+    .legal-page h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .legal-page .legal-updated {
+      font-size: 0.8rem; color: var(--subtle);
+      margin-bottom: 3rem;
+    }
+    .legal-page h2 {
+      font-family: var(--font-display);
+      font-size: 1.1rem; font-weight: 600;
+      color: var(--red);
+      margin-top: 2.5rem; margin-bottom: 1rem;
+      letter-spacing: 0.04em;
+    }
+    .legal-page h3 {
+      font-size: 0.92rem; font-weight: 600;
+      color: var(--white);
+      margin-top: 1.5rem; margin-bottom: 0.5rem;
+    }
+    .legal-page p, .legal-page li {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.75;
+      margin-bottom: 0.75rem;
+    }
+    .legal-page ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .legal-page a { color: var(--red); text-decoration: underline; }
+    .legal-page a:hover { color: var(--gold-light); }
+    .legal-page strong { color: var(--white); }
+
+    .legal-page table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.84rem;
+    }
+    .legal-page table th {
+      background: var(--surface2);
+      color: var(--white);
+      font-weight: 600;
+      text-align: left;
+      padding: 0.6rem 0.8rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .legal-page table td {
+      padding: 0.6rem 0.8rem;
+      border-bottom: 1px solid var(--border-soft);
+      color: var(--muted);
+      vertical-align: top;
+    }
+    .legal-page table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .legal-footer {
+      border-top: 1px solid var(--border);
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex; flex-wrap: wrap; gap: 1.5rem;
+      justify-content: center;
+    }
+    .legal-footer a {
+      font-size: 0.78rem; color: var(--subtle);
+      transition: color 0.2s;
+    }
+    .legal-footer a:hover { color: var(--red); }
+  </style>
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu</a>
+
+  <nav class="legal-nav">
+    <a href="index.html" class="legal-nav__logo">THYMOS</a>
+    <a href="index.html" class="legal-nav__back">&larr; Retour au site</a>
+  </nav>
+
+  <main class="legal-page" id="main" role="main">
+    <h1>Politique de confidentialité</h1>
+    <p class="legal-updated">Dernière mise à jour : 16 avril 2026</p>
+
+    <p>
+      La présente politique de confidentialité décrit la manière dont <strong>THYMOS Platform</strong>
+      collecte, utilise et protège les données personnelles des utilisateurs de la plateforme
+      THYMOS, conformément au Règlement Général sur la Protection des Données (RGPD —
+      Règlement UE 2016/679) et à la loi Informatique et Libertés du 6 janvier 1978 modifiée.
+    </p>
+
+    <h2>1. Responsable du traitement</h2>
+    <p>
+      Le responsable du traitement des données est :<br />
+      <strong>THYMOS Platform</strong> (en cours d'immatriculation)<br />
+      Email : <a href="mailto:contact@thymos-mma.fr">contact@thymos-mma.fr</a><br />
+      Délégué à la protection des données (DPO) : <a href="mailto:dpo@thymos-mma.fr">dpo@thymos-mma.fr</a>
+    </p>
+
+    <h2>2. Données collectées</h2>
+    <p>Dans le cadre de l'utilisation de la plateforme, nous collectons les données suivantes :</p>
+
+    <h3>a) Données du gérant de salle (Utilisateur)</h3>
+    <ul>
+      <li>Nom et prénom</li>
+      <li>Adresse email</li>
+      <li>Nom de la salle / du club</li>
+      <li>Données de facturation (traitées par Stripe)</li>
+    </ul>
+
+    <h3>b) Données des combattants (saisies par le gérant)</h3>
+    <ul>
+      <li>Nom et prénom</li>
+      <li>Poids et catégorie de poids</li>
+      <li>Palmarès (victoires, défaites, nuls)</li>
+      <li>Scores physiques (force, endurance, souplesse, etc.)</li>
+      <li>Scores mentaux (motivation, confiance, gestion du stress, etc.)</li>
+      <li>Données de nutrition et de préparation physique</li>
+      <li>Historique d'entraînements et de combats</li>
+    </ul>
+
+    <h2>3. Finalités du traitement</h2>
+    <p>Les données sont collectées et traitées pour les finalités suivantes :</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Finalité</th>
+          <th>Base légale</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fourniture et fonctionnement du service (création de compte, gestion des combattants, planning)</td>
+          <td>Exécution du contrat (Art. 6.1.b RGPD)</td>
+        </tr>
+        <tr>
+          <td>Recommandations personnalisées par intelligence artificielle</td>
+          <td>Exécution du contrat (Art. 6.1.b RGPD)</td>
+        </tr>
+        <tr>
+          <td>Amélioration du service et des algorithmes d'IA</td>
+          <td>Intérêt légitime (Art. 6.1.f RGPD)</td>
+        </tr>
+        <tr>
+          <td>Communication sur le service (mises à jour, informations importantes)</td>
+          <td>Exécution du contrat (Art. 6.1.b RGPD)</td>
+        </tr>
+        <tr>
+          <td>Communication marketing (newsletters, offres)</td>
+          <td>Consentement (Art. 6.1.a RGPD)</td>
+        </tr>
+        <tr>
+          <td>Gestion de la facturation et des paiements</td>
+          <td>Exécution du contrat + obligation légale (Art. 6.1.b et 6.1.c RGPD)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. Hébergement et sous-traitants</h2>
+    <p>
+      Vos données sont traitées par les sous-traitants suivants, sélectionnés pour leur
+      conformité aux normes de protection des données :
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Sous-traitant</th>
+          <th>Fonction</th>
+          <th>Localisation des données</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Supabase</strong></td>
+          <td>Base de données, authentification, stockage</td>
+          <td>Union européenne (AWS eu-west)</td>
+        </tr>
+        <tr>
+          <td><strong>Netlify</strong></td>
+          <td>Hébergement du site web, CDN</td>
+          <td>USA (réseau CDN mondial)</td>
+        </tr>
+        <tr>
+          <td><strong>Stripe</strong></td>
+          <td>Traitement des paiements</td>
+          <td>USA / UE</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>5. Transferts de données hors Union européenne</h2>
+    <p>
+      Certains de nos sous-traitants sont situés en dehors de l'Union européenne,
+      notamment Netlify (USA). Ces transferts sont encadrés par :
+    </p>
+    <ul>
+      <li><strong>Clauses contractuelles types (CCT)</strong> approuvées par la Commission européenne</li>
+      <li>Le <strong>Data Privacy Framework</strong> UE-USA, le cas échéant</li>
+    </ul>
+    <p>
+      Les données principales (base de données, fichiers) sont hébergées sur des serveurs
+      situés dans l'Union européenne via Supabase.
+    </p>
+
+    <h2>6. Durée de conservation</h2>
+    <ul>
+      <li><strong>Données de compte et des combattants :</strong> conservées pendant toute la durée
+        d'utilisation du service, puis <strong>3 ans</strong> après la clôture du compte</li>
+      <li><strong>Données de facturation :</strong> conservées pendant <strong>10 ans</strong>
+        conformément aux obligations comptables et fiscales françaises</li>
+      <li><strong>Données de prospection commerciale :</strong> conservées pendant <strong>3 ans</strong>
+        à compter du dernier contact</li>
+    </ul>
+    <p>
+      À l'issue de ces durées, les données sont supprimées de manière définitive
+      ou anonymisées de façon irréversible.
+    </p>
+
+    <h2>7. Droits des utilisateurs</h2>
+    <p>
+      Conformément au RGPD, vous disposez des droits suivants sur vos données personnelles :
+    </p>
+    <ul>
+      <li><strong>Droit d'accès :</strong> obtenir la confirmation que vos données sont traitées
+        et en recevoir une copie</li>
+      <li><strong>Droit de rectification :</strong> faire corriger des données inexactes ou incomplètes</li>
+      <li><strong>Droit à l'effacement :</strong> demander la suppression de vos données
+        dans les conditions prévues par le RGPD</li>
+      <li><strong>Droit à la portabilité :</strong> recevoir vos données dans un format structuré,
+        couramment utilisé et lisible par machine</li>
+      <li><strong>Droit d'opposition :</strong> vous opposer au traitement de vos données
+        pour des motifs légitimes</li>
+      <li><strong>Droit à la limitation :</strong> demander la limitation du traitement
+        dans certaines circonstances</li>
+      <li><strong>Droit de retirer votre consentement :</strong> à tout moment, sans affecter
+        la licéité du traitement effectué avant le retrait</li>
+    </ul>
+    <p>
+      Pour exercer vos droits, contactez notre DPO à l'adresse :
+      <a href="mailto:dpo@thymos-mma.fr">dpo@thymos-mma.fr</a>.
+      Nous nous engageons à répondre dans un délai maximum d'<strong>un mois</strong>.
+    </p>
+    <p>
+      Vous disposez également du droit d'introduire une réclamation auprès de la
+      <strong>Commission Nationale de l'Informatique et des Libertés (CNIL)</strong> :
+      <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>.
+    </p>
+
+    <h2>8. Cookies</h2>
+    <p>
+      La plateforme THYMOS utilise <strong>uniquement des cookies strictement nécessaires</strong>
+      au fonctionnement du service :
+    </p>
+    <ul>
+      <li><strong>Cookie de session d'authentification :</strong> permet de maintenir votre connexion
+        à la plateforme pendant votre session</li>
+    </ul>
+    <p>
+      <strong>Aucun cookie de traçage, de publicité ou d'analyse comportementale n'est utilisé.</strong>
+      Aucun outil de mesure d'audience tiers n'est intégré.
+    </p>
+    <p>
+      Les cookies de session étant strictement nécessaires au fonctionnement du service,
+      ils ne requièrent pas de consentement préalable conformément à l'article 82
+      de la loi Informatique et Libertés.
+    </p>
+
+    <h2>9. Sécurité des données</h2>
+    <p>
+      THYMOS Platform met en œuvre des mesures techniques et organisationnelles appropriées
+      pour protéger vos données contre tout accès non autorisé, modification, divulgation
+      ou destruction, notamment :
+    </p>
+    <ul>
+      <li>Chiffrement des données en transit (HTTPS / TLS)</li>
+      <li>Chiffrement des données au repos (AES-256 via Supabase)</li>
+      <li>Authentification sécurisée avec gestion des sessions</li>
+      <li>Accès restreint aux données selon le principe du moindre privilège</li>
+      <li>Sauvegardes régulières des données</li>
+    </ul>
+
+    <h2>10. Données des combattants</h2>
+    <p>
+      Les données des combattants (scores physiques, mentaux, poids, palmarès) sont saisies
+      par le gérant de salle. Le gérant est responsable de :
+    </p>
+    <ul>
+      <li>Informer ses combattants du traitement de leurs données sur la plateforme THYMOS</li>
+      <li>Obtenir leur consentement explicite pour ce traitement</li>
+      <li>Répondre aux demandes d'exercice de droits de ses combattants</li>
+    </ul>
+    <p>
+      THYMOS Platform agit en tant que sous-traitant au sens du RGPD pour les données
+      des combattants, le gérant de salle étant responsable de traitement.
+    </p>
+
+    <h2>11. Modification de la politique</h2>
+    <p>
+      La présente politique de confidentialité peut être modifiée à tout moment.
+      Les Utilisateurs seront informés de toute modification substantielle par email
+      ou notification sur la plateforme. La date de dernière mise à jour est indiquée
+      en haut de cette page.
+    </p>
+
+    <h2>12. Contact</h2>
+    <p>
+      Pour toute question relative à la protection de vos données personnelles,
+      vous pouvez contacter :
+    </p>
+    <ul>
+      <li>Email général : <a href="mailto:contact@thymos-mma.fr">contact@thymos-mma.fr</a></li>
+      <li>Délégué à la protection des données : <a href="mailto:dpo@thymos-mma.fr">dpo@thymos-mma.fr</a></li>
+    </ul>
+  </main>
+
+  <footer class="legal-footer">
+    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="cgu.html">Conditions générales d'utilisation</a>
+    <a href="confidentialite.html">Politique de confidentialité</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,704 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-04-17",
+    "description": "MMA/Combat Sports Knowledge Base for AI Coach RAG context",
+    "source": "ARES Platform"
+  },
+
+  "weight_classes": [
+    { "name": "Strawweight", "limit_lbs": 115, "limit_kg": 52.2, "gender": "women" },
+    { "name": "Flyweight", "limit_lbs": 125, "limit_kg": 56.7, "gender": "both" },
+    { "name": "Bantamweight", "limit_lbs": 135, "limit_kg": 61.2, "gender": "both" },
+    { "name": "Featherweight", "limit_lbs": 145, "limit_kg": 65.8, "gender": "both" },
+    { "name": "Lightweight", "limit_lbs": 155, "limit_kg": 70.3, "gender": "both" },
+    { "name": "Welterweight", "limit_lbs": 170, "limit_kg": 77.1, "gender": "both" },
+    { "name": "Middleweight", "limit_lbs": 185, "limit_kg": 83.9, "gender": "both" },
+    { "name": "Light Heavyweight", "limit_lbs": 205, "limit_kg": 93.0, "gender": "both" },
+    { "name": "Heavyweight", "limit_lbs": 265, "limit_kg": 120.2, "gender": "men" }
+  ],
+
+  "current_champions": {
+    "last_updated": "2025-04",
+    "men": [
+      {
+        "weight_class": "Flyweight",
+        "champion": "Alexandre Pantoja",
+        "country": "Brazil",
+        "record": "28-5-0",
+        "title_defenses": 3,
+        "since": "2023-07"
+      },
+      {
+        "weight_class": "Bantamweight",
+        "champion": "Merab Dvalishvili",
+        "country": "Georgia",
+        "record": "18-4-0",
+        "title_defenses": 1,
+        "since": "2024-09"
+      },
+      {
+        "weight_class": "Featherweight",
+        "champion": "Ilia Topuria",
+        "country": "Spain/Georgia",
+        "record": "16-0-0",
+        "title_defenses": 1,
+        "since": "2024-02"
+      },
+      {
+        "weight_class": "Lightweight",
+        "champion": "Islam Makhachev",
+        "country": "Russia",
+        "record": "26-1-0",
+        "title_defenses": 3,
+        "since": "2022-10"
+      },
+      {
+        "weight_class": "Welterweight",
+        "champion": "Belal Muhammad",
+        "country": "USA",
+        "record": "24-3-0",
+        "title_defenses": 1,
+        "since": "2024-07"
+      },
+      {
+        "weight_class": "Middleweight",
+        "champion": "Dricus Du Plessis",
+        "country": "South Africa",
+        "record": "22-2-0",
+        "title_defenses": 1,
+        "since": "2024-01"
+      },
+      {
+        "weight_class": "Light Heavyweight",
+        "champion": "Alex Pereira",
+        "country": "Brazil",
+        "record": "12-2-0",
+        "title_defenses": 3,
+        "since": "2023-11"
+      },
+      {
+        "weight_class": "Heavyweight",
+        "champion": "Jon Jones",
+        "country": "USA",
+        "record": "27-1-0",
+        "title_defenses": 1,
+        "since": "2023-03"
+      }
+    ],
+    "women": [
+      {
+        "weight_class": "Strawweight",
+        "champion": "Zhang Weili",
+        "country": "China",
+        "record": "25-3-0",
+        "title_defenses": 3,
+        "since": "2022-11"
+      },
+      {
+        "weight_class": "Flyweight",
+        "champion": "Valentina Shevchenko",
+        "country": "Kyrgyzstan/Peru",
+        "record": "24-4-1",
+        "title_defenses": 8,
+        "since": "2024-09"
+      },
+      {
+        "weight_class": "Bantamweight",
+        "champion": "Raquel Pennington",
+        "country": "USA",
+        "record": "16-8-0",
+        "title_defenses": 1,
+        "since": "2024-01"
+      }
+    ]
+  },
+
+  "historic_champions": [
+    { "name": "Khabib Nurmagomedov", "weight_class": "Lightweight", "record": "29-0-0", "reign": "2018-2020", "defenses": 3, "retired_undefeated": true },
+    { "name": "Georges St-Pierre", "weight_class": "Welterweight", "record": "26-2-0", "reign": "2008-2013", "defenses": 9 },
+    { "name": "Anderson Silva", "weight_class": "Middleweight", "record": "34-11-0", "reign": "2006-2013", "defenses": 10 },
+    { "name": "Jon Jones", "weight_class": "Light Heavyweight", "record": "27-1-0", "reign": "2011-2020", "defenses": 11 },
+    { "name": "Demetrious Johnson", "weight_class": "Flyweight", "record": "30-4-1", "reign": "2012-2018", "defenses": 11 },
+    { "name": "Amanda Nunes", "weight_class": "Bantamweight/Featherweight", "record": "22-5-0", "reign": "2016-2022", "defenses": 7 },
+    { "name": "Stipe Miocic", "weight_class": "Heavyweight", "record": "20-4-0", "reign": "2016-2021", "defenses": 4 },
+    { "name": "Max Holloway", "weight_class": "Featherweight", "record": "25-7-0", "reign": "2017-2019", "defenses": 3 },
+    { "name": "Conor McGregor", "weight_class": "Featherweight/Lightweight", "record": "22-6-0", "reign": "2015-2016", "defenses": 0 },
+    { "name": "Daniel Cormier", "weight_class": "Light Heavyweight/Heavyweight", "record": "22-3-0", "reign": "2018-2020", "defenses": 3 },
+    { "name": "Jose Aldo", "weight_class": "Featherweight", "record": "31-8-0", "reign": "2011-2015", "defenses": 7 },
+    { "name": "Ronda Rousey", "weight_class": "Women's Bantamweight", "record": "12-2-0", "reign": "2012-2015", "defenses": 6 }
+  ],
+
+  "iconic_fights": [
+    { "rank": 1, "fighters": ["Forrest Griffin", "Stephan Bonnar"], "event": "TUF 1 Finale", "date": "2005-04-09", "result": "Griffin def. Bonnar", "method": "Decision (Unanimous)", "round": 3, "significance": "Saved the UFC, launched the sport into mainstream" },
+    { "rank": 2, "fighters": ["Robbie Lawler", "Rory MacDonald"], "event": "UFC 189", "date": "2015-07-11", "result": "Lawler def. MacDonald", "method": "TKO", "round": 5, "significance": "Greatest welterweight fight ever" },
+    { "rank": 3, "fighters": ["Justin Gaethje", "Michael Chandler"], "event": "UFC 268", "date": "2021-11-06", "result": "Gaethje def. Chandler", "method": "Decision (Unanimous)", "round": 3, "significance": "Non-stop action, Fight of the Year" },
+    { "rank": 4, "fighters": ["Zhang Weili", "Joanna Jedrzejczyk"], "event": "UFC 248", "date": "2020-03-07", "result": "Zhang def. Joanna", "method": "Decision (Split)", "round": 5, "significance": "Greatest women's MMA fight" },
+    { "rank": 5, "fighters": ["Conor McGregor", "Nate Diaz"], "event": "UFC 202", "date": "2016-08-20", "result": "McGregor def. Diaz", "method": "Decision (Majority)", "round": 5, "significance": "Epic rematch, biggest PPV of its time" },
+    { "rank": 6, "fighters": ["Khabib Nurmagomedov", "Conor McGregor"], "event": "UFC 229", "date": "2018-10-06", "result": "Khabib def. McGregor", "method": "Submission (Neck Crank)", "round": 4, "significance": "Biggest UFC PPV ever, legendary rivalry" },
+    { "rank": 7, "fighters": ["Anderson Silva", "Chael Sonnen"], "event": "UFC 117", "date": "2010-08-07", "result": "Silva def. Sonnen", "method": "Submission (Triangle Armbar)", "round": 5, "significance": "Incredible comeback, submitted in final round" },
+    { "rank": 8, "fighters": ["Jon Jones", "Alexander Gustafsson"], "event": "UFC 165", "date": "2013-09-21", "result": "Jones def. Gustafsson", "method": "Decision (Unanimous)", "round": 5, "significance": "Jones' toughest fight, LHW classic" },
+    { "rank": 9, "fighters": ["Mark Hunt", "Bigfoot Silva"], "event": "UFC Fight Night 33", "date": "2013-12-07", "result": "Draw", "method": "Draw (Majority)", "round": 5, "significance": "Heavyweight war, both fighters nearly finished multiple times" },
+    { "rank": 10, "fighters": ["Frankie Edgar", "Gray Maynard"], "event": "UFC 125", "date": "2011-01-01", "result": "Draw", "method": "Draw", "round": 5, "significance": "Edgar survived devastating first round" },
+    { "rank": 11, "fighters": ["Dustin Poirier", "Justin Gaethje"], "event": "UFC on FOX 29", "date": "2018-04-14", "result": "Poirier def. Gaethje", "method": "TKO", "round": 4, "significance": "Absolute war between lightweights" },
+    { "rank": 12, "fighters": ["Tony Ferguson", "Anthony Pettis"], "event": "UFC 229", "date": "2018-10-06", "result": "Ferguson def. Pettis", "method": "TKO (Corner Stoppage)", "round": 2, "significance": "Blood-soaked instant classic" },
+    { "rank": 13, "fighters": ["Israel Adesanya", "Kelvin Gastelum"], "event": "UFC 236", "date": "2019-04-13", "result": "Adesanya def. Gastelum", "method": "Decision (Unanimous)", "round": 5, "significance": "Interim title fight, FOTY 2019" },
+    { "rank": 14, "fighters": ["Max Holloway", "Brian Ortega"], "event": "UFC 231", "date": "2018-12-08", "result": "Holloway def. Ortega", "method": "TKO (Doctor Stoppage)", "round": 4, "significance": "Holloway's masterclass performance" },
+    { "rank": 15, "fighters": ["Daniel Cormier", "Stipe Miocic"], "event": "UFC 252", "date": "2020-08-15", "result": "Miocic def. Cormier", "method": "Decision (Unanimous)", "round": 5, "significance": "Trilogy finale for heavyweight GOAT status" },
+    { "rank": 16, "fighters": ["Chris Weidman", "Anderson Silva"], "event": "UFC 162", "date": "2013-07-06", "result": "Weidman def. Silva", "method": "KO", "round": 2, "significance": "End of Silva's legendary reign" },
+    { "rank": 17, "fighters": ["Conor McGregor", "Jose Aldo"], "event": "UFC 194", "date": "2015-12-12", "result": "McGregor def. Aldo", "method": "KO", "round": 1, "significance": "13-second KO, fastest title fight finish" },
+    { "rank": 18, "fighters": ["Nate Diaz", "Conor McGregor"], "event": "UFC 196", "date": "2016-03-05", "result": "Diaz def. McGregor", "method": "Submission (Rear Naked Choke)", "round": 2, "significance": "Massive upset on short notice" },
+    { "rank": 19, "fighters": ["Matt Hughes", "Frank Trigg"], "event": "UFC 52", "date": "2005-04-16", "result": "Hughes def. Trigg", "method": "Submission (Rear Naked Choke)", "round": 1, "significance": "Hughes survived low blow and slam finish" },
+    { "rank": 20, "fighters": ["Chuck Liddell", "Wanderlei Silva"], "event": "UFC 79", "date": "2007-12-29", "result": "Liddell def. Silva", "method": "Decision (Unanimous)", "round": 3, "significance": "Dream matchup between strikers" },
+    { "rank": 21, "fighters": ["Islam Makhachev", "Charles Oliveira"], "event": "UFC 280", "date": "2022-10-22", "result": "Makhachev def. Oliveira", "method": "Submission (Arm Triangle)", "round": 2, "significance": "Crowning of new lightweight king" },
+    { "rank": 22, "fighters": ["Max Holloway", "Justin Gaethje"], "event": "UFC 300", "date": "2024-04-13", "result": "Holloway def. Gaethje", "method": "KO", "round": 5, "significance": "Last-second KO for BMF title" },
+    { "rank": 23, "fighters": ["Charles Oliveira", "Dustin Poirier"], "event": "UFC 269", "date": "2021-12-11", "result": "Oliveira def. Poirier", "method": "Submission (Rear Naked Choke)", "round": 3, "significance": "Oliveira's dominance after being hurt" },
+    { "rank": 24, "fighters": ["Georges St-Pierre", "Matt Hughes"], "event": "UFC 65", "date": "2006-11-18", "result": "GSP def. Hughes", "method": "TKO", "round": 2, "significance": "GSP's first title, era-defining" },
+    { "rank": 25, "fighters": ["Randy Couture", "Tim Sylvia"], "event": "UFC 68", "date": "2007-03-03", "result": "Couture def. Sylvia", "method": "Decision (Unanimous)", "round": 5, "significance": "43-year-old Couture's comeback" },
+    { "rank": 26, "fighters": ["Ilia Topuria", "Alexander Volkanovski"], "event": "UFC 298", "date": "2024-02-17", "result": "Topuria def. Volkanovski", "method": "KO", "round": 2, "significance": "New generation claims featherweight throne" },
+    { "rank": 27, "fighters": ["Alex Pereira", "Israel Adesanya"], "event": "UFC 281", "date": "2022-11-12", "result": "Pereira def. Adesanya", "method": "TKO", "round": 5, "significance": "Rivalry from kickboxing to MMA" },
+    { "rank": 28, "fighters": ["Rose Namajunas", "Joanna Jedrzejczyk"], "event": "UFC 217", "date": "2017-11-04", "result": "Namajunas def. Jedrzejczyk", "method": "TKO", "round": 1, "significance": "Massive upset, thug rose moment" },
+    { "rank": 29, "fighters": ["Georges St-Pierre", "BJ Penn"], "event": "UFC 94", "date": "2009-01-31", "result": "GSP def. Penn", "method": "TKO (Corner Stoppage)", "round": 4, "significance": "GSP's dominant welterweight reign" },
+    { "rank": 30, "fighters": ["Cain Velasquez", "Junior Dos Santos"], "event": "UFC 166", "date": "2013-10-19", "result": "Velasquez def. Dos Santos", "method": "TKO", "round": 5, "significance": "Trilogy conclusion, Cain at his best" },
+    { "rank": 31, "fighters": ["Sean O'Malley", "Marlon Vera"], "event": "UFC 299", "date": "2024-03-09", "result": "O'Malley def. Vera", "method": "TKO", "round": 2, "significance": "Redemption fight for bantamweight champ" },
+    { "rank": 32, "fighters": ["Leon Edwards", "Kamaru Usman"], "event": "UFC 278", "date": "2022-08-20", "result": "Edwards def. Usman", "method": "KO (Head Kick)", "round": 5, "significance": "Last-minute head kick KO, one of greatest comebacks" },
+    { "rank": 33, "fighters": ["Amanda Nunes", "Cris Cyborg"], "event": "UFC 232", "date": "2018-12-29", "result": "Nunes def. Cyborg", "method": "TKO", "round": 1, "significance": "GOAT women's MMA moment" },
+    { "rank": 34, "fighters": ["Demetrious Johnson", "Henry Cejudo"], "event": "UFC 227", "date": "2018-08-04", "result": "Cejudo def. Johnson", "method": "Decision (Split)", "round": 5, "significance": "End of DJ's record flyweight reign" },
+    { "rank": 35, "fighters": ["Kamaru Usman", "Colby Covington"], "event": "UFC 245", "date": "2019-12-14", "result": "Usman def. Covington", "method": "TKO", "round": 5, "significance": "Rivalry fight, broken jaw drama" },
+    { "rank": 36, "fighters": ["Tony Ferguson", "Rafael Dos Anjos"], "event": "TUF 28 Finale", "date": "2018-11-30", "result": "Ferguson def. Dos Anjos", "method": "Decision (Unanimous)", "round": 3, "significance": "Ferguson's relentless pace" },
+    { "rank": 37, "fighters": ["BJ Penn", "Matt Hughes"], "event": "UFC 46", "date": "2004-01-31", "result": "Penn def. Hughes", "method": "Submission (Rear Naked Choke)", "round": 1, "significance": "Penn's lightweight moving up to win welterweight" },
+    { "rank": 38, "fighters": ["Ronda Rousey", "Miesha Tate"], "event": "UFC 168", "date": "2013-12-28", "result": "Rousey def. Tate", "method": "Submission (Armbar)", "round": 3, "significance": "Peak of women's MMA rivalry" },
+    { "rank": 39, "fighters": ["Holly Holm", "Ronda Rousey"], "event": "UFC 193", "date": "2015-11-15", "result": "Holm def. Rousey", "method": "KO (Head Kick)", "round": 2, "significance": "Biggest upset in UFC history" },
+    { "rank": 40, "fighters": ["Poirier", "Hooker"], "event": "UFC Fight Night 172", "date": "2020-06-27", "result": "Poirier def. Hooker", "method": "Decision (Unanimous)", "round": 5, "significance": "Lightweight war, FOTY candidate" },
+    { "rank": 41, "fighters": ["Korean Zombie", "Dustin Poirier"], "event": "UFC on Fuel TV 3", "date": "2012-05-15", "result": "Poirier def. Korean Zombie", "method": "KO", "round": 4, "significance": "Back and forth featherweight classic" },
+    { "rank": 42, "fighters": ["Don Frye", "Yoshihiro Takayama"], "event": "PRIDE 21", "date": "2002-06-23", "result": "Frye def. Takayama", "method": "TKO", "round": 1, "significance": "Most famous brawl in MMA history" },
+    { "rank": 43, "fighters": ["Nick Diaz", "Paul Daley"], "event": "Strikeforce", "date": "2011-04-09", "result": "Diaz def. Daley", "method": "TKO", "round": 1, "significance": "Stockton slap heard round the world" },
+    { "rank": 44, "fighters": ["Derrick Lewis", "Francis Ngannou"], "event": "UFC 226", "date": "2018-07-07", "result": "Lewis def. Ngannou", "method": "Decision (Unanimous)", "round": 3, "significance": "Worst fight ever? Memorable for wrong reasons" },
+    { "rank": 45, "fighters": ["Francis Ngannou", "Stipe Miocic"], "event": "UFC 260", "date": "2021-03-27", "result": "Ngannou def. Miocic", "method": "KO", "round": 2, "significance": "Ngannou's redemption, claimed heavyweight title" },
+    { "rank": 46, "fighters": ["Petr Yan", "Cory Sandhagen"], "event": "UFC 267", "date": "2021-10-30", "result": "Yan def. Sandhagen", "method": "Decision (Unanimous)", "round": 5, "significance": "Technical bantamweight masterpiece" },
+    { "rank": 47, "fighters": ["Jon Jones", "Daniel Cormier"], "event": "UFC 182", "date": "2015-01-03", "result": "Jones def. Cormier", "method": "Decision (Unanimous)", "round": 5, "significance": "GOAT rivalry first chapter" },
+    { "rank": 48, "fighters": ["Gilbert Burns", "Khamzat Chimaev"], "event": "UFC 273", "date": "2022-04-09", "result": "Chimaev def. Burns", "method": "Decision (Unanimous)", "round": 3, "significance": "Chimaev tested for first time" },
+    { "rank": 49, "fighters": ["Robert Whittaker", "Yoel Romero"], "event": "UFC 225", "date": "2018-06-09", "result": "Whittaker def. Romero", "method": "Decision (Split)", "round": 5, "significance": "Five rounds of middleweight violence" },
+    { "rank": 50, "fighters": ["Valentina Shevchenko", "Jennifer Maia"], "event": "UFC 255", "date": "2020-11-21", "result": "Shevchenko def. Maia", "method": "Decision (Unanimous)", "round": 5, "significance": "Shevchenko's flyweight dominance" }
+  ],
+
+  "fighting_styles": {
+    "wrestling": {
+      "description": "Grappling art focused on takedowns, control, and ground-and-pound",
+      "origins": "USA, Russia, Iran",
+      "key_techniques": ["double leg takedown", "single leg takedown", "body lock", "cage wrestling", "chain wrestling", "ground-and-pound", "top control"],
+      "strengths": ["dictates where fight takes place", "excellent cardio base", "dominant cage control", "strong mental toughness"],
+      "weaknesses": ["can be predictable", "vulnerable to guillotines on shots", "may lack submission offense", "can gas if relying only on wrestling"],
+      "notable_mma_fighters": ["Khabib Nurmagomedov", "Daniel Cormier", "Henry Cejudo", "Kamaru Usman", "Islam Makhachev"],
+      "sub_styles": ["Freestyle", "Greco-Roman", "Folkstyle (Collegiate)"]
+    },
+    "brazilian_jiu_jitsu": {
+      "description": "Ground-based martial art focused on submissions and positional control",
+      "origins": "Brazil (from Japanese Judo/Jiu-Jitsu)",
+      "key_techniques": ["rear naked choke", "armbar", "triangle choke", "guillotine", "kimura", "omoplata", "heel hook", "guard passing", "sweeps", "back takes"],
+      "strengths": ["can finish fights from bottom", "dangerous off back", "excellent scrambling", "submission threat opens up strikes"],
+      "weaknesses": ["takedown ability may be limited", "can struggle against strong wrestlers who avoid submissions", "pulling guard risky in MMA", "ground strikes while attacking"],
+      "notable_mma_fighters": ["Charles Oliveira", "Demian Maia", "Ronaldo Souza", "Brian Ortega", "Fabricio Werdum"],
+      "belt_system": ["White", "Blue", "Purple", "Brown", "Black", "Red/Black", "Red"]
+    },
+    "muay_thai": {
+      "description": "Thai boxing using strikes with fists, elbows, knees, and shins",
+      "origins": "Thailand",
+      "key_techniques": ["roundhouse kick", "teep (push kick)", "elbow strikes", "knee strikes", "clinch work", "low kicks", "switch kicks", "flying knee"],
+      "strengths": ["most complete striking art for MMA", "devastating in clinch", "leg kicks destroy mobility", "elbows cause cuts"],
+      "weaknesses": ["square stance can be vulnerable to takedowns", "heavy reliance on checking kicks", "clinch work differs in MMA with cage", "can gas with high output"],
+      "notable_mma_fighters": ["Jose Aldo", "Valentina Shevchenko", "Joanna Jedrzejczyk", "Anderson Silva", "Alistair Overeem"],
+      "scoring_areas": ["Head", "Body", "Legs (inner/outer)"]
+    },
+    "boxing": {
+      "description": "Western striking art focused on punches, footwork, and head movement",
+      "origins": "England/Western World",
+      "key_techniques": ["jab", "cross", "hook", "uppercut", "head movement", "footwork", "combinations", "counterpunching", "body shots"],
+      "strengths": ["best hand technique", "superior footwork and angles", "head movement avoids damage", "knockout power in hands"],
+      "weaknesses": ["no kicks means limited range", "stance vulnerable to leg kicks", "no clinch or takedown defense inherently", "hands-only approach limited in MMA"],
+      "notable_mma_fighters": ["Conor McGregor", "Cody Garbrandt", "Petr Yan", "Max Holloway", "Junior Dos Santos"],
+      "key_principles": ["Distance management", "Timing", "Angles", "Defense"]
+    },
+    "karate": {
+      "description": "Japanese striking art emphasizing distance, timing, and explosive movement",
+      "origins": "Japan (Okinawa)",
+      "key_techniques": ["front kick", "sidekick", "spinning back kick", "blitzing entries", "distance management", "point-fighting counter strikes", "kata movement patterns"],
+      "strengths": ["unpredictable angles and timing", "excellent distance management", "explosive in-out movement", "creative unorthodox techniques"],
+      "weaknesses": ["can struggle in clinch", "wide stance variants vulnerable to leg kicks", "limited ground game", "in-out style can be timed"],
+      "notable_mma_fighters": ["Lyoto Machida", "Stephen Thompson", "Robert Whittaker", "Gunnar Nelson", "Kyoji Horiguchi"],
+      "styles_in_mma": ["Shotokan", "Kyokushin", "Goju-Ryu"]
+    },
+    "judo": {
+      "description": "Japanese grappling art focused on throws and trips using the gi/clinch",
+      "origins": "Japan",
+      "key_techniques": ["hip throws (o-goshi)", "foot sweeps (de ashi barai)", "sacrifice throws (tomoe nage)", "arm locks", "chokes", "pins", "uchi-mata", "seoi-nage"],
+      "strengths": ["explosive throws score knockdowns", "excellent clinch work", "trips along cage", "submission awareness on ground"],
+      "weaknesses": ["relies on gripping which differs without gi", "may struggle with wrestling-style takedowns", "limited bottom game compared to BJJ", "can be outpaced by wrestlers"],
+      "notable_mma_fighters": ["Ronda Rousey", "Kayla Harrison", "Yoshihiro Akiyama", "Hector Lombard", "Karo Parisyan"],
+      "olympic_sport": true
+    },
+    "sambo": {
+      "description": "Russian martial art combining wrestling, judo, and submissions",
+      "origins": "Russia/Soviet Union",
+      "key_techniques": ["leg locks", "takedowns from clinch", "ground control", "arm locks", "hip throws", "leg entanglements", "top pressure"],
+      "strengths": ["complete grappling system", "dangerous leg locks", "excellent scrambling", "integrates strikes (Combat Sambo)"],
+      "weaknesses": ["limited training availability outside Russia", "can be one-dimensional without striking development", "guard play less developed"],
+      "notable_mma_fighters": ["Khabib Nurmagomedov", "Islam Makhachev", "Fedor Emelianenko", "Rustam Khabilov", "Vitaly Minakov"],
+      "variants": ["Sport Sambo", "Combat Sambo", "Freestyle Sambo"]
+    }
+  },
+
+  "common_injuries": [
+    {
+      "type": "ACL Tear",
+      "location": "Knee",
+      "common_causes": ["Awkward takedown landing", "Planting foot while pivoting", "Hyperextension from leg lock attempt"],
+      "recovery_time_months": "6-12",
+      "severity": "High",
+      "prevention": ["Strengthen quadriceps and hamstrings equally", "Proprioception training", "Proper warm-up", "Avoid overtraining legs when fatigued"]
+    },
+    {
+      "type": "MCL/LCL Sprain",
+      "location": "Knee",
+      "common_causes": ["Side pressure during grappling", "Leg kicks to inside of knee", "Twisting during scrambles"],
+      "recovery_time_months": "1-3",
+      "severity": "Medium",
+      "prevention": ["Leg strengthening", "Knee mobility work", "Check leg kicks properly"]
+    },
+    {
+      "type": "Rotator Cuff Tear",
+      "location": "Shoulder",
+      "common_causes": ["Kimura/Americana submissions", "Falling on outstretched arm", "Repetitive punching"],
+      "recovery_time_months": "4-8",
+      "severity": "High",
+      "prevention": ["Shoulder strengthening with bands", "Rotator cuff prehab exercises", "Tap early in training"]
+    },
+    {
+      "type": "Concussion",
+      "location": "Brain",
+      "common_causes": ["Head strikes", "Slam takedowns", "Accidental headbutts"],
+      "recovery_time_months": "1-6",
+      "severity": "High",
+      "prevention": ["Limit hard sparring frequency", "Use proper headgear in training", "Strengthen neck muscles", "Recognize symptoms early"]
+    },
+    {
+      "type": "Broken Hand/Metacarpal Fracture",
+      "location": "Hand",
+      "common_causes": ["Punching with improper form", "Hitting hard surfaces (skull, elbow)", "Overuse"],
+      "recovery_time_months": "1-3",
+      "severity": "Medium",
+      "prevention": ["Proper fist formation", "Hand wrapping technique", "Calcium and vitamin D intake", "Gradual bag work progression"]
+    },
+    {
+      "type": "Herniated Disc",
+      "location": "Spine (Lumbar/Cervical)",
+      "common_causes": ["Spinal compression from stacking", "Heavy wrestling", "Repeated spinal flexion under load"],
+      "recovery_time_months": "3-12",
+      "severity": "High",
+      "prevention": ["Core strengthening", "Proper lifting mechanics", "Avoid excessive spinal loading", "Regular decompression work"]
+    },
+    {
+      "type": "Cauliflower Ear",
+      "location": "Ear",
+      "common_causes": ["Repeated friction/impact during grappling", "Head position in clinch", "Ground fighting"],
+      "recovery_time_months": "0.5-1",
+      "severity": "Low",
+      "prevention": ["Wear ear guards during training", "Drain hematomas immediately", "Ice after training"]
+    },
+    {
+      "type": "Rib Fracture/Bruised Ribs",
+      "location": "Ribcage",
+      "common_causes": ["Body kicks", "Knee strikes to body", "Pressure from side control"],
+      "recovery_time_months": "1-3",
+      "severity": "Medium",
+      "prevention": ["Condition body gradually", "Core and oblique strengthening", "Proper guard defense"]
+    },
+    {
+      "type": "Ankle Sprain",
+      "location": "Ankle",
+      "common_causes": ["Checking kicks", "Awkward footwork", "Being taken down while standing on one leg"],
+      "recovery_time_months": "0.5-2",
+      "severity": "Low-Medium",
+      "prevention": ["Ankle mobility work", "Balance training", "Proper footwear for training surface", "Ankle strengthening exercises"]
+    },
+    {
+      "type": "Meniscus Tear",
+      "location": "Knee",
+      "common_causes": ["Twisting motions during grappling", "Deep squatting positions", "Leg lock defense"],
+      "recovery_time_months": "2-6",
+      "severity": "Medium-High",
+      "prevention": ["Strengthen supporting muscles", "Avoid deep knee flexion under load", "Adequate recovery between sessions"]
+    }
+  ],
+
+  "weight_cutting": {
+    "overview": "Weight cutting is the practice of rapidly losing weight before weigh-ins to compete in a lower weight class",
+    "safe_protocols": {
+      "gradual_cut": {
+        "description": "Slow caloric reduction over 8-12 weeks",
+        "max_weight_loss_per_week_kg": 0.5,
+        "method": "Reduce calories by 300-500 daily, maintain protein intake",
+        "recommended_for": "Fighters cutting less than 5% bodyweight"
+      },
+      "water_cut": {
+        "description": "Manipulation of water and sodium in final week",
+        "timeline": {
+          "7_days_out": "Increase water intake to 8L/day, high sodium",
+          "5_days_out": "Maintain 8L water, begin reducing sodium",
+          "3_days_out": "Reduce water to 4L, low sodium",
+          "2_days_out": "Reduce water to 2L, no sodium",
+          "1_day_out": "Sip water only, hot bath/sauna to cut final kg",
+          "weigh_in_day": "No water until after weigh-in"
+        },
+        "max_safe_water_cut_percent": 8,
+        "recommended_for": "Experienced fighters with medical supervision"
+      }
+    },
+    "rehydration_protocol": {
+      "immediately_after_weighin": "Sip electrolyte solution (Pedialyte/ORS)",
+      "first_2_hours": "500ml-1L electrolyte drink, small easily digestible meal",
+      "2_to_6_hours": "Continue hydrating, eat carbohydrate-rich meals",
+      "6_to_12_hours": "Normal meals, continue fluids, aim for clear urine",
+      "target_rehydration": "Regain 5-8% of bodyweight before fight"
+    },
+    "danger_signs": [
+      "Dizziness or fainting",
+      "Rapid heart rate at rest",
+      "Dark brown urine",
+      "Muscle cramps that won't resolve",
+      "Confusion or disorientation",
+      "Kidney pain"
+    ],
+    "guidelines": [
+      "Never cut more than 10% of bodyweight total",
+      "Water cut should not exceed 6-8% bodyweight",
+      "Always have medical supervision",
+      "Practice cuts before actual fight week",
+      "Consider moving up in weight if cuts are too difficult",
+      "Young/amateur fighters should cut minimally or not at all"
+    ]
+  },
+
+  "mental_preparation": {
+    "visualization": {
+      "description": "Mental rehearsal of fight scenarios",
+      "techniques": [
+        {
+          "name": "Outcome Visualization",
+          "description": "Visualize winning the fight - hand raised, belt around waist",
+          "frequency": "Daily, 5-10 minutes",
+          "timing": "Morning or before sleep"
+        },
+        {
+          "name": "Process Visualization",
+          "description": "Mentally rehearse specific techniques, combos, and transitions",
+          "frequency": "Daily, 10-15 minutes",
+          "timing": "After training or before sleep"
+        },
+        {
+          "name": "Adversity Visualization",
+          "description": "Visualize overcoming challenges - being rocked, taken down, cut",
+          "frequency": "3x per week",
+          "timing": "During camp"
+        }
+      ]
+    },
+    "breathing_techniques": [
+      {
+        "name": "Box Breathing",
+        "description": "4 seconds inhale, 4 hold, 4 exhale, 4 hold",
+        "use_case": "Pre-fight anxiety, between rounds",
+        "duration": "2-5 minutes"
+      },
+      {
+        "name": "Physiological Sigh",
+        "description": "Double inhale through nose, long exhale through mouth",
+        "use_case": "Immediate stress relief, during walkout",
+        "duration": "1-3 breaths as needed"
+      },
+      {
+        "name": "Wim Hof Method",
+        "description": "30 power breaths followed by breath hold",
+        "use_case": "Morning routine, building stress tolerance",
+        "duration": "3 rounds, 15 minutes total"
+      },
+      {
+        "name": "Nasal Breathing Training",
+        "description": "Breathe only through nose during low-intensity training",
+        "use_case": "Building aerobic base, CO2 tolerance",
+        "duration": "During warm-ups and cool-downs"
+      }
+    ],
+    "pre_fight_routines": [
+      {
+        "name": "Fight Week Mental Protocol",
+        "days_out_7": "Review game plan, watch opponent tape one last time",
+        "days_out_3": "Stop watching opponent, focus on own strengths",
+        "days_out_1": "Light activity, visualization, positive self-talk",
+        "fight_day": "Set routine - music, warm-up, breathing, mantras"
+      }
+    ],
+    "psychological_skills": [
+      {
+        "skill": "Self-talk management",
+        "description": "Replace negative thoughts with instructional or motivational cues",
+        "example": "Instead of 'Don't get taken down' -> 'Sprawl hard, underhooks'"
+      },
+      {
+        "skill": "Arousal regulation",
+        "description": "Finding optimal excitement level - not too calm, not too amped",
+        "example": "Use music to increase arousal or breathing to decrease it"
+      },
+      {
+        "skill": "Focus cues",
+        "description": "Single-word triggers to refocus during the fight",
+        "example": "'Pressure', 'Breathe', 'Level change', 'Hands up'"
+      },
+      {
+        "skill": "Post-loss recovery",
+        "description": "Structured approach to processing defeats",
+        "example": "48hr no film review, then objective analysis, identify 3 improvements"
+      }
+    ]
+  },
+
+  "training_periodization": {
+    "eight_week_camp": {
+      "description": "Standard fight camp for fighters who stay in shape year-round",
+      "phases": [
+        {
+          "phase": "General Preparation",
+          "weeks": "1-3",
+          "focus": "Build aerobic base, increase training volume, drill techniques",
+          "training_days_per_week": 6,
+          "sessions_per_day": 2,
+          "intensity": "Moderate (60-70% max)",
+          "details": {
+            "strength": "Hypertrophy/strength - 3-4x/week",
+            "conditioning": "Zone 2 cardio - 3x/week",
+            "technical": "Drilling new techniques, positional sparring",
+            "sparring": "Light technical sparring only"
+          }
+        },
+        {
+          "phase": "Specific Preparation",
+          "weeks": "4-6",
+          "focus": "Opponent-specific game plan, increase intensity, hard sparring",
+          "training_days_per_week": 6,
+          "sessions_per_day": "2-3",
+          "intensity": "High (75-90% max)",
+          "details": {
+            "strength": "Power/explosiveness - 2-3x/week",
+            "conditioning": "Sport-specific intervals (5min rounds) - 3x/week",
+            "technical": "Game plan drilling, opponent-specific scenarios",
+            "sparring": "Hard sparring 2-3x/week with similar-style partners"
+          }
+        },
+        {
+          "phase": "Taper / Peaking",
+          "weeks": "7-8",
+          "focus": "Reduce volume, maintain intensity, sharpen timing, weight cut",
+          "training_days_per_week": "4-5",
+          "sessions_per_day": 1,
+          "intensity": "Moderate-High but LOW volume",
+          "details": {
+            "strength": "Maintenance only - 1-2x/week, reduced volume 50%",
+            "conditioning": "Short sharp intervals, sport-specific",
+            "technical": "Game plan review, visualization, pad work",
+            "sparring": "Light technical sparring only, or none in final week"
+          }
+        }
+      ]
+    },
+    "twelve_week_camp": {
+      "description": "Extended camp for title fights or fighters returning from layoff",
+      "phases": [
+        {
+          "phase": "Base Building",
+          "weeks": "1-4",
+          "focus": "Rebuild conditioning, address weaknesses, general fitness",
+          "intensity": "Low-Moderate",
+          "details": {
+            "strength": "General strength building - 4x/week",
+            "conditioning": "Aerobic base (running, swimming, cycling) - 4x/week",
+            "technical": "Work on weaknesses identified in previous fights",
+            "sparring": "Positional sparring only"
+          }
+        },
+        {
+          "phase": "General Preparation",
+          "weeks": "5-8",
+          "focus": "Increase sport-specific training, begin game planning",
+          "intensity": "Moderate-High",
+          "details": {
+            "strength": "Transition to power - 3x/week",
+            "conditioning": "MMA circuits, interval training - 3x/week",
+            "technical": "Implement game plan, combine techniques",
+            "sparring": "Progressive increase, 2x/week moderate to hard"
+          }
+        },
+        {
+          "phase": "Specific Preparation",
+          "weeks": "9-11",
+          "focus": "Peak performance, opponent simulation, hard sparring",
+          "intensity": "High",
+          "details": {
+            "strength": "Power/reactive - 2x/week",
+            "conditioning": "Fight simulation rounds",
+            "technical": "Opponent-specific drilling daily",
+            "sparring": "Hard sparring with specific partners 2-3x/week"
+          }
+        },
+        {
+          "phase": "Taper",
+          "weeks": "12",
+          "focus": "Recovery, weight cut, mental preparation",
+          "intensity": "Low-Moderate, reduced volume",
+          "details": {
+            "strength": "None or very light",
+            "conditioning": "Light movement only",
+            "technical": "Visualization, pad work, shadow boxing",
+            "sparring": "None"
+          }
+        }
+      ]
+    },
+    "weekly_template": {
+      "monday": { "am": "Strength & Conditioning", "pm": "MMA/Striking" },
+      "tuesday": { "am": "Wrestling/Grappling", "pm": "Sparring or Technical Drilling" },
+      "wednesday": { "am": "Active Recovery (Yoga/Swimming)", "pm": "BJJ" },
+      "thursday": { "am": "Strength & Conditioning", "pm": "MMA/Striking" },
+      "friday": { "am": "Wrestling/Grappling", "pm": "Sparring" },
+      "saturday": { "am": "Technical work / Pad work", "pm": "Light conditioning or OFF" },
+      "sunday": "Full Rest Day"
+    }
+  },
+
+  "nutrition": {
+    "macros_for_fighters": {
+      "general_training": {
+        "protein_g_per_kg": "1.8-2.2",
+        "carbs_g_per_kg": "4-6",
+        "fat_g_per_kg": "0.8-1.2",
+        "calories": "40-45 kcal/kg bodyweight"
+      },
+      "weight_cut_phase": {
+        "protein_g_per_kg": "2.2-2.5",
+        "carbs_g_per_kg": "2-3",
+        "fat_g_per_kg": "0.6-0.8",
+        "calories": "25-30 kcal/kg bodyweight",
+        "note": "High protein preserves muscle during caloric deficit"
+      },
+      "fight_week": {
+        "early_week": "Normal training nutrition, slight caloric surplus",
+        "mid_week": "Begin water manipulation, reduce fiber",
+        "pre_weighin": "Minimal intake per weight cut protocol",
+        "post_weighin": "Aggressive rehydration and carb loading",
+        "fight_day": "Familiar foods, easily digestible, 3-4 hours before fight"
+      }
+    },
+    "pre_training_meal": {
+      "timing": "2-3 hours before training",
+      "composition": "Moderate protein, high carb, low fat, low fiber",
+      "examples": ["Rice + chicken + vegetables", "Oatmeal + banana + whey protein", "Pasta + lean meat sauce"]
+    },
+    "post_training_meal": {
+      "timing": "Within 30-60 minutes after training",
+      "composition": "High protein, high carb, moderate fat",
+      "examples": ["Whey protein shake + banana + peanut butter", "Rice + salmon + avocado", "Greek yogurt + berries + granola"],
+      "protein_target": "30-40g",
+      "carb_target": "50-80g"
+    },
+    "hydration": {
+      "daily_target_liters": "3-4L outside of weight cut",
+      "during_training": "500ml-1L per hour depending on sweat rate",
+      "electrolytes": "Sodium, potassium, magnesium - especially in hot training environments",
+      "indicators": "Urine should be pale yellow"
+    },
+    "supplements_evidence_based": [
+      { "name": "Creatine Monohydrate", "dose": "5g daily", "benefit": "Strength, power, recovery", "timing": "Any time with meal" },
+      { "name": "Caffeine", "dose": "3-6mg/kg", "benefit": "Performance, alertness, pain tolerance", "timing": "30-60 min pre-training" },
+      { "name": "Omega-3 (Fish Oil)", "dose": "2-3g EPA+DHA daily", "benefit": "Anti-inflammatory, joint health, recovery", "timing": "With meals" },
+      { "name": "Vitamin D", "dose": "2000-5000 IU daily", "benefit": "Bone health, immune function, recovery", "timing": "With fat-containing meal" },
+      { "name": "Whey Protein", "dose": "20-40g per serving", "benefit": "Convenient protein source, recovery", "timing": "Post-training or between meals" },
+      { "name": "Beta-Alanine", "dose": "3-6g daily", "benefit": "Buffer lactic acid, endurance in rounds", "timing": "Split doses throughout day" }
+    ]
+  },
+
+  "rules": {
+    "unified_rules_of_mma": {
+      "version": "Updated 2017 (ABC)",
+      "round_duration_minutes": 5,
+      "championship_rounds": 5,
+      "non_championship_rounds": 3,
+      "rest_between_rounds_seconds": 60
+    },
+    "ways_to_win": [
+      "Knockout (KO)",
+      "Technical Knockout (TKO) - referee stoppage, doctor stoppage, corner stoppage",
+      "Submission - tap, verbal tap, referee stoppage",
+      "Decision - Unanimous, Split, Majority",
+      "Draw - Unanimous, Split, Majority",
+      "Disqualification",
+      "No Contest"
+    ],
+    "scoring_criteria": {
+      "system": "10-point must system",
+      "criteria_priority": [
+        {
+          "priority": 1,
+          "criterion": "Effective Striking/Grappling",
+          "description": "Impact of strikes (damage), dominance in grappling (takedowns, submission attempts, reversals, control)"
+        },
+        {
+          "priority": 2,
+          "criterion": "Effective Aggressiveness",
+          "description": "Moving forward and landing strikes or attempting submissions (not just chasing)"
+        },
+        {
+          "priority": 3,
+          "criterion": "Fighting Area Control",
+          "description": "Cage control, dictating where the fight takes place (octagon control)"
+        }
+      ],
+      "round_scores": {
+        "10-9": "Close round, one fighter slightly better",
+        "10-8": "Dominant round, clear advantage, close to finish",
+        "10-7": "Extremely dominant, near-finish multiple times (very rare)"
+      }
+    },
+    "fouls": [
+      "Headbutts",
+      "Eye gouging",
+      "Biting or spitting",
+      "Fish hooking",
+      "Groin strikes",
+      "Strikes to the back of the head/spine",
+      "Strikes to the throat",
+      "12-6 elbows (downward point of elbow)",
+      "Grabbing the fence",
+      "Holding shorts or gloves of opponent",
+      "Small joint manipulation",
+      "Hair pulling",
+      "Spiking opponent on head/neck (piledriver)",
+      "Kicking/kneeing grounded opponent's head",
+      "Stomps to grounded opponent (UFC rules)",
+      "Timidity (avoiding contact, faking injury)",
+      "Throwing opponent outside the ring/cage",
+      "Interference from corner",
+      "Using abusive language",
+      "Attacking during break or after bell"
+    ],
+    "grounded_fighter_definition": "A fighter is grounded when any body part other than the soles of the feet is touching the ground. A single hand or knee on the ground = grounded.",
+    "referee_actions": [
+      "Verbal warning",
+      "Point deduction",
+      "Disqualification"
+    ],
+    "weight_class_allowances": {
+      "championship": "Must be at or under weight limit",
+      "non_championship": "1 pound allowance",
+      "catchweight": "Agreed upon by both fighters"
+    }
+  }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activation — THYMOS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body style="background:var(--bg);display:flex;align-items:center;justify-content:center;min-height:100vh;padding:2rem;">
+  <a href="#main" class="skip-link">Aller au contenu</a>
+
+<div id="main" role="main" style="max-width:440px;width:100%;text-align:center;">
+  <!-- LOADING STATE -->
+  <div id="stateLoading">
+    <div style="width:56px;height:56px;border:3px solid var(--border);border-top-color:var(--red);border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 1.5rem;"></div>
+    <h2 style="font-family:var(--font-display);font-size:1.1rem;font-weight:900;letter-spacing:0.04em;margin-bottom:0.5rem;">Activation en cours...</h2>
+    <p style="font-size:0.85rem;color:var(--muted);">Vérification de votre paiement et activation de votre abonnement.</p>
+  </div>
+
+  <!-- SUCCESS STATE -->
+  <div id="stateSuccess" style="display:none;">
+    <div style="width:64px;height:64px;border-radius:50%;background:rgba(74,158,92,0.15);border:2px solid rgba(74,158,92,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#4a9e5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h2 style="font-family:var(--font-display);font-size:1.2rem;font-weight:900;letter-spacing:0.04em;margin-bottom:0.5rem;">Abonnement activé</h2>
+    <p style="font-size:0.88rem;color:var(--muted);margin-bottom:0.5rem;" id="successPlan"></p>
+    <p style="font-size:0.78rem;color:var(--subtle);margin-bottom:2rem;">Votre plan a été mis à jour. Vous avez accès à toutes les fonctionnalités incluses.</p>
+    <a href="dashboard.html" class="btn btn--primary btn--large" style="display:inline-flex;">
+      Accéder à mon dashboard
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:0.4rem;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+
+  <!-- ALREADY LOGGED IN — ACTIVATE -->
+  <div id="stateNeedLogin" style="display:none;">
+    <div style="width:64px;height:64px;border-radius:50%;background:rgba(212,160,23,0.15);border:2px solid rgba(212,160,23,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#D4A017" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </div>
+    <h2 style="font-family:var(--font-display);font-size:1.1rem;font-weight:900;margin-bottom:0.5rem;">Connexion requise</h2>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:2rem;">Connectez-vous à votre compte THYMOS pour activer votre abonnement.</p>
+    <a href="connexion.html" class="btn btn--primary">Se connecter</a>
+  </div>
+
+  <!-- ERROR STATE -->
+  <div id="stateError" style="display:none;">
+    <div style="width:64px;height:64px;border-radius:50%;background:var(--red-dim);border:2px solid var(--red-border);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </div>
+    <h2 style="font-family:var(--font-display);font-size:1.1rem;font-weight:900;margin-bottom:0.5rem;color:var(--red);">Erreur d'activation</h2>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:2rem;" id="errorMsg">Une erreur est survenue.</p>
+    <a href="index.html#tarifs" class="btn btn--ghost">Retour aux tarifs</a>
+  </div>
+</div>
+
+<style>
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.50.0" crossorigin="anonymous" defer></script>
+<script src="js/security.js" defer></script>
+<script src="js/supabase-config.js" defer></script>
+<script>
+(async function() {
+  const params = new URLSearchParams(window.location.search);
+  const plan = params.get('plan');
+
+  if (!plan) {
+    showState('stateError', 'Aucun plan spécifié.');
+    return;
+  }
+
+  // Check if logged in
+  const { data: { session } } = await window.supabase.auth.getSession();
+  if (!session) {
+    showState('stateNeedLogin');
+    return;
+  }
+
+  // Verify Stripe payment before activating paid plans
+  const sessionId = params.get('session_id');
+  const FREE_PLANS = ['decouverte'];
+
+  if (!FREE_PLANS.includes(plan) && !sessionId) {
+    showState('stateError', 'Session de paiement manquante. Veuillez passer par la page de paiement.');
+    return;
+  }
+
+  try {
+    let rpcCall;
+    if (FREE_PLANS.includes(plan)) {
+      rpcCall = window.supabase.rpc('activate_plan', { new_plan: plan });
+    } else {
+      rpcCall = window.supabase.rpc('verify_and_activate_plan', {
+        new_plan: plan,
+        stripe_session_id: sessionId
+      });
+    }
+
+    const { data, error } = await rpcCall;
+
+    if (error) {
+      showState('stateError', 'Erreur technique : ' + error.message);
+      return;
+    }
+
+    if (data && data.success) {
+      const planLabels = { guerrier: 'Pro', champion: 'Elite', decouverte: 'Essai' };
+      document.getElementById('successPlan').textContent = 'Plan ' + (planLabels[data.plan] || data.plan) + ' activé avec succès.';
+      showState('stateSuccess');
+    } else {
+      showState('stateError', data?.error || 'Paiement non vérifié ou erreur inconnue.');
+    }
+  } catch (err) {
+    showState('stateError', 'Erreur de connexion.');
+  }
+})();
+
+function showState(id, errorMsg) {
+  ['stateLoading', 'stateSuccess', 'stateNeedLogin', 'stateError'].forEach(s => {
+    document.getElementById(s).style.display = s === id ? 'block' : 'none';
+  });
+  if (errorMsg && id === 'stateError') {
+    document.getElementById('errorMsg').textContent = errorMsg;
+  }
+}
+</script>
+</body>
+</html>

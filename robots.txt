@@ -1,0 +1,21 @@
+# THYMOS — robots.txt
+User-agent: *
+Allow: /
+
+# Espaces privés (derrière authentification) — pas d'indexation
+Disallow: /dashboard.html
+Disallow: /combattants.html
+Disallow: /combattant.html
+Disallow: /combats.html
+Disallow: /alertes.html
+Disallow: /sparring.html
+Disallow: /planning.html
+Disallow: /parametres.html
+Disallow: /admin.html
+Disallow: /activation.html
+Disallow: /_system.html
+
+# Page morte (ne plus indexer)
+Disallow: /paiement.html
+
+Sitemap: https://thymos-mma.fr/sitemap.xml

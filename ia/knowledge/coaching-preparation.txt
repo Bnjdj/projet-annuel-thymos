@@ -1,0 +1,1740 @@
+================================================================================
+MMA COACHING, PREPARATION & SPORTS SCIENCE KNOWLEDGE BASE
+================================================================================
+This document serves as the complete reference for coaching MMA fighters through
+training camps, physical preparation, weight management, mental conditioning,
+nutrition, injury management, and competition rules.
+================================================================================
+
+
+================================================================================
+SECTION 1: PERIODIZATION & TRAINING CAMPS
+================================================================================
+
+--------------------------------------------------------------------------------
+1.1 — 8-WEEK CAMP STRUCTURE (STANDARD FIGHT CAMP)
+--------------------------------------------------------------------------------
+
+This is the standard preparation timeline for a scheduled bout. The fighter
+should enter camp healthy, at a reasonable walking weight (within 12-15% of
+target fight weight), and without significant injuries.
+
+WEEK 1 — BASE BUILDING / ASSESSMENT
+Goal: Establish aerobic foundation, assess current fitness, begin film study.
+Volume: HIGH (75-80% of peak training volume)
+Intensity: LOW to MODERATE (RPE 5-6 average)
+Sessions:
+  - 6 training days, 1 full rest day
+  - 2x technical striking sessions (focus on fundamentals, not power)
+  - 2x grappling/wrestling sessions (positional drilling, flow rolling)
+  - 2x strength & conditioning (moderate loads, movement quality focus)
+  - 3x aerobic sessions (30-45min steady state at 130-150bpm)
+  - 1x film study session (study opponent footage if available)
+Sparring: NONE. Technical flow only.
+Strength focus: Hypertrophy/work capacity (3x8-12 at 65-75% 1RM)
+Notes: Baseline HRV and body composition measurements taken. Establish sleep
+and nutrition patterns. Identify any nagging issues to address with physio.
+
+WEEK 2 — BASE BUILDING / TECHNICAL VOLUME
+Goal: Increase technical volume, continue aerobic base, introduce gameplan ideas.
+Volume: HIGH (80% of peak)
+Intensity: MODERATE (RPE 6-7)
+Sessions:
+  - 6 training days, 1 rest day
+  - 2x striking (begin working combinations specific to opponent)
+  - 2x grappling (start working specific positions from gameplan)
+  - 2x S&C (increase loads slightly, begin power development)
+  - 3x aerobic (include 1 tempo run: 3min at 75%, 1min easy, x5 rounds)
+  - 2x film study (detailed opponent breakdown with coaching team)
+Sparring: Light technical sparring (1 session, 3-4 rounds, 60% power)
+Strength focus: Transition to strength (4x5 at 78-82% 1RM)
+Notes: Nutrition dialed in. Weight check — ensure trajectory is correct.
+Begin identifying primary gameplan strategies (A, B, and C plans).
+
+WEEK 3 — INTENSIFICATION
+Goal: Increase intensity significantly, implement gameplan in live situations.
+Volume: HIGH (85% of peak — this is near-peak volume)
+Intensity: MODERATE-HIGH (RPE 7-8)
+Sessions:
+  - 6 training days, 1 rest day
+  - 3x striking (gameplan-specific combos, counters, defense)
+  - 2x grappling (live positional sparring, submission chains)
+  - 1x wrestling (takedown/anti-takedown specific work)
+  - 2x S&C (heavy — working toward peak strength numbers)
+  - 2x conditioning (introduce fight-pace intervals: 5min rounds, 1min rest)
+  - 1x film study
+Sparring: 2 sessions, moderate intensity (70-80% power)
+  - Session 1: 4-5 rounds standing focus
+  - Session 2: 4-5 rounds mixed (start standing, allow grappling)
+Strength focus: Peak strength (5x3 at 85-90% 1RM, include power cleans)
+Notes: This is the hardest training week alongside Week 4. Monitor recovery
+closely. HRV should not drop more than 10% from baseline consistently.
+
+WEEK 4 — INTENSIFICATION / PEAK VOLUME
+Goal: Maximum training stress. Hardest week of camp. Test gameplan under pressure.
+Volume: PEAK (100% — highest volume of entire camp)
+Intensity: HIGH (RPE 8-9)
+Sessions:
+  - 6 training days, 1 rest day (consider 2 rest days if recovery poor)
+  - 3x striking (hard technical work, pad work at fight pace)
+  - 2x grappling (hard live rounds, simulate scrambles)
+  - 1x wrestling (live takedown rounds, 3min on/1min off)
+  - 2x S&C (heavy + power: squat/deadlift heavy, then plyo work)
+  - 2x conditioning (fight simulation: 5x5min at 85-90% effort)
+  - 1x film study (finalize gameplan, identify key moments to exploit)
+Sparring: 2 sessions, HARD (85-90% power, with protective gear)
+  - Session 1: Full MMA rounds, 5 rounds, with corners
+  - Session 2: Specific situational sparring (e.g., start in bad position)
+Strength focus: Peak (work up to heavy singles/doubles, maintain power work)
+Notes: Expect fatigue. This is intentional overreach. Fighter may feel flat.
+That is acceptable — supercompensation will occur during taper.
+
+WEEK 5 — FIGHT-SPECIFIC / EARLY TAPER
+Goal: Transition from volume to quality. Everything now mimics fight conditions.
+Volume: REDUCED (70-75% of peak)
+Intensity: HIGH (RPE 8-9, but fewer total sets/rounds)
+Sessions:
+  - 5-6 training days, 1-2 rest days
+  - 2x striking (fight-specific: practice exact sequences from gameplan)
+  - 2x grappling (fight-specific: practice transitions and finishes)
+  - 1x S&C (maintain strength only: 3x3 at 82-85%, explosive movements)
+  - 2x conditioning (fight simulation rounds with rest matching fight)
+  - 1x full simulation (dress rehearsal: full rounds with corner, clock, ref)
+Sparring: 1-2 sessions (80-85% power, focus on executing gameplan)
+  - Choose sparring partners who mimic opponent's style
+Strength focus: Maintenance only. No PRs. Just maintain neural patterns.
+Notes: Begin mild caloric reduction if weight cut needed. Sleep prioritized
+(8-9 hours). Reduce outside stressors. Visualization training begins (3x/week).
+
+WEEK 6 — PEAK PERFORMANCE / SHARPENING
+Goal: Peak power output, sharpen timing, fine-tune gameplan details.
+Volume: REDUCED (60-65% of peak)
+Intensity: VERY HIGH for short bursts (RPE 9-10 in intervals, low otherwise)
+Sessions:
+  - 5 training days, 2 rest days
+  - 2x striking (short sharp pad rounds, reaction drills, timing work)
+  - 1x grappling (flow + specific submissions/escapes)
+  - 1x S&C (power only: jump squats, med ball, explosive pulls — low volume)
+  - 2x conditioning (short high-intensity: 30s max/30s rest x8-10)
+  - 1x light simulation (3 rounds, focus on round 1 start + between-round routine)
+Sparring: 1 session MAX (controlled, 70-75% power, 3 rounds only)
+  LAST HARD SPARRING SESSION OF CAMP — after this, no more hard sparring.
+Strength focus: Power/speed (40-60% load moved explosively, 3x3)
+Notes: Fighter should start feeling sharp, fast, and fresh. Visualization daily.
+Weight cut water loading assessment. Plan exact cut timeline.
+
+WEEK 7 — TAPER
+Goal: Full recovery while maintaining sharpness. Reduce volume 50% from peak.
+Volume: LOW (50% of peak volume)
+Intensity: MODERATE (RPE 6-7, just enough to stay activated)
+Sessions:
+  - 4-5 training days, 2-3 rest days
+  - 2x light technical work (shadow boxing, drilling, mitt work at 50-60%)
+  - 1x light grappling (flow rolling, technique review, no intensity)
+  - 1x S&C (light activation: bodyweight + bands, mobility focus)
+  - 1x conditioning (20min easy aerobic + short burst: 4x20s sprint)
+  - Daily: visualization (10min), breathing exercises, mental preparation
+Sparring: ZERO. No sparring this week.
+Strength focus: None. Light movement only.
+Notes: Begin water loading protocol if cutting weight. Reduce fiber intake.
+Sleep 9+ hours. Limit social media and external stimuli. Review gameplan
+mentally but do not add new information. Confidence-building conversations
+with coaching team. Address any remaining anxiety or doubts.
+
+WEEK 8 — FIGHT WEEK
+Goal: Make weight safely, stay activated without fatigue, peak mentally.
+Volume: MINIMAL (20-25% of peak)
+Intensity: LOW with brief activation bursts
+Sessions:
+  MONDAY: 20min light technical work + visualization + weight cut protocol
+  TUESDAY: 15min shadow boxing, stretching, sauna if needed for weight
+  WEDNESDAY: Light 10min pad work (just to stay sharp), cut water
+  THURSDAY: Activation only (5min shadow, 5min stretch), final weight cut
+  FRIDAY (WEIGH-IN DAY): Weigh in → immediate rehydration → light meal → rest
+  SATURDAY (FIGHT DAY): Morning activation routine (shadow box 2x2min, dynamic
+    warmup), eat scheduled meals, arrive at venue 3h early, warmup with coach
+    (pads, movement, 15-20min), mental cues, compete.
+  OR if Friday fight: adjust timeline accordingly.
+Notes: EVERYTHING is about making weight and peaking mentally. Do not learn
+anything new. Do not change the gameplan. Trust the preparation. The work
+is done — fight week is about delivery, not preparation.
+
+--------------------------------------------------------------------------------
+1.2 — 12-WEEK CAMP STRUCTURE (TITLE FIGHT / MAJOR EVENT)
+--------------------------------------------------------------------------------
+
+Used for championship bouts, tournament finals, or when a fighter needs extra
+preparation time (new opponent style, coming back from injury, moving weight
+classes).
+
+WEEKS 1-3: FOUNDATION PHASE
+Goal: Build work capacity, address weaknesses, begin skill development for
+specific opponent challenges.
+Volume: Moderate-High (65-75% of eventual peak)
+Intensity: Low-Moderate (RPE 5-7)
+  - Focus on identified weaknesses from previous fights
+  - If opponent is a wrestler: extra wrestling 3x/week
+  - If opponent is a striker: extra defensive boxing/head movement work
+  - Strength: hypertrophy block (3-4x8-12 reps, progressive overload)
+  - Conditioning: primarily aerobic base (long steady-state, hiking, swimming)
+  - Sparring: Light technical only, 1x/week, focused on specific skills
+  - Film study: Deep dive on opponent (all available fights, patterns, habits)
+  - Mobility/prehab: address any imbalances, build joint resilience
+
+WEEKS 4-6: DEVELOPMENT PHASE
+Goal: Build specific fitness, develop gameplan, increase sparring intensity.
+Volume: High (80-90% of peak)
+Intensity: Moderate-High (RPE 7-8)
+  - Gameplan now established — drill specific sequences daily
+  - Strength: transition to max strength (4-5x3-5 at 82-90% 1RM)
+  - Conditioning: introduce sport-specific intervals alongside aerobic
+  - Sparring: 2x/week, moderate to hard (75-85% power), 4-6 rounds
+  - Begin working specific scenarios (what if taken down? what if pressured?)
+  - Bring in training partners who mimic opponent's style and body type
+
+WEEKS 7-9: INTENSIFICATION PHASE
+Goal: Peak training stress. Maximize fight-specific fitness and skill execution.
+Volume: PEAK (100%)
+Intensity: High (RPE 8-9)
+  - This is the hardest 3-week block. Intentional overreach.
+  - Strength: peak (heavy singles/doubles/triples)
+  - Conditioning: fight simulation dominates (5x5min rounds multiple times/week)
+  - Sparring: 2-3x/week, hard (85-90% power), full rounds with corners
+  - Full fight simulations with referee, clock, walk-out, everything
+  - Mental toughness work: train tired, simulate adversity
+  - Weight: check weekly, ensure trajectory is correct for fight week
+
+WEEKS 10-11: SHARPENING / TAPER
+Goal: Recovery + maintain peak qualities. Reduce volume dramatically.
+Volume: Declining (Week 10: 65%, Week 11: 45% of peak)
+Intensity: Moderate-High but brief
+  - Sparring: Week 10 — last hard session (1 session, 4 rounds)
+  - Sparring: Week 11 — light or none
+  - Strength: maintenance only (2x/week, light loads, explosive)
+  - Conditioning: short + sharp (quality over quantity)
+  - Technical: refine, don't add. Practice finishes, starts, transitions.
+  - Mental: daily visualization, routine establishment, confidence building
+
+WEEK 12: FIGHT WEEK
+  - Same protocol as Week 8 in the standard camp (see above)
+  - Extra emphasis on mental readiness given the magnitude of the fight
+  - Championship rounds preparation: remind fighter about pace for 5 rounds
+
+--------------------------------------------------------------------------------
+1.3 — WEEKLY TEMPLATE (IN-CAMP, PEAK WEEKS)
+--------------------------------------------------------------------------------
+
+MONDAY — STRENGTH + STRIKING
+  AM (60min): Strength & Conditioning
+    - Warmup: 10min (bike/row + dynamic mobility)
+    - Main lifts: Squat or Deadlift 4x4 at 85%, Bench or OHP 4x4
+    - Accessory: Pull-ups 3x8, RDLs 3x8, Core 3x30s
+    - Cooldown: 5min stretch
+  PM (90min): Striking Technical
+    - Warmup: 15min shadow boxing + footwork drills
+    - Pad work: 6x3min rounds (gameplan combinations)
+    - Heavy bag: 3x3min (power shots)
+    - Partner drills: 20min (specific defensive/offensive sequences)
+    - Cool down: 10min stretching + foam roll
+
+TUESDAY — GRAPPLING + CONDITIONING
+  AM (60min): Wrestling/Takedown Practice
+    - Warmup: 15min (wrestling-specific: sprawls, shots, pummeling)
+    - Technique: 20min (drilling 2-3 takedown setups/defenses)
+    - Live rounds: 5x3min (start standing, reset if taken down)
+    - Cool down: 10min
+  PM (75min): Grappling + Conditioning Finisher
+    - BJJ/Grappling: 45min (technique 20min + positional sparring 25min)
+    - Conditioning: 20min (4x4min rounds at fight pace, 1min rest between)
+    - Cool down: 10min
+
+WEDNESDAY — ACTIVE RECOVERY
+  AM (45min): Recovery Session
+    - 20min light aerobic (bike or swim at <130bpm)
+    - 15min mobility/yoga flow
+    - 10min foam rolling
+  PM: Film study (30-45min) + visualization (10min)
+  Optional: massage or physiotherapy session
+
+THURSDAY — SPARRING + POWER
+  AM (45min): Power Development
+    - Warmup: 10min
+    - Plyometrics: Box jumps 4x5, Med ball throws 3x6, Broad jumps 3x5
+    - Olympic lifts: Power clean 5x3 at 70-75%
+    - Cool down: stretch
+  PM (90min): MMA Sparring
+    - Warmup: 20min (shadow, pads, movement)
+    - Sparring: 5-6 rounds x 5min (match fight conditions)
+    - Post-sparring review: 15min (immediate feedback with coach)
+    - Cool down: 15min (ice bath optional)
+
+FRIDAY — TECHNICAL + CONDITIONING
+  AM (60min): Striking Technical (light)
+    - Pad work: 4x3min (speed and accuracy focus)
+    - Defense drills: 15min (slipping, checking, blocking)
+    - Body work: 10min (specific body shot sequences)
+  PM (60min): Conditioning
+    - Fight simulation: 5x5min rounds at 80-85% effort, 1min rest
+    - OR interval session: 10x30s all-out / 30s rest + 3x3min tempo
+    - Cool down: 15min easy + stretch
+
+SATURDAY — GRAPPLING FOCUS
+  AM (90min): Full Grappling Session
+    - Warmup: 15min (flow roll)
+    - Technique: 30min (specific submissions, escapes, transitions)
+    - Live rolling: 6x5min rounds (vary partners for different styles)
+    - Cool down: 10min
+  PM: Light conditioning (20min easy cardio) OR full rest
+
+SUNDAY — COMPLETE REST
+  No training. Sleep, eat well, mental recovery.
+  Optional: light walk, meditation, film study if desired.
+  MANDATORY: Minimum 8 hours sleep.
+
+--------------------------------------------------------------------------------
+1.4 — TRAINING LOAD MANAGEMENT
+--------------------------------------------------------------------------------
+
+RPE SCALE FOR MMA:
+  1-2: Very light, barely any effort (slow shadow boxing, walking)
+  3-4: Light, easy conversation possible (technical drilling, flow roll)
+  5-6: Moderate, conversation in short sentences (pad work at 50-60%)
+  7-8: Hard, cannot sustain conversation (sparring, hard rounds)
+  9: Very hard, near maximum effort (fight simulation, hard sparring)
+  10: Maximum effort (all-out intervals, fight-ending sequences)
+
+MONITORING OVERTRAINING:
+Signs to watch for:
+  - Resting heart rate elevated 5+ bpm above baseline for 3+ consecutive days
+  - HRV (Heart Rate Variability) dropped 15%+ from rolling 7-day average
+  - Sleep quality declining despite adequate time in bed
+  - Mood disturbance: irritability, lack of motivation, feeling of dread
+  - Performance drops: power output declining, slower reaction time
+  - Appetite changes: either no appetite or excessive hunger
+  - Increased illness frequency (sore throat, cold symptoms)
+  - Joint pain that does not improve with warmup
+  - Persistent muscle soreness >72 hours after session
+
+When these appear, implement:
+  - Reduce volume by 30-40% for 3-5 days
+  - Increase sleep by 1 hour
+  - Add caloric intake (200-300kcal from carbs)
+  - Prioritize parasympathetic activities (walking, meditation, easy swim)
+  - If not resolved in 5 days: take 2-3 full rest days
+
+DELOAD WEEKS:
+When: Every 3-4 weeks of hard training (in 12-week camp: end of week 3, 6, 9)
+How:
+  - Reduce training volume by 40-50%
+  - Reduce intensity by 20-30%
+  - Maintain frequency (still train same days, just less per session)
+  - Focus on technique quality, not output
+  - Extra recovery: massage, sleep, nutrition quality
+Duration: 3-5 days minimum, up to 7 days if significantly fatigued.
+
+VOLUME VS INTENSITY BALANCE:
+  - Cannot have both at maximum simultaneously for more than 2 weeks
+  - Early camp: high volume, moderate intensity (build capacity)
+  - Mid camp: high both (intentional overreach, brief: 2-3 weeks max)
+  - Late camp: low volume, high intensity (sharpen and peak)
+  - Fight week: minimal both (just enough to stay activated)
+
+
+================================================================================
+SECTION 2: STRENGTH & CONDITIONING FOR MMA
+================================================================================
+
+--------------------------------------------------------------------------------
+2.1 — STRENGTH TRAINING
+--------------------------------------------------------------------------------
+
+PRIMARY EXERCISES (Compound Movements):
+  Squat (back squat, front squat): Foundation of lower body power. Builds leg
+    drive for takedowns, takedown defense, striking power from the ground up.
+    Programming: 4x4-6 at 80-87% 1RM during strength phase.
+
+  Deadlift (conventional, sumo, trap bar): Posterior chain king. Hip hinge
+    power for clinch work, lifting opponents, scramble explosiveness.
+    Programming: Work up to heavy triple or 5x3 at 82-88% 1RM.
+
+  Bench Press (flat, incline, close grip): Upper body pushing. Relevant for
+    framing, push-off from bottom, creating distance.
+    Programming: 4x5 at 78-85% 1RM. Close grip for tricep emphasis.
+
+  Overhead Press (strict, push press): Shoulder strength for clinch, frames,
+    defending takedowns with underhooks.
+    Programming: 3x5 at 78-82% 1RM strict, or 5x3 push press for power.
+
+  Power Clean: Full body explosive movement. Trains triple extension crucial
+    for striking power and takedown explosiveness.
+    Programming: 5x3 at 70-78% 1RM. Technique is paramount — never grind reps.
+
+  Snatch (hang snatch, power snatch): Rate of force development, full body
+    coordination, overhead stability.
+    Programming: 5x2 at 65-75% 1RM. Only if technically proficient.
+
+  Kettlebell Work: Swings (hip hinge power, conditioning), Turkish get-ups
+    (shoulder stability, ground-to-standing movement), goblet squats (mobility).
+    Programming: Swings 5x10-15, TGU 3x2 each side, as accessory or warmup.
+
+REP SCHEMES FOR FIGHTERS:
+  Maximum Strength: 3-5 sets of 1-5 reps at 85-95% 1RM. Rest 3-5min.
+    When: Early-mid camp, 2-3x/week. Builds force production ceiling.
+  Power: 4-6 sets of 2-3 reps at 70-80% 1RM (moved as fast as possible).
+    When: Mid-late camp. Converts strength to usable speed-strength.
+  Hypertrophy: 3-4 sets of 8-12 reps at 65-75% 1RM. Rest 60-90s.
+    When: Off-season or early camp weeks 1-2 only. Build muscle base.
+  Strength-Endurance: 3 sets of 12-20 reps at 50-60% 1RM.
+    When: Off-season only, for connective tissue health and work capacity.
+
+WHEN TO LIFT IN CAMP:
+  Weeks 1-4: Heavy lifting 2-3x/week. Progressive overload still applies.
+  Weeks 5-6: Reduce to 2x/week. Maintain loads but reduce volume (fewer sets).
+  Weeks 7-8: 1x/week max. Light weight, explosive speed. Maintenance only.
+  Fight week: No lifting. At most, light activation (push-ups, bands).
+
+COMMON PROGRAMS ADAPTED FOR FIGHTERS:
+
+  Westside for Fighters (Conjugate):
+    - Max effort day: work up to 1-3RM on main lift (rotate exercise weekly)
+    - Dynamic effort day: 8-10x2-3 at 50-60% 1RM with bands/chains, maximum speed
+    - Accessory work: target weaknesses, keep volume moderate
+    - Perfect for fighters: develops both max strength AND speed-strength
+
+  5/3/1 for Fighters (Wendler adaptation):
+    - Week 1: 3x5 (65/75/85%)
+    - Week 2: 3x3 (70/80/90%)
+    - Week 3: 5/3/1 (75/85/95%)
+    - Week 4: Deload (40/50/60%)
+    - Reduce supplemental work vs standard 5/3/1. Skip BBB template.
+    - 2 days/week (upper/lower split) during camp.
+
+  Simple Strength for Fighters (Minimalist):
+    - Squat 3x5, Deadlift 3x3, Bench 3x5, Rows 3x8, twice per week
+    - Add 2.5kg/week until plateau, then reset 10% and rebuild
+    - Perfect for fighters who cannot dedicate much time to S&C
+
+--------------------------------------------------------------------------------
+2.2 — POWER & EXPLOSIVENESS
+--------------------------------------------------------------------------------
+
+PLYOMETRICS:
+  Box Jumps: 4-5 sets of 3-5 reps. Step down (don't jump down). Focus on
+    maximal height. Trains rate of force development.
+  Depth Jumps: 3 sets of 5. Drop from 30-50cm box, immediately jump max height
+    upon landing. Advanced exercise — only if squat >1.5x bodyweight.
+  Broad Jumps: 4x5. Maximum horizontal distance. Rest fully between sets.
+  Med Ball Throws: Chest pass, overhead slam, rotational throw, scoop toss.
+    3-4 sets of 5-6 reps each direction. Highly sport-specific for MMA.
+  Single Leg Bounds: 3x5 each leg. Unilateral power for kicks, level changes.
+
+OLYMPIC LIFTS:
+  Power Clean: 5x3 at 70-78% 1RM. Full hip extension = striking power.
+  Hang Snatch: 4x3 at 65-72% 1RM. Overhead rate of force development.
+  Clean Pull: 4x3 at 90-100% clean 1RM. Overloads the pull without catch.
+  Push Jerk: 3x3 at 78-85% 1RM. Full body power expression.
+  NOTE: Only prescribe if technically proficient. Bad Olympic lifts = injury.
+
+BALLISTIC TRAINING:
+  Jump Squats: 5x5 at 30-40% back squat 1RM. Maximum bar speed on every rep.
+  Bench Throws (Smith machine): 5x5 at 30-40% bench 1RM. Release at top.
+  Explosive Push-ups (clap push-ups): 4x6-8. Upper body rate of force.
+  Band-Resisted Movements: Squat with bands, bench with bands — accommodating
+    resistance teaches acceleration through full range of motion.
+
+SPORT-SPECIFIC POWER:
+  Striking Power Drills:
+    - Heavy bag: 5x10s maximum power (all-out, rest 50s between)
+    - Sledgehammer slams: 4x10 each side (rotational power)
+    - Landmine press/rotation: 3x8 each side (punch-specific movement pattern)
+    - Resistance band punches: 3x20 each hand (speed against resistance)
+  Explosive Hip Movement:
+    - Hip escapes with band resistance: 3x10 each side
+    - Explosive bridging: 4x8 (hip thrust with pause at bottom, explode up)
+    - Sprawl to shot: 4x6 (defensive to offensive transition speed)
+    - Level change with medicine ball: 3x8 (simulate shot entry with load)
+
+--------------------------------------------------------------------------------
+2.3 — CARDIO & CONDITIONING
+--------------------------------------------------------------------------------
+
+ENERGY SYSTEMS OVERVIEW:
+  Phosphocreatine System (ATP-PC): 0-10 seconds
+    - Fuels: explosive strikes, takedown shots, scrambles, finish attempts
+    - Training: all-out sprints 6-10s, full recovery (1:10 work:rest ratio)
+    - Example: 8x8s bike sprint / 80s rest
+
+  Glycolytic System (Anaerobic): 10 seconds - 2 minutes
+    - Fuels: sustained high-intensity exchanges, pressure sequences, chain wrestling
+    - Training: 30s-2min intervals at 85-95% effort, incomplete recovery
+    - Example: 8x30s / 30s rest or 5x90s / 90s rest
+
+  Oxidative System (Aerobic): 2+ minutes
+    - Fuels: ability to recover between exchanges, sustain pace across rounds
+    - Training: sustained effort 20-60min at 60-75% max HR, or longer intervals
+    - Example: 30min run at 130-150bpm, or 5x4min / 2min rest at 75-80%
+
+  MMA REQUIRES ALL THREE: A 5-minute round includes bursts (ATP-PC), sustained
+  exchanges (glycolytic), and recovery periods (aerobic). A fighter with poor
+  aerobic base cannot recover between bursts. A fighter with no anaerobic
+  capacity cannot sustain pressure. A fighter without phosphocreatine cannot
+  generate knockout power in the 4th round.
+
+SPECIFIC PROTOCOLS:
+
+  Cardiac Output Method (Aerobic Base):
+    - Intensity: 130-150bpm (conversational pace)
+    - Duration: 30-60 minutes continuous
+    - Modality: running, cycling, swimming, rowing, assault bike
+    - Frequency: 3-5x/week in base phase, 1-2x/week in camp
+    - Purpose: builds cardiac stroke volume, capillary density, mitochondria
+    - This is the FOUNDATION. Without it, all other conditioning fails long-term.
+
+  Tempo Intervals (Threshold / Lactate Work):
+    - Intensity: 70-80% max effort (hard but sustainable)
+    - Duration: 3-5 minutes work, 1-2 minutes recovery
+    - Sets: 4-6 rounds
+    - Purpose: raise lactate threshold, sustain higher pace without fatigue
+    - Example: 5x4min assault bike at 80% / 90s easy between
+
+  Fight Simulation (Sport-Specific):
+    - Duration: 5-minute rounds, 1-minute rest (matches 3 or 5 round fight)
+    - Intensity: 80-90% effort (match actual fight intensity)
+    - Sets: 3 rounds (3-round fight sim) or 5 rounds (championship sim)
+    - Modality: pads/bag/grappling dummy/partner drills (NOT just cardio machine)
+    - Purpose: specific metabolic conditioning under sport conditions
+    - Frequency: 2-3x/week during peak camp weeks
+
+  High Intensity Intervals (Anaerobic Power):
+    - 30/30: 30s all-out / 30s active rest, x10-15 rounds
+    - 60/60: 60s hard / 60s rest, x8-10 rounds
+    - 10/50: 10s MAX sprint / 50s rest, x10-12 (phosphocreatine repeat)
+    - Purpose: push anaerobic ceiling higher, tolerate more lactate
+    - Frequency: 2-3x/week during intensification phase
+
+  Tabata (Maximum Oxygen Debt):
+    - 20 seconds ALL-OUT / 10 seconds rest, x8 rounds (4 minutes total)
+    - Modality: bike, assault bike, or bodyweight (burpees, thrusters)
+    - Purpose: maximal oxygen deficit, push VO2max
+    - WARNING: brutally fatiguing. Use 1-2x/week max. Never on sparring days.
+
+HEART RATE ZONES:
+  Zone 1 (50-60% max HR): Active recovery, warmups
+  Zone 2 (60-70% max HR): Aerobic base building (cardiac output work)
+  Zone 3 (70-80% max HR): Tempo/threshold work (lactate management)
+  Zone 4 (80-90% max HR): Anaerobic intervals (fight pace)
+  Zone 5 (90-100% max HR): Maximum effort (short bursts only)
+
+  To estimate max HR: 220 - age (rough) or use field test (best option).
+
+WEEKLY CARDIO PROGRAMMING IN CAMP:
+  Early camp (weeks 1-3): Zone 2 x3-4, Zone 3 x1-2, Zone 4 x1
+  Mid camp (weeks 4-6): Zone 2 x2, Zone 3 x1-2, Zone 4 x2-3
+  Late camp (weeks 7-8): Zone 2 x1 (recovery), Zone 4-5 x1-2 (sharpening)
+
+--------------------------------------------------------------------------------
+2.4 — MOBILITY & INJURY PREVENTION
+--------------------------------------------------------------------------------
+
+ESSENTIAL STRETCHES FOR FIGHTERS:
+  Hip Flexors: Half-kneeling hip flexor stretch, couch stretch, pigeon pose
+    WHY: Tight from sitting, limits kick height and takedown defense stance.
+  Shoulders: Sleeper stretch, cross-body stretch, doorway pec stretch, band pull-aparts
+    WHY: Tight from punching/clinch work. Limits reach and causes impingement.
+  Ankles: Wall ankle mobilization, banded ankle distraction
+    WHY: Limits squat depth, stance width, and lateral movement.
+  Thoracic Spine: Foam roller extensions, open book rotations, cat-cow
+    WHY: Rounded upper back from guard/clinch. Limits rotation for striking.
+  Hamstrings: Romanian deadlift stretch, standing toe touch, PNF stretching
+    WHY: Tight from sprawling, limits high kicks and guard flexibility.
+  Groin/Adductors: Side-lying adductor stretch, frog stretch, Cossack squat
+    WHY: Crucial for guard retention, kick flexibility, stance width.
+
+FOAM ROLLING PROTOCOL (10-15 minutes):
+  Order: Calves (60s each) → Quads (60s each) → IT band (30s each) →
+  Glutes (60s each) → Upper back (60s) → Lats (30s each)
+  Technique: Slow rolling, pause on tender spots for 20-30s.
+  When: Pre-training (brief, 5min) or post-training / evening (full protocol).
+
+DYNAMIC WARMUP ROUTINE (Pre-Training, 10-15 min):
+  1. General: 3min light jog or jump rope
+  2. Leg swings: 10 forward/back + 10 side-to-side each leg
+  3. Walking lunges with rotation: 10 each side
+  4. Inchworms: 8 reps
+  5. World's greatest stretch: 5 each side
+  6. High knees: 20m
+  7. Butt kicks: 20m
+  8. Lateral shuffles: 20m each direction
+  9. Arm circles: 10 forward + 10 backward (small then large)
+  10. Sport-specific: shadow boxing 2min at 40-50% effort
+
+COOL DOWN ROUTINE (Post-Training, 10 min):
+  1. 3-5min easy movement (walking, light bike)
+  2. Static stretching: hold each position 30-45s (hip flexors, hamstrings,
+     shoulders, thoracic rotation, groin)
+  3. Deep breathing: 10 breaths (4s inhale, 6s exhale — activate parasympathetic)
+
+COMMON IMBALANCES IN FIGHTERS AND CORRECTIONS:
+  Internal rotation dominance (shoulders): From punching/clinch
+    Fix: External rotation exercises (band pull-aparts, face pulls, prone Y-raises)
+    Protocol: 3x15 daily as warmup
+
+  Anterior pelvic tilt / tight hip flexors: From stance + sprawling
+    Fix: Glute bridges, hip flexor stretching, dead bugs for anterior core
+    Protocol: Stretch 2x30s + 2x15 glute bridges daily
+
+  Weak posterior chain relative to quads: From heavy squat/sprint focus
+    Fix: Romanian deadlifts, Nordic curls, hip thrusts
+    Protocol: 3x8-12 twice per week
+
+  Rounded thoracic spine: From guard/clinch/computer posture
+    Fix: Foam roller extensions, prone Y-T-W raises, face pulls
+    Protocol: Foam roller 2min + 3x10 prone raises daily
+
+  Weak neck: Critical for concussion prevention in MMA
+    Fix: Neck curls (front/back/side), manual resistance, neck harness
+    Protocol: 3x15-20 each direction, 3x/week. Build gradually.
+
+
+================================================================================
+SECTION 3: WEIGHT CUTTING — COMPLETE GUIDE
+================================================================================
+
+--------------------------------------------------------------------------------
+3.1 — UNDERSTANDING WEIGHT CLASSES
+--------------------------------------------------------------------------------
+
+WHY FIGHTERS CUT WEIGHT:
+Fighters cut weight to compete at a lower weight class where they will have a
+size and strength advantage over opponents who are naturally smaller. On fight
+night (24-32 hours after weigh-in), a fighter may be 10-15% heavier than the
+class limit. This is a competitive advantage: more mass = more force = more
+damage resistance.
+
+SAFE RANGE:
+  - 8-10% of walking weight is a manageable cut for experienced fighters
+  - Example: walking weight 77kg, fighting at 70kg (10% cut)
+  - This allows full recovery and performance maintenance
+
+MODERATE RISK RANGE:
+  - 10-12% cut is aggressive and requires precise protocol
+  - Experienced fighters with good discipline can manage this
+  - Performance risk: may not fully rehydrate, speed/endurance compromised
+
+DANGEROUS RANGE:
+  - >12% cut is dangerous and should be strongly discouraged
+  - Health risks: kidney damage, cardiac arrhythmia, cognitive impairment
+  - Performance is almost always compromised (slower, weaker, less durable chin)
+
+RECOMMENDATION: A fighter should be within 6-8% of their fight weight at 4 weeks
+out from a fight. If more than 10% away at 4 weeks, consider moving up a class.
+
+--------------------------------------------------------------------------------
+3.2 — 4-WEEK WEIGHT CUT PROTOCOL (DETAILED)
+--------------------------------------------------------------------------------
+
+Assumes: Fighter needs to lose 6-10% bodyweight for weigh-in.
+Example: Fighter walks at 76-77kg, needs to make 70kg.
+
+WEEK 4 (28-21 days out):
+  Starting weight: ~76-77kg
+  Actions:
+    - Establish baseline: weigh daily (AM, after bathroom, before food/water)
+    - Nutrition: eat at maintenance calories with clean foods
+    - Water intake: 3-4L/day (normal)
+    - Training: normal camp intensity (not modified for weight yet)
+    - Assess: determine how much is fat loss vs water manipulation needed
+    - If >5kg over: begin mild caloric deficit (-300 to -500kcal/day)
+    - Target: lose 1-1.5kg of actual body mass this week through diet alone
+  End of week target: ~75-76kg
+
+WEEK 3 (21-14 days out):
+  Starting weight: ~75-76kg
+  Actions:
+    - Reduce caloric intake by 500kcal from maintenance
+    - Protein STAYS HIGH: 2.5g/kg to preserve muscle
+    - Carbs reduced: 2-3g/kg (lower end on non-training days)
+    - Fat: 0.8-1g/kg
+    - Water intake: increase to 6L/day (begin establishing high water baseline)
+    - Sodium: normal (do not restrict yet)
+    - Begin cutting empty calories, alcohol (should already be zero), sugar
+    - Fiber: keep moderate this week (switch to low fiber next week)
+    - Training: normal but monitor energy levels
+  End of week target: ~74-75kg
+
+WEEK 2 (14-7 days out):
+  Starting weight: ~74-75kg
+  Actions:
+    - WATER LOADING BEGINS: 7-8L/day (this upregulates kidney excretion)
+    - SODIUM LOADING: 5-8g/day added sodium (salt food heavily, add salt to water)
+    - This combination trains kidneys to excrete maximum fluid constantly
+    - Caloric intake: deficit of 500-750kcal from maintenance
+    - Carbs: reduce to 1-2g/kg (carbs hold 3g water per 1g glycogen stored)
+    - Protein: maintain 2.5g/kg
+    - Low fiber diet: white rice over brown, no beans, minimal vegetables
+    - Avoid gas-producing foods: cruciferous vegetables, legumes
+    - Training: reduce volume (taper phase) — no heavy sweating sessions yet
+    - Continue weighing daily, track fluid intake precisely
+  End of week target: ~73-74kg (NOTE: water loading may keep weight elevated,
+    this is expected and planned — the drop comes when water is cut)
+
+WEEK 1 (7-0 days out) — THE CRITICAL WEEK:
+
+  MONDAY (6 days out):
+    - Water: 8L throughout the day
+    - Sodium: HIGH (8g added salt)
+    - Food: low carb, moderate protein, low fiber meals
+    - Training: light technical work only (no sweat sessions)
+    - Weight: ~73-74kg (still water loaded — this is fine)
+
+  TUESDAY (5 days out):
+    - Water: 8L
+    - Sodium: HIGH (8g)
+    - Food: same as Monday
+    - Training: light shadow boxing, visualization
+    - Weight: ~73-74kg
+
+  WEDNESDAY (4 days out):
+    - Water: CUT TO 4L (kidneys still dumping at 8L rate = net fluid loss)
+    - Sodium: CUT COMPLETELY (zero added salt, low-sodium foods only)
+    - Food: very low carb (<50g total), lean protein, small portions
+    - Training: 10min light movement only
+    - Weight: should start dropping noticeably (target ~72-73kg by evening)
+
+  THURSDAY (3 days out):
+    - Water: CUT TO 2L (spread across whole day in sips)
+    - Sodium: ZERO
+    - Food: minimal — small portion of lean protein, no carbs
+    - Training: none or 5min shadow boxing (activation only)
+    - Sauna: first session if needed (15-20min, do not exceed)
+    - Monitoring: check urine color (if clear = still losing water well)
+    - Weight: target ~71-72kg by evening
+
+  FRIDAY — WEIGH-IN DAY:
+    - Water: sip only (maximum 500ml throughout morning if needed)
+    - Food: nothing until after weigh-in
+    - Morning weight check: assess distance from target
+    - If within 0.5kg of limit: just wait, may lose through breathing/sweating
+    - If 0.5-1.5kg over: hot bath (20-30min) or sauna (15min sessions with breaks)
+    - If >1.5kg over: This is a problem. Sauna protocol needed.
+      Sauna protocol: 15min in, 5min out (weigh between), repeat until done.
+      Maximum sauna time: 45-60min total. Beyond this = serious health risk.
+    - WEIGH-IN: make weight, smile, take photos, begin recovery immediately.
+
+  POST-WEIGH-IN — REHYDRATION BEGINS IMMEDIATELY:
+    (See detailed rehydration protocol in section 3.4)
+
+--------------------------------------------------------------------------------
+3.3 — NUTRITION DURING CUT
+--------------------------------------------------------------------------------
+
+MACRONUTRIENT TARGETS (Final 2 weeks):
+  Protein: 2.5g/kg lean body mass (muscle preservation is critical)
+  Carbs: Progressively reduce from 3g/kg to <1g/kg in final 3 days
+  Fat: 0.8-1g/kg (sufficient for hormone function)
+  Fiber: <15g/day in final week (reduces gut weight by 0.5-1kg)
+
+FOODS TO EAT:
+  Proteins: Chicken breast, white fish (tilapia, cod), egg whites, lean turkey,
+    whey protein isolate
+  Carbs (when allowed): White rice (low fiber), white bread, rice cakes
+  Fats: Small amounts of olive oil, egg yolks, avocado (in moderation)
+  Minimal residue: These foods leave minimal waste in the GI tract
+
+FOODS TO AVOID:
+  - Dairy (bloating, water retention, slow digestion)
+  - High-fiber foods (oats, brown rice, whole grains, legumes, most vegetables)
+  - Sodium-rich foods in final 3 days (no soy sauce, processed food, canned food)
+  - Cruciferous vegetables (broccoli, cauliflower — gas and bloating)
+  - Carbonated beverages
+  - Alcohol (dehydrating in wrong way, liver stress, poor recovery)
+  - Artificial sweeteners (can cause bloating)
+
+SUPPLEMENTS DURING CUT:
+  - Electrolytes (early in cut ONLY, stop when sodium is cut): potassium,
+    magnesium, sodium in early loading phase
+  - Magnesium glycinate: 400-600mg/day (prevents cramps, aids sleep)
+  - Potassium: 200-400mg/day (early in cut, stop 3 days before weigh-in)
+  - Dandelion root extract: mild natural diuretic (controversial, some use it)
+  - DO NOT USE pharmaceutical diuretics (dangerous, banned in many jurisdictions)
+  - Vitamin C: 1000mg/day (mild diuretic effect + immune support)
+
+--------------------------------------------------------------------------------
+3.4 — REHYDRATION PROTOCOL (POST-WEIGH-IN TO FIGHT)
+--------------------------------------------------------------------------------
+
+TIMING: Assume weigh-in is Friday afternoon, fight is Saturday evening.
+That gives approximately 20-28 hours to recover.
+
+FIRST 30 MINUTES AFTER WEIGH-IN:
+  - 500ml oral rehydration solution (Pedialyte, WHO-ORS, or similar)
+  - Contains sodium, potassium, glucose for optimal absorption
+  - Sip steadily, do not chug (stomach may be sensitive)
+  - NO solid food yet
+
+30-60 MINUTES POST-WEIGH-IN:
+  - Additional 500ml water or diluted sports drink
+  - Small easy-to-digest food: banana, white rice (small portion: 150g)
+  - Continue sipping fluids between bites
+
+1-2 HOURS POST-WEIGH-IN:
+  - First full meal: 200g white rice + 150g chicken breast + small sweet potato
+  - Continue drinking: total 1-1.5L consumed by this point
+  - Electrolyte supplement with this meal (magnesium + sodium + potassium)
+
+2-6 HOURS POST-WEIGH-IN:
+  - Eat every 2 hours: easily digestible meals
+  - Meal options: pasta + lean meat, rice + fish, sandwich on white bread
+  - Total fluid target: 3-4L by bedtime
+  - Avoid heavy fats (slow digestion), heavy fiber, large single meals
+  - Better: 4-5 smaller meals than 2 huge ones
+
+BEDTIME:
+  - One more small snack: protein + carbs (yogurt + honey, protein shake + banana)
+  - Magnesium supplement for sleep (400mg)
+  - Keep water by bed, sip if waking during night
+
+FIGHT DAY MORNING:
+  - Weigh yourself: goal is to have regained 5-7% bodyweight
+    (Example: weighed in at 70kg, now should be 73.5-75kg)
+  - Breakfast: familiar, well-tolerated meal (oats + banana + eggs, or rice + eggs)
+  - Continue hydrating: 1-1.5L before noon
+  - Avoid anything new or unusual (no new foods, no experiments)
+
+3-4 HOURS BEFORE FIGHT:
+  - Last meal: moderate portion of carbs + protein (pasta + chicken, rice + fish)
+  - No heavy foods, no high fat, no high fiber
+  - Small amount of caffeine acceptable (coffee or pre-workout)
+
+1-2 HOURS BEFORE FIGHT:
+  - Stop eating
+  - Small sips of water or sports drink only
+  - Light snack if needed: banana or handful of gummy bears (fast sugar)
+
+WARNING SIGNS DURING REHYDRATION:
+  - Cannot keep fluids down (vomiting): seek medical attention
+  - Severe muscle cramps that do not resolve: electrolyte emergency
+  - Confusion or disorientation: stop cut, seek medical help
+  - Heart palpitations or chest pain: EMERGENCY, immediate medical attention
+  - Dark brown urine that does not improve after 2L fluid: kidney concern
+
+--------------------------------------------------------------------------------
+3.5 — DANGERS & RED FLAGS
+--------------------------------------------------------------------------------
+
+KIDNEY DAMAGE:
+  Repeated aggressive cuts (multiple times per year) cause cumulative kidney
+  stress. Each severe dehydration episode forces kidneys to concentrate urine
+  beyond normal capacity. Chronic repeated dehydration is linked to kidney
+  stones and reduced kidney function over career span.
+
+CARDIAC RISKS:
+  Severe dehydration thickens blood, reduces plasma volume, forces heart to
+  work harder at lower output. Electrolyte imbalances (low potassium, low
+  magnesium) can cause cardiac arrhythmias. Combined with the extreme physical
+  exertion of a fight, this creates genuine cardiac event risk.
+
+COGNITIVE IMPAIRMENT:
+  Brain is 75% water. Even 3% dehydration impairs reaction time, decision-making,
+  and coordination. A severely dehydrated fighter entering a fight with degraded
+  cognitive function is at increased risk of being knocked out (brain more
+  vulnerable to impact when dehydrated).
+
+SIGNS TO STOP IMMEDIATELY:
+  - Urine is dark brown (rhabdomyolysis risk)
+  - Dizziness when standing that does not resolve
+  - Heart palpitations at rest
+  - Confusion, inability to answer simple questions
+  - Loss of consciousness (even brief)
+  - Seizure activity
+  - Inability to produce ANY urine for 8+ hours
+
+DEATHS IN COMBAT SPORTS FROM WEIGHT CUTTING:
+  - Yang Jian Bing (2015): MMA fighter, died from weight cut complications
+    during ONE Championship event preparation.
+  - Jessica Lindsay (2019): Muay Thai fighter, died from heat stroke during
+    extreme sauna use for weight cut.
+  - Multiple amateur wrestling deaths in late 1990s prompted NCAA rule changes.
+  - Ramon Dekkers-era Muay Thai: several fighters hospitalized from kidney
+    failure following extreme cuts in Thailand heat.
+  These deaths are PREVENTABLE with proper protocols and the willingness
+  to move up a weight class rather than risk health.
+
+
+================================================================================
+SECTION 4: MENTAL PREPARATION
+================================================================================
+
+--------------------------------------------------------------------------------
+4.1 — PRE-FIGHT MENTAL PROTOCOL (WEEK-BY-WEEK)
+--------------------------------------------------------------------------------
+
+4 WEEKS OUT:
+  - Begin visualization training: 3 sessions per week, 10 minutes each
+  - Establish "focus words" — 2-3 words that represent fight identity
+    (e.g., "Pressure. Relentless. Finish.")
+  - Journal: write down fears/anxieties about the fight. Externalize them.
+  - Identify personal "why" for this fight (motivation anchoring)
+  - Begin reducing unnecessary social commitments
+
+3 WEEKS OUT:
+  - Visualization increases to 4x/week
+  - Practice pre-performance routine (same warmup sequence every training session)
+  - Begin breath work practice: 5 minutes daily (box breathing or 4-7-8 pattern)
+  - Discuss scenarios with coach: "What if I get taken down early?" etc.
+  - Prepare answers mentally for every possible in-fight situation
+
+2 WEEKS OUT:
+  - DAILY visualization: 10 minutes minimum
+  - Establish mantras for specific fight moments:
+    * Getting hurt: "Breathe. Survive. Reset."
+    * Feeling tired: "Push now. Rest is coming."
+    * Winning moment: "Finish. Don't celebrate early."
+  - Breathing practice: 10 minutes daily
+  - Reduce external stimuli: limit social media, news, unnecessary conversations
+  - Sleep hygiene becomes critical: same bedtime, dark room, no screens 1h before
+
+1 WEEK OUT:
+  - Routine becomes everything. Same wake time, same meals, same sequence daily.
+  - Visualization: 2x daily (morning + before bed)
+  - Reduce any new information. Do not learn new techniques.
+  - Confidence-building review: watch highlights of your own best performances
+  - Positive self-talk: actively replace doubt with evidence-based confidence
+  - Prepare fight-day bag, outfit, music playlist, everything pre-decided
+
+DAY BEFORE:
+  - Relaxation protocol: progressive muscle relaxation (20 minutes)
+  - No training of any kind
+  - Watch a movie, spend time with support person, stay calm
+  - Prepare everything for fight day (food, clothes, transport, timeline)
+  - Sleep: get to bed at normal time. If cannot sleep, still rest (dark, quiet)
+  - Reminder: the work is done. Tomorrow is about expression, not preparation.
+
+FIGHT DAY:
+  - Wake at planned time (not too early)
+  - Morning routine: 10min visualization, light breakfast, light movement
+  - 5min shadow boxing (slow, just to feel the body move)
+  - Arrive at venue 3 hours before fight time (minimum)
+  - Controlled warmup with coach (building from 20% to 70% intensity over 20min)
+  - 10min before: activation cues (coach speaks focus words, final breath work)
+  - Walk to cage: controlled breathing, focus on first 30 seconds of round 1
+  - Cage entry: own the space. Deep breath. When ref says go: EXECUTE.
+
+--------------------------------------------------------------------------------
+4.2 — VISUALIZATION TECHNIQUES
+--------------------------------------------------------------------------------
+
+HOW TO VISUALIZE EFFECTIVELY:
+  - Find a quiet, relaxed position (sitting or lying down)
+  - Close eyes, take 10 deep breaths to relax fully
+  - See in FIRST PERSON (through your own eyes, not watching yourself)
+  - Include ALL senses:
+    * See: the cage, lights, opponent's stance, referee
+    * Hear: crowd, corner calls, breathing, impact sounds
+    * Feel: gloves on hands, mat under feet, sweat, heartbeat
+    * Smell: the venue, the heat
+  - Include emotions: feel the confidence, the controlled aggression
+  - Move at REAL TIME speed (not slow motion)
+  - Duration: 5-10 minutes per scenario
+
+SCENARIO 1 — PERFECT PERFORMANCE (Domination):
+  Visualize: Walk out confident. Touch gloves. From the opening bell, everything
+  works. Jab lands clean. Opponent reacts exactly as gameplan predicted. You push
+  forward, land the combination. They shoot — you sprawl perfectly, punish them.
+  Back to the feet, you continue pressuring. Find the opening, land the finish.
+  Referee stops it. You've won convincingly.
+  Purpose: builds confidence, rehearses ideal execution.
+
+SCENARIO 2 — ADVERSITY OVERCOME (Resilience):
+  Visualize: You get hit hard early. See stars momentarily. Opponent rushes in.
+  You clinch, buy time, breathe. Head clears. You work back to distance.
+  Start landing your shots. Build momentum. By round 2-3, you've taken over.
+  You find the finish despite the rocky start.
+  Purpose: Prepares for adversity. Rehearses recovery. Reduces panic if hit.
+
+SCENARIO 3 — LATE FIGHT FINISH (Championship rounds):
+  Visualize: Close fight. Going into the final round, you might be down on
+  the scorecards. Corner tells you that you need a finish. Deep breath. You
+  find another gear. Push the pace. Make the opponent crack under sustained
+  pressure. Late in the round, the opening appears. You take it. Finish.
+  Purpose: Builds belief in late-fight capacity. Rehearses urgency without panic.
+
+ADDITIONAL SCENARIOS TO VISUALIZE:
+  - Getting taken down but sweeping/escaping immediately
+  - Clinch battle where you dominate position
+  - Executing the exact gameplan combination that scores the knockdown
+  - Final 30 seconds of a round where you steal it with late flurry
+
+--------------------------------------------------------------------------------
+4.3 — CONFIDENCE AFTER A LOSS
+--------------------------------------------------------------------------------
+
+WEEK 1 (IMMEDIATELY AFTER LOSS):
+  - Physical rest: no training. Heal body and mind.
+  - Do NOT watch the fight back yet. Too emotional, too soon.
+  - Support network: spend time with people who care about you as a person, not
+    just as a fighter. Family, close friends, partner.
+  - Allow emotions: anger, sadness, frustration are all normal. Feel them.
+  - Do NOT make any career decisions in this week. No "I'm retiring" or
+    "I'm changing camps." Emotions are too raw.
+  - Light physical activity only if desired (walk, swim, nothing competitive)
+
+WEEKS 2-3 (OBJECTIVE REVIEW):
+  - Watch the fight back with coach. Be analytical, not emotional.
+  - Identify SPECIFIC fixable issues. Not "I suck" but "I dropped my hand after
+    the jab and got countered." Specific, technical, fixable.
+  - Write down 3 concrete things to improve. Only 3.
+  - Start to return to the gym: light technique drilling, low pressure
+  - No sparring yet. Technical work only.
+  - Continue mental health check: if depression, loss of motivation, or avoidance
+    symptoms are severe, consider sports psychologist
+
+WEEKS 3-4 (RETURN TO TRAINING):
+  - Resume full technical training
+  - NO hard sparring yet
+  - Light play sparring acceptable (30-40% intensity, with trusted partners)
+  - Work specifically on the 3 identified weaknesses from fight review
+  - Rebuild confidence through repetition: do the drills until they feel second
+    nature again. Confidence = competence felt.
+
+WEEKS 5+ (PROGRESSIVE RETURN):
+  - Gradually increase sparring intensity (50% → 70% → 85% over 3-4 weeks)
+  - Start with smaller/lesser-experienced partners if confidence is fragile
+  - Celebrate small wins: landed a combo clean, defended a takedown, good round
+  - Mental reframing work:
+    * "A loss is data. It tells me exactly what to fix."
+    * "I am not defined by one performance."
+    * "Every champion has losses. What matters is the response."
+  - Only accept next fight when coach AND fighter agree confidence is genuine
+
+--------------------------------------------------------------------------------
+4.4 — ANXIETY MANAGEMENT
+--------------------------------------------------------------------------------
+
+BOX BREATHING (Pre-fight anxiety control):
+  - Inhale through nose: 4 seconds
+  - Hold (lungs full): 4 seconds
+  - Exhale through mouth: 4 seconds
+  - Hold (lungs empty): 4 seconds
+  - Repeat for 2-5 minutes
+  - Effect: activates parasympathetic nervous system, reduces cortisol, slows
+    heart rate, brings mental clarity
+
+PROGRESSIVE MUSCLE RELAXATION (Night before / pre-fight):
+  - Start at feet: tense ALL muscles in feet for 5 seconds, then release.
+    Notice the contrast between tension and relaxation.
+  - Move up: calves (5s tense, release), thighs, glutes, abdomen, chest,
+    hands, arms, shoulders, neck, face.
+  - Take 20-30 minutes for full body.
+  - Effect: teaches body awareness of tension vs relaxation. Reduces physical
+    anxiety symptoms. Excellent for sleep difficulty before fights.
+
+GROUNDING TECHNIQUE (When overwhelmed / pre-fight panic):
+  5-4-3-2-1 method:
+  - Name 5 things you can SEE (the cage, your gloves, the ref, the lights, the clock)
+  - Name 4 things you can TOUCH (floor under feet, gloves on hands, shorts, mouthguard)
+  - Name 3 things you can HEAR (crowd, music, corner instructions)
+  - Name 2 things you can SMELL (arena, sweat)
+  - Name 1 thing you can TASTE (mouthguard, water)
+  Effect: pulls attention to present moment, out of anxious future-thinking.
+
+PRE-PERFORMANCE ROUTINE (Ritual for consistency):
+  Establish the SAME routine before every training session and every fight:
+  - Same music on headphones during warmup
+  - Same warmup sequence (skip rope → shadow box → pads → stretch)
+  - Same corner team interactions (who speaks, what they say)
+  - Same clothing/gear preparation order
+  PURPOSE: familiarity = comfort. When anxiety is high, routine provides a
+  sense of control. The brain says "I've done this before. I know what comes next."
+
+MANAGING ADRENALINE DUMP:
+  The adrenaline dump occurs when excessive nervous energy causes premature
+  fatigue in round 1. Heart rate spikes, breathing becomes shallow, muscles
+  tense and fatigue quickly.
+  Prevention:
+  - Thorough warmup before entering the cage (break a light sweat)
+  - Breathing: conscious slow exhales in the first 60 seconds of the fight
+  - Start at 70% intensity for first 30 seconds (unless gameplan requires blitz)
+  - Remind fighter: "The first 2 minutes, just breathe and execute technique.
+    Do not chase the knockout. Let it come to you."
+  Recovery if it happens:
+  - Clinch to buy time and slow pace
+  - Breathe: exhale forcefully, inhale naturally
+  - Focus on one simple technique (jab only, movement only)
+  - Between rounds: long slow exhales, ice on back of neck, sip water
+
+--------------------------------------------------------------------------------
+4.5 — FIGHT IQ & DECISION MAKING
+--------------------------------------------------------------------------------
+
+WHEN TO PUSH VS WHEN TO RECOVER:
+  Push (increase output) when:
+  - Opponent is visibly hurt (wobbled, covering up, backing straight up)
+  - You just landed a clean shot and opponent hasn't recovered position
+  - Final 30 seconds of a round (steal the round / judges' impression)
+  - You're behind on scorecards and need urgency
+  - Opponent is tired (hands dropping, flat-footed, heavy breathing)
+
+  Recover (reduce output, manage energy) when:
+  - You just got hit hard and need to clear your head
+  - Heart rate is too high (can't breathe, arms heavy)
+  - Early in a round after a very hard previous round
+  - You're ahead on scorecards and in a decision fight
+  - Opponent is fresh and looking for a counter (don't be reckless)
+
+READING THE SCORECARDS (Knowing your position):
+  - Before each fight, assign value to what you do well
+  - After each round, honest self-assessment: "Did I win that round?"
+  - If you won rounds 1 and 2 in a 3-round fight: you can manage round 3
+  - If you lost rounds 1 and 2: you NEED round 3 and may need a finish
+  - In a 5-round fight: losing rounds 1-3 means you likely need a finish
+  - Corner must communicate honestly: "You need this round" or "Great round, stay smart"
+  - Do not assume judges see it your way — if close, treat it as though you're losing
+
+ADAPTING WHEN THE GAMEPLAN FAILS:
+  Signs your Plan A is not working:
+  - Your primary weapon isn't landing (opponent has figured out timing/range)
+  - Opponent is imposing their gameplan successfully
+  - You're getting hit by the same shot repeatedly
+
+  What to do:
+  - Switch to Plan B (this must be prepared in camp: "If striking isn't working, grapple")
+  - Change range: if fighting outside isn't working, close distance (or vice versa)
+  - Change level of attack: if head hunting fails, go body
+  - Change rhythm: if consistent pace isn't working, add feints and varied timing
+  - Communicate with corner: between rounds, listen for adjustments
+  - DO NOT abandon structure entirely. Plan B is still a plan. Panic = loss.
+
+MANAGING ADRENALINE DUMP (Round 1 fatigue from nerves):
+  - Stay patient in round 1. Do not try to end it immediately (unless that IS the plan)
+  - First 60 seconds: jab, move, breathe. Establish range and rhythm.
+  - Allow heart rate to settle naturally through controlled breathing
+  - Focus on technique execution, not outcome. "Throw the jab correctly" not "knock him out"
+  - If fatigue hits early: clinch, lean on opponent, slow the pace, survive to round 2
+  - Remember: round 2 and 3 will feel MUCH better once adrenaline normalizes
+
+
+================================================================================
+SECTION 5: NUTRITION FOR FIGHTERS
+================================================================================
+
+--------------------------------------------------------------------------------
+5.1 — BASE NUTRITION (OFF-CAMP / GENERAL TRAINING)
+--------------------------------------------------------------------------------
+
+CALORIC NEEDS:
+  Calculation: 35-40 kcal per kilogram of bodyweight for active fighters
+  Example: 75kg fighter = 2625-3000 kcal/day
+  Adjust based on: training volume, body composition goals, metabolic rate
+  Off-camp: eat at maintenance or slight surplus to support recovery and adaptation
+
+MACRONUTRIENT TARGETS:
+  Protein: 2-2.2g per kg bodyweight
+    Sources: chicken, turkey, fish, lean beef, eggs, whey protein, Greek yogurt
+    Purpose: muscle repair, recovery, immune function
+    Example (75kg): 150-165g protein/day
+
+  Carbohydrates: 4-6g per kg bodyweight
+    Sources: rice, oats, sweet potato, pasta, bread, fruits, vegetables
+    Purpose: fuel training, replenish glycogen, brain function
+    Example (75kg): 300-450g carbs/day (adjust to training volume)
+
+  Fats: 1-1.2g per kg bodyweight
+    Sources: olive oil, nuts, avocado, fatty fish, egg yolks
+    Purpose: hormones (testosterone), joint health, vitamin absorption
+    Example (75kg): 75-90g fat/day
+
+HYDRATION:
+  Minimum: 3-4L water daily (more on heavy training days)
+  Signs of good hydration: pale yellow urine, urinating every 2-3 hours
+  Add electrolytes on heavy sweat days (sodium, potassium, magnesium)
+  Avoid excessive caffeine dehydration (limit to 3-4 cups coffee/day max)
+
+MICRONUTRIENT PRIORITIES:
+  Iron: for oxygen transport (red meat 2-3x/week or supplement if vegetarian)
+  Zinc: immune function, testosterone (oysters, beef, pumpkin seeds)
+  Vitamin D: bone health, immune, mood (sun exposure or supplement)
+  B-vitamins: energy metabolism (whole grains, meats, eggs)
+  Calcium: bone density (dairy, fortified foods, leafy greens)
+
+--------------------------------------------------------------------------------
+5.2 — IN-CAMP NUTRITION
+--------------------------------------------------------------------------------
+
+WEEKS 1-4: MAINTENANCE CALORIES
+  - Eat at maintenance (neither surplus nor deficit)
+  - High quality whole foods: minimize processed food
+  - Protein priority: hit 2-2.2g/kg every single day
+  - Carbs: match to training volume (high training day = high carb)
+  - One "relaxed" meal per week if needed psychologically (not a binge)
+
+WEEKS 5-6: SLIGHT DEFICIT (If weight cut required)
+  - Reduce by 300-500kcal below maintenance
+  - Reduce primarily from carbs and fat (never reduce protein in camp)
+  - New targets: Protein 2.2-2.5g/kg, Carbs 3-4g/kg, Fat 0.8-1g/kg
+  - Monitor energy: if training quality drops, add 100-200kcal back (from carbs)
+  - Weigh daily, track weekly average (expect 0.5-0.8kg/week loss)
+
+WEEK 7: TRANSITION TO CUT
+  - Low fiber begins (see weight cut section)
+  - Reduce food volume (smaller meals, more calorie-dense choices)
+  - Carbs continue dropping: 2-3g/kg
+  - Begin water loading protocol
+  - Keep protein at 2.5g/kg (preserve muscle during energy deficit)
+
+FIGHT WEEK: SEE WEIGHT CUTTING PROTOCOL (Section 3)
+
+NUTRITION FOR RECOVERY BETWEEN SESSIONS (2-a-day training):
+  Between AM and PM session:
+  - Fast-digesting protein + carbs within 30min of AM session ending
+  - Full meal 2 hours before PM session
+  - Example post-AM: protein shake + banana (immediately after)
+  - Example pre-PM: 200g rice + 150g chicken + small portion vegetables (2h before)
+  Total daily calories may need to increase by 300-500kcal on double-session days.
+
+--------------------------------------------------------------------------------
+5.3 — MEAL TIMING
+--------------------------------------------------------------------------------
+
+PRE-TRAINING (2-3 hours before):
+  Goal: Topped up glycogen, steady blood sugar, no GI distress
+  Ideal meal: Complex carbs + moderate protein + low fat
+  Examples:
+    - 80g oats + 1 scoop whey + banana
+    - 200g rice + 150g chicken breast + small salad
+    - 2 slices toast + 3 eggs + fruit
+  Avoid: High fat (slows digestion), high fiber (GI discomfort), dairy (some fighters)
+
+  If training within 60 minutes (insufficient time for full meal):
+  - Banana + small protein shake
+  - Rice cakes + honey + few almonds
+  - Sports drink + protein bar (20g protein max)
+
+INTRA-TRAINING (During sessions >90 minutes):
+  - Sip BCAA drink (5-10g BCAAs in water) or sports drink (30g carbs/hour)
+  - Particularly important for long sparring or double-session days
+  - If session is <60 minutes: water only is fine
+
+POST-TRAINING (Within 30-45 minutes — the anabolic window):
+  Goal: Begin recovery immediately. Protein synthesis peaks with stimulus.
+  Ideal: 30-40g fast-digesting protein + 40-60g fast carbohydrates
+  Examples:
+    - Whey protein shake + banana + honey
+    - Chocolate milk (400-500ml) — fast, convenient, effective
+    - 200g white rice + protein shake
+  Then follow with a full whole-food meal within 2 hours.
+
+BEFORE BED (30-60 minutes before sleep):
+  Goal: Sustained amino acid delivery overnight (8h without food)
+  Ideal: Slow-digesting protein + small amount of healthy fat
+  Examples:
+    - 200g cottage cheese (casein protein: slow release)
+    - Casein protein shake + tablespoon peanut butter
+    - Greek yogurt + handful of nuts
+  Avoid: Large carb-heavy meals before bed (blood sugar disruption to sleep)
+
+FIGHT DAY NUTRITION: (See rehydration protocol in Section 3.4 for post-weigh-in)
+  - Eat familiar foods only. Nothing new or experimental.
+  - Last full meal: 3-4 hours before fight
+  - Last snack: 1-2 hours before (banana, rice cakes, small gummy bears)
+  - Caffeine: if used, take 60-90 min before fight time (3-5mg/kg)
+
+--------------------------------------------------------------------------------
+5.4 — SUPPLEMENTS (LEGAL & EVIDENCE-BASED)
+--------------------------------------------------------------------------------
+
+CREATINE MONOHYDRATE:
+  Dose: 3-5g daily (no loading phase necessary, though 20g/day for 5 days speeds saturation)
+  Benefits: +5-10% strength, improved power output, faster recovery between sets,
+    neuroprotective (relevant for fighters taking head impact)
+  Timing: any time of day (consistency > timing)
+  Note: Causes 1-3kg water weight gain (intramuscular). Stop 2-3 weeks before
+    weigh-in if water weight is a concern. Resume post-weigh-in immediately.
+  Safety: Most studied supplement in history. No kidney damage in healthy individuals.
+
+CAFFEINE:
+  Dose: 3-6mg/kg bodyweight, taken 30-60 minutes before training
+  Benefits: Improved power output, reaction time, pain tolerance, focus
+  Example: 75kg fighter = 225-450mg caffeine (2-4 cups coffee equivalent)
+  Note: Build tolerance gradually. Do not exceed 6mg/kg. Avoid after 2pm (sleep).
+  Competition: Legal in all sports at these doses.
+
+OMEGA-3 FATTY ACIDS (Fish Oil):
+  Dose: 2-3g EPA+DHA combined daily
+  Benefits: Reduces inflammation, joint health, brain health (concussion
+    protection potentially), heart health, recovery
+  Timing: With meals (fat aids absorption)
+  Source: Fish oil capsules or liquid, or algae-based for plant-based fighters
+
+VITAMIN D3:
+  Dose: 2000-4000 IU daily (or based on blood test — target 50-70 ng/mL)
+  Benefits: Bone health, immune function, muscle function, mood regulation
+  Note: Most fighters training indoors are deficient. Test blood levels annually.
+  Timing: With a meal containing fat
+
+MAGNESIUM:
+  Dose: 400-600mg before bed (glycinate or bisglycinate form preferred)
+  Benefits: Sleep quality, muscle relaxation, cramp prevention, stress reduction
+  Note: Most athletes are deficient. Critical during weight cuts.
+  Avoid: Magnesium oxide (poor absorption, causes GI issues)
+
+BETA-ALANINE:
+  Dose: 3.2-6.4g daily (split into 2 doses to reduce tingling sensation)
+  Benefits: Buffers hydrogen ions during high-intensity work (delays fatigue),
+    particularly useful for sustained grappling exchanges and later rounds
+  Timing: Daily (cumulative effect over 4+ weeks, timing within day doesn't matter)
+  Note: Causes harmless tingling (paresthesia) at higher single doses
+
+OTHER WORTHWHILE SUPPLEMENTS:
+  - Zinc: 15-30mg/day if not getting enough from food (immune, testosterone)
+  - Tart cherry juice: 30ml concentrate 2x daily (reduces DOMS, anti-inflammatory)
+  - Collagen peptides: 10-15g/day (joint/tendon health, combine with vitamin C)
+  - Ashwagandha: 300-600mg/day (cortisol management, recovery — some evidence)
+
+SUPPLEMENTS TO AVOID:
+  - Testosterone boosters (unproven, potentially contaminated)
+  - Fat burners (stimulant overload, no magic for weight loss)
+  - Any supplement not third-party tested (contamination risk = failed drug test)
+  - ALWAYS use NSF Certified for Sport or Informed Sport certified products
+
+
+================================================================================
+SECTION 6: COMMON INJURIES & REHABILITATION
+================================================================================
+
+--------------------------------------------------------------------------------
+6.1 — HAND & WRIST INJURIES
+--------------------------------------------------------------------------------
+
+BOXER'S FRACTURE (5th Metacarpal):
+  Mechanism: Improper fist formation on impact, usually hitting with ring/pinky knuckle
+  Symptoms: Immediate pain over outer hand, swelling, unable to make fist
+  Timeline: 4-6 weeks in cast/splint, then 2-4 weeks rehabilitation
+  Rehab: Grip strengthening (rice bucket), wrist curls, progressive bag work
+  Return to full training: 8-10 weeks total
+  Prevention: Proper wrapping technique (figure-8 around knuckles, wrist support),
+    correct fist alignment (land with index and middle knuckle), gradual heavy bag introduction
+
+WRIST SPRAINS:
+  Mechanism: Hyperextension during impact, catching with open hand, posting on mat
+  Grades: I (mild stretch), II (partial tear), III (complete ligament rupture)
+  Timeline: Grade I: 1-2 weeks. Grade II: 3-6 weeks. Grade III: 6-12 weeks or surgery.
+  Rehab: Wrist curls/extensions, radial/ulnar deviation, pronation/supination
+  Prevention: Strong wrist extensors, proper wrapping, wrist guards for grappling
+
+METACARPOPHALANGEAL JOINT SPRAINS (Knuckle injuries):
+  Mechanism: Repeated impact, hyperextension of fingers during grappling
+  Timeline: 2-6 weeks depending on severity
+  Management: Buddy taping, ice, anti-inflammatory, modified training
+  Prevention: Proper glove fit, hand strengthening, grip work
+
+--------------------------------------------------------------------------------
+6.2 — KNEE INJURIES
+--------------------------------------------------------------------------------
+
+ACL TEAR (Anterior Cruciate Ligament):
+  Mechanism: Planting and twisting (common during scrambles, spinning kicks,
+    awkward takedown landings), hyperextension, valgus collapse
+  Symptoms: Pop heard/felt, immediate swelling, instability, inability to pivot
+  Treatment: Surgical reconstruction (patellar tendon, hamstring, or quadriceps graft)
+  Timeline: 9-12 months return to full contact (some fighters take 14-18 months)
+  Rehab phases:
+    - Weeks 1-6: ROM recovery, swelling management, quad activation, gentle leg raises
+    - Weeks 6-12: Progressive strengthening, stationary bike, bodyweight squats
+    - Months 3-6: Full strength training, light jogging, balance/proprioception
+    - Months 6-9: Sport-specific movement, agility, light drilling
+    - Months 9-12: Progressive sparring, full return when functional tests passed
+  Prevention: Hamstring/glute strengthening, proper landing mechanics (knee over toe,
+    avoid valgus), proprioception training (single-leg balance, wobble board),
+    neuromuscular training (cutting drills with proper form)
+
+MCL SPRAIN (Medial Collateral Ligament):
+  Mechanism: Lateral force to outside of knee, twisting during grappling,
+    leg lock defenses, inside knee-on-knee pressure
+  Grades: I (2-3 weeks), II (4-6 weeks), III (6-8 weeks, rarely surgical)
+  Treatment: Usually conservative (brace, rehab, progressive loading)
+  Prevention: Lateral hip strengthening, avoid full knee extension under load in twisting
+
+MENISCUS TEARS:
+  Mechanism: Deep squat + twist (very common in grappling transitions, guard play)
+  Types: Lateral vs Medial, Bucket handle vs Radial vs Longitudinal
+  Treatment:
+    - Small tears / degenerative: conservative (rest, rehab, 4-8 weeks)
+    - Large tears / locking: arthroscopic surgery (repair or partial removal)
+    - Repair: 3-6 months recovery. Removal: 4-8 weeks recovery.
+  Prevention: Maintain deep squat mobility, avoid training through knee catching/locking
+
+--------------------------------------------------------------------------------
+6.3 — SHOULDER INJURIES
+--------------------------------------------------------------------------------
+
+ROTATOR CUFF STRAIN:
+  Mechanism: Repeated overhead work (elbows from top position), kimura/americana
+    stress, direct impact on shoulder during fall, overuse from punching
+  Symptoms: Pain with overhead movement, weakness in external rotation, night pain
+  Timeline: 4-8 weeks for strain. If partial tear: 8-16 weeks. Full tear: surgery.
+  Rehab: External rotation with band, prone Y-T-W, wall slides, scapular retraction
+  Return criteria: Full pain-free ROM, strength within 90% of uninjured side
+  Prevention: Daily external rotation exercises (band pull-aparts, face pulls),
+    balanced pressing to pulling ratio (2:1 pull to push volume minimum)
+
+LABRAL TEAR (SLAP or Bankart):
+  Mechanism: Shoulder dislocation, repeated subluxation, falling on outstretched hand,
+    kimura/americana (arm forcefully rotated while caught in submission)
+  Symptoms: Clicking, catching, deep shoulder pain, instability
+  Treatment: Conservative first (rehab 8-12 weeks). If unstable/recurring: surgery (repair or debridement)
+  Timeline: Conservative: 3-4 months. Post-surgery: 6-9 months for full MMA return.
+  Prevention: Strong rotator cuff, scapular stability, tap EARLY to submissions (ego kills shoulders)
+
+SHOULDER DISLOCATION/SUBLUXATION:
+  Mechanism: Arm forced into external rotation + abduction (kimura position),
+    posting on arm during takedown, reaching back to prevent takedown
+  First dislocation: 6 weeks immobilization + 6-8 weeks rehab
+  Recurrent: May require Bankart repair surgery
+  WARNING: Recurrence rate is HIGH (>50% in athletes under 25). After first
+  dislocation, rigorous rehab and prevention work is mandatory.
+
+--------------------------------------------------------------------------------
+6.4 — CONCUSSIONS
+--------------------------------------------------------------------------------
+
+DEFINITION: Traumatic brain injury caused by acceleration/deceleration forces
+or direct impact to the head. Does NOT require loss of consciousness.
+
+SYMPTOMS:
+  - Headache, pressure in head
+  - Dizziness, balance problems
+  - Nausea/vomiting
+  - Confusion, feeling "foggy"
+  - Sensitivity to light/noise
+  - Memory problems (can't remember what happened)
+  - Emotional changes (irritability, sadness)
+  - Sleep disturbance
+
+MINIMUM PROTOCOL:
+  - Minimum 2 weeks ZERO contact after ANY concussion (many experts say 4 weeks)
+  - This includes no sparring, no grappling with head contact, no heading balls, nothing
+
+RETURN TO PLAY PROTOCOL (Graduated):
+  Stage 1 (Day 3+ if symptom-free at rest): Light aerobic (walking, stationary bike <70% max HR)
+    - If symptoms return: stop, rest another 24-48h, try again
+  Stage 2 (if Stage 1 completed without symptoms): Sport-specific cardio (drilling at 70-80%)
+    - No contact, no impact risk
+  Stage 3: Non-contact training drills (pad work at moderate intensity, grappling drill without live)
+  Stage 4: Light contact practice (controlled sparring, 50% power, with trusted partners)
+  Stage 5: Full contact practice (normal sparring intensity)
+  Stage 6: Competition (full fight)
+
+  EACH STAGE MINIMUM 1 WEEK. If symptoms return at any stage, go back 2 stages.
+  Total minimum return time: 6 weeks from concussion to competition (and often longer).
+
+CRITICAL RULES:
+  - NEVER return same day after a concussion. NEVER.
+  - NEVER "push through" concussion symptoms. This causes Second Impact Syndrome
+    (catastrophic brain swelling, potentially fatal).
+  - If loss of consciousness occurred: minimum 4 weeks no contact.
+  - If fighter has had 3+ concussions in 12 months: MANDATORY extended break
+    (3-6 months minimum). Consider career implications seriously.
+  - Multiple concussions cause CUMULATIVE damage. CTE is real. Long-term brain
+    health must be prioritized over any single fight.
+
+PREVENTION:
+  - Strong neck muscles (neck curls, manual resistance, harness work) reduce
+    concussion risk by controlling head acceleration
+  - Mouthguard (properly fitted custom guard is best) — may reduce concussion severity
+  - Defensive skill development (don't get hit is the best prevention)
+  - Reduce hard sparring frequency (2x/week MAX, many elite camps do 1x/week)
+  - Consider headgear for training (debated, but may reduce cuts and superficial damage)
+
+--------------------------------------------------------------------------------
+6.5 — BACK (LUMBAR SPINE) INJURIES
+--------------------------------------------------------------------------------
+
+DISC HERNIATION / BULGE:
+  Mechanism: Heavy deadlift with flexed spine, explosive rotation under load,
+    defending stacking passes in guard, bridging repeatedly
+  Symptoms: Low back pain radiating to leg (sciatica), numbness/tingling,
+    weakness in leg, pain worse sitting or bending forward
+  Treatment:
+    - Conservative first (90% resolve without surgery): 6-12 weeks
+    - Physical therapy: McKenzie method, core stability, nerve gliding
+    - Avoid flexion-based movements initially
+    - If no improvement after 12 weeks, or progressive neurological deficit: surgery
+  Surgery recovery: 3-6 months for discectomy, 6-12 months for fusion
+  Prevention: Perfect deadlift/squat form (neutral spine ALWAYS), strong core
+    (brace before loading), hip mobility (so spine doesn't compensate)
+
+MUSCLE STRAIN (Erector Spinae / QL):
+  Mechanism: Twisting under load, explosive movement without warmup, accumulated
+    fatigue from grappling
+  Timeline: 2-4 weeks for mild strain, 4-8 weeks for moderate
+  Treatment: Initial rest (2-3 days), then progressive loading. Ice first 48h,
+    then heat. Light movement is better than complete immobility.
+  Prevention: Core stability training (anti-rotation: Pallof press, anti-extension:
+    dead bugs, anti-lateral flexion: suitcase carries), adequate warmup before
+    explosive movement
+
+PREVENTION STRATEGIES FOR BACK HEALTH:
+  - McGill Big 3: Curl-up, Side plank, Bird dog — daily
+  - Hip hinge pattern mastery before any heavy deadlifting
+  - Thoracic mobility: if upper back is stiff, lower back compensates
+  - Core bracing before ANY loaded movement or explosive action
+  - Avoid loaded spinal flexion + rotation (the injury mechanism for most disc herniations)
+  - Decompress after training: hang from bar (30-60s), child's pose, supine twist
+
+--------------------------------------------------------------------------------
+6.6 — RETURNING FROM ANY INJURY
+--------------------------------------------------------------------------------
+
+GOLDEN RULES:
+  1. Never rush. Reinjury rate is 3x higher if return is premature.
+  2. The injured area must be STRONGER than before injury (prehab > pre-injury level)
+  3. Pain-free does NOT mean healed. Tissue remodeling continues long after pain resolves.
+  4. If it was surgical: follow surgeon's timeline. Do not freelance.
+  5. Communicate honestly with coaching staff about how it feels (no "toughing it out")
+
+FUNCTIONAL TESTS BEFORE RETURN:
+  - Single-leg hop test: >90% of uninjured side
+  - Change of direction test: full speed without hesitation or guarding
+  - Sport-specific movement test: can perform ALL required movements without pain
+  - Strength test: >90% of uninjured side (or pre-injury level for bilateral)
+  - Psychological readiness: fighter must feel CONFIDENT, not protecting the area.
+    If they're subconsciously guarding, they're not ready (and will likely compensate
+    and injure something else).
+
+PROGRESSIVE LOADING PROTOCOL:
+  Stage 1 — 50% (1-2 weeks):
+    Light drilling, technical work only. No live resistance. No speed.
+    Purpose: Reintroduce movement patterns, build tissue tolerance.
+
+  Stage 2 — 70% (1-2 weeks):
+    Moderate drilling with cooperative partner. Moderate speed.
+    Light rolling/sparring with VERY trusted partners who know the injury.
+    Purpose: Increase load on tissue. Begin sport-specific stress.
+
+  Stage 3 — 85% (1-2 weeks):
+    Near-full intensity with controlled sparring partners.
+    No competition-level exchanges yet. Can train most things.
+    Purpose: Final preparation for full return. Build confidence.
+
+  Stage 4 — 100% (1+ weeks before competition):
+    Full training, full sparring, no restrictions.
+    If this stage goes well for 2+ weeks: cleared for competition.
+    Purpose: Confirm readiness. Build full confidence.
+
+
+================================================================================
+SECTION 7: RULES & SCORING (UNIFIED RULES OF MMA)
+================================================================================
+
+--------------------------------------------------------------------------------
+7.1 — UNIFIED RULES OF MMA
+--------------------------------------------------------------------------------
+
+LEGAL TECHNIQUES:
+  Striking:
+    - Punches (all types: jab, cross, hook, uppercut, overhand, spinning backfist)
+    - Kicks (all types: low kick, body kick, head kick, front kick, spinning kicks)
+    - Knees (to body and head of STANDING opponent; rules vary for grounded opponent)
+    - Elbows (all angles EXCEPT 12-to-6 downward elbow striking motion)
+  Grappling:
+    - All takedowns (single leg, double leg, trips, throws, slams within rules)
+    - All submissions (chokes, joint locks, muscle locks)
+    - Ground and pound (strikes from top position to legal target areas)
+    - Clinch work (dirty boxing, knees, trips, cage work)
+
+ILLEGAL TECHNIQUES (Fouls):
+    - Strikes to the back of the head (the "mohawk" area from crown to base of skull)
+    - Strikes to the spine directly
+    - Groin strikes (immediate point deduction if egregious, warning first usually)
+    - Knees to a downed opponent's head (ONE Championship allows this, UFC does not)
+      NOTE: "Downed" = any body part other than soles of feet touching the mat
+      (updated in some jurisdictions: now requires a full palm down, not just fingertips)
+    - 12-to-6 elbows (straight downward motion, perpendicular to ground)
+    - Eye gouging / eye poking (intentional = DQ, accidental = warning/time)
+    - Fish-hooking (inserting fingers in mouth, nose, or ears and pulling)
+    - Fence/cage grabbing (immediate warning, point deduction if repeated/advantageous)
+    - Grabbing shorts or gloves of opponent
+    - Small joint manipulation (cannot grab individual fingers/toes and bend them)
+    - Biting
+    - Headbutting
+    - Strikes to throat (direct punch to trachea)
+    - Spiking opponent on head/neck (pile-driver motion)
+    - Hair pulling
+    - Attacking during break (when referee separates fighters)
+    - Timidity / avoiding contact / running (can be warned/penalized)
+    - Using abusive language in the cage
+    - Interference from corner
+
+ROUND STRUCTURE:
+  Non-title / Non-main event: 3 rounds x 5 minutes, with 1 minute rest between
+  Main event or Title fight: 5 rounds x 5 minutes, with 1 minute rest between
+  NOTE: Some promotions (ONE Championship, Rizin) use different round structures.
+
+WEIGHT CLASS LIMITS (UFC Standard):
+  Strawweight: 115 lbs (52.2 kg)
+  Flyweight: 125 lbs (56.7 kg)
+  Bantamweight: 135 lbs (61.2 kg)
+  Featherweight: 145 lbs (65.8 kg)
+  Lightweight: 155 lbs (70.3 kg)
+  Welterweight: 170 lbs (77.1 kg)
+  Middleweight: 185 lbs (83.9 kg)
+  Light Heavyweight: 205 lbs (93.0 kg)
+  Heavyweight: 265 lbs (120.2 kg)
+
+--------------------------------------------------------------------------------
+7.2 — JUDGING CRITERIA (IN ORDER OF IMPORTANCE)
+--------------------------------------------------------------------------------
+
+The Unified Rules establish a HIERARCHY of scoring criteria:
+
+1. EFFECTIVE STRIKING AND GRAPPLING (Primary Criterion):
+   Effective Striking:
+     - Judged by DAMAGE first, then significant strikes, then volume
+     - A strike that visibly hurts the opponent > 10 strikes that don't
+     - Knockdowns are valued very highly
+     - Strikes that change the complexion of the fight carry more weight
+     - Body shots and leg kicks that accumulate damage count significantly
+
+   Effective Grappling:
+     - Successful takedowns (finishing in dominant position)
+     - Submission attempts that threaten the opponent
+     - Advancing position (guard → half guard → side control → mount → back)
+     - Ground and pound from dominant positions
+     - Reversal from bottom to top
+     - A takedown that leads to nothing is worth less than a takedown with follow-up
+
+2. EFFECTIVE AGGRESSIVENESS (Secondary — used only if striking/grappling is equal):
+   - Moving forward with purpose and intent to finish
+   - Pushing the pace of the fight
+   - Attempting to end the fight (not just accumulating safe strikes)
+   - NOTE: Aggressive but ineffective (swinging wildly and missing) does NOT score
+   - Effective counterstriking while moving backward CAN outscore forward pressure
+
+3. CAGE/OCTAGON CONTROL (Tertiary — used only if all above are equal):
+   - Dictating WHERE the fight takes place
+   - Dictating the PACE of the fight
+   - Forcing opponent to fight your fight (making them react to you)
+   - Ring generalship and positioning
+   - This is the tiebreaker and rarely decides a round on its own
+
+IMPORTANT: Judges score PER ROUND. Previous rounds do not influence the current
+round's score. Each round starts fresh at 10-10 and is scored independently.
+
+--------------------------------------------------------------------------------
+7.3 — 10-POINT MUST SYSTEM
+--------------------------------------------------------------------------------
+
+STANDARD ROUND (10-9):
+  - The winner of the round receives 10 points
+  - The loser receives 9 points
+  - Most rounds are scored 10-9
+  - Close rounds where both fighters had success: still 10-9 (must give winner 10)
+
+10-8 ROUND (Dominant round):
+  A 10-8 round should be awarded when:
+  - Near finish: One fighter was close to being stopped (hurt badly, almost
+    submitted, referee was close to stopping)
+  - OR Complete domination: One-sided striking (significant damage differential)
+    or one-sided grappling (complete control with damage/threat throughout)
+  - Best practice: BOTH near finish + domination = definite 10-8
+  - Just one element (near finish OR domination): judges may or may not give 10-8
+
+  Under current rules interpretation, 10-8 rounds should be given more frequently
+  than they were historically. A clearly one-sided round SHOULD be 10-8.
+
+10-7 ROUND (Extremely rare):
+  - Both a near finish AND complete domination to an extreme degree
+  - Examples: Multiple knockdowns + sustained ground and pound with opponent
+    offering no offense for essentially the entire round
+  - Extremely rare. Maybe a handful exist in major promotion history.
+
+10-10 ROUND (Draw round):
+  - Only awarded when the round is so close that NO winner can be identified
+  - Extremely rare in practice (judges are instructed to pick a winner)
+  - Both fighters performed equally in ALL criteria
+
+HOW FINAL SCORES WORK:
+  - 3-round fight: each judge's scores for all 3 rounds are totaled
+  - Example: Judge scores 10-9, 9-10, 10-9 = 29-28 for Fighter A
+  - 5-round fight: total across all 5 rounds
+  - Three judges score independently
+
+--------------------------------------------------------------------------------
+7.4 — WAYS TO WIN
+--------------------------------------------------------------------------------
+
+KNOCKOUT (KO):
+  Fighter renders opponent unconscious through strikes. Referee stops the bout
+  when a fighter cannot intelligently defend themselves and is unconscious or
+  clearly unable to continue.
+
+TECHNICAL KNOCKOUT (TKO):
+  Sub-categories:
+  - Strikes: Referee stops because fighter is taking unanswered damage and is no
+    longer intelligently defending (even if still conscious)
+  - Doctor Stoppage: Ringside physician determines a fighter cannot safely
+    continue (usually due to cuts around the eyes affecting vision)
+  - Corner Stoppage: Fighter's corner throws in the towel or verbally stops the fight
+  - Body Shot TKO: Fighter cannot continue due to body damage (liver shot, etc.)
+
+SUBMISSION:
+  Types:
+  - Tap (physical): Fighter taps opponent or mat with hand/foot
+  - Verbal tap: Fighter verbally says "tap" or screams
+  - Referee stoppage: Fighter goes unconscious from choke or joint is clearly in
+    danger and fighter cannot respond
+  - Technical submission: Fighter is so compromised in a submission (arm trapped,
+    unconscious from blood choke) that referee stops it
+
+DECISION:
+  - Unanimous Decision (UD): All 3 judges score for the same fighter
+    (Example: 29-28, 30-27, 29-28 all for Fighter A)
+  - Split Decision (SD): 2 judges score for one fighter, 1 judge for the other
+    (Example: 29-28 A, 28-29 B, 29-28 A — Fighter A wins split decision)
+  - Majority Decision (MD): 2 judges score for one fighter, 1 judge scores draw
+    (Example: 29-28 A, 29-29, 29-28 A — Fighter A wins majority decision)
+
+DRAW:
+  - Split Draw: 1 judge scores for A, 1 for B, 1 scores draw
+  - Majority Draw: 2 judges score draw, 1 scores for a fighter
+  - Unanimous Draw: All 3 judges score it a draw (extremely rare)
+
+NO CONTEST (NC):
+  - Accidental foul stops the fight before completion of enough rounds
+    (Usually before round 3 in a 5-round fight, or before round 2 in a 3-round fight)
+  - Overturned result due to failed drug test (changes to NC retroactively)
+  - Both fighters commit simultaneous illegal actions making continuation impossible
+
+DISQUALIFICATION (DQ):
+  - Intentional foul: fighter deliberately commits illegal action (biting, eye gouging)
+  - Repeated fouls after point deductions: if a fighter continues fouling after
+    multiple warnings and point deductions, referee may disqualify
+  - Extremely rare in modern MMA (most fouls are handled with warnings/point deductions)
+
+POINT DEDUCTIONS:
+  - Referee can deduct 1 point for fouls (after warning usually, though immediate
+    deduction is allowed for egregious fouls)
+  - A point deduction affects the round score for that round only
+  - Example: Fighter A would win round 10-9, but had 1 point deducted = 9-9 round
+  - Multiple point deductions in one round are possible
+  - Typical progression: verbal warning → warning with point threat → point deduction → DQ
+
+SCORING STRATEGY IMPLICATIONS FOR FIGHTERS:
+  - If you think you're winning on points: fight smart, don't take unnecessary risks
+  - If you think you're losing on points: increase output, seek finish
+  - In a 5-round fight: you can afford to lose a round if you win 3
+  - 10-8 rounds can swing a fight: one dominant round can overcome losing 2 close rounds
+  - Finish rate correlates with championship success: don't rely solely on decisions
+  - In close fights: activity in final 30 seconds of a round influences judges heavily
+    (recency bias is real)
+
+
+================================================================================
+END OF KNOWLEDGE BASE
+================================================================================
+This document should be updated as sports science evolves and new research emerges.
+Key principles remain: progressive overload, specificity, recovery, individualization.
+Every fighter is different — use this as a framework, not an absolute prescription.
+Adapt protocols to the individual athlete's needs, experience level, and response to training.
+================================================================================

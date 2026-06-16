@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Combattant — THYMOS Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/combattant.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body class="dashboard-body">
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<!-- SVG SPRITE -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="ic-sword"         viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><path d="M12 2l-3 5h6z" fill="currentColor" stroke="none"/><line x1="9" y1="20" x2="15" y2="20"/></symbol>
+  <symbol id="ic-menu"          viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+  <symbol id="ic-home"          viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="ic-users"         viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="ic-bell"          viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></symbol>
+  <symbol id="ic-calendar"      viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+  <symbol id="ic-shuffle"       viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></symbol>
+  <symbol id="ic-award"         viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></symbol>
+  <symbol id="ic-cpu"           viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+  <symbol id="ic-settings"      viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+  <symbol id="ic-brain"         viewBox="0 0 24 24"><path d="M12 4.5C9 4.5 7 7 7 9.5c0 1 .4 2 1 2.7-.7.7-1 1.6-1 2.6 0 2 1.6 3.7 3.6 3.7h2.8c2 0 3.6-1.7 3.6-3.7 0-1-.3-1.9-1-2.6.6-.7 1-1.7 1-2.7C17 7 15 4.5 12 4.5z"/><line x1="12" y1="4.5" x2="12" y2="7.5"/><line x1="9.5" y1="10" x2="14.5" y2="10"/></symbol>
+  <symbol id="ic-activity"      viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+  <symbol id="ic-alert"         viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+  <symbol id="ic-chevron-left"  viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></symbol>
+  <symbol id="ic-chevron-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+  <symbol id="ic-send"          viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+  <symbol id="ic-download"      viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+  <symbol id="ic-video"         viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></symbol>
+  <symbol id="ic-trending-up"   viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></symbol>
+  <symbol id="ic-shield"        viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="ic-zap"           viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+  <symbol id="ic-heart"         viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+  <symbol id="ic-target"        viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="ic-edit"          viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></symbol>
+  <symbol id="ic-check"         viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="ic-clock"         viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="ic-droplet"       viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></symbol>
+  <symbol id="ic-map-pin"       viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+</svg>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__logo">
+      <span class="logo-icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-sword"/></svg></span>
+      <span class="logo-text">THYMOS</span>
+    </div>
+    <nav class="sidebar__nav">
+      <div class="nav-group">
+        <span class="nav-group-label">Principal</span>
+        <a href="dashboard.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-home"/></svg><span>Dashboard</span></a>
+        <a href="combattants.html" class="nav-item active"><svg class="icon" aria-hidden="true"><use href="#ic-users"/></svg><span>Combattants</span></a>
+        <a href="alertes.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-bell"/></svg><span>Alertes IA</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Gestion</span>
+        <a href="planning.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-calendar"/></svg><span>Planning</span></a>
+        <a href="sparring.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-shuffle"/></svg><span>Sparring IA</span></a>
+        <a href="combats.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-award"/></svg><span>Combats</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">IA</span>
+        <a href="dashboard.html#ia-coach" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-cpu"/></svg><span>IA Coach</span><span class="nav-badge nav-badge--gold">Bientôt</span></a>
+      </div>
+    </nav>
+    <div class="sidebar__footer">
+      <div class="sidebar__salle">
+        <div class="salle-avatar">—</div>
+        <div class="salle-info">
+          <div class="salle-name">Ma Salle</div>
+          <div class="salle-plan">Plan Pro</div>
+        </div>
+        <a href="parametres.html" class="salle-settings" title="Parametres"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-settings"/></svg></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="dashboard-main">
+    <header class="topbar">
+      <div class="topbar__left">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-menu"/></svg></button>
+        <div class="topbar__breadcrumb">
+          <a href="dashboard.html" class="breadcrumb-gym">Ma Salle</a>
+          <span class="breadcrumb-sep">></span>
+          <a href="combattants.html" class="breadcrumb-gym">Combattants</a>
+          <span class="breadcrumb-sep">></span>
+          <span class="breadcrumb-page">Chargement...</span>
+        </div>
+      </div>
+      <div class="topbar__right">
+        <button class="btn btn--ghost btn--sm" id="prefightReportBtn" type="button" aria-label="Generer le rapport pre-combat"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-award"/></svg> Rapport pré-combat</button>
+        <a href="combattants.html" class="btn btn--ghost btn--sm"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-chevron-left"/></svg> Retour</a>
+        <button class="btn btn--ghost btn--sm" id="exportBtn"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-edit"/></svg> Modifier</button>
+      </div>
+    </header>
+
+    <div class="dashboard-content" id="main" role="main">
+
+      <!-- PROFIL HEADER — filled by page-combattant.js -->
+      <div class="fighter-header" id="fighterHeader">
+        <div style="padding:2rem;text-align:center;color:var(--subtle);width:100%;">Chargement du profil...</div>
+      </div>
+
+      <!-- TABS -->
+      <div class="tabs-bar">
+        <button class="tab-btn active" data-tab="physique"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-activity"/></svg> Physique</button>
+        <button class="tab-btn" data-tab="mental"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-brain"/></svg> Mental</button>
+        <button class="tab-btn" data-tab="combats"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-video"/></svg> Combats</button>
+        <button class="tab-btn" data-tab="blessures"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-heart"/></svg> Blessures</button>
+        <button class="tab-btn" data-tab="camp"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-target"/></svg> Camp actif</button>
+        <button class="tab-btn" data-tab="ia" id="ia-fighter"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-cpu"/></svg> IA Coach <span class="badge-soon">Bientôt</span></button>
+      </div>
+
+      <!-- TAB CONTENTS — filled by page-combattant.js -->
+      <div class="tab-content active" id="tab-physique">
+        <div style="text-align:center;padding:3rem;color:var(--subtle);">Chargement...</div>
+      </div>
+      <div class="tab-content" id="tab-mental">
+        <div style="text-align:center;padding:3rem;color:var(--subtle);">Chargement...</div>
+      </div>
+      <div class="tab-content" id="tab-combats">
+        <div style="text-align:center;padding:3rem;color:var(--subtle);">Chargement...</div>
+      </div>
+      <div class="tab-content" id="tab-blessures">
+        <div style="text-align:center;padding:3rem;color:var(--subtle);">Chargement...</div>
+      </div>
+      <div class="tab-content" id="tab-camp">
+        <div style="text-align:center;padding:3rem;color:var(--subtle);">Chargement...</div>
+      </div>
+      <div class="tab-content" id="tab-ia">
+        <div class="soon-banner">IA Coach — bientôt disponible.</div>
+        <div class="ia-soon-composer soon-locked" style="display:flex;gap:0.5rem;max-width:680px;margin:0 auto;">
+          <input type="text" id="iaFighterInput" class="ia-full-input" placeholder="IA Coach bientôt disponible…" disabled aria-disabled="true" style="flex:1;" />
+          <button type="button" id="iaFighterSend" class="btn btn--primary btn--sm" disabled aria-disabled="true"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-send"/></svg> Envoyer</button>
+        </div>
+      </div>
+
+      <!-- PROGRESSION CHART -->
+      <div class="panel" id="progressPanel" style="margin-top:1.5rem;display:none;">
+        <div class="panel__header">
+          <div class="panel__title"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-trending-up"/></svg> Progression</div>
+        </div>
+        <div class="panel__body p-lg">
+          <canvas id="progressChart" width="400" height="200"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.50.0" crossorigin="anonymous" defer></script>
+  <script src="js/security.js" defer></script>
+<script src="js/supabase-config.js" defer></script>
+  <script src="js/sidebar-badges.js" defer></script>
+  <script src="js/auth-guard.js" defer></script>
+  <script src="js/settings-loader.js" defer></script>
+  <script src="js/toast.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/plan-guard.js" defer></script>
+  <script src="js/modal-fighter.js" defer></script>
+  <script src="js/combattant.js" defer></script>
+  <script src="js/page-combattant.js" defer></script>
+</body>
+</html>

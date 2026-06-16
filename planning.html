@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planning — THYMOS Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body class="dashboard-body">
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="ic-sword"    viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><path d="M12 2l-3 5h6z" fill="currentColor" stroke="none"/><line x1="9" y1="20" x2="15" y2="20"/></symbol>
+  <symbol id="ic-menu"     viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+  <symbol id="ic-home"     viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="ic-users"    viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="ic-bell"     viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></symbol>
+  <symbol id="ic-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+  <symbol id="ic-shuffle"  viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></symbol>
+  <symbol id="ic-award"    viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></symbol>
+  <symbol id="ic-cpu"      viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+  <symbol id="ic-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+  <symbol id="ic-chevron-left"  viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></symbol>
+  <symbol id="ic-chevron-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+  <symbol id="ic-plus"     viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+  <symbol id="ic-x"        viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+  <symbol id="ic-edit"     viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></symbol>
+  <symbol id="ic-trash"    viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></symbol>
+  <symbol id="ic-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+  <symbol id="ic-activity" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+  <symbol id="ic-alert"    viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+</svg>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__logo"><span class="logo-icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-sword"/></svg></span><span class="logo-text">THYMOS</span></div>
+    <nav class="sidebar__nav">
+      <div class="nav-group"><span class="nav-group-label">Principal</span>
+        <a href="dashboard.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-home"/></svg><span>Dashboard</span></a>
+        <a href="combattants.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-users"/></svg><span>Combattants</span></a>
+        <a href="alertes.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-bell"/></svg><span>Alertes IA</span></a>
+      </div>
+      <div class="nav-group"><span class="nav-group-label">Gestion</span>
+        <a href="planning.html" class="nav-item active"><svg class="icon" aria-hidden="true"><use href="#ic-calendar"/></svg><span>Planning</span></a>
+        <a href="sparring.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-shuffle"/></svg><span>Sparring IA</span></a>
+        <a href="combats.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-award"/></svg><span>Combats</span></a>
+      </div>
+      <div class="nav-group"><span class="nav-group-label">IA</span>
+        <a href="dashboard.html#ia-coach" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-cpu"/></svg><span>IA Coach</span><span class="nav-badge nav-badge--gold">Bientôt</span></a>
+      </div>
+    </nav>
+    <div class="sidebar__footer"><div class="sidebar__salle"><div class="salle-avatar">—</div><div class="salle-info"><div class="salle-name">Ma Salle</div><div class="salle-plan">Plan Pro</div></div><a href="parametres.html" class="salle-settings"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-settings"/></svg></a></div></div>
+  </aside>
+
+  <div class="dashboard-main">
+    <header class="topbar">
+      <div class="topbar__left">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-menu"/></svg></button>
+        <div class="cal-nav">
+          <button class="cal-arrow" id="prevWeek"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-chevron-left"/></svg></button>
+          <h2 class="cal-title" id="calTitle">—</h2>
+          <button class="cal-arrow" id="nextWeek"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-chevron-right"/></svg></button>
+          <button class="cal-today" id="todayBtn">Aujourd'hui</button>
+        </div>
+      </div>
+      <div class="topbar__right">
+        <button class="btn btn--ghost btn--sm" id="exportCalBtn">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-download"/></svg>
+          Exporter .ics
+        </button>
+        <button class="btn btn--primary btn--sm" id="addSessionBtn">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-plus"/></svg>
+          Nouvelle séance
+        </button>
+      </div>
+    </header>
+
+    <div class="cal-content" id="main" role="main">
+      <div class="cal-grid" id="calGrid">
+        <div class="cal-loading">Chargement du planning...</div>
+      </div>
+    </div>
+
+    <!-- SESSION DETAIL POPUP -->
+    <div class="sess-popup" id="sessPopup">
+      <div class="sess-popup__inner" id="sessPopupInner"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.50.0" crossorigin="anonymous" defer></script>
+  <script src="js/security.js" defer></script>
+<script src="js/supabase-config.js" defer></script>
+  <script src="js/sidebar-badges.js" defer></script>
+  <script src="js/auth-guard.js" defer></script>
+  <script src="js/settings-loader.js" defer></script>
+  <script src="js/toast.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/plan-guard.js" defer></script>
+  <script>
+  // ═══ STATE ══════════════════════════════════
+  let weekOffset = 0;
+  let loadedSessions = [];
+  let loadedFighters = [];
+  let salleName = '';
+  let salleId = '';
+
+  const DAY_NAMES = ['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+  const DAY_FULL  = ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+  const MONTH_NAMES = ['janvier','fevrier','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','decembre'];
+  const TYPE_COLORS = {
+    frappe:    { bg: 'rgba(193,18,31,0.12)',  border: 'var(--red)',  label: 'Frappe' },
+    grappling: { bg: 'rgba(74,158,92,0.12)',  border: '#4a9e5c',    label: 'Grappling' },
+    cardio:    { bg: 'rgba(74,108,192,0.14)', border: '#4a6cc0',    label: 'Cardio' },
+    muscu:     { bg: 'rgba(212,160,23,0.12)', border: '#D4A017',    label: 'Musculation' },
+    sparring:  { bg: 'rgba(193,18,31,0.18)',  border: 'var(--red)',  label: 'Sparring' },
+    physio:    { bg: 'rgba(150,100,200,0.12)',border: '#9664c8',    label: 'Physio' },
+    autre:     { bg: 'rgba(255,255,255,0.05)',border: 'var(--muted)',label: 'Autre' },
+  };
+
+  // ═══ WEEK HELPERS ═════════════════════════
+  function getWeekDates(offset) {
+    const ref = new Date();
+    ref.setDate(ref.getDate() + offset * 7);
+    const day = ref.getDay();
+    const monday = new Date(ref);
+    monday.setDate(ref.getDate() - ((day + 6) % 7));
+    const dates = [];
+    for (let i = 0; i < 7; i++) {
+      const d = new Date(monday);
+      d.setDate(monday.getDate() + i);
+      dates.push(d);
+    }
+    return dates;
+  }
+
+  function isoDate(d) { return d.toISOString().split('T')[0]; }
+  function todayISO() { return isoDate(new Date()); }
+
+  // ═══ RENDER CALENDAR ══════════════════════
+  function renderCalendar(sessions, weekDates) {
+    const grid = document.getElementById('calGrid');
+    const today = todayISO();
+    const byDate = {};
+    sessions.forEach(s => {
+      if (!byDate[s.session_date]) byDate[s.session_date] = [];
+      byDate[s.session_date].push(s);
+    });
+
+    grid.innerHTML = weekDates.map(date => {
+      const iso = isoDate(date);
+      const isToday = iso === today;
+      const daySessions = byDate[iso] || [];
+      const dayNum = date.getDate();
+      const dayName = DAY_NAMES[date.getDay()];
+
+      const sessionsHTML = daySessions.map(s => {
+        const tc = TYPE_COLORS[s.type] || TYPE_COLORS.autre;
+        const startH = (s.start_time || '').substring(0,5).replace(':','h');
+        const endH = (s.end_time || '').substring(0,5).replace(':','h');
+        const participants = (s.session_participants || []).map(p => {
+          const c = p.combattants || {};
+          return `<span class="cal-av" style="background:${escapeHtml(c.avatar_color || '#333')}">${escapeHtml(getInitials(c.first_name, c.last_name))}</span>`;
+        }).join('');
+
+        return `<div class="cal-event" data-id="${s.id}" style="background:${tc.bg};border-left-color:${tc.border};">
+          <div class="cal-event__time">${startH} – ${endH}</div>
+          <div class="cal-event__title">${escapeHtml(s.title || tc.label)}</div>
+          <div class="cal-event__avs">${participants}</div>
+        </div>`;
+      }).join('');
+
+      return `<div class="cal-day${isToday ? ' cal-day--today' : ''}" data-date="${iso}">
+        <div class="cal-day__header">
+          <span class="cal-day__name">${dayName}</span>
+          <span class="cal-day__num${isToday ? ' cal-day__num--today' : ''}">${dayNum}</span>
+        </div>
+        <div class="cal-day__body">
+          ${sessionsHTML}
+          <button class="cal-add-btn" data-date="${iso}" title="Ajouter une seance">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-plus"/></svg>
+          </button>
+        </div>
+      </div>`;
+    }).join('');
+
+    // Bind events
+    grid.querySelectorAll('.cal-event').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showSessionPopup(el.dataset.id, el);
+      });
+    });
+    grid.querySelectorAll('.cal-add-btn').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openSessionModal(el.dataset.date);
+      });
+    });
+  }
+
+  // ═══ SESSION POPUP (click on event) ═══════
+  function showSessionPopup(sessionId, anchorEl) {
+    const s = loadedSessions.find(x => x.id === sessionId);
+    if (!s) return;
+    const tc = TYPE_COLORS[s.type] || TYPE_COLORS.autre;
+    const startH = (s.start_time || '').substring(0,5).replace(':','h');
+    const endH = (s.end_time || '').substring(0,5).replace(':','h');
+    const dateObj = new Date(s.session_date + 'T12:00:00');
+    const dateStr = DAY_FULL[dateObj.getDay()] + ' ' + dateObj.getDate() + ' ' + MONTH_NAMES[dateObj.getMonth()];
+    const participants = (s.session_participants || []).map(p => {
+      const c = p.combattants || {};
+      return `<div class="pop-participant"><span class="cal-av" style="background:${escapeHtml(c.avatar_color || '#333')}">${escapeHtml(getInitials(c.first_name, c.last_name))}</span>${escapeHtml(getFullName(c))}</div>`;
+    }).join('') || '<div style="color:var(--subtle);font-size:0.75rem;">Aucun participant</div>';
+
+    const popup = document.getElementById('sessPopup');
+    const inner = document.getElementById('sessPopupInner');
+    inner.innerHTML = `
+      <div class="pop-header" style="border-left:3px solid ${tc.border};padding-left:0.75rem;">
+        <div class="pop-type" style="color:${tc.border};">${tc.label}</div>
+        <div class="pop-title">${escapeHtml(s.title || tc.label)}</div>
+        <div class="pop-date">${dateStr}</div>
+        <div class="pop-time">${startH} – ${endH}</div>
+      </div>
+      <div class="pop-section">
+        <div class="pop-label">Participants</div>
+        ${participants}
+      </div>
+      ${s.notes ? '<div class="pop-section"><div class="pop-label">Notes</div><div class="pop-notes">' + escapeHtml(s.notes) + '</div></div>' : ''}
+      <div class="pop-actions">
+        <button class="pop-btn" onclick="exportSingleSession('${s.id}')">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-download"/></svg> Exporter
+        </button>
+        <button class="pop-btn pop-btn--danger" onclick="handleDeleteSession('${s.id}')">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-trash"/></svg> Supprimer
+        </button>
+      </div>
+      <button class="pop-close" onclick="closePopup()">&times;</button>`;
+
+    // Position popup near the clicked event
+    popup.classList.add('open');
+    document.addEventListener('click', closePopupOutside);
+  }
+
+  function closePopup() {
+    document.getElementById('sessPopup').classList.remove('open');
+    document.removeEventListener('click', closePopupOutside);
+  }
+  function closePopupOutside(e) {
+    const popup = document.getElementById('sessPopup');
+    if (!popup.contains(e.target) && !e.target.closest('.cal-event')) closePopup();
+  }
+
+  async function handleDeleteSession(id) {
+    closePopup();
+    confirmModal('Supprimer cette seance ?', async () => {
+      const result = await deleteSession(id);
+      if (result.success) {
+        toast('Seance supprimee', 'warning');
+        loadWeek(weekOffset);
+      } else {
+        toast('Erreur lors de la suppression', 'error');
+      }
+    });
+  }
+
+  function exportSingleSession(id) {
+    const s = loadedSessions.find(x => x.id === id);
+    if (s) {
+      downloadICS([s], salleName);
+      toast('Seance exportee — ouvrez le fichier .ics avec votre calendrier', 'success', 4000);
+    }
+    closePopup();
+  }
+
+  // ═══ ADD SESSION MODAL ════════════════════
+  async function openSessionModal(preDate) {
+    if (!salleId) { const salle = await getCurrentSalle(); salleId = salle?.id; }
+    if (!loadedFighters.length) loadedFighters = await getCombattants(salleId);
+
+    const fighters = loadedFighters;
+    const checkboxes = fighters.map(f =>
+      `<label class="sess-check"><input type="checkbox" value="${escapeHtml(f.id)}"/><span class="cal-av" style="background:${escapeHtml(f.avatar_color || '#333')}">${escapeHtml(getInitials(f.first_name, f.last_name))}</span>${escapeHtml(getFullName(f))}</label>`
+    ).join('') || '<div style="color:var(--subtle);font-size:0.75rem;">Ajoutez d\'abord des combattants</div>';
+
+    const overlay = document.createElement('div');
+    overlay.className = 'sess-modal-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-labelledby', 'sessModalTitle');
+    overlay.innerHTML = `
+      <div class="sess-modal">
+        <div class="sess-modal__header">
+          <h3 id="sessModalTitle">Nouvelle seance</h3>
+          <button class="pop-close" onclick="this.closest('.sess-modal-overlay').remove()">&times;</button>
+        </div>
+        <form class="sess-modal__form" id="sessForm">
+          <div class="sf-row">
+            <div class="sf-field">
+              <label>Titre</label>
+              <input type="text" id="sfTitle" required placeholder="Ex: Frappe technique"/>
+            </div>
+            <div class="sf-field">
+              <label>Type</label>
+              <select id="sfType" required>
+                <option value="frappe">Frappe</option>
+                <option value="grappling">Grappling</option>
+                <option value="cardio">Cardio</option>
+                <option value="muscu">Musculation</option>
+                <option value="sparring">Sparring</option>
+                <option value="physio">Physio</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+          </div>
+          <div class="sf-row">
+            <div class="sf-field">
+              <label>Date</label>
+              <input type="date" id="sfDate" required value="${preDate || todayISO()}"/>
+            </div>
+            <div class="sf-field sf-time-row">
+              <div><label>Debut</label><input type="time" id="sfStart" required value="09:00"/></div>
+              <div><label>Fin</label><input type="time" id="sfEnd" required value="11:00"/></div>
+            </div>
+          </div>
+          <div class="sf-field">
+            <label>Participants</label>
+            <div class="sf-fighters">${checkboxes}</div>
+          </div>
+          <div class="sf-field">
+            <label>Notes</label>
+            <input type="text" id="sfNotes" placeholder="Optionnel..."/>
+          </div>
+          <div class="sf-actions">
+            <button type="button" class="btn btn--ghost" onclick="this.closest('.sess-modal-overlay').remove()">Annuler</button>
+            <button type="submit" class="btn btn--primary" id="sfSubmit">Creer</button>
+          </div>
+        </form>
+      </div>`;
+
+    document.body.appendChild(overlay);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
+    requestAnimationFrame(() => overlay.classList.add('open'));
+    setTimeout(() => { document.getElementById('sfTitle').focus(); }, 50);
+
+    document.getElementById('sessForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      document.getElementById('sfSubmit').classList.add('loading');
+
+      const result = await createSession(salleId, {
+        title: document.getElementById('sfTitle').value.trim(),
+        type: document.getElementById('sfType').value,
+        session_date: document.getElementById('sfDate').value,
+        start_time: document.getElementById('sfStart').value + ':00',
+        end_time: document.getElementById('sfEnd').value + ':00',
+        notes: document.getElementById('sfNotes').value.trim() || null,
+      });
+
+      if (result.error) {
+        toast('Erreur: ' + (result.error.message || 'Impossible de creer'), 'error');
+        document.getElementById('sfSubmit').classList.remove('loading');
+        return;
+      }
+
+      const checked = overlay.querySelectorAll('.sf-fighters input:checked');
+      const participantIds = [];
+      for (const cb of checked) {
+        await addSessionParticipant(result.data.id, cb.value);
+        participantIds.push(cb.value);
+      }
+
+      // Notify participants
+      if (participantIds.length > 0) {
+        await notifySessionParticipants(salleId, result.data, participantIds);
+      }
+
+      overlay.remove();
+      const notifMsg = participantIds.length
+        ? `Seance creee — ${participantIds.length} combattant${participantIds.length > 1 ? 's' : ''} notifie${participantIds.length > 1 ? 's' : ''}`
+        : 'Seance creee';
+      toast(notifMsg, 'success');
+      loadWeek(weekOffset);
+    });
+  }
+
+  // ═══ LOAD WEEK ════════════════════════════
+  async function loadWeek(offset) {
+    const salle = await getCurrentSalle();
+    if (!salle) return;
+    salleId = salle.id;
+    salleName = salle.name;
+
+    const weekDates = getWeekDates(offset);
+    const startDate = isoDate(weekDates[0]);
+    const endDate = isoDate(weekDates[6]);
+
+    const sessions = await getSessions(salle.id, startDate, endDate);
+    loadedSessions = sessions;
+    loadedFighters = await getCombattants(salle.id);
+
+    // Title
+    const s = weekDates[0], e = weekDates[6];
+    const sameMonth = s.getMonth() === e.getMonth();
+    const title = sameMonth
+      ? s.getDate() + ' – ' + e.getDate() + ' ' + MONTH_NAMES[s.getMonth()] + ' ' + s.getFullYear()
+      : s.getDate() + ' ' + MONTH_NAMES[s.getMonth()] + ' – ' + e.getDate() + ' ' + MONTH_NAMES[e.getMonth()] + ' ' + e.getFullYear();
+    document.getElementById('calTitle').textContent = title;
+
+    renderCalendar(sessions, weekDates);
+  }
+
+  // ═══ INIT ═════════════════════════════════
+  loadWeek(0);
+  document.getElementById('prevWeek').addEventListener('click', () => { weekOffset--; loadWeek(weekOffset); });
+  document.getElementById('nextWeek').addEventListener('click', () => { weekOffset++; loadWeek(weekOffset); });
+  document.getElementById('todayBtn').addEventListener('click', () => { weekOffset = 0; loadWeek(0); });
+  document.getElementById('addSessionBtn').addEventListener('click', () => openSessionModal());
+  document.getElementById('exportCalBtn').addEventListener('click', () => {
+    if (!loadedSessions.length) { toast('Aucune seance cette semaine', 'warning'); return; }
+    downloadICS(loadedSessions, salleName);
+    toast('Planning exporte — ouvrez le .ics avec votre calendrier', 'success', 4000);
+  });
+  </script>
+
+  <style>
+  /* ═══ CALENDAR LAYOUT ══════════════════════ */
+  .cal-content { flex: 1; padding: 0; overflow: hidden; }
+  .cal-loading { padding: 4rem; text-align: center; color: var(--subtle); font-size: 0.85rem; }
+
+  /* Nav bar */
+  .cal-nav { display: flex; align-items: center; gap: 0.5rem; }
+  .cal-title {
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    min-width: 200px;
+    text-align: center;
+  }
+  .cal-arrow {
+    background: var(--surface3);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    color: var(--muted);
+    padding: 0.35rem;
+    cursor: pointer;
+    display: flex;
+    transition: all 0.18s;
+  }
+  .cal-arrow:hover { color: var(--white); border-color: var(--muted); }
+  .cal-today {
+    background: none;
+    border: 1px solid var(--red-border);
+    border-radius: var(--r);
+    color: var(--red);
+    font-family: var(--font-display);
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.65rem;
+    cursor: pointer;
+    transition: all 0.18s;
+  }
+  .cal-today:hover { background: var(--red-dim); }
+
+  /* Grid */
+  .cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    min-height: calc(100vh - 56px);
+    border-top: 1px solid var(--border);
+  }
+  .cal-day {
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    min-height: 140px;
+  }
+  .cal-day:last-child { border-right: none; }
+  .cal-day--today { background: rgba(193,18,31,0.03); }
+
+  .cal-day__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.6rem 0.4rem 0.45rem;
+    border-bottom: 1px solid var(--border);
+    gap: 0.15rem;
+  }
+  .cal-day__name {
+    font-family: var(--font-display);
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--subtle);
+  }
+  .cal-day__num {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--muted);
+    width: 28px; height: 28px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%;
+  }
+  .cal-day__num--today {
+    background: var(--red);
+    color: #fff;
+  }
+
+  .cal-day__body {
+    flex: 1;
+    padding: 0.35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    position: relative;
+  }
+
+  /* Events */
+  .cal-event {
+    border-left: 3px solid var(--red);
+    border-radius: 0 var(--r) var(--r) 0;
+    padding: 0.4rem 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s var(--ease-out-expo), box-shadow 0.2s;
+  }
+  .cal-event:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    z-index: 2;
+  }
+  .cal-event:active { transform: scale(0.98); }
+  .cal-event__time { font-size: 0.55rem; color: var(--subtle); margin-bottom: 0.15rem; }
+  .cal-event__title { font-size: 0.72rem; font-weight: 600; color: var(--white); line-height: 1.3; }
+  .cal-event__avs { display: flex; gap: 0.15rem; margin-top: 0.3rem; flex-wrap: wrap; }
+  .cal-av {
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.4rem; font-weight: 700;
+    border: 1px solid rgba(255,255,255,0.1);
+    flex-shrink: 0;
+  }
+
+  /* Add button in day */
+  .cal-add-btn {
+    margin-top: auto;
+    background: none;
+    border: 1px dashed var(--border);
+    border-radius: var(--r);
+    color: var(--subtle);
+    padding: 0.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+  .cal-day:hover .cal-add-btn { opacity: 1; }
+  .cal-add-btn:hover { border-color: var(--red); color: var(--red); background: var(--red-dim); }
+
+  /* ═══ SESSION POPUP ═══════════════════════ */
+  .sess-popup {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    width: 320px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s, transform 0.25s var(--ease-out-expo);
+  }
+  .sess-popup.open {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .sess-popup__inner { padding: 1.25rem; }
+  .pop-header { margin-bottom: 1rem; }
+  .pop-type { font-family: var(--font-display); font-size: 0.55rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.2rem; }
+  .pop-title { font-size: 1rem; font-weight: 700; margin-bottom: 0.25rem; }
+  .pop-date { font-size: 0.78rem; color: var(--muted); }
+  .pop-time { font-size: 0.78rem; color: var(--subtle); }
+  .pop-section { margin-bottom: 0.85rem; }
+  .pop-label { font-family: var(--font-display); font-size: 0.55rem; letter-spacing: 0.1em; color: var(--subtle); margin-bottom: 0.4rem; text-transform: uppercase; }
+  .pop-participant { display: flex; align-items: center; gap: 0.5rem; font-size: 0.78rem; color: var(--muted); padding: 0.2rem 0; }
+  .pop-notes { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+  .pop-actions { display: flex; gap: 0.4rem; padding-top: 0.75rem; border-top: 1px solid var(--border); }
+  .pop-btn {
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    font-size: 0.68rem; padding: 0.35rem 0.65rem;
+    border: 1px solid var(--border); border-radius: var(--r);
+    background: transparent; color: var(--muted);
+    cursor: pointer; font-family: var(--font-body);
+    transition: all 0.18s;
+  }
+  .pop-btn:hover { color: var(--white); border-color: var(--muted); }
+  .pop-btn--danger:hover { color: var(--red); border-color: var(--red-border); }
+  .pop-close {
+    position: absolute; top: 0.75rem; right: 0.75rem;
+    background: none; border: none; color: var(--subtle);
+    font-size: 1.2rem; cursor: pointer; padding: 0.2rem;
+    transition: color 0.18s;
+  }
+  .pop-close:hover { color: var(--white); }
+
+  /* ═══ ADD SESSION MODAL ════════════════════ */
+  .sess-modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0);
+    z-index: 10000;
+    display: flex; align-items: center; justify-content: center;
+    padding: 1rem;
+    transition: background 0.25s;
+  }
+  .sess-modal-overlay.open { background: rgba(0,0,0,0.7); }
+  .sess-modal {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    width: 100%; max-width: 460px;
+    max-height: 90vh; overflow-y: auto;
+    transform: scale(0.95) translateY(10px);
+    opacity: 0;
+    transition: transform 0.3s var(--ease-out-expo), opacity 0.25s;
+  }
+  .sess-modal-overlay.open .sess-modal { transform: scale(1) translateY(0); opacity: 1; }
+  .sess-modal__header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 1.25rem; border-bottom: 1px solid var(--border);
+  }
+  .sess-modal__header h3 { font-family: var(--font-display); font-size: 0.82rem; letter-spacing: 0.08em; }
+  .sess-modal__form { padding: 1.25rem; display: flex; flex-direction: column; gap: 0.9rem; }
+  .sf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .sf-field { display: flex; flex-direction: column; gap: 0.35rem; }
+  .sf-field label { font-family: var(--font-display); font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .sf-field input, .sf-field select {
+    background: var(--bg); border: 1px solid var(--border); border-radius: var(--r);
+    color: var(--white); font-family: var(--font-body); font-size: 0.82rem;
+    padding: 0.5rem 0.7rem; outline: none; transition: border-color 0.2s; width: 100%;
+  }
+  .sf-field input:focus, .sf-field select:focus { border-color: var(--red); }
+  .sf-field select option { background: var(--bg); }
+  .sf-time-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+  .sf-fighters {
+    max-height: 150px; overflow-y: auto;
+    display: flex; flex-direction: column; gap: 0.35rem;
+    padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: var(--r);
+  }
+  .sess-check {
+    display: flex; align-items: center; gap: 0.45rem;
+    font-size: 0.76rem; color: var(--muted); cursor: pointer;
+  }
+  .sess-check input { accent-color: var(--red); width: 14px; height: 14px; }
+  .sf-actions { display: flex; justify-content: flex-end; gap: 0.6rem; padding-top: 0.5rem; border-top: 1px solid var(--border); }
+
+  /* ═══ RESPONSIVE ═══════════════════════════ */
+  @media (max-width: 1024px) {
+    .cal-grid { grid-template-columns: repeat(4, 1fr); }
+    .cal-day:nth-child(n+6) { display: none; }
+  }
+  @media (max-width: 768px) {
+    .cal-grid { grid-template-columns: repeat(2, 1fr); }
+    .cal-day:nth-child(n+5) { display: none; }
+    .cal-nav { gap: 0.3rem; }
+    .cal-title { font-size: 0.72rem; min-width: 140px; }
+    .cal-today { display: none; }
+    .sess-popup { width: 90%; max-width: 320px; }
+  }
+  @media (max-width: 480px) {
+    .cal-grid { grid-template-columns: 1fr; min-height: auto; }
+    .cal-day { min-height: 100px; border-right: none; border-bottom: 1px solid var(--border); }
+    .cal-day:nth-child(n+5) { display: flex; }
+    .cal-day__header { flex-direction: row; justify-content: space-between; padding: 0.5rem 0.75rem; }
+    .sf-row { grid-template-columns: 1fr; }
+  }
+  </style>
+</body>
+</html>

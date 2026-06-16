@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Paiement — THYMOS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body class="auth-body">
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="ic-sword"  viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><path d="M12 2l-3 5h6z" fill="currentColor" stroke="none"/><line x1="9" y1="20" x2="15" y2="20"/></symbol>
+  <symbol id="ic-arrow-left" viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></symbol>
+  <symbol id="ic-arrow-right" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+</svg>
+
+  <!--
+    NOTE: l'ancien formulaire de paiement a ete retire (collecte de carte en clair +
+    faux traitement non securise). Le paiement en ligne n'est pas encore actif.
+    Les CTA payants de la landing pointent directement vers Stripe (buy.stripe.com).
+  -->
+
+  <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem;">
+    <div style="max-width:440px;width:100%;text-align:center;">
+      <a href="index.html" class="auth-brand__logo" style="justify-content:center;margin-bottom:2rem;">
+        <span class="logo-icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#ic-sword"/></svg></span>
+        <span class="logo-text" style="font-size:1.6rem;">THYMOS</span>
+      </a>
+
+      <h1 style="font-family:var(--font-display);font-size:1.4rem;font-weight:900;letter-spacing:0.03em;margin-bottom:1rem;">
+        Paiement en ligne bientôt disponible
+      </h1>
+      <p style="font-size:0.9rem;color:var(--muted);line-height:1.6;margin-bottom:2rem;">
+        L'abonnement en ligne n'est pas encore ouvert. Vous pouvez démarrer dès maintenant
+        avec l'essai gratuit, sans carte bancaire. Nous vous accompagnerons ensuite pour
+        passer à une formule supérieure.
+      </p>
+
+      <a href="connexion.html?plan=decouverte" class="btn btn--primary btn--large" style="display:inline-flex;align-items:center;gap:0.5rem;margin-bottom:1rem;">
+        Démarrer l'essai gratuit
+        <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-arrow-right"/></svg>
+      </a>
+
+      <div style="margin-top:1.5rem;">
+        <a href="index.html#tarifs" style="color:var(--muted);font-size:0.8rem;display:inline-flex;align-items:center;gap:0.35rem;">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-arrow-left"/></svg>
+          Retour aux tarifs
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

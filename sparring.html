@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sparring IA — THYMOS Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body class="dashboard-body">
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="ic-sword"         viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><path d="M12 2l-3 5h6z" fill="currentColor" stroke="none"/><line x1="9" y1="20" x2="15" y2="20"/></symbol>
+  <symbol id="ic-menu"          viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+  <symbol id="ic-home"          viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="ic-users"         viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="ic-bell"          viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></symbol>
+  <symbol id="ic-calendar"      viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+  <symbol id="ic-shuffle"       viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></symbol>
+  <symbol id="ic-award"         viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></symbol>
+  <symbol id="ic-cpu"           viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+  <symbol id="ic-settings"      viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+  <symbol id="ic-check"         viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="ic-x"             viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+  <symbol id="ic-refresh"       viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></symbol>
+  <symbol id="ic-plus"          viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+  <symbol id="ic-calendar-plus" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="12" y1="15" x2="12" y2="19"/><line x1="10" y1="17" x2="14" y2="17"/></symbol>
+  <symbol id="ic-alert"         viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+  <symbol id="ic-clock"         viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="ic-trending-up"   viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></symbol>
+  <symbol id="ic-shield"        viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="ic-brain"         viewBox="0 0 24 24"><path d="M12 4.5C9 4.5 7 7 7 9.5c0 1 .4 2 1 2.7-.7.7-1 1.6-1 2.6 0 2 1.6 3.7 3.6 3.7h2.8c2 0 3.6-1.7 3.6-3.7 0-1-.3-1.9-1-2.6.6-.7 1-1.7 1-2.7C17 7 15 4.5 12 4.5z"/><line x1="12" y1="4.5" x2="12" y2="7.5"/><line x1="9.5" y1="10" x2="14.5" y2="10"/></symbol>
+  <symbol id="ic-activity"      viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+</svg>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__logo">
+      <span class="logo-icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-sword"/></svg></span>
+      <span class="logo-text">THYMOS</span>
+    </div>
+    <nav class="sidebar__nav">
+      <div class="nav-group">
+        <span class="nav-group-label">Principal</span>
+        <a href="dashboard.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-home"/></svg><span>Dashboard</span></a>
+        <a href="combattants.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-users"/></svg><span>Combattants</span><span class="nav-badge">—</span></a>
+        <a href="alertes.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-bell"/></svg><span>Alertes IA</span><span class="nav-badge nav-badge--red">—</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Gestion</span>
+        <a href="planning.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-calendar"/></svg><span>Planning</span></a>
+        <a href="sparring.html" class="nav-item active"><svg class="icon" aria-hidden="true"><use href="#ic-shuffle"/></svg><span>Sparring IA</span></a>
+        <a href="combats.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-award"/></svg><span>Combats</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">IA</span>
+        <a href="dashboard.html#ia-coach" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-cpu"/></svg><span>IA Coach</span><span class="nav-badge nav-badge--gold">Bientôt</span></a>
+      </div>
+    </nav>
+    <div class="sidebar__footer">
+      <div class="sidebar__salle">
+        <div class="salle-avatar">—</div>
+        <div class="salle-info"><div class="salle-name">Ma Salle</div><div class="salle-plan">Plan Pro</div></div>
+        <a href="#" class="salle-settings"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-settings"/></svg></a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="dashboard-main">
+    <header class="topbar">
+      <div class="topbar__left">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu">
+          <svg class="icon icon--md" aria-hidden="true"><use href="#ic-menu"/></svg>
+        </button>
+        <div class="topbar__breadcrumb">
+          <a href="dashboard.html" class="breadcrumb-gym">Ma Salle</a>
+          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-page">Sparring IA</span>
+        </div>
+      </div>
+      <div class="topbar__right">
+        <div class="topbar__date" id="current-date"></div>
+        <button class="btn btn--ghost btn--sm" id="refreshSparring">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-refresh"/></svg>
+          Régénérer
+        </button>
+      </div>
+    </header>
+
+    <div class="dashboard-content" id="main" role="main">
+
+      <!-- KPI -->
+      <div class="kpi-row">
+        <div class="kpi-card">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-shuffle"/></svg></div>
+          <div class="kpi-body"><div class="kpi-value" id="spKpi1">0</div><div class="kpi-label">Paires suggérées</div></div>
+          <div class="kpi-trend" id="spKpi1Sub">&mdash;</div>
+        </div>
+        <div class="kpi-card kpi-card--red">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-trending-up"/></svg></div>
+          <div class="kpi-body"><div class="kpi-value" id="spKpi2">&mdash;</div><div class="kpi-label">Compatibilité moyenne</div></div>
+          <div class="kpi-trend" id="spKpi2Sub">&mdash;</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-check"/></svg></div>
+          <div class="kpi-body"><div class="kpi-value" id="spKpi3">0</div><div class="kpi-label">Séances planifiées / mois</div></div>
+          <div class="kpi-trend" id="spKpi3Sub">&mdash;</div>
+        </div>
+        <div class="kpi-card kpi-card--alert">
+          <div class="kpi-icon"><svg class="icon" aria-hidden="true"><use href="#ic-alert"/></svg></div>
+          <div class="kpi-body"><div class="kpi-value" id="spKpi4">0</div><div class="kpi-label">Restriction active</div></div>
+          <div class="kpi-trend" id="spKpi4Sub">&mdash;</div>
+        </div>
+      </div>
+
+      <div class="main-row main-row--sidebar-sm">
+
+        <!-- SUGGESTIONS IA -->
+        <div>
+          <div class="panel">
+            <div class="panel__header">
+              <div class="panel__title">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-shuffle"/></svg>
+                Paires de sparring suggérées
+              </div>
+              <span class="panel-sub">Calculées sur le poids, le niveau et le style des combattants</span>
+            </div>
+            <div class="panel__body" id="sparringSuggestions" style="padding:1rem;">
+              <div class="sparring-cards">
+                <div style="text-align:center;padding:2rem;color:var(--muted);font-size:0.8rem;">Chargement des suggestions...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div style="display:flex;flex-direction:column;gap:1.25rem;">
+
+          <!-- HISTORIQUE -->
+          <div class="panel">
+            <div class="panel__header">
+              <div class="panel__title">Historique récent</div>
+            </div>
+            <div class="panel__body" id="sparringHistory" style="padding: 0.5rem 0;">
+              <div style="text-align:center;padding:1.5rem;color:var(--muted);font-size:0.75rem;">Chargement...</div>
+            </div>
+          </div>
+
+          <!-- PAIRES DÉCONSEILLÉES -->
+          <div class="panel">
+            <div class="panel__header">
+              <div class="panel__title">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-alert"/></svg>
+                Paires déconseillées
+              </div>
+            </div>
+            <div class="panel__body" id="sparringForbidden" style="padding: 0.85rem 1rem;">
+              <div style="text-align:center;padding:0.75rem;color:var(--muted);font-size:0.72rem;">Chargement...</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.50.0" crossorigin="anonymous" defer></script>
+  <script src="js/security.js" defer></script>
+<script src="js/supabase-config.js" defer></script>
+  <script src="js/sidebar-badges.js" defer></script>
+  <script src="js/auth-guard.js" defer></script>
+  <script src="js/settings-loader.js" defer></script>
+  <script src="js/toast.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/plan-guard.js" defer></script>
+  <script>
+    /* ═══════════════════════════════════════════
+       SPARRING — MATCHING ALGORITHMIQUE (déterministe, sans IA)
+       Génère les paires de sparring à partir des combattants de la salle.
+       Critères : proximité de poids, proximité de niveau, compatibilité de style.
+    ════════════════════════════════════════════ */
+
+    // Pondération des critères (total = 100)
+    const SP_WEIGHTS = { weight: 45, level: 35, style: 20 };
+
+    // Parse le nombre de kg depuis une chaîne type « -70 kg », « 70kg », « +93 kg »
+    function spParseWeight(cat) {
+      if (!cat) return null;
+      const m = String(cat).match(/(\d+(?:[.,]\d+)?)/);
+      if (!m) return null;
+      return parseFloat(m[1].replace(',', '.'));
+    }
+
+    // Niveau global d'un combattant : score physique + bonus d'expérience (record)
+    function spLevel(f) {
+      const phys = Number.isFinite(f.score_physique) ? f.score_physique : 50;
+      const wins = Number.isFinite(f.record_wins) ? f.record_wins : 0;
+      const losses = Number.isFinite(f.record_losses) ? f.record_losses : 0;
+      const fights = wins + losses;
+      // L'expérience (nb de combats) pèse jusqu'à +20 pts, plafonnée à 10 combats.
+      const expBonus = Math.min(fights, 10) * 2;
+      return phys + expBonus; // ~ 0..120
+    }
+
+    // Sous-score POIDS (0..1) selon l'écart de catégorie.
+    function spWeightScore(a, b) {
+      const wa = spParseWeight(a.weight_category);
+      const wb = spParseWeight(b.weight_category);
+      if (wa === null || wb === null) return { score: 0.5, sameCat: false, diff: null }; // info manquante => neutre
+      if (a.weight_category === b.weight_category) return { score: 1, sameCat: true, diff: 0 };
+      const diff = Math.abs(wa - wb);
+      // Les catégories MMA s'échelonnent ~ tous les 7-9 kg. 1 cran ≈ <=9 kg.
+      let score;
+      if (diff <= 9) score = 0.75;        // 1 cran d'écart : correct
+      else if (diff <= 18) score = 0.4;   // 2 crans : faible
+      else score = 0.12;                  // au-delà : très faible
+      return { score, sameCat: false, diff };
+    }
+
+    // Sous-score NIVEAU (0..1) : plus l'écart de niveau est faible, mieux c'est.
+    function spLevelScore(a, b) {
+      const diff = Math.abs(spLevel(a) - spLevel(b));
+      // 0 d'écart => 1 ; 60+ d'écart => 0 (échelle linéaire).
+      const score = Math.max(0, 1 - diff / 60);
+      return { score, diff };
+    }
+
+    // Sous-score STYLE (0..1) + libellé de raison.
+    // Mêmes styles = bon travail technique ciblé ; styles complémentaires = bon test.
+    function spStyleScore(a, b) {
+      const sa = a.style, sb = b.style;
+      if (!sa || !sb) return { score: 0.6, reason: null };
+      if (sa === sb) {
+        return { score: 0.85, reason: 'Même style (' + (STYLE_LABELS[sa] || sa) + ')' };
+      }
+      const pair = [sa, sb].sort().join('+');
+      // striker vs grappler : opposition classique très formatrice.
+      if (pair === 'grappler+striker') {
+        return { score: 1, reason: 'Styles complémentaires (striker / grappler)' };
+      }
+      // mma_complet face à un spécialiste : profil polyvalent, bon partenaire.
+      if (sa === 'mma_complet' || sb === 'mma_complet') {
+        return { score: 0.9, reason: 'Profil MMA complet face à un spécialiste' };
+      }
+      return { score: 0.75, reason: 'Styles variés' };
+    }
+
+    // Calcule le score de compatibilité 0..100 + raisons d'une paire.
+    function spComputePair(a, b) {
+      const w = spWeightScore(a, b);
+      const l = spLevelScore(a, b);
+      const st = spStyleScore(a, b);
+
+      const total = Math.round(
+        w.score * SP_WEIGHTS.weight +
+        l.score * SP_WEIGHTS.level +
+        st.score * SP_WEIGHTS.style
+      );
+
+      // Construction des raisons (1 à 3, les plus pertinentes).
+      const reasons = [];
+      if (w.sameCat) {
+        reasons.push('Même catégorie ' + (a.weight_category || ''));
+      } else if (w.diff !== null && w.diff <= 9) {
+        reasons.push('Catégories de poids proches (' + (a.weight_category || '?') + ' / ' + (b.weight_category || '?') + ')');
+      } else if (w.diff !== null) {
+        reasons.push('Écart de poids notable (' + Math.round(w.diff) + ' kg)');
+      }
+      if (l.diff <= 12) {
+        reasons.push('Niveau physique et expérience proches');
+      } else if (l.diff <= 30) {
+        reasons.push('Niveaux assez proches');
+      }
+      if (st.reason) reasons.push(st.reason);
+
+      return {
+        fighter_a: a,
+        fighter_b: b,
+        compatibility_score: Math.max(0, Math.min(100, total)),
+        reasons: reasons.slice(0, 3),
+        is_priority: total >= 80
+      };
+    }
+
+    // Statuts indisponibles pour le sparring actif.
+    function spIsUnavailable(f) {
+      return f.status === 'injured' || f.status === 'rest';
+    }
+    function spStatusReason(f) {
+      const name = f.first_name || getFullName(f) || 'Ce combattant';
+      if (f.status === 'injured') return name + ' est blessé — aucun sparring autorisé';
+      if (f.status === 'rest') return name + ' est en repos actif — sparring déconseillé';
+      return name + ' est indisponible';
+    }
+
+    /**
+     * Génère les suggestions à partir de la liste des combattants.
+     * @returns {{ active: object[], forbidden: object[] }}
+     *   active   : paires recommandées (combattants disponibles), triées par score décroissant.
+     *   forbidden: paires impliquant un combattant indisponible, avec une `restriction`.
+     */
+    function generateSparringSuggestions(fighters) {
+      const available = fighters.filter(f => !spIsUnavailable(f));
+      const unavailable = fighters.filter(spIsUnavailable);
+
+      // ── Paires actives (entre combattants disponibles) ──
+      const allPairs = [];
+      for (let i = 0; i < available.length; i++) {
+        for (let j = i + 1; j < available.length; j++) {
+          allPairs.push(spComputePair(available[i], available[j]));
+        }
+      }
+      allPairs.sort((a, b) => b.compatibility_score - a.compatibility_score);
+
+      // Sélection : top paires en limitant le nb d'apparitions d'un même combattant (max 2),
+      // pour offrir des partenaires variés plutôt que toujours les 2 mêmes.
+      const MAX_PER_FIGHTER = 2;
+      const MAX_PAIRS = 8;
+      const usage = {};
+      const active = [];
+      for (const p of allPairs) {
+        if (active.length >= MAX_PAIRS) break;
+        const ia = p.fighter_a.id, ib = p.fighter_b.id;
+        if ((usage[ia] || 0) >= MAX_PER_FIGHTER) continue;
+        if ((usage[ib] || 0) >= MAX_PER_FIGHTER) continue;
+        usage[ia] = (usage[ia] || 0) + 1;
+        usage[ib] = (usage[ib] || 0) + 1;
+        active.push(p);
+      }
+
+      // ── Paires déconseillées (1 combattant indisponible + 1 partenaire plausible) ──
+      // Pour chaque combattant indisponible, on prend le partenaire dispo le plus compatible
+      // (sur poids/niveau/style) afin d'illustrer concrètement la restriction.
+      const forbidden = [];
+      for (const u of unavailable) {
+        let best = null;
+        for (const a of available) {
+          const pair = spComputePair(u, a);
+          if (!best || pair.compatibility_score > best.compatibility_score) best = pair;
+        }
+        if (best) {
+          best.restriction = spStatusReason(u);
+          best.reasons = []; // on n'affiche pas de "pourquoi" positif sur une paire déconseillée
+          forbidden.push(best);
+        } else {
+          // Aucun partenaire disponible : on signale tout de même la restriction.
+          forbidden.push({ fighter_a: u, fighter_b: null, compatibility_score: 0, reasons: [], restriction: spStatusReason(u) });
+        }
+      }
+
+      return { active, forbidden, unavailable };
+    }
+
+    function renderSparringCard(s) {
+      const a = s.fighter_a || {};
+      const b = s.fighter_b || {};
+      const initA = escapeHtml(getInitials(a.first_name, a.last_name));
+      const initB = escapeHtml(getInitials(b.first_name, b.last_name));
+      const nameA = escapeHtml(getFullName(a));
+      const nameB = escapeHtml(getFullName(b));
+      const styleA = escapeHtml(STYLE_LABELS[a.style] || a.style || '');
+      const styleB = escapeHtml(STYLE_LABELS[b.style] || b.style || '');
+      const catA = escapeHtml(a.weight_category || '');
+      const catB = escapeHtml(b.weight_category || '');
+      const compat = s.compatibility_score || 0;
+      const isPriority = s.is_priority || false;
+      const reasons = Array.isArray(s.reasons) ? s.reasons.filter(r => r && String(r).trim()) : [];
+      const restriction = s.restriction || '';
+
+      return `
+        <div class="sp-card ${isPriority ? 'sp-card--priority' : ''}">
+          ${isPriority ? '<div class="sp-priority-badge">Idéale</div>' : ''}
+          <div class="sp-card__body">
+            <div class="sp-fighters">
+              <div class="sp-fighter">
+                <div class="sp-av sp-av--lg" style="background:${escapeHtml(a.avatar_color || '#333')}">${initA}</div>
+                <div class="sp-fighter-info">
+                  <div class="sp-fighter-name">${nameA}</div>
+                  <div class="sp-fighter-meta">${catA} ${styleA ? '· ' + styleA : ''}</div>
+                </div>
+              </div>
+              <div class="sp-vs">VS</div>
+              <div class="sp-fighter">
+                <div class="sp-av sp-av--lg" style="background:${escapeHtml(b.avatar_color || '#333')}">${initB}</div>
+                <div class="sp-fighter-info">
+                  <div class="sp-fighter-name">${nameB}</div>
+                  <div class="sp-fighter-meta">${catB} ${styleB ? '· ' + styleB : ''}</div>
+                </div>
+              </div>
+              <div class="sp-compat">
+                <div class="sp-pct">${compat}%</div>
+                <div class="sp-pct-label">compatibilité</div>
+                <div class="sp-ring-mini">
+                  <svg viewBox="0 0 36 36" style="width:44px;height:44px;transform:rotate(-90deg)">
+                    <circle cx="18" cy="18" r="15.9" fill="none" stroke="var(--border)" stroke-width="3"/>
+                    <circle cx="18" cy="18" r="15.9" fill="none" stroke="var(--gold-light)" stroke-width="3" stroke-dasharray="${compat} 100" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            ${reasons.length ? `<div class="sp-analysis">
+              <div class="sp-analysis-title"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-shuffle"/></svg> Pourquoi cette paire ?</div>
+              <ul class="sp-reasons">${reasons.map(r => '<li>' + escapeHtml(r) + '</li>').join('')}</ul>
+            </div>` : ''}
+            ${restriction ? `<div class="sp-restriction">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-alert"/></svg>
+              ${escapeHtml(restriction)}
+            </div>` : ''}
+          </div>
+          ${restriction ? '' : `<div class="sp-card__actions">
+            <button class="sp-btn sp-btn--reject" type="button" onclick="dismissSparring(this)"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-x"/></svg>Masquer</button>
+          </div>`}
+        </div>`;
+    }
+
+    // Masque une carte de suggestion (action locale, non persistée — pas de faux backend).
+    function dismissSparring(btn) {
+      const card = btn.closest('.sp-card');
+      if (!card) return;
+      card.style.transition = 'opacity 0.2s';
+      card.style.opacity = '0';
+      setTimeout(() => card.remove(), 200);
+      if (typeof toast === 'function') toast('Suggestion masquée', 'info');
+    }
+
+    const SP_EMPTY_NEED_FIGHTERS = '<div style="text-align:center;padding:2.5rem;color:var(--muted);font-size:0.82rem;">Ajoutez au moins 2 combattants disponibles pour générer des paires de sparring.</div>';
+    const SP_EMPTY_NO_PAIR = '<div style="text-align:center;padding:2.5rem;color:var(--muted);font-size:0.82rem;">Aucune paire possible : trop de combattants sont indisponibles (blessés ou au repos).</div>';
+
+    // Rend l'ensemble de la page à partir d'une liste de combattants déjà chargée.
+    function renderSparringPage(fighters) {
+      const sugEl = document.getElementById('sparringSuggestions');
+      const forbiddenEl = document.getElementById('sparringForbidden');
+      const historyEl = document.getElementById('sparringHistory');
+
+      const totalFighters = fighters.length;
+      const { active, forbidden, unavailable } = generateSparringSuggestions(fighters);
+
+      // ── KPI ──
+      document.getElementById('spKpi1').textContent = active.length;
+      document.getElementById('spKpi1Sub').textContent = active.length ? 'Paires recommandées' : 'Aucune paire';
+
+      if (active.length) {
+        const avg = Math.round(active.reduce((s, x) => s + (x.compatibility_score || 0), 0) / active.length);
+        document.getElementById('spKpi2').innerHTML = avg + '<span class="kpi-unit">%</span>';
+        document.getElementById('spKpi2Sub').textContent = 'Sur ' + active.length + ' paire' + (active.length > 1 ? 's' : '');
+      } else {
+        document.getElementById('spKpi2').innerHTML = '&mdash;';
+        document.getElementById('spKpi2Sub').textContent = '—';
+      }
+
+      document.getElementById('spKpi3').textContent = totalFighters;
+      const kpi3Card = document.getElementById('spKpi3').closest('.kpi-body');
+      const kpi3Label = kpi3Card ? kpi3Card.querySelector('.kpi-label') : null;
+      if (kpi3Label) kpi3Label.textContent = 'Combattants évalués';
+      document.getElementById('spKpi3Sub').textContent = unavailable.length ? (unavailable.length + ' indisponible' + (unavailable.length > 1 ? 's' : '')) : 'Tous disponibles';
+
+      document.getElementById('spKpi4').textContent = unavailable.length;
+      document.getElementById('spKpi4Sub').textContent = unavailable.length ? getFullName(unavailable[0]) : 'Aucune';
+
+      // ── Suggestions actives ──
+      if (totalFighters < 2) {
+        sugEl.innerHTML = SP_EMPTY_NEED_FIGHTERS;
+      } else if (!active.length) {
+        sugEl.innerHTML = SP_EMPTY_NO_PAIR;
+      } else {
+        sugEl.innerHTML = '<div class="sparring-cards">' + active.map(renderSparringCard).join('') + '</div>';
+      }
+
+      // ── Paires déconseillées ──
+      if (!forbidden.length) {
+        forbiddenEl.innerHTML = '<div style="color:var(--muted);font-size:0.72rem;">Aucune restriction active</div>';
+      } else {
+        forbiddenEl.innerHTML = forbidden.map(p => {
+          const a = p.fighter_a || {};
+          const b = p.fighter_b;
+          const avA = `<span class="sp-av sp-av--sm" style="background:${escapeHtml(a.avatar_color || '#333')}">${escapeHtml(getInitials(a.first_name, a.last_name))}</span>`;
+          const partner = b
+            ? `<span class="sp-av sp-av--sm" style="background:${escapeHtml(b.avatar_color || '#333')}">${escapeHtml(getInitials(b.first_name, b.last_name))}</span>`
+            : '<span style="font-size:0.7rem;color:var(--muted)">Tout le monde</span>';
+          return `<div class="sp-forbidden" style="margin-bottom:0.75rem;">
+            <div class="sp-h-pair">
+              ${avA}
+              <span style="font-size:0.7rem;color:var(--subtle);padding:0 0.35rem;">&times;</span>
+              ${partner}
+            </div>
+            <div class="sp-forbidden-reason">${escapeHtml(p.restriction || '')}</div>
+          </div>`;
+        }).join('');
+      }
+
+      // ── Historique : pas de source de données réelle (aucune séance enregistrée).
+      // On reste honnête : état vide explicite plutôt qu'un faux historique.
+      historyEl.innerHTML = '<div style="text-align:center;padding:1.5rem;color:var(--muted);font-size:0.75rem;">Aucun historique de sparring enregistré</div>';
+    }
+
+    // Charge les combattants puis rend la page. Réutilisable par le bouton « Régénérer ».
+    async function loadAndRenderSparring() {
+      const salle = await getCurrentSalle();
+      if (!salle) return;
+      const fighters = await getCombattants(salle.id);
+      renderSparringPage(Array.isArray(fighters) ? fighters : []);
+    }
+
+    loadAndRenderSparring();
+
+    // Bouton « Régénérer » : relance réellement le calcul du matching.
+    const refreshBtn = document.getElementById('refreshSparring');
+    if (refreshBtn) {
+      const refreshHTML = refreshBtn.innerHTML;
+      refreshBtn.addEventListener('click', async () => {
+        refreshBtn.disabled = true;
+        refreshBtn.textContent = 'Calcul en cours...';
+        try {
+          await loadAndRenderSparring();
+          if (typeof toast === 'function') toast('Paires de sparring recalculées', 'success');
+        } finally {
+          refreshBtn.innerHTML = refreshHTML;
+          refreshBtn.disabled = false;
+        }
+      });
+    }
+  </script>
+  <style>
+    .sparring-cards { display: flex; flex-direction: column; gap: 1rem; }
+
+    .sp-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      position: relative;
+      transition: border-color 0.18s;
+    }
+    .sp-card:hover { border-color: var(--muted); }
+    .sp-card--priority { border-color: var(--red-border); background: rgba(193,18,31,0.03); }
+    .sp-card--accepted { border-color: rgba(74,158,92,0.4); background: rgba(74,158,92,0.04); }
+
+    .sp-priority-badge {
+      position: absolute;
+      top: 0; right: 0;
+      background: var(--red);
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 0.55rem;
+      letter-spacing: 0.1em;
+      padding: 0.2rem 0.55rem;
+      border-radius: 0 var(--r-lg) 0 var(--r);
+    }
+
+    .sp-card__body { padding: 1rem 1.1rem; }
+    .sp-fighters { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.9rem; }
+
+    .sp-fighter { flex: 1; display: flex; align-items: center; gap: 0.8rem; }
+    .sp-av {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.58rem; font-weight: 700;
+      flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .sp-av--lg { width: 42px; height: 42px; font-size: 0.7rem; }
+    .sp-av--sm { width: 24px; height: 24px; font-size: 0.5rem; }
+
+    .sp-fighter-name { font-size: 0.82rem; font-weight: 600; margin-bottom: 0.15rem; }
+    .sp-fighter-meta { font-size: 0.68rem; color: var(--muted); margin-bottom: 0.35rem; }
+    .sp-fighter-scores { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .sps {
+      font-size: 0.6rem;
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      background: var(--surface3);
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .sps.ok   { color: #4a9e5c; background: rgba(74,158,92,0.08); border-color: rgba(74,158,92,0.2); }
+    .sps.warn { color: var(--red); background: var(--red-dim); border-color: var(--red-border); }
+
+    .sp-vs {
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: var(--subtle);
+      flex-shrink: 0;
+    }
+
+    .sp-compat { text-align: center; flex-shrink: 0; min-width: 70px; }
+    .sp-compat--sm { min-width: 50px; }
+    .sp-pct { font-family: var(--font-display); font-size: 1.5rem; font-weight: 900; color: var(--gold-light); line-height: 1; }
+    .sp-pct-label { font-size: 0.58rem; color: var(--subtle); }
+    .sp-ring-mini { margin-top: 0.3rem; display: flex; justify-content: center; }
+
+    .sp-analysis { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 0.75rem; margin-bottom: 0.75rem; }
+    .sp-analysis-title { display: flex; align-items: center; gap: 0.4rem; font-family: var(--font-display); font-size: 0.58rem; letter-spacing: 0.08em; color: var(--subtle); margin-bottom: 0.55rem; }
+    .sp-reasons { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+    .sp-reasons li { font-size: 0.74rem; color: var(--muted); line-height: 1.45; display: flex; gap: 0.4rem; align-items: flex-start; }
+    .sp-reasons li::before { content: '→'; color: var(--gold-light); flex-shrink: 0; }
+    .sp-reasons strong { color: var(--white); }
+
+    .sp-restriction {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.45rem;
+      font-size: 0.72rem;
+      color: #D4A017;
+      background: rgba(212,160,23,0.06);
+      border: 1px solid rgba(212,160,23,0.2);
+      border-radius: var(--r);
+      padding: 0.55rem 0.7rem;
+    }
+
+    .sp-card__actions {
+      display: flex;
+      gap: 0.4rem;
+      padding: 0.7rem 1.1rem;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .sp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.68rem;
+      padding: 0.38rem 0.7rem;
+      border-radius: var(--r);
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-family: var(--font-body);
+      transition: all 0.18s;
+    }
+    .sp-btn--accept  { color: #4a9e5c; border-color: rgba(74,158,92,0.3); }
+    .sp-btn--accept:hover  { background: rgba(74,158,92,0.12); }
+    .sp-btn--schedule { color: var(--gold-light); border-color: rgba(212,160,23,0.3); }
+    .sp-btn--schedule:hover { background: rgba(212,160,23,0.08); }
+    .sp-btn--reject  { color: var(--subtle); }
+    .sp-btn--reject:hover  { color: var(--red); border-color: var(--red-border); }
+    .sp-btn:disabled { opacity: 0.5; cursor: default; }
+
+    .sp-accepted-msg { font-size: 0.72rem; color: #4a9e5c; display: flex; align-items: center; gap: 0.35rem; }
+
+    /* COMPACT CARD */
+    .sp-card--compact .sp-card__body { padding: 0.75rem 1.1rem; }
+    .sp-fighter-compact { display: flex; align-items: center; gap: 0.5rem; flex: 1; }
+    .sp-compact-reason { font-size: 0.72rem; color: var(--muted); margin-top: 0.55rem; line-height: 1.4; }
+
+    /* HISTORY */
+    .sp-history-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.65rem 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+    .sp-history-item:last-child { border-bottom: none; }
+    .sp-h-pair { display: flex; align-items: center; gap: 0.25rem; flex-shrink: 0; }
+    .sp-h-vs { font-size: 0.5rem; color: var(--subtle); }
+    .sp-h-info { flex: 1; }
+    .sp-h-names { font-size: 0.75rem; font-weight: 600; }
+    .sp-h-date { font-size: 0.65rem; color: var(--muted); margin-top: 0.1rem; }
+    .sp-h-result { font-size: 0.62rem; font-weight: 600; white-space: nowrap; }
+    .sp-h-result--ok   { color: #4a9e5c; }
+    .sp-h-result--warn { color: #D4A017; }
+
+    /* FORBIDDEN */
+    .sp-forbidden { display: flex; gap: 0.75rem; align-items: flex-start; }
+    .sp-forbidden-reason { font-size: 0.72rem; color: var(--muted); line-height: 1.45; flex: 1; }
+
+    /* RESPONSIVE SPARRING */
+    @media (max-width: 768px) {
+      .sp-fighters { flex-wrap: wrap; gap: 0.65rem; }
+      .sp-fighter { min-width: 0; }
+      .sp-compat { width: 100%; display: flex; align-items: center; gap: 0.75rem; text-align: left; }
+      .sp-pct { font-size: 1.2rem; }
+      .sp-ring-mini { margin-top: 0; }
+      .sp-card__actions { flex-wrap: wrap; }
+    }
+    @media (max-width: 480px) {
+      .sp-fighter { flex-direction: column; align-items: flex-start; text-align: left; }
+      .sp-av--lg { width: 36px; height: 36px; font-size: 0.62rem; }
+      .sp-card__body { padding: 0.75rem; }
+    }
+  </style>
+</body>
+</html>

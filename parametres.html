@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paramètres — THYMOS Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body class="dashboard-body">
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="ic-sword"         viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><path d="M12 2l-3 5h6z" fill="currentColor" stroke="none"/><line x1="9" y1="20" x2="15" y2="20"/></symbol>
+  <symbol id="ic-menu"          viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+  <symbol id="ic-home"          viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="ic-users"         viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="ic-bell"          viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></symbol>
+  <symbol id="ic-calendar"      viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+  <symbol id="ic-shuffle"       viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></symbol>
+  <symbol id="ic-award"         viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></symbol>
+  <symbol id="ic-cpu"           viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+  <symbol id="ic-settings"      viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+  <symbol id="ic-check"         viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="ic-upload"        viewBox="0 0 24 24"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></symbol>
+  <symbol id="ic-image"         viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></symbol>
+  <symbol id="ic-user"          viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="ic-mail"          viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+  <symbol id="ic-phone"         viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l1.27-.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="ic-globe"         viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="ic-map-pin"       viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="ic-bell-off"      viewBox="0 0 24 24"><path d="M13.73 21a2 2 0 0 1-3.46 0"/><path d="M18.63 13A17.89 17.89 0 0 1 18 8"/><path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"/><path d="M18 8a6 6 0 0 0-9.33-5"/><line x1="1" y1="1" x2="23" y2="23"/></symbol>
+  <symbol id="ic-shield"        viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="ic-credit-card"   viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></symbol>
+  <symbol id="ic-users-plus"    viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></symbol>
+  <symbol id="ic-x"             viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+  <symbol id="ic-trash"         viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></symbol>
+  <symbol id="ic-eye"           viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="ic-eye-off"       viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></symbol>
+</svg>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__logo">
+      <span class="logo-icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-sword"/></svg></span>
+      <span class="logo-text">THYMOS</span>
+    </div>
+    <nav class="sidebar__nav">
+      <div class="nav-group">
+        <span class="nav-group-label">Principal</span>
+        <a href="dashboard.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-home"/></svg><span>Dashboard</span></a>
+        <a href="combattants.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-users"/></svg><span>Combattants</span><span class="nav-badge">—</span></a>
+        <a href="alertes.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-bell"/></svg><span>Alertes IA</span><span class="nav-badge nav-badge--red">—</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Gestion</span>
+        <a href="planning.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-calendar"/></svg><span>Planning</span></a>
+        <a href="sparring.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-shuffle"/></svg><span>Sparring IA</span></a>
+        <a href="combats.html" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-award"/></svg><span>Combats</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">IA</span>
+        <a href="dashboard.html#ia-coach" class="nav-item"><svg class="icon" aria-hidden="true"><use href="#ic-cpu"/></svg><span>IA Coach</span><span class="nav-badge nav-badge--gold">Bientôt</span></a>
+      </div>
+    </nav>
+    <div class="sidebar__footer">
+      <div class="sidebar__salle">
+        <div class="salle-avatar" id="sidebarAvatar">AC</div>
+        <div class="salle-info">
+          <div class="salle-name" id="sidebarGymName">Ma Salle</div>
+          <div class="salle-plan" id="sidebarPlan">Plan Pro</div>
+        </div>
+        <a href="parametres.html" class="salle-settings" title="Paramètres" style="color:var(--white)">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-settings"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="dashboard-main">
+    <header class="topbar">
+      <div class="topbar__left">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu">
+          <svg class="icon icon--md" aria-hidden="true"><use href="#ic-menu"/></svg>
+        </button>
+        <div class="topbar__breadcrumb">
+          <a href="dashboard.html" class="breadcrumb-gym" id="breadcrumbGym">Ma Salle</a>
+          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-page">Paramètres</span>
+        </div>
+      </div>
+      <div class="topbar__right">
+        <button class="btn btn--ghost btn--sm" id="resetBtn">Réinitialiser</button>
+        <button class="btn btn--primary btn--sm" id="saveBtn">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+          Enregistrer les modifications
+        </button>
+      </div>
+    </header>
+
+    <div class="dashboard-content" id="main" role="main">
+
+      <!-- TABS NAVIGATION -->
+      <div class="settings-tabs">
+        <button class="stab active" data-stab="profil">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-image"/></svg>
+          Profil &amp; Apparence
+        </button>
+        <button class="stab" data-stab="infos">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-map-pin"/></svg>
+          Informations
+        </button>
+        <button class="stab" data-stab="abonnement">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-credit-card"/></svg>
+          Abonnement
+        </button>
+        <button class="stab" data-stab="equipe">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-users-plus"/></svg>
+          Équipe
+        </button>
+        <button class="stab" data-stab="notifications">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-bell"/></svg>
+          Notifications
+        </button>
+        <button class="stab" data-stab="securite">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-shield"/></svg>
+          Sécurité
+        </button>
+      </div>
+
+      <!-- ══════════════════════════
+           TAB : PROFIL & APPARENCE
+      ══════════════════════════ -->
+      <div class="stab-content active" id="stab-profil">
+        <div class="settings-layout">
+
+          <!-- COLONNE FORMULAIRE -->
+          <div class="settings-col settings-col--form">
+
+            <!-- NOM DE LA SALLE -->
+            <div class="settings-card">
+              <div class="sc-header">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-user"/></svg>
+                <div>
+                  <div class="sc-title">Identité de la salle</div>
+                  <div class="sc-sub">Nom et description affichés sur la plateforme</div>
+                </div>
+              </div>
+              <div class="sc-body">
+                <div class="form-field">
+                  <label class="field-label" for="gymName">Nom de la salle</label>
+                  <input class="field-input" type="text" id="gymName" placeholder="Ex : Ma Salle Marseille" maxlength="40" />
+                  <div class="field-hint">Affiché dans la sidebar et sur votre profil public.</div>
+                </div>
+                <div class="form-field">
+                  <label class="field-label" for="gymSlogan">Slogan / description courte</label>
+                  <input class="field-input" type="text" id="gymSlogan" placeholder="Ex : Là où les champions se forgent" maxlength="60" />
+                </div>
+                <div class="form-field">
+                  <label class="field-label" for="gymCity">Ville</label>
+                  <input class="field-input" type="text" id="gymCity" placeholder="Ex : Marseille" />
+                </div>
+              </div>
+            </div>
+
+            <!-- LOGO -->
+            <div class="settings-card">
+              <div class="sc-header">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-image"/></svg>
+                <div>
+                  <div class="sc-title">Logo de la salle</div>
+                  <div class="sc-sub">Affiché dans la sidebar, sur les fiches combattants et les exports PDF</div>
+                </div>
+              </div>
+              <div class="sc-body">
+                <div class="upload-zone" id="logoDropzone">
+                  <div class="uz-preview" id="logoPreview">
+                    <div class="uz-initials" id="logoInitials">AC</div>
+                  </div>
+                  <div class="uz-info">
+                    <div class="uz-title">Glisser-déposer ou cliquer pour importer</div>
+                    <div class="uz-hint">PNG, JPG ou SVG — recommandé : 200×200 px minimum</div>
+                    <div class="uz-actions">
+                      <label class="btn btn--ghost btn--sm" for="logoInput" style="cursor:pointer;">
+                        <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-upload"/></svg>
+                        Choisir un fichier
+                      </label>
+                      <button class="btn btn--ghost btn--sm" id="removeLogoBtn" style="display:none;">
+                        <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-trash"/></svg>
+                        Supprimer
+                      </button>
+                    </div>
+                  </div>
+                  <input type="file" id="logoInput" accept="image/*" style="display:none;" />
+                </div>
+              </div>
+            </div>
+
+            <!-- IMAGE DE FOND -->
+            <div class="settings-card">
+              <div class="sc-header">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-image"/></svg>
+                <div>
+                  <div class="sc-title">Image de fond</div>
+                  <div class="sc-sub">Apparaît en filigrane discret derrière le dashboard (opacité ~8%)</div>
+                </div>
+              </div>
+              <div class="sc-body">
+                <div class="upload-zone upload-zone--wide" id="bgDropzone">
+                  <div class="uz-bg-preview" id="bgPreview">
+                    <span class="uz-bg-empty">Aucune image de fond</span>
+                  </div>
+                  <div class="uz-info">
+                    <div class="uz-title">Image d'arrière-plan du dashboard</div>
+                    <div class="uz-hint">JPG ou PNG — recommandé : 1920×1080 px. L'image sera assombrie automatiquement.</div>
+                    <div class="uz-actions">
+                      <label class="btn btn--ghost btn--sm" for="bgInput" style="cursor:pointer;">
+                        <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-upload"/></svg>
+                        Choisir une image
+                      </label>
+                      <button class="btn btn--ghost btn--sm" id="removeBgBtn" style="display:none;">
+                        <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-trash"/></svg>
+                        Supprimer
+                      </button>
+                    </div>
+                  </div>
+                  <input type="file" id="bgInput" accept="image/*" style="display:none;" />
+                </div>
+
+                <!-- Opacité -->
+                <div class="form-field" style="margin-top:1rem;">
+                  <label class="field-label" for="bgOpacity">
+                    Intensité du fond
+                    <span class="field-val-badge" id="opacityVal">8%</span>
+                  </label>
+                  <input type="range" id="bgOpacity" min="2" max="20" value="8" class="range-input" />
+                  <div class="range-labels"><span>Très discret</span><span>Plus visible</span></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- COLONNE APERÇU -->
+          <div class="settings-col settings-col--preview">
+            <div class="settings-card settings-card--sticky">
+              <div class="sc-header">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-eye"/></svg>
+                <div>
+                  <div class="sc-title">Aperçu en direct</div>
+                  <div class="sc-sub">Mise à jour instantanée</div>
+                </div>
+              </div>
+              <div class="sc-body">
+
+                <!-- MINI SIDEBAR PREVIEW -->
+                <div class="preview-sidebar">
+                  <div class="prev-logo">
+                    <div class="prev-sword">⚔</div>
+                    <span>THYMOS</span>
+                  </div>
+                  <div class="prev-nav">
+                    <div class="prev-nav-item prev-active">Dashboard</div>
+                    <div class="prev-nav-item">Combattants</div>
+                    <div class="prev-nav-item">Alertes IA</div>
+                    <div class="prev-nav-sep"></div>
+                    <div class="prev-nav-item">Planning</div>
+                    <div class="prev-nav-item">Sparring IA</div>
+                  </div>
+                  <div class="prev-footer">
+                    <div class="prev-avatar" id="prevAvatar">AC</div>
+                    <div class="prev-gym-info">
+                      <div class="prev-gym-name" id="prevGymName">Ma Salle</div>
+                      <div class="prev-gym-plan" id="prevGymPlan">Plan Pro</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- MINI BG PREVIEW -->
+                <div class="preview-bg-demo" id="previewBgDemo">
+                  <div class="pbd-overlay" id="previewBgOverlay"></div>
+                  <div class="pbd-content">
+                    <div class="pbd-topbar">
+                      <span class="pbd-breadcrumb" id="pbd-breadcrumb">Ma Salle › Dashboard</span>
+                    </div>
+                    <div class="pbd-cards">
+                      <div class="pbd-card"></div>
+                      <div class="pbd-card"></div>
+                      <div class="pbd-card"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══════════════════════════
+           TAB : INFORMATIONS
+      ══════════════════════════ -->
+      <div class="stab-content" id="stab-infos">
+        <div class="settings-layout settings-layout--single">
+          <div class="settings-card">
+            <div class="sc-header">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-map-pin"/></svg>
+              <div><div class="sc-title">Coordonnées de la salle</div><div class="sc-sub">Informations de contact et localisation</div></div>
+            </div>
+            <div class="sc-body sc-body--grid">
+              <div class="form-field">
+                <label class="field-label" for="gymAddress">Adresse</label>
+                <input class="field-input" type="text" id="gymAddress" placeholder="12 rue des Elites" />
+              </div>
+              <div class="form-field">
+                <label class="field-label" for="gymZip">Code postal</label>
+                <input class="field-input" type="text" id="gymZip" placeholder="69001" />
+              </div>
+              <div class="form-field">
+                <label class="field-label" for="gymCityInfo">Ville</label>
+                <input class="field-input" type="text" id="gymCityInfo" placeholder="Marseille" />
+              </div>
+              <div class="form-field">
+                <label class="field-label" for="gymPhone">
+                  <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-phone"/></svg>
+                  Téléphone
+                </label>
+                <input class="field-input" type="tel" id="gymPhone" placeholder="+33 4 78 XX XX XX" />
+              </div>
+              <div class="form-field">
+                <label class="field-label" for="gymEmail">
+                  <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-mail"/></svg>
+                  Email
+                </label>
+                <input class="field-input" type="email" id="gymEmail" placeholder="contact@arena-combat.fr" />
+              </div>
+              <div class="form-field">
+                <label class="field-label" for="gymWebsite">
+                  <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-globe"/></svg>
+                  Site web
+                </label>
+                <input class="field-input" type="url" id="gymWebsite" placeholder="https://arena-combat.fr" />
+              </div>
+              <div class="form-field form-field--full">
+                <label class="field-label">Réseaux sociaux</label>
+                <div class="socials-row">
+                  <input class="field-input" type="url" id="gymInstagram" placeholder="Instagram" />
+                  <input class="field-input" type="url" id="gymFacebook"  placeholder="Facebook" />
+                  <input class="field-input" type="url" id="gymYoutube"   placeholder="YouTube" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════
+           TAB : ABONNEMENT
+      ══════════════════════════ -->
+      <div class="stab-content" id="stab-abonnement">
+        <div class="settings-layout settings-layout--single">
+
+          <!-- Plan actuel -->
+          <div class="settings-card">
+            <div class="sc-header">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-credit-card"/></svg>
+              <div><div class="sc-title">Plan actuel</div><div class="sc-sub">Facturation mensuelle</div></div>
+            </div>
+            <div class="sc-body">
+              <div class="plan-current">
+                <div class="plan-badge plan-badge--guerrier" id="planBadge">PRO</div>
+                <div class="plan-details">
+                  <div class="plan-price" id="planPrice">59 <span>EUR / mois</span></div>
+                  <div class="plan-renew">Sans engagement · annulable à tout moment</div>
+                </div>
+              </div>
+              <div class="plan-features">
+                <div class="pf-item ok" id="planLimit">Combattants illimités</div>
+                <div class="pf-item muted">IA Coach 24h/24 <span class="badge-soon">Bientôt</span></div>
+                <div class="pf-item ok">Suivi mental + physique complet</div>
+                <div class="pf-item ok">Camps de préparation</div>
+                <div class="pf-item ok">Matching sparring</div>
+                <div class="pf-item ok">Planning, booking & nutrition</div>
+                <div class="pf-item muted">Analyse vidéo IA — <span style="color:var(--gold-light)">Elite</span></div>
+                <div class="pf-item muted">Multi-coachs — <span style="color:var(--gold-light)">Elite</span></div>
+              </div>
+              <div style="margin-top:1.25rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+                <a href="https://buy.stripe.com/00w00j03Z6OQg3Y7KGeZ202" class="btn btn--primary btn--sm">Passer au plan Elite</a>
+                <button class="btn btn--ghost btn--sm" id="activateManual" style="color:#4a9e5c;border-color:rgba(74,158,92,0.3);">Activer un plan (code)</button>
+                <button class="btn btn--ghost btn--sm" onclick="toast('Portail de facturation — disponible prochainement', 'info')">Gérer la facturation</button>
+                <button class="btn btn--ghost btn--sm soon-locked" id="cancelSubBtn" disabled style="border-color:var(--red-border);color:var(--red);" title="Bientôt disponible">Résilier mon abonnement <span class="badge-soon">Bientôt</span></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Comparaison plans -->
+          <div class="settings-card">
+            <div class="sc-header">
+              <div><div class="sc-title">Comparer les plans</div></div>
+            </div>
+            <div class="sc-body">
+              <div class="plans-compare">
+                <div class="pc-plan" data-plan="decouverte">
+                  <div class="pc-name">Découverte</div>
+                  <div class="pc-price">Gratuit</div>
+                  <ul class="pc-features">
+                    <li>30 jours d'essai complet</li>
+                    <li>Toutes les fonctionnalités</li>
+                    <li>Sans carte bancaire</li>
+                  </ul>
+                </div>
+                <div class="pc-plan" data-plan="guerrier">
+                  <div class="pc-name">Pro</div>
+                  <div class="pc-price">59 EUR <span>/mois</span></div>
+                  <ul class="pc-features">
+                    <li>15 combattants</li>
+                    <li>IA Coach complet 24h/24</li>
+                    <li>Mental + Physique + Nutrition</li>
+                    <li>Camps & Sparring IA</li>
+                    <li>Planning & booking</li>
+                  </ul>
+                </div>
+                <div class="pc-plan pc-plan--premium" data-plan="champion">
+                  <div class="pc-name">Elite</div>
+                  <div class="pc-price">129 EUR <span>/mois</span></div>
+                  <ul class="pc-features">
+                    <li>Tout du Pro</li>
+                    <li>Analyse vidéo IA</li>
+                    <li>Analytics avancés</li>
+                    <li>Multi-coachs (5)</li>
+                    <li>Export fédérations</li>
+                    <li>Support prioritaire</li>
+                  </ul>
+                  <a href="https://buy.stripe.com/00w00j03Z6OQg3Y7KGeZ202" class="btn btn--primary btn--sm" style="margin-top:1rem;width:100%;">Passer au Elite</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══════════════════════════
+           TAB : ÉQUIPE
+      ══════════════════════════ -->
+      <div class="stab-content" id="stab-equipe">
+        <div class="settings-layout settings-layout--single">
+          <div class="settings-card">
+            <div class="sc-header">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-users-plus"/></svg>
+              <div><div class="sc-title">Membres de l'équipe</div><div class="sc-sub">Gérez les accès à la plateforme</div></div>
+              <button class="btn btn--primary btn--sm" style="margin-left:auto;">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-users-plus"/></svg>
+                Inviter
+              </button>
+            </div>
+            <div class="sc-body">
+              <div class="team-list" id="teamList">
+                <div style="padding:2rem;text-align:center;color:var(--subtle);font-size:0.82rem;">Chargement...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════
+           TAB : NOTIFICATIONS
+      ══════════════════════════ -->
+      <div class="stab-content" id="stab-notifications">
+        <div class="settings-layout settings-layout--single">
+          <div class="settings-card">
+            <div class="sc-header">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-bell"/></svg>
+              <div><div class="sc-title">Préférences de notifications</div><div class="sc-sub">Alertes IA et communications automatiques</div></div>
+            </div>
+            <div class="sc-body">
+              <div class="soon-banner">Notifications email/SMS — bientôt disponibles. Ces préférences ne sont pas encore actives.</div>
+              <div class="notif-group">
+                <div class="notif-group-title">Alertes IA <span class="badge-soon">Bientôt</span></div>
+                <div class="notif-item">
+                  <div class="notif-info">
+                    <div class="notif-label">Alerte score mental critique</div>
+                    <div class="notif-desc">Lorsqu'un combattant passe sous 60% de score mental</div>
+                  </div>
+                  <label class="toggle soon-locked" title="Bientôt disponible">
+                    <input type="checkbox" checked disabled id="notif-mental-critical" />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+                <div class="notif-item">
+                  <div class="notif-info">
+                    <div class="notif-label">Alerte score mental en baisse</div>
+                    <div class="notif-desc">Lorsqu'un score mental baisse de plus de 10 pts en une semaine</div>
+                  </div>
+                  <label class="toggle soon-locked" title="Bientôt disponible">
+                    <input type="checkbox" checked disabled id="notif-mental-drop" />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+                <div class="notif-item">
+                  <div class="notif-info">
+                    <div class="notif-label">Questionnaire non complété</div>
+                    <div class="notif-desc">Rappel si un combattant n'a pas rempli son questionnaire depuis 7 jours</div>
+                  </div>
+                  <label class="toggle soon-locked" title="Bientôt disponible">
+                    <input type="checkbox" checked disabled id="notif-questionnaire" />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+                <div class="notif-item">
+                  <div class="notif-info">
+                    <div class="notif-label">Alerte blessure</div>
+                    <div class="notif-desc">Mise à jour du statut de rééducation des combattants blessés</div>
+                  </div>
+                  <label class="toggle soon-locked" title="Bientôt disponible">
+                    <input type="checkbox" checked disabled id="notif-injury" />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="notif-group">
+                <div class="notif-group-title">Combats &amp; Planning <span class="badge-soon">Bientôt</span></div>
+                <div class="notif-item">
+                  <div class="notif-info">
+                    <div class="notif-label">Rappel J-14 avant un combat</div>
+                    <div class="notif-desc">Alerte automatique 2 semaines avant un combat programmé</div>
+                  </div>
+                  <label class="toggle soon-locked" title="Bientôt disponible">
+                    <input type="checkbox" checked disabled id="notif-fight-14" />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+                <div class="notif-item">
+                  <div class="notif-info">
+                    <div class="notif-label">Rappel J-7 avant un combat</div>
+                    <div class="notif-desc">Alerte de préparation finale une semaine avant</div>
+                  </div>
+                  <label class="toggle soon-locked" title="Bientôt disponible">
+                    <input type="checkbox" checked disabled id="notif-fight-7" />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+                <div class="notif-item">
+                  <div class="notif-info">
+                    <div class="notif-label">Suggestions sparring IA quotidiennes</div>
+                    <div class="notif-desc">Nouvelles paires suggérées chaque matin à 8h</div>
+                  </div>
+                  <label class="toggle soon-locked" title="Bientôt disponible">
+                    <input type="checkbox" disabled id="notif-sparring" />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="notif-group">
+                <div class="notif-group-title">Canal de notification <span class="badge-soon">Bientôt</span></div>
+                <div class="notif-channels soon-locked">
+                  <label class="channel-option">
+                    <input type="checkbox" checked disabled /> Notifications dans l'application
+                  </label>
+                  <label class="channel-option">
+                    <input type="checkbox" checked disabled /> Email
+                  </label>
+                  <label class="channel-option">
+                    <input type="checkbox" disabled /> SMS
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════
+           TAB : SÉCURITÉ
+      ══════════════════════════ -->
+      <div class="stab-content" id="stab-securite">
+        <div class="settings-layout settings-layout--single">
+
+          <div class="settings-card">
+            <div class="sc-header">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-shield"/></svg>
+              <div><div class="sc-title">Mot de passe</div></div>
+            </div>
+            <div class="sc-body" style="max-width:400px;">
+              <div class="form-field">
+                <label class="field-label">Mot de passe actuel</label>
+                <div class="password-field">
+                  <input class="field-input" type="password" id="pwdCurrent" placeholder="••••••••" />
+                  <button class="pwd-toggle" data-target="pwdCurrent" type="button">
+                    <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-eye"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="field-label">Nouveau mot de passe</label>
+                <div class="password-field">
+                  <input class="field-input" type="password" id="pwdNew" placeholder="••••••••" />
+                  <button class="pwd-toggle" data-target="pwdNew" type="button">
+                    <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-eye"/></svg>
+                  </button>
+                </div>
+                <div class="pwd-strength" id="pwdStrength" style="display:none;">
+                  <div class="pwd-strength-bar"><div class="pwd-strength-fill" id="pwdStrengthFill"></div></div>
+                  <span id="pwdStrengthLabel"></span>
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="field-label">Confirmer le nouveau mot de passe</label>
+                <div class="password-field">
+                  <input class="field-input" type="password" id="pwdConfirm" placeholder="••••••••" />
+                  <button class="pwd-toggle" data-target="pwdConfirm" type="button">
+                    <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-eye"/></svg>
+                  </button>
+                </div>
+              </div>
+              <button class="btn btn--primary btn--sm">Changer le mot de passe</button>
+            </div>
+          </div>
+
+          <div class="settings-card">
+            <div class="sc-header">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-shield"/></svg>
+              <div><div class="sc-title">Double authentification (2FA) <span class="badge-soon">Bientôt</span></div><div class="sc-sub">Sécurisez l'accès à votre compte</div></div>
+              <label class="toggle soon-locked" style="margin-left:auto;" title="Bientôt disponible">
+                <input type="checkbox" id="toggle2fa" disabled />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <div class="sc-body">
+              <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;">La double authentification ajoute une couche de sécurité supplémentaire. Une fois activée, vous devrez confirmer votre identité via votre application d'authentification à chaque connexion.</p>
+            </div>
+          </div>
+
+          <div class="settings-card settings-card--danger">
+            <div class="sc-header">
+              <svg class="icon icon--sm" aria-hidden="true" style="color:var(--red)"><use href="#ic-trash"/></svg>
+              <div><div class="sc-title" style="color:var(--red)">Zone de danger <span class="badge-soon">Bientôt</span></div><div class="sc-sub">Actions irréversibles</div></div>
+            </div>
+            <div class="sc-body">
+              <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:1rem;">La suppression du compte supprime définitivement toutes les données des combattants, les historiques et les analyses IA. Cette action est irréversible.</p>
+              <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:1rem;">La suppression automatique n'est pas encore disponible. Pour supprimer votre compte, contactez-nous à <a href="mailto:contact@thymos.app" style="color:var(--gold-light);">contact@thymos.app</a> et nous traiterons votre demande.</p>
+              <button class="btn btn--ghost btn--sm soon-locked" disabled style="border-color:var(--red-border);color:var(--red);" title="Bientôt disponible">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-trash"/></svg>
+                Supprimer le compte
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.50.0" crossorigin="anonymous" defer></script>
+  <script src="js/security.js" defer></script>
+<script src="js/supabase-config.js" defer></script>
+  <script src="js/sidebar-badges.js" defer></script>
+  <script src="js/auth-guard.js" defer></script>
+  <script src="js/settings-loader.js" defer></script>
+  <script src="js/toast.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+  <script>
+  // ── TABS ──────────────────────────────────────────
+  const stabBtns     = document.querySelectorAll('.stab');
+  const stabContents = document.querySelectorAll('.stab-content');
+  stabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      stabBtns.forEach(b => b.classList.remove('active'));
+      stabContents.forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('stab-' + btn.dataset.stab).classList.add('active');
+    });
+  });
+
+  // ── LOAD STORED SETTINGS ─────────────────────────
+  const stored = {
+    name:     localStorage.getItem('thymos_gym_name')     || '',
+    slogan:   localStorage.getItem('thymos_gym_slogan')   || '',
+    city:     localStorage.getItem('thymos_gym_city')     || '',
+    logo:     localStorage.getItem('thymos_gym_logo')     || null,
+    bg:       localStorage.getItem('thymos_gym_bg')       || null,
+    opacity:  localStorage.getItem('thymos_gym_opacity')  || '8',
+    initials: localStorage.getItem('thymos_gym_initials') || 'AC',
+  };
+
+  document.getElementById('gymName').value    = stored.name;
+  document.getElementById('gymSlogan').value  = stored.slogan;
+  document.getElementById('gymCity').value    = stored.city;
+  document.getElementById('bgOpacity').value  = stored.opacity;
+  document.getElementById('opacityVal').textContent = stored.opacity + '%';
+
+  if (stored.logo) applyLogoPreview(stored.logo);
+  if (stored.bg)   applyBgPreview(stored.bg);
+  updateSidebarPreview();
+
+  // ── HYDRATATION DEPUIS LA BASE (source de vérité ; localStorage = cache) ──
+  (async function loadSalleFromDb() {
+    try {
+      const { data: salles } = await window.supabase.from('salles').select('*').limit(1);
+      const s = salles && salles[0];
+      if (!s) return;
+      const setIf = (id, val, lsKey) => {
+        if (val === null || val === undefined || val === '') return;
+        const el = document.getElementById(id);
+        if (el) el.value = val;
+        if (lsKey) localStorage.setItem(lsKey, val);
+      };
+      setIf('gymName', s.name, 'thymos_gym_name');
+      setIf('gymSlogan', s.description, 'thymos_gym_slogan');
+      setIf('gymCity', s.city, 'thymos_gym_city');
+      if (s.bg_opacity !== null && s.bg_opacity !== undefined) {
+        const op = document.getElementById('bgOpacity');
+        if (op) { op.value = s.bg_opacity; document.getElementById('opacityVal').textContent = s.bg_opacity + '%'; }
+        localStorage.setItem('thymos_gym_opacity', String(s.bg_opacity));
+      }
+      const dbInfo = {
+        gymAddress: s.address, gymZip: s.zip_code, gymCityInfo: s.city,
+        gymPhone: s.phone, gymEmail: s.email, gymWebsite: s.website,
+        gymInstagram: s.instagram, gymFacebook: s.facebook, gymYoutube: s.youtube,
+      };
+      Object.entries(dbInfo).forEach(([id, val]) => setIf(id, val, 'thymos_' + id));
+      if (s.logo_url)     { stored.logo = s.logo_url;     localStorage.setItem('thymos_gym_logo', s.logo_url); applyLogoPreview(s.logo_url); }
+      if (s.bg_image_url) { stored.bg   = s.bg_image_url; localStorage.setItem('thymos_gym_bg', s.bg_image_url); applyBgPreview(s.bg_image_url); }
+      updateSidebarPreview();
+    } catch (e) {
+      console.warn('Chargement salle depuis la base echoue:', e);
+    }
+  })();
+
+  // ── ABONNEMENT (plan reel depuis la base) ────────
+  const PLAN_INFO = {
+    decouverte: { name: 'Essai',  badge: 'ESSAI', price: 'Gratuit',                       limit: '3 combattants',           cls: 'plan-badge--guerrier' },
+    guerrier:   { name: 'Pro',    badge: 'PRO',   price: '59 <span>EUR / mois</span>',     limit: '15 combattants',          cls: 'plan-badge--guerrier' },
+    champion:   { name: 'Elite',  badge: 'ELITE', price: '129 <span>EUR / mois</span>',    limit: 'Combattants illimites',   cls: 'plan-badge--champion' },
+  };
+
+  (async function loadSubscription() {
+    let plan = 'decouverte';
+    try {
+      const { data } = await window.supabase.from('salles').select('plan').limit(1);
+      plan = data?.[0]?.plan || 'decouverte';
+    } catch (e) {
+      console.warn('Chargement du plan echoue, repli sur Essai:', e);
+      plan = 'decouverte';
+    }
+    const info = PLAN_INFO[plan] || PLAN_INFO.decouverte;
+
+    // Carte "Plan actuel"
+    const badgeEl = document.getElementById('planBadge');
+    if (badgeEl) {
+      badgeEl.textContent = info.badge;
+      badgeEl.className = 'plan-badge ' + info.cls;
+    }
+    const priceEl = document.getElementById('planPrice');
+    if (priceEl) priceEl.innerHTML = info.price;
+    const limitEl = document.getElementById('planLimit');
+    if (limitEl) limitEl.textContent = escapeHtml(info.limit);
+
+    // Comparatif : place le badge "Actuel" sur la bonne offre
+    const matchKey = PLAN_INFO[plan] ? plan : 'decouverte';
+    document.querySelectorAll('#stab-abonnement .pc-plan').forEach(card => {
+      card.classList.remove('pc-plan--active');
+      const existing = card.querySelector('.pc-badge');
+      if (existing) existing.remove();
+      if (card.dataset.plan === matchKey) {
+        card.classList.add('pc-plan--active');
+        const badge = document.createElement('div');
+        badge.className = 'pc-badge';
+        badge.textContent = 'Actuel';
+        card.prepend(badge);
+      }
+    });
+  })();
+
+  // ── LIVE PREVIEW ──────────────────────────────────
+  document.getElementById('gymName').addEventListener('input', updateSidebarPreview);
+  document.getElementById('gymSlogan').addEventListener('input', updateSidebarPreview);
+
+  function updateSidebarPreview() {
+    const name = document.getElementById('gymName').value.trim() || 'Ma Salle';
+    document.getElementById('prevGymName').textContent  = name;
+    document.getElementById('pbd-breadcrumb').textContent = name + ' › Dashboard';
+    document.getElementById('sidebarGymName').textContent = name;
+    document.getElementById('breadcrumbGym').textContent  = name;
+
+    // Initiales auto
+    const words    = name.split(' ').filter(Boolean);
+    const initials = words.length >= 2
+      ? (words[0][0] + words[1][0]).toUpperCase()
+      : name.slice(0, 2).toUpperCase();
+    document.getElementById('logoInitials').textContent = initials;
+
+    if (!stored.logo) {
+      document.getElementById('prevAvatar').textContent     = initials;
+      document.getElementById('sidebarAvatar').textContent  = initials;
+    }
+  }
+
+  // ── LOGO UPLOAD ───────────────────────────────────
+  document.getElementById('logoInput').addEventListener('change', function() {
+    const file = this.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = e => {
+      stored.logo = e.target.result;
+      applyLogoPreview(stored.logo);
+    };
+    reader.readAsDataURL(file);
+  });
+
+  function applyLogoPreview(src) {
+    const safeUrl = typeof sanitizeCssUrl === 'function' ? sanitizeCssUrl(src) : 'none';
+    const preview  = document.getElementById('logoPreview');
+    const initials = document.getElementById('logoInitials');
+    preview.style.backgroundImage    = safeUrl;
+    preview.style.backgroundSize     = 'cover';
+    preview.style.backgroundPosition = 'center';
+    initials.style.display           = 'none';
+
+    // Live preview sidebar
+    const prevAv = document.getElementById('prevAvatar');
+    prevAv.style.backgroundImage    = safeUrl;
+    prevAv.style.backgroundSize     = 'cover';
+    prevAv.style.backgroundPosition = 'center';
+    prevAv.textContent = '';
+
+    const sideAv = document.getElementById('sidebarAvatar');
+    sideAv.style.backgroundImage    = safeUrl;
+    sideAv.style.backgroundSize     = 'cover';
+    sideAv.style.backgroundPosition = 'center';
+    sideAv.textContent = '';
+
+    document.getElementById('removeLogoBtn').style.display = 'inline-flex';
+  }
+
+  document.getElementById('removeLogoBtn').addEventListener('click', () => {
+    stored.logo = null;
+    const preview  = document.getElementById('logoPreview');
+    const initials = document.getElementById('logoInitials');
+    preview.style.backgroundImage = '';
+    initials.style.display = '';
+
+    const name = document.getElementById('gymName').value.trim() || 'Ma Salle';
+    const words = name.split(' ').filter(Boolean);
+    const ini = words.length >= 2
+      ? (words[0][0] + words[1][0]).toUpperCase()
+      : name.slice(0, 2).toUpperCase();
+
+    ['prevAvatar','sidebarAvatar'].forEach(id => {
+      const el = document.getElementById(id);
+      el.style.backgroundImage = '';
+      el.textContent = ini;
+    });
+    document.getElementById('removeLogoBtn').style.display = 'none';
+    document.getElementById('logoInput').value = '';
+  });
+
+  // ── BG UPLOAD ─────────────────────────────────────
+  document.getElementById('bgInput').addEventListener('change', function() {
+    const file = this.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = e => {
+      stored.bg = e.target.result;
+      applyBgPreview(stored.bg);
+    };
+    reader.readAsDataURL(file);
+  });
+
+  function applyBgPreview(src) {
+    const safeUrl = typeof sanitizeCssUrl === 'function' ? sanitizeCssUrl(src) : 'none';
+    const preview = document.getElementById('bgPreview');
+    preview.style.backgroundImage    = safeUrl;
+    preview.style.backgroundSize     = 'cover';
+    preview.style.backgroundPosition = 'center';
+    preview.querySelector('.uz-bg-empty') && (preview.querySelector('.uz-bg-empty').style.display = 'none');
+
+    const pbd = document.getElementById('previewBgOverlay');
+    pbd.style.backgroundImage    = safeUrl;
+    pbd.style.backgroundSize     = 'cover';
+    pbd.style.backgroundPosition = 'center';
+    pbd.style.opacity            = (document.getElementById('bgOpacity').value / 100).toFixed(2);
+
+    document.getElementById('removeBgBtn').style.display = 'inline-flex';
+  }
+
+  document.getElementById('removeBgBtn').addEventListener('click', () => {
+    stored.bg = null;
+    const preview = document.getElementById('bgPreview');
+    preview.style.backgroundImage = '';
+    if (preview.querySelector('.uz-bg-empty')) preview.querySelector('.uz-bg-empty').style.display = '';
+    document.getElementById('previewBgOverlay').style.backgroundImage = '';
+    document.getElementById('removeBgBtn').style.display = 'none';
+    document.getElementById('bgInput').value = '';
+  });
+
+  // ── OPACITY SLIDER ────────────────────────────────
+  document.getElementById('bgOpacity').addEventListener('input', function() {
+    document.getElementById('opacityVal').textContent = this.value + '%';
+    const pbd = document.getElementById('previewBgOverlay');
+    pbd.style.opacity = (this.value / 100).toFixed(2);
+  });
+
+  // ── PASSWORD STRENGTH ─────────────────────────────
+  document.getElementById('pwdNew').addEventListener('input', function() {
+    const v = this.value;
+    const block = document.getElementById('pwdStrength');
+    const fill  = document.getElementById('pwdStrengthFill');
+    const label = document.getElementById('pwdStrengthLabel');
+    if (!v) { block.style.display = 'none'; return; }
+    block.style.display = 'flex';
+    let score = 0;
+    if (v.length >= 8)  score++;
+    if (/[A-Z]/.test(v)) score++;
+    if (/[0-9]/.test(v)) score++;
+    if (/[^A-Za-z0-9]/.test(v)) score++;
+    const levels = [
+      { w: '25%', color: '#C1121F', text: 'Faible' },
+      { w: '50%', color: '#D4A017', text: 'Moyen' },
+      { w: '75%', color: '#7aad7e', text: 'Bon' },
+      { w: '100%',color: '#4a9e5c', text: 'Fort' },
+    ];
+    const lvl = levels[Math.max(0, score - 1)];
+    fill.style.width      = lvl.w;
+    fill.style.background = lvl.color;
+    label.textContent     = lvl.text;
+    label.style.color     = lvl.color;
+  });
+
+  // ── PASSWORD TOGGLE ───────────────────────────────
+  document.querySelectorAll('.pwd-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const input = document.getElementById(btn.dataset.target);
+      input.type = input.type === 'password' ? 'text' : 'password';
+    });
+  });
+
+  // ── SAVE ──────────────────────────────────────────
+  document.getElementById('saveBtn').addEventListener('click', async () => {
+    const name    = document.getElementById('gymName').value.trim() || 'Ma Salle';
+    const slogan  = document.getElementById('gymSlogan').value.trim();
+    const city    = document.getElementById('gymCity').value.trim();
+    const opacity = document.getElementById('bgOpacity').value;
+
+    const words    = name.split(' ').filter(Boolean);
+    const initials = words.length >= 2
+      ? (words[0][0] + words[1][0]).toUpperCase()
+      : name.slice(0, 2).toUpperCase();
+
+    // Mapping champ DOM (onglet Infos) -> colonne SQL de la table salles
+    const infoFields = {
+      gymAddress: 'address', gymZip: 'zip_code', gymCityInfo: 'city',
+      gymPhone: 'phone', gymEmail: 'email', gymWebsite: 'website',
+      gymInstagram: 'instagram', gymFacebook: 'facebook', gymYoutube: 'youtube',
+    };
+
+    // 1) Cache local (lecture rapide + compat settings-loader.js)
+    localStorage.setItem('thymos_gym_name',     name);
+    localStorage.setItem('thymos_gym_slogan',   slogan);
+    localStorage.setItem('thymos_gym_city',     city);
+    localStorage.setItem('thymos_gym_initials', initials);
+    localStorage.setItem('thymos_gym_opacity',  opacity);
+    Object.keys(infoFields).forEach(id => {
+      const el = document.getElementById(id);
+      if (el) localStorage.setItem('thymos_' + id, el.value.trim());
+    });
+    if (stored.logo) localStorage.setItem('thymos_gym_logo', stored.logo);
+    else             localStorage.removeItem('thymos_gym_logo');
+    if (stored.bg) localStorage.setItem('thymos_gym_bg', stored.bg);
+    else           localStorage.removeItem('thymos_gym_bg');
+
+    // 2) Persistance en base (pour ne plus perdre les réglages au changement d'appareil)
+    let dbOk = true;
+    try {
+      const { data: salles } = await window.supabase.from('salles').select('id').limit(1);
+      const salleId = salles && salles[0] && salles[0].id;
+      if (salleId) {
+        const updates = {
+          name: name,
+          description: slogan,
+          city: city,
+          bg_opacity: parseInt(opacity, 10) || 8,
+          logo_url: stored.logo || null,
+          bg_image_url: stored.bg || null,
+        };
+        Object.entries(infoFields).forEach(([id, col]) => {
+          const el = document.getElementById(id);
+          if (el && el.value.trim()) updates[col] = el.value.trim();
+        });
+        const { error } = await window.supabase.from('salles').update(updates).eq('id', salleId);
+        if (error) { dbOk = false; console.warn('Persistance salle:', error); }
+      } else {
+        dbOk = false;
+      }
+    } catch (e) {
+      dbOk = false;
+      console.warn('Persistance Supabase des parametres echouee:', e);
+    }
+
+    toast(dbOk ? 'Modifications enregistrées' : 'Enregistré localement (synchro base indisponible)', dbOk ? 'success' : 'warning');
+    const btn = document.getElementById('saveBtn');
+    const orig = btn.innerHTML;
+    btn.innerHTML = '<svg style="width:14px;height:14px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Enregistré !';
+    btn.disabled = true;
+    setTimeout(() => { btn.innerHTML = orig; btn.disabled = false; }, 2000);
+  });
+
+  // ── RESET ─────────────────────────────────────────
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    confirmModal('Réinitialiser tous les paramètres d\'apparence ? Cette action est irréversible.', () => {
+      ['thymos_gym_name','thymos_gym_slogan','thymos_gym_city','thymos_gym_logo','thymos_gym_bg','thymos_gym_initials','thymos_gym_opacity'].forEach(k => localStorage.removeItem(k));
+      toast('Paramètres réinitialisés', 'info');
+      setTimeout(() => location.reload(), 800);
+    });
+  });
+
+  // ── ÉQUIPE — chargement dynamique ────────────────
+  (async function loadTeam() {
+    const teamList = document.getElementById('teamList');
+    if (!teamList) return;
+
+    try {
+      const { data: { session } } = await window.supabase.auth.getSession();
+      if (!session) return;
+
+      const user = session.user;
+      const meta = user.user_metadata || {};
+      const firstName = meta.first_name || '';
+      const lastName = meta.last_name || '';
+      const initials = ((firstName[0] || '') + (lastName[0] || '')).toUpperCase() || '??';
+
+      // Load team members from salle_members table
+      const { data: salles } = await window.supabase.from('salles').select('id').limit(1);
+      const salleId = salles?.[0]?.id;
+      let members = [];
+      if (salleId) {
+        const { data } = await window.supabase.from('salle_members').select('*').eq('salle_id', salleId);
+        members = data || [];
+      }
+
+      // Render owner
+      let html = `
+        <div class="team-member">
+          <div class="tm-av" style="background:var(--red-dim);color:var(--red);border:1px solid var(--red-border);">${escapeHtml(initials)}</div>
+          <div class="tm-info">
+            <div class="tm-name">${escapeHtml(firstName)} ${escapeHtml(lastName)}</div>
+            <div class="tm-email">${escapeHtml(user.email)}</div>
+          </div>
+          <div class="tm-role tm-role--owner">Proprietaire</div>
+          <div class="tm-actions"></div>
+        </div>`;
+
+      // Render other members
+      members.forEach(m => {
+        const isPending = m.status === 'pending';
+        const mInitials = m.email ? m.email.substring(0, 2).toUpperCase() : '??';
+        html += `
+          <div class="team-member ${isPending ? 'team-member--pending' : ''}">
+            <div class="tm-av" style="background:${isPending ? '#2a2a2a;color:var(--subtle)' : '#123058'}">${isPending ? '?' : escapeHtml(mInitials)}</div>
+            <div class="tm-info">
+              <div class="tm-name ${isPending ? 'tm-name--pending' : ''}">${isPending ? 'Invitation en attente' : escapeHtml(m.email || 'Membre')}</div>
+              <div class="tm-email">${escapeHtml(m.email || '')}</div>
+            </div>
+            <div class="tm-role tm-role--${isPending ? 'pending' : 'coach'}">${escapeHtml(m.role || 'Coach')}</div>
+            <div class="tm-actions">
+              ${isPending ? '<button class="tm-btn" onclick="toast(\'Relance enregistrée — l\\\'e-mail automatique arrive bientôt.\', \'info\')">Renvoyer</button>' : ''}
+              <button class="tm-btn tm-btn--danger" onclick="removeMember('${m.id}', this)">Supprimer</button>
+            </div>
+          </div>`;
+      });
+
+      // Empty state if no other members
+      if (members.length === 0) {
+        html += '<div style="padding:1.5rem;text-align:center;color:var(--subtle);font-size:0.8rem;border-top:1px solid var(--border);">Aucun autre membre pour le moment. Invitez vos coachs.</div>';
+      }
+
+      teamList.innerHTML = html;
+    } catch (err) {
+      teamList.innerHTML = '<div style="padding:2rem;text-align:center;color:var(--subtle);">Erreur de chargement</div>';
+    }
+  })();
+
+  async function removeMember(id, btn) {
+    const member = btn.closest('.team-member');
+    const name = member.querySelector('.tm-name')?.textContent || 'Membre';
+    confirmModal('Supprimer l\'acces de <strong>' + name + '</strong> ?', async () => {
+      await window.supabase.from('salle_members').delete().eq('id', id);
+      member.style.opacity = '0.3';
+      member.style.pointerEvents = 'none';
+      toast('Acces revoque', 'warning');
+    });
+  }
+
+  // ── ÉQUIPE — bouton Inviter ───────────────────────
+  document.querySelector('#stab-equipe .btn--primary')?.addEventListener('click', async () => {
+    const email = prompt('Email du nouveau membre :');
+    if (!email || !email.includes('@')) {
+      if (email !== null) toast('Email invalide', 'error');
+      return;
+    }
+    const { data: salles } = await window.supabase.from('salles').select('id').limit(1);
+    if (!salles?.[0]) { toast('Aucune salle trouvee', 'error'); return; }
+    const { error } = await window.supabase.from('salle_members').insert({
+      salle_id: salles[0].id,
+      email: email,
+      role: 'coach',
+      status: 'pending'
+    });
+    if (error) { toast('Erreur : ' + error.message, 'error'); return; }
+    toast('Membre ajouté. L\'envoi automatique de l\'e-mail d\'invitation arrive bientôt.', 'info');
+    location.reload();
+  });
+
+  // ── ABONNEMENT — boutons upgrade ─────────────────
+  document.querySelectorAll('#stab-abonnement .btn--primary').forEach(btn => {
+    btn.addEventListener('click', () => {
+      toast('Redirection vers le portail de facturation…', 'info');
+    });
+  });
+  document.querySelectorAll('#stab-abonnement .btn--ghost').forEach(btn => {
+    if (btn.textContent.includes('facturation')) {
+      btn.addEventListener('click', () => {
+        toast('Portail de facturation — fonctionnalité disponible prochainement', 'info');
+      });
+    }
+  });
+
+  // ── ACTIVATION MANUELLE ─────────────────────────
+  document.getElementById('activateManual')?.addEventListener('click', () => {
+    const overlay = document.createElement('div');
+    overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0);z-index:10000;display:flex;align-items:center;justify-content:center;padding:1rem;transition:background 0.25s;';
+    overlay.innerHTML = `
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);max-width:400px;width:100%;transform:scale(0.95);opacity:0;transition:transform 0.3s cubic-bezier(0.22,1,0.36,1),opacity 0.25s;">
+        <div style="padding:1.25rem;border-bottom:1px solid var(--border);">
+          <h3 style="font-family:var(--font-display);font-size:0.82rem;letter-spacing:0.08em;">Activer un abonnement</h3>
+        </div>
+        <div style="padding:1.25rem;">
+          <p style="font-size:0.8rem;color:var(--muted);margin-bottom:1rem;">La gestion des abonnements payants n'est pas encore disponible en ligne. Pour faire evoluer votre formule, contactez-nous : l'activation se fait manuellement pour le moment.</p>
+          <button class="btn btn--ghost btn--sm" style="width:100%;justify-content:center;color:var(--subtle);" onclick="this.closest('div[style]').parentElement.parentElement.remove()">Annuler</button>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+    requestAnimationFrame(() => {
+      overlay.style.background = 'rgba(0,0,0,0.7)';
+      overlay.firstElementChild.style.transform = 'scale(1)';
+      overlay.firstElementChild.style.opacity = '1';
+    });
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
+  });
+
+  // ── SÉCURITÉ — changer mot de passe ──────────────
+  const pwdBtn = document.querySelector('#stab-securite .btn--primary');
+  pwdBtn?.addEventListener('click', async () => {
+    const current = document.getElementById('pwdCurrent').value;
+    const newPwd  = document.getElementById('pwdNew').value;
+    const confirm = document.getElementById('pwdConfirm').value;
+    if (!current || !newPwd) { toast('Remplissez tous les champs', 'error'); return; }
+    if (newPwd.length < 8)   { toast('Mot de passe trop court (8 caractères min.)', 'warning'); return; }
+    if (newPwd !== confirm)  { toast('Les mots de passe ne correspondent pas', 'error'); return; }
+
+    pwdBtn.disabled = true;
+    try {
+      // Re-authentification : on verifie le mot de passe actuel avant tout changement.
+      const { data: { user } } = await window.supabase.auth.getUser();
+      if (!user || !user.email) {
+        toast('Session expirée, reconnectez-vous', 'error');
+        return;
+      }
+      const { error: reauthError } = await window.supabase.auth.signInWithPassword({ email: user.email, password: current });
+      if (reauthError) {
+        toast('Mot de passe actuel incorrect', 'error');
+        return;
+      }
+      const { error } = await window.supabase.auth.updateUser({ password: newPwd });
+      if (error) {
+        toast('Erreur : ' + error.message, 'error');
+        return;
+      }
+      toast('Mot de passe mis à jour', 'success');
+      ['pwdCurrent','pwdNew','pwdConfirm'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('pwdStrength').style.display = 'none';
+    } catch (e) {
+      toast('Erreur : ' + (e?.message || 'Impossible de changer le mot de passe'), 'error');
+    } finally {
+      pwdBtn.disabled = false;
+    }
+  });
+
+  // ── Charger les champs info depuis localStorage ──
+  ['gymAddress','gymZip','gymCityInfo','gymPhone','gymEmail','gymWebsite','gymInstagram','gymFacebook','gymYoutube'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.value = localStorage.getItem('thymos_' + id) || '';
+  });
+  </script>
+
+  <style>
+    /* ─── SETTINGS TABS ────────────────────────── */
+    .settings-tabs {
+      display: flex;
+      gap: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 0.35rem;
+      flex-wrap: wrap;
+    }
+    .stab {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: none;
+      border: none;
+      border-radius: var(--r);
+      cursor: pointer;
+      transition: all 0.18s;
+      white-space: nowrap;
+    }
+    .stab:hover { color: var(--white); background: rgba(255,255,255,0.03); }
+    .stab.active { color: var(--white); background: var(--red-dim); border: 1px solid var(--red-border); }
+
+    .stab-content { display: none; }
+    .stab-content.active { display: block; }
+
+    /* ─── SETTINGS LAYOUT ──────────────────────── */
+    .settings-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 1.25rem;
+      align-items: start;
+    }
+    .settings-layout--single { grid-template-columns: 1fr; max-width: 720px; }
+
+    .settings-col--form   { display: flex; flex-direction: column; gap: 1.25rem; }
+    .settings-col--preview { display: flex; flex-direction: column; }
+
+    /* ─── SETTINGS CARD ────────────────────────── */
+    .settings-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+    }
+    .settings-card--sticky { position: sticky; top: 72px; }
+    .settings-card--danger { border-color: var(--red-border); }
+
+    .sc-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.9rem 1.1rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface2);
+    }
+    .sc-header .icon { color: var(--muted); flex-shrink: 0; margin-top: 2px; }
+    .sc-title { font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); }
+    .sc-sub   { font-size: 0.68rem; color: var(--subtle); margin-top: 0.15rem; font-family: var(--font-body); }
+    .sc-body  { padding: 1.25rem; display: flex; flex-direction: column; gap: 1rem; }
+    .sc-body--grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-field--full { grid-column: span 2; }
+
+    /* ─── FORM FIELDS ──────────────────────────── */
+    .form-field { display: flex; flex-direction: column; gap: 0.4rem; }
+    .field-label {
+      font-family: var(--font-display);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .field-val-badge {
+      background: var(--red-dim);
+      color: var(--red);
+      font-size: 0.6rem;
+      padding: 0.08rem 0.35rem;
+      border-radius: 3px;
+      border: 1px solid var(--red-border);
+      font-family: var(--font-body);
+    }
+    .field-input {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      padding: 0.55rem 0.8rem;
+      outline: none;
+      transition: border-color 0.18s;
+      width: 100%;
+    }
+    .field-input:focus { border-color: var(--red); }
+    .field-input::placeholder { color: var(--subtle); }
+    .field-hint { font-size: 0.65rem; color: var(--subtle); }
+
+    .socials-row { display: flex; gap: 0.6rem; }
+    .socials-row .field-input { flex: 1; }
+
+    /* ─── UPLOAD ZONE ──────────────────────────── */
+    .upload-zone {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      background: var(--bg);
+      border: 1px dashed var(--border);
+      border-radius: var(--r-lg);
+      padding: 1.25rem;
+      transition: border-color 0.18s;
+    }
+    .upload-zone:hover { border-color: var(--muted); }
+    .upload-zone--wide { flex-direction: column; align-items: flex-start; }
+
+    .uz-preview {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      background: var(--red-dim);
+      border: 2px solid var(--red-border);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      background-size: cover;
+      background-position: center;
+    }
+    .uz-initials {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: var(--red);
+    }
+
+    .uz-bg-preview {
+      width: 100%; height: 110px;
+      border-radius: var(--r);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 0.75rem;
+    }
+    .uz-bg-empty { font-size: 0.72rem; color: var(--subtle); }
+
+    .uz-title { font-size: 0.8rem; font-weight: 500; margin-bottom: 0.25rem; }
+    .uz-hint  { font-size: 0.66rem; color: var(--muted); margin-bottom: 0.65rem; }
+    .uz-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+    /* ─── RANGE ────────────────────────────────── */
+    .range-input {
+      width: 100%;
+      -webkit-appearance: none;
+      height: 4px;
+      border-radius: 2px;
+      background: var(--surface3);
+      outline: none;
+      cursor: pointer;
+    }
+    .range-input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      background: var(--red);
+      cursor: pointer;
+      border: 2px solid var(--bg);
+    }
+    .range-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.6rem;
+      color: var(--subtle);
+      margin-top: 0.25rem;
+    }
+
+    /* ─── PREVIEW SIDEBAR ──────────────────────── */
+    .preview-sidebar {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .prev-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.65rem 0.85rem;
+      border-bottom: 1px solid var(--border);
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      color: var(--white);
+    }
+    .prev-sword { font-size: 0.7rem; }
+    .prev-nav { padding: 0.5rem 0; }
+    .prev-nav-item {
+      padding: 0.35rem 0.85rem;
+      font-size: 0.65rem;
+      color: var(--subtle);
+    }
+    .prev-active { color: var(--white); background: var(--red-dim); border-right: 2px solid var(--red); }
+    .prev-nav-sep { height: 1px; background: var(--border); margin: 0.4rem 0; }
+    .prev-footer {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 0.85rem;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .prev-avatar {
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      background: var(--red-dim);
+      border: 1px solid var(--red-border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.5rem; font-weight: 700; color: var(--red);
+      flex-shrink: 0;
+      background-size: cover;
+      background-position: center;
+    }
+    .prev-gym-name { font-size: 0.65rem; font-weight: 600; }
+    .prev-gym-plan { font-size: 0.52rem; color: var(--gold-light); }
+
+    /* ─── PREVIEW BG ───────────────────────────── */
+    .preview-bg-demo {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      position: relative;
+      height: 120px;
+    }
+    .pbd-overlay {
+      position: absolute;
+      inset: 0;
+      opacity: 0.08;
+      background-size: cover;
+      background-position: center;
+      pointer-events: none;
+    }
+    .pbd-content {
+      position: relative;
+      z-index: 1;
+      padding: 0.65rem;
+    }
+    .pbd-topbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.35rem 0.6rem;
+      margin: -0.65rem -0.65rem 0.5rem;
+    }
+    .pbd-breadcrumb { font-size: 0.58rem; color: var(--muted); }
+    .pbd-cards { display: flex; gap: 0.4rem; }
+    .pbd-card {
+      flex: 1; height: 52px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+
+    /* ─── PLANS ────────────────────────────────── */
+    .plan-current {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 1.1rem;
+      background: var(--bg);
+      border: 1px solid var(--red-border);
+      border-radius: var(--r-lg);
+      margin-bottom: 1rem;
+    }
+    .plan-badge {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      padding: 0.5rem 1rem;
+      border-radius: var(--r);
+    }
+    .plan-badge--guerrier {
+      background: var(--red-dim);
+      color: var(--red);
+      border: 1px solid var(--red-border);
+    }
+    .plan-badge--champion {
+      background: rgba(184,150,12,0.12);
+      color: var(--gold-light);
+      border: 1px solid rgba(184,150,12,0.3);
+    }
+    .plan-price {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 900;
+    }
+    .plan-price span { font-size: 0.8rem; color: var(--muted); }
+    .plan-renew { font-size: 0.68rem; color: var(--muted); margin-top: 0.15rem; }
+
+    .plan-features {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    .pf-item {
+      font-size: 0.76rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .pf-item::before { content: ''; width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+    .pf-item.ok::before     { background: #4a9e5c; }
+    .pf-item.muted::before  { background: var(--surface3); border: 1px solid var(--border); }
+
+    .plans-compare {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .pc-plan {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 1rem;
+      position: relative;
+    }
+    .pc-plan--active  { border-color: var(--red-border); background: rgba(193,18,31,0.04); }
+    .pc-plan--premium { border-color: rgba(184,150,12,0.3); background: rgba(184,150,12,0.04); }
+    .pc-badge {
+      position: absolute;
+      top: -1px; right: -1px;
+      background: var(--red);
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 0.52rem;
+      letter-spacing: 0.1em;
+      padding: 0.18rem 0.5rem;
+      border-radius: 0 var(--r-lg) 0 var(--r);
+    }
+    .pc-name  { font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--subtle); margin-bottom: 0.4rem; }
+    .pc-price {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 900;
+      margin-bottom: 0.75rem;
+    }
+    .pc-price span { font-size: 0.7rem; color: var(--muted); }
+    .pc-features { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+    .pc-features li { font-size: 0.72rem; color: var(--muted); display: flex; gap: 0.4rem; align-items: flex-start; }
+    .pc-features li::before { content: '·'; color: var(--subtle); flex-shrink: 0; }
+
+    /* ─── TEAM ─────────────────────────────────── */
+    .team-list { display: flex; flex-direction: column; gap: 0; }
+    .team-member {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 0.85rem 1.1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      transition: background 0.15s;
+    }
+    .team-member:last-child { border-bottom: none; }
+    .team-member:hover { background: rgba(255,255,255,0.02); }
+    .team-member--pending { opacity: 0.6; }
+    .tm-av {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.62rem; font-weight: 700;
+      flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .tm-info { flex: 1; min-width: 0; }
+    .tm-name { font-size: 0.8rem; font-weight: 500; }
+    .tm-name--pending { color: var(--subtle); font-style: italic; }
+    .tm-email { font-size: 0.66rem; color: var(--muted); margin-top: 0.1rem; }
+    .tm-role {
+      font-family: var(--font-display);
+      font-size: 0.58rem;
+      letter-spacing: 0.08em;
+      padding: 0.15rem 0.45rem;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .tm-role--owner   { background: var(--red-dim); color: var(--red); border: 1px solid var(--red-border); }
+    .tm-role--coach   { background: var(--surface3); color: var(--muted); border: 1px solid var(--border); }
+    .tm-role--pending { background: var(--surface2); color: var(--subtle); border: 1px dashed var(--border); }
+    .tm-actions { display: flex; gap: 0.35rem; flex-shrink: 0; }
+    .tm-btn {
+      font-size: 0.65rem;
+      padding: 0.25rem 0.55rem;
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-family: var(--font-body);
+      transition: all 0.18s;
+    }
+    .tm-btn:hover { color: var(--white); border-color: var(--muted); }
+    .tm-btn--danger:hover { color: var(--red); border-color: var(--red-border); }
+
+    /* ─── NOTIFICATIONS ────────────────────────── */
+    .notif-group { margin-bottom: 1.25rem; }
+    .notif-group:last-child { margin-bottom: 0; }
+    .notif-group-title {
+      font-family: var(--font-display);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--subtle);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .notif-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.65rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+    .notif-item:last-child { border-bottom: none; }
+    .notif-label { font-size: 0.8rem; font-weight: 500; margin-bottom: 0.15rem; }
+    .notif-desc  { font-size: 0.68rem; color: var(--muted); line-height: 1.4; }
+
+    .notif-channels { display: flex; flex-direction: column; gap: 0.5rem; }
+    .channel-option {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      cursor: pointer;
+    }
+    .channel-option input[type="checkbox"] { accent-color: var(--red); width: 14px; height: 14px; }
+
+    /* ─── TOGGLE SWITCH ────────────────────────── */
+    .toggle { position: relative; display: inline-block; width: 38px; height: 20px; flex-shrink: 0; }
+    .toggle input { opacity: 0; width: 0; height: 0; }
+    .toggle-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--surface3);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      transition: 0.25s;
+    }
+    .toggle-slider::before {
+      position: absolute;
+      content: '';
+      width: 14px; height: 14px;
+      left: 2px; bottom: 2px;
+      background: var(--muted);
+      border-radius: 50%;
+      transition: 0.25s;
+    }
+    .toggle input:checked + .toggle-slider { background: var(--red-dim); border-color: var(--red-border); }
+    .toggle input:checked + .toggle-slider::before { transform: translateX(18px); background: var(--red); }
+
+    /* ─── PASSWORD ─────────────────────────────── */
+    .password-field { position: relative; }
+    .password-field .field-input { padding-right: 2.5rem; }
+    .pwd-toggle {
+      position: absolute;
+      right: 0.6rem; top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--subtle);
+      cursor: pointer;
+      padding: 0.15rem;
+      display: flex;
+      transition: color 0.18s;
+    }
+    .pwd-toggle:hover { color: var(--muted); }
+    .pwd-strength { display: flex; align-items: center; gap: 0.6rem; margin-top: 0.4rem; }
+    .pwd-strength-bar { flex: 1; height: 3px; background: var(--surface3); border-radius: 2px; overflow: hidden; }
+    .pwd-strength-fill { height: 100%; border-radius: 2px; transition: width 0.3s, background 0.3s; }
+    .pwd-strength span { font-size: 0.65rem; white-space: nowrap; }
+
+    /* ─── RESPONSIVE ───────────────────────────── */
+    @media (max-width: 1100px) {
+      .settings-layout { grid-template-columns: 1fr; }
+      .settings-card--sticky { position: static; }
+      .plans-compare { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .sc-body--grid { grid-template-columns: 1fr; }
+      .form-field--full { grid-column: span 1; }
+      .socials-row { flex-direction: column; }
+      .settings-tabs { gap: 0.15rem; }
+      .stab { padding: 0.4rem 0.65rem; font-size: 0.58rem; }
+      .stab span { display: none; }
+    }
+  </style>
+</body>
+</html>

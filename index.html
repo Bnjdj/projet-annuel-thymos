@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THYMOS — L'outil qui manque aux coachs MMA</title>
+  <meta name="description" content="THYMOS : la plateforme de gestion pour les coachs et salles MMA. Suivi physique et mental, alertes automatiques, planning et préparation des combats. Essai gratuit 30 jours sans CB." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="THYMOS — L'outil qui manque aux coachs MMA" />
+  <meta property="og:description" content="THYMOS : la plateforme de gestion pour les coachs et salles MMA. Suivi physique et mental, alertes automatiques, planning et préparation des combats. Essai gratuit 30 jours sans CB." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thymos-mma.fr" />
+  <meta property="og:image" content="https://thymos-mma.fr/assets/og-image.jpg" />
+  <meta property="og:image:alt" content="THYMOS — le logiciel de gestion pour coachs MMA" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/jpeg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="THYMOS — L'outil qui manque aux coachs MMA" />
+  <meta name="twitter:description" content="THYMOS : la plateforme de gestion pour les coachs et salles MMA. Suivi physique et mental, alertes automatiques, planning et préparation des combats. Essai gratuit 30 jours sans CB." />
+  <meta name="twitter:image" content="https://thymos-mma.fr/assets/og-image.jpg" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://thymos-mma.fr/" />
+
+  <!-- Données structurées (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://thymos-mma.fr/#organization",
+        "name": "THYMOS",
+        "url": "https://thymos-mma.fr",
+        "description": "Plateforme de gestion pour coachs et salles de MMA : suivi physique et mental, alertes automatiques, planning et préparation des combats.",
+        "areaServed": "FR"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://thymos-mma.fr/#website",
+        "url": "https://thymos-mma.fr",
+        "name": "THYMOS",
+        "inLanguage": "fr-FR",
+        "publisher": { "@id": "https://thymos-mma.fr/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "THYMOS",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://thymos-mma.fr",
+        "description": "SaaS de gestion pour coachs MMA : suivi physique et mental, alertes automatiques, planning et préparation des combats.",
+        "offers": [
+          { "@type": "Offer", "name": "Découverte", "price": "0", "priceCurrency": "EUR", "description": "Essai gratuit 30 jours, jusqu'à 3 combattants." },
+          { "@type": "Offer", "name": "Pro", "price": "59", "priceCurrency": "EUR", "description": "Jusqu'à 15 combattants, suivi complet, alertes et planning." },
+          { "@type": "Offer", "name": "Elite", "price": "129", "priceCurrency": "EUR", "description": "Combattants illimités et multi-coachs ; sparring et analyse vidéo à venir." }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/landing.css" />
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body>
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<!-- SVG SPRITE -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="ic-sword"       viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><path d="M12 2l-3 5h6z" fill="currentColor" stroke="none"/><line x1="9" y1="20" x2="15" y2="20"/></symbol>
+  <symbol id="ic-menu"        viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+  <symbol id="ic-brain"       viewBox="0 0 24 24"><path d="M12 4.5C9 4.5 7 7 7 9.5c0 1 .4 2 1 2.7-.7.7-1 1.6-1 2.6 0 2 1.6 3.7 3.6 3.7h2.8c2 0 3.6-1.7 3.6-3.7 0-1-.3-1.9-1-2.6.6-.7 1-1.7 1-2.7C17 7 15 4.5 12 4.5z"/><line x1="12" y1="4.5" x2="12" y2="7.5"/><line x1="9.5" y1="10" x2="14.5" y2="10"/></symbol>
+  <symbol id="ic-activity"    viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+  <symbol id="ic-target"      viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="ic-droplet"     viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></symbol>
+  <symbol id="ic-shuffle"     viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></symbol>
+  <symbol id="ic-calendar"    viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+  <symbol id="ic-cpu"         viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+  <symbol id="ic-building"    viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="ic-user-plus"   viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="17" y1="11" x2="23" y2="11"/></symbol>
+  <symbol id="ic-check"       viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="ic-x"           viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+  <symbol id="ic-arrow-right" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="ic-shield"      viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="ic-zap"         viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+  <symbol id="ic-users"       viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="ic-trending-up" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></symbol>
+  <symbol id="ic-lock"        viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+  <symbol id="ic-clock"       viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="ic-alert"       viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+</svg>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <span class="logo-icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-sword"/></svg></span>
+        <span class="logo-text">THYMOS</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#probleme">Pourquoi THYMOS</a></li>
+        <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="connexion.html" class="btn btn--ghost">Connexion</a>
+        <a href="connexion.html?plan=decouverte" class="btn btn--primary">Essai gratuit</a>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <svg class="icon icon--md" aria-hidden="true"><use href="#ic-menu"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#probleme" class="mobile-link">Pourquoi THYMOS</a></li>
+      <li><a href="#fonctionnalites" class="mobile-link">Fonctionnalités</a></li>
+      <li><a href="#tarifs" class="mobile-link">Tarifs</a></li>
+      <li><a href="connexion.html?plan=decouverte" class="mobile-link btn btn--primary" style="display:inline-block;margin-top:1.5rem;">Essai gratuit</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+
+    <!-- ═══════════════════════════════════════
+         HERO — Accroche émotionnelle
+    ════════════════════════════════════════ -->
+    <section class="hero">
+      <div class="hero__bg-pattern"></div>
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="badge-dot"></span>
+          Conçu par et pour les coachs MMA
+        </div>
+        <h1 class="hero__title">
+          Vous gérez 10 combattants.<br/>Vous en suivez vraiment<br/><span class="text-red">combien ?</span>
+        </h1>
+        <p class="hero__subtitle">
+          Le poids de Karim avant son combat. Le moral de Thomas depuis sa défaite. La douleur au genou de Sofiane qu'il ne mentionne plus. Vous ne pouvez pas tout retenir — et un carnet ne suffit plus. THYMOS garde un œil sur chacun, même quand vous ne pouvez pas.
+        </p>
+        <div class="hero__ctas">
+          <a href="connexion.html?plan=decouverte" class="btn btn--primary btn--large">
+            Essayer gratuitement 30 jours
+            <svg class="btn-arrow icon" aria-hidden="true"><use href="#ic-arrow-right"/></svg>
+          </a>
+          <a href="#probleme" class="btn btn--ghost btn--large">
+            Pourquoi j'en ai besoin ?
+          </a>
+        </div>
+        <div class="hero__trust">
+          <span>Sans carte bancaire</span>
+          <span>Prêt en 5 minutes</span>
+          <span>Annulable en 1 clic</span>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__mockup" aria-hidden="true">
+          <div class="mockup-screen">
+            <div class="mockup-header">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot orange"></span>
+              <span class="mockup-dot green"></span>
+              <span class="mockup-title">THYMOS · Tableau de bord</span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-kpis">
+                <div class="mockup-kpi">
+                  <span class="mkpi-value">12</span>
+                  <span class="mkpi-label">Combattants</span>
+                </div>
+                <div class="mockup-kpi">
+                  <span class="mkpi-value mkpi-value--green">78%</span>
+                  <span class="mkpi-label">Forme globale</span>
+                </div>
+                <div class="mockup-kpi">
+                  <span class="mkpi-value mkpi-value--orange">2</span>
+                  <span class="mkpi-label">Alertes</span>
+                </div>
+              </div>
+              <div class="mockup-divider"></div>
+              <div class="mockup-fighters">
+                <div class="mockup-fighter-row">
+                  <div class="mf-avatar">KD</div>
+                  <div class="mf-info">
+                    <span class="mf-name">Karim D.</span>
+                    <span class="mf-meta">-70kg · Combat dans 12 jours</span>
+                  </div>
+                  <div class="mf-score mf-score--good"></div>
+                </div>
+                <div class="mockup-fighter-row">
+                  <div class="mf-avatar mf-avatar--alert">TS</div>
+                  <div class="mf-info">
+                    <span class="mf-name">Thomas S.</span>
+                    <span class="mf-meta">-77kg · Confiance en baisse</span>
+                  </div>
+                  <div class="mf-score mf-score--warn"></div>
+                </div>
+                <div class="mockup-fighter-row">
+                  <div class="mf-avatar">SB</div>
+                  <div class="mf-info">
+                    <span class="mf-name">Sofiane B.</span>
+                    <span class="mf-meta">-84kg · Retour de blessure</span>
+                  </div>
+                  <div class="mf-score mf-score--good"></div>
+                </div>
+              </div>
+              <div class="mockup-divider"></div>
+              <div class="mockup-ai">
+                <span class="ai-icon"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-alert"/></svg></span>
+                <span class="ai-text">Thomas n'a pas retrouvé confiance depuis le 8 mars. Recommandation : réduire le sparring dur, privilégier le technique.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="hero__mockup-caption" style="margin-top:0.75rem;text-align:center;font-size:0.8rem;opacity:0.6;">Aperçu de l'interface</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         LE PROBLÈME — Ce que vit un coach au quotidien
+    ════════════════════════════════════════ -->
+    <section class="problem-section" id="probleme">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-tag">Le problème</div>
+          <h2 class="section-title">Vous êtes un excellent coach.<br/>Mais vous ne pouvez pas <span class="text-red">tout voir.</span></h2>
+        </div>
+
+        <div class="scenario-grid">
+          <div class="scenario-card">
+            <div class="scenario-icon scenario-icon--before">
+              <svg class="icon icon--md" aria-hidden="true"><use href="#ic-clock"/></svg>
+            </div>
+            <div class="scenario-label">Lundi, 19h</div>
+            <h3>Votre combattant perd confiance.</h3>
+            <p>Il ne dit rien. Il s'entraîne normalement. Mais depuis sa dernière défaite, il hésite à s'engager en sparring. Vous le sentez, mais entre les 8 autres gars à gérer, vous n'avez pas le temps d'y penser.</p>
+            <div class="scenario-consequence">
+              <strong>Sans THYMOS :</strong> Vous le voyez le jour du combat. Il perd au premier round sur une hésitation.
+            </div>
+          </div>
+
+          <div class="scenario-card">
+            <div class="scenario-icon scenario-icon--before">
+              <svg class="icon icon--md" aria-hidden="true"><use href="#ic-activity"/></svg>
+            </div>
+            <div class="scenario-label">Mercredi, 20h30</div>
+            <h3>Un fighter force sur une douleur.</h3>
+            <p>Il vous a dit "ça va" la semaine dernière. Depuis, il compense, sa garde change, il s'appuie moins sur sa jambe droite. Mais dans le bruit de la salle, ça passe inaperçu.</p>
+            <div class="scenario-consequence">
+              <strong>Sans THYMOS :</strong> Blessure à J-10 du combat. 3 mois d'arrêt. Un combat annulé. De l'argent perdu.
+            </div>
+          </div>
+
+          <div class="scenario-card">
+            <div class="scenario-icon scenario-icon--before">
+              <svg class="icon icon--md" aria-hidden="true"><use href="#ic-droplet"/></svg>
+            </div>
+            <div class="scenario-label">Vendredi, pesée</div>
+            <h3>La coupe de poids déraille.</h3>
+            <p>Votre combattant devait être à 72kg à J-7. Il est à 74. Personne n'a suivi son poids depuis 3 semaines. Maintenant c'est la panique, coupe agressive, performances dégradées.</p>
+            <div class="scenario-consequence">
+              <strong>Sans THYMOS :</strong> Il fait le poids mais monte dans la cage vide. Ou pire, il rate la pesée.
+            </div>
+          </div>
+        </div>
+
+        <!-- LA SOLUTION -->
+        <div class="solution-block">
+          <div class="solution-block__header">
+            <div class="solution-icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#ic-shield"/></svg>
+            </div>
+            <h3>Avec THYMOS, vous voyez tout ça <span class="text-red">avant</span> que ça devienne un problème.</h3>
+          </div>
+          <div class="solution-grid">
+            <div class="solution-item">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+              <span>Le mental de Thomas baisse ? <strong>Alerte à J-14</strong>, pas le jour du combat.</span>
+            </div>
+            <div class="solution-item">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+              <span>Sofiane compense ? <strong>Le score physique chute</strong>, vous le voyez tout de suite.</span>
+            </div>
+            <div class="solution-item">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+              <span>Karim est en retard sur son poids ? <strong>THYMOS vous prévient à J-21</strong>, pas à J-3.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         POUR QUI — Le coach se reconnait
+    ════════════════════════════════════════ -->
+    <section class="whoisitfor-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-tag">C'est pour vous si</div>
+          <h2 class="section-title">Vous vous reconnaissez<br/><span class="text-red">là-dedans ?</span></h2>
+        </div>
+        <div class="whoisitfor-grid">
+          <div class="whoisitfor-item">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+            <span>Vous gérez entre <strong>3 et 30 combattants</strong> qui compétent ou veulent compétent</span>
+          </div>
+          <div class="whoisitfor-item">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+            <span>Vous notez des trucs sur votre téléphone, dans votre tête, ou nulle part</span>
+          </div>
+          <div class="whoisitfor-item">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+            <span>Vous aimeriez suivre le mental de vos gars mais vous ne savez pas comment</span>
+          </div>
+          <div class="whoisitfor-item">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+            <span>Vous avez déjà eu un combattant blessé ou battu parce que vous avez raté un signal</span>
+          </div>
+          <div class="whoisitfor-item">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+            <span>Vous voulez professionnaliser votre salle sans y passer des heures</span>
+          </div>
+          <div class="whoisitfor-item">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+            <span>Vous dirigez une salle de MMA, boxe, muay-thai, jiu-jitsu ou grappling</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FONCTIONNALITES — Ce que ca fait concretement
+    ════════════════════════════════════════ -->
+    <section class="features" id="fonctionnalites">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-tag">Concrètement</div>
+          <h2 class="section-title">Ce que THYMOS fait pour vous<br/><span class="text-red">chaque semaine.</span></h2>
+          <p class="section-sub">Pas des fonctionnalités abstraites. Des actions concrètes qui changent votre quotidien de coach.</p>
+        </div>
+
+        <div class="features-grid-v2">
+          <div class="feat-v2 feat-v2--hero">
+            <div class="feat-v2__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#ic-brain"/></svg></div>
+            <div class="feat-v2__content">
+              <h3>Un tableau de bord par combattant</h3>
+              <p>En un coup d'œil : son état physique, son mental, ses prochains combats, son historique. Plus besoin de fouiller dans vos notes ou de vous rappeler qui a dit quoi la semaine dernière. Tout est là, à jour, exploitable.</p>
+              <div class="feat-v2__tags">
+                <span>Score physique</span>
+                <span>Score mental</span>
+                <span>Historique combats</span>
+                <span>Alertes auto</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="feat-v2">
+            <div class="feat-v2__icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-alert"/></svg></div>
+            <h3>Alertes avant les problèmes</h3>
+            <p>Un score qui chute, un combattant qui décroche, un poids en retard. THYMOS vous prévient avant que vous le voyiez à l'œil nu.</p>
+          </div>
+
+          <div class="feat-v2">
+            <div class="feat-v2__icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-cpu"/></svg></div>
+            <h3>IA Coach — votre second cerveau <span class="badge-soon">Bientôt</span></h3>
+            <p>"Thomas est prêt pour samedi ?" — posez la question, l'IA connaît son historique et répond avec des données, pas du vent.</p>
+          </div>
+
+          <div class="feat-v2">
+            <div class="feat-v2__icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-target"/></svg></div>
+            <h3>Préparation combat générée <span class="badge-soon">Bientôt</span></h3>
+            <p>Date du combat, poids de forme, profil adversaire. THYMOS génère un camp semaine par semaine, adapté à l'état réel de votre combattant.</p>
+          </div>
+
+          <div class="feat-v2">
+            <div class="feat-v2__icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-calendar"/></svg></div>
+            <h3>Planning en 2 clics</h3>
+            <p>Créez une séance, sélectionnez les combattants, ils sont prévenus. Export Apple Calendar / Google Calendar intégré.</p>
+          </div>
+
+          <div class="feat-v2">
+            <div class="feat-v2__icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-shuffle"/></svg></div>
+            <h3>Sparring sans prise de risque <span class="badge-soon">Bientôt</span></h3>
+            <p>THYMOS croise les profils, les poids et la forme du jour pour vous dire qui peut sparrer avec qui sans que ça tourne mal.</p>
+          </div>
+
+          <div class="feat-v2">
+            <div class="feat-v2__icon"><svg class="icon icon--md" aria-hidden="true"><use href="#ic-droplet"/></svg></div>
+            <h3>Suivi du poids automatisé <span class="badge-soon">Bientôt</span></h3>
+            <p>Courbe de poids, objectif pesée, alerte si retard. Plus de surprise à J-7 quand il reste 3kg à perdre en urgence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         AVANT / APRES — La difference concrète
+    ════════════════════════════════════════ -->
+    <section class="beforeafter-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 class="section-title">Votre semaine<br/><span class="text-red">avec et sans THYMOS.</span></h2>
+        </div>
+        <div class="ba-grid">
+          <div class="ba-col ba-col--before">
+            <div class="ba-col__header">Sans THYMOS</div>
+            <div class="ba-item">Vous devinez qui est prêt et qui ne l'est pas</div>
+            <div class="ba-item">Le mental, vous le "sentez" mais vous ne le mesurez pas</div>
+            <div class="ba-item">Le poids, vous demandez "t'en es où ?" à la volée</div>
+            <div class="ba-item">Un combattant blessé = surprise et combat annulé</div>
+            <div class="ba-item">Vos notes sont éparpillées entre 4 endroits différents</div>
+            <div class="ba-item">Vous prenez des décisions avec votre mémoire seule</div>
+          </div>
+          <div class="ba-col ba-col--after">
+            <div class="ba-col__header">Avec THYMOS</div>
+            <div class="ba-item">Chaque combattant a un score clair et factuel</div>
+            <div class="ba-item">Le mental est mesuré, suivi, et vous êtes alerté si ça chute</div>
+            <div class="ba-item">Le poids est tracé automatiquement, alerte à J-21 si retard</div>
+            <div class="ba-item">Les signaux de blessure sont détectés 2 semaines avant</div>
+            <div class="ba-item">Tout est au même endroit, accessible en 10 secondes</div>
+            <div class="ba-item">Vous décidez avec des données en plus de votre expérience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         COMMENT CA MARCHE — Ultra simple
+    ════════════════════════════════════════ -->
+    <section class="how-v2" id="comment">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-tag">Mise en place</div>
+          <h2 class="section-title">Si vous savez utiliser Instagram,<br/>vous savez utiliser <span class="text-red">THYMOS.</span></h2>
+          <p class="section-sub">Pas d'installation, pas de formation, pas de commercial qui vous appelle. Vous créez un compte et vous êtes opérationnel.</p>
+        </div>
+        <div class="steps-v2">
+          <div class="step-v2">
+            <div class="step-v2__number">1</div>
+            <div class="step-v2__content">
+              <h3>Créez votre compte</h3>
+              <p>Email + nom de salle. 30 secondes. Pas de CB demandée.</p>
+            </div>
+          </div>
+          <div class="step-v2__connector"></div>
+          <div class="step-v2">
+            <div class="step-v2__number">2</div>
+            <div class="step-v2__content">
+              <h3>Ajoutez vos combattants</h3>
+              <p>Nom, poids, style. 1 minute par combattant. Le reste se construit au fil du temps.</p>
+            </div>
+          </div>
+          <div class="step-v2__connector"></div>
+          <div class="step-v2">
+            <div class="step-v2__number">3</div>
+            <div class="step-v2__content">
+              <h3>THYMOS veille pour vous</h3>
+              <p>Alertes, recommandations, suivi. Vous ouvrez l'app, tout est là. Zéro effort supplémentaire.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TARIFS — Le prix justifie
+    ════════════════════════════════════════ -->
+    <section class="pricing-v2" id="tarifs">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-tag">Tarifs</div>
+          <h2 class="section-title">Le prix d'un protège-tibias<br/><span class="text-red">par mois.</span></h2>
+          <p class="section-sub">Comparez : une seule séance avec un préparateur mental coûte 80 EUR. Un nutritionniste aussi. THYMOS fait les deux pour tous vos combattants, tous les jours, pour moins cher qu'un seul RDV.</p>
+
+          <div class="pricing-toggle">
+            <button class="pricing-toggle__btn active" data-period="monthly">Mensuel</button>
+            <button class="pricing-toggle__btn" data-period="yearly">Annuel <span class="pricing-save">-20%</span></button>
+          </div>
+        </div>
+
+        <!-- PRICING CARDS -->
+        <div class="pricing-grid-v2">
+
+          <!-- ESSAI -->
+          <div class="pcard">
+            <div class="pcard__header">
+              <span class="pcard__name">Découverte</span>
+              <span class="pcard__desc">Testez sans rien payer</span>
+            </div>
+            <div class="pcard__price">
+              <span class="pcard__amount">0 EUR</span>
+              <span class="pcard__period">30 jours · sans carte bancaire</span>
+            </div>
+            <a href="connexion.html?plan=decouverte" class="btn btn--ghost btn--full pcard__cta">Commencer maintenant</a>
+            <ul class="pcard__features">
+              <li class="pcard__feat pcard__feat--included">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span>Jusqu'à <strong>3 combattants</strong></span>
+              </li>
+              <li class="pcard__feat pcard__feat--included">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span>Suivi physique basique</span>
+              </li>
+              <li class="pcard__feat pcard__feat--included">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span>Planning & export calendrier</span>
+              </li>
+              <li class="pcard__feat pcard__feat--excluded">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-x"/></svg>
+                <span>IA Coach</span>
+              </li>
+              <li class="pcard__feat pcard__feat--excluded">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-x"/></svg>
+                <span>Suivi mental</span>
+              </li>
+              <li class="pcard__feat pcard__feat--excluded">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-x"/></svg>
+                <span>Alertes automatiques</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- PRO -->
+          <div class="pcard pcard--featured">
+            <div class="pcard__badge">Le plus choisi</div>
+            <div class="pcard__header">
+              <span class="pcard__name">Pro</span>
+              <span class="pcard__desc">Pour les coachs qui veulent un vrai avantage</span>
+            </div>
+            <div class="pcard__price">
+              <span class="pcard__amount" data-monthly="59 EUR" data-yearly="47 EUR">59 EUR</span>
+              <span class="pcard__period" data-monthly="/mois · sans engagement" data-yearly="/mois · facturé 564 EUR/an">/mois · sans engagement</span>
+            </div>
+            <a href="https://buy.stripe.com/28E9ATcQL7SUbNI7KGeZ200" class="btn btn--primary btn--full pcard__cta pricing-cta-link" data-monthly="https://buy.stripe.com/28E9ATcQL7SUbNI7KGeZ200" data-yearly="https://buy.stripe.com/fZu5kDbMH3CEg3YghceZ201">Démarrer avec Pro</a>
+            <ul class="pcard__features">
+              <li class="pcard__feat pcard__feat--included">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span>Jusqu'à <strong>15 combattants</strong></span>
+              </li>
+              <li class="pcard__feat pcard__feat--included pcard__feat--highlight">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span>Suivi physique <strong>ET mental</strong> complet</span>
+              </li>
+              <li class="pcard__feat pcard__feat--included pcard__feat--highlight">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span><strong>IA Coach</strong> — posez vos questions 24h/24 <span class="badge-soon">Bientôt</span></span>
+              </li>
+              <li class="pcard__feat pcard__feat--included pcard__feat--highlight">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span><strong>Camps de préparation</strong> générés automatiquement <span class="badge-soon">Bientôt</span></span>
+              </li>
+              <li class="pcard__feat pcard__feat--included">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span>Alertes automatiques sur les baisses</span>
+              </li>
+              <li class="pcard__feat pcard__feat--included">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span>Planning & notifications combattants</span>
+              </li>
+              <li class="pcard__feat pcard__feat--excluded">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-x"/></svg>
+                <span>Sparring intelligent</span>
+              </li>
+              <li class="pcard__feat pcard__feat--excluded">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-x"/></svg>
+                <span>Nutrition & gestion du poids</span>
+              </li>
+            </ul>
+            <p class="pcard__note" data-monthly="Soit 59 EUR/mois. Résiliable en 1 clic à tout moment." data-yearly="Soit 564 EUR/an au lieu de 708 EUR. Résiliable à tout moment.">Soit 59 EUR/mois. Résiliable en 1 clic à tout moment.</p>
+          </div>
+
+          <!-- ELITE -->
+          <div class="pcard pcard--elite">
+            <div class="pcard__header">
+              <span class="pcard__name">Elite</span>
+              <span class="pcard__desc">Pour les salles qui préparent des champions</span>
+            </div>
+            <div class="pcard__price">
+              <span class="pcard__amount" data-monthly="129 EUR" data-yearly="103 EUR">129 EUR</span>
+              <span class="pcard__period" data-monthly="/mois · sans engagement" data-yearly="/mois · facturé 1 236 EUR/an">/mois · sans engagement</span>
+            </div>
+            <a href="https://buy.stripe.com/00w00j03Z6OQg3Y7KGeZ202" class="btn btn--ghost btn--full pcard__cta pricing-cta-link" data-monthly="https://buy.stripe.com/00w00j03Z6OQg3Y7KGeZ202" data-yearly="https://buy.stripe.com/28E14ng2Xb561947KGeZ203">Passer à l'Elite</a>
+            <ul class="pcard__features">
+              <li class="pcard__feat pcard__feat--included">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span>Combattants <strong>illimités</strong></span>
+              </li>
+              <li class="pcard__feat pcard__feat--included">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span>Tout le plan Pro, plus :</span>
+              </li>
+              <li class="pcard__feat pcard__feat--included pcard__feat--highlight">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span><strong>Sparring intelligent</strong> — paires optimales sans risque <span class="badge-soon">Bientôt</span></span>
+              </li>
+              <li class="pcard__feat pcard__feat--included pcard__feat--highlight">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span><strong>Nutrition & poids</strong> — suivi coupe et alertes <span class="badge-soon">Bientôt</span></span>
+              </li>
+              <li class="pcard__feat pcard__feat--included pcard__feat--highlight">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span><strong>Analyse vidéo</strong> des combats par IA <span class="badge-soon">Bientôt</span></span>
+              </li>
+              <li class="pcard__feat pcard__feat--included">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span>Analytics avancés & tendances</span>
+              </li>
+              <li class="pcard__feat pcard__feat--included">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span>Multi-coachs (jusqu'à 5 comptes)</span>
+              </li>
+              <li class="pcard__feat pcard__feat--included">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-check"/></svg>
+                <span>Export fiches pour les fédérations</span>
+              </li>
+            </ul>
+            <p class="pcard__note" data-monthly="Soit 129 EUR/mois. Pour les équipes qui veulent tout." data-yearly="Soit 1 236 EUR/an au lieu de 1 548 EUR. L'excellence sans compromis.">Soit 129 EUR/mois. Pour les équipes qui veulent tout.</p>
+          </div>
+
+        </div>
+
+        <!-- COMPARAISON PRIX -->
+        <div class="price-compare">
+          <div class="price-compare__title">Pour mettre en perspective :</div>
+          <div class="price-compare__grid">
+            <div class="price-compare__item">
+              <span class="price-compare__label">1 séance prep mentale</span>
+              <span class="price-compare__value">80 EUR</span>
+            </div>
+            <div class="price-compare__item">
+              <span class="price-compare__label">1 RDV nutritionniste</span>
+              <span class="price-compare__value">60 EUR</span>
+            </div>
+            <div class="price-compare__item">
+              <span class="price-compare__label">1 mois de THYMOS Pro</span>
+              <span class="price-compare__value price-compare__value--highlight">59 EUR</span>
+            </div>
+            <div class="price-compare__item">
+              <span class="price-compare__label">Pour TOUS vos combattants</span>
+              <span class="price-compare__value price-compare__value--highlight">24h/24</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FAQ — Lever les objections
+    ════════════════════════════════════════ -->
+    <section class="faq-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 class="section-title">Vos questions. Nos réponses.</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>"Je connais mes combattants, j'ai pas besoin d'un logiciel"</h3>
+            <p>Vous les connaissez, oui. Mais vous en gérez combien ? Au-delà de 5, même le meilleur coach rate des signaux. THYMOS ne remplace pas votre instinct — il le complète avec des données. Vous restez le coach, THYMOS est juste une mémoire qui ne dort jamais.</p>
+          </div>
+          <div class="faq-item">
+            <h3>"Ça a l'air compliqué, j'ai pas le temps"</h3>
+            <p>On a construit THYMOS pour des coachs qui passent leur vie sur le tatami, pas devant un écran. Setup en 5 minutes. L'utilisation quotidienne prend moins de temps que de répondre à un message WhatsApp.</p>
+          </div>
+          <div class="faq-item">
+            <h3>"C'est pour les grosses structures, pas pour moi"</h3>
+            <p>Au contraire. Les grosses structures ont déjà des prepa mentaux et des nutritionnistes. THYMOS existe pour les coachs qui gèrent tout seuls et qui n'ont pas les moyens d'embaucher un staff complet.</p>
+          </div>
+          <div class="faq-item">
+            <h3>"59 EUR/mois c'est cher pour une salle"</h3>
+            <p>Un combattant blessé, c'est des mois d'arrêt et un combat annulé. Un combat perdu à cause d'une mauvaise préparation, c'est de la confiance perdue et un combattant qui peut quitter la salle. 59 EUR pour éviter ça, c'est l'investissement le plus rentable que vous ferez.</p>
+          </div>
+          <div class="faq-item">
+            <h3>"Comment ça marche l'essai gratuit ?"</h3>
+            <p>Vous créez un compte, vous avez 30 jours pour tout tester. Pas de carte bancaire demandée. Si au bout de 30 jours ça ne vous convient pas, votre compte est simplement désactivé. Zéro risque, zéro engagement.</p>
+          </div>
+          <div class="faq-item">
+            <h3>"Mes données sont en sécurité ?"</h3>
+            <p>Hébergement en Union Européenne, conforme RGPD, chiffrement des données, accès par mot de passe. Vos données ne sont jamais revendues et ne servent qu'à vous. Vous pouvez les supprimer à tout moment.</p>
+          </div>
+          <div class="faq-item">
+            <h3>"Ça marche pour la boxe / muay-thai / JJB ?"</h3>
+            <p>Oui. THYMOS est conçu pour le MMA mais tout coach de sport de combat a les mêmes problèmes : suivi du poids, gestion du mental avant les compétitions, préparation physique. Ça marche pour toutes les disciplines.</p>
+          </div>
+          <div class="faq-item">
+            <h3>"Et si je veux arrêter ?"</h3>
+            <p>Un clic dans les paramètres, c'est fini. Pas de frais cachés, pas de "période d'engagement", pas de commercial qui vous relance. Vos données restent disponibles 30 jours après la résiliation pour export.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CTA FINAL
+    ════════════════════════════════════════ -->
+    <section class="cta-final" id="inscription">
+      <div class="cta-final__bg-pattern"></div>
+      <div class="section-inner">
+        <div class="cta-final__content">
+          <h2 class="cta-final__title">
+            Le prochain combat<br/>se prépare <span class="text-red">aujourd'hui.</span>
+          </h2>
+          <p class="cta-final__sub">Chaque jour sans outil de suivi, c'est un signal raté, un risque non détecté, une décision prise à l'aveugle. Testez THYMOS gratuitement et voyez la différence dès la première semaine.</p>
+          <div class="hero__ctas" style="justify-content:center;margin-bottom:1rem;">
+            <a href="connexion.html?plan=decouverte" class="btn btn--primary btn--large">
+              Créer mon compte — c'est gratuit
+              <svg class="btn-arrow icon" aria-hidden="true"><use href="#ic-arrow-right"/></svg>
+            </a>
+          </div>
+          <p class="cta-legal">30 jours gratuits · Sans carte bancaire · Résiliable en 1 clic<br/>En vous inscrivant, vous acceptez nos <a href="cgu.html">CGU</a> et notre <a href="confidentialite.html">politique de confidentialité</a>.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MOBILE STICKY CTA -->
+  <div class="mobile-sticky-cta" id="mobileCta">
+    <a href="connexion.html?plan=decouverte" class="btn btn--primary btn--large">
+      Essai gratuit 30 jours
+      <svg class="btn-arrow icon" aria-hidden="true"><use href="#ic-arrow-right"/></svg>
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer footer--compact">
+    <div class="footer__compact-inner">
+      <div class="footer__left">
+        <a href="/" class="footer__logo">
+          <span class="logo-icon"><svg class="icon icon--sm" aria-hidden="true"><use href="#ic-sword"/></svg></span>
+          <span style="font-family:var(--font-display);font-size:0.85rem;font-weight:900;letter-spacing:0.1em;">THYMOS</span>
+        </a>
+        <span class="footer__copy">2026 THYMOS Platform</span>
+      </div>
+      <nav class="footer__nav">
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="connexion.html">Connexion</a>
+        <span class="footer__sep"></span>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgu.html">CGU</a>
+        <a href="confidentialite.html">Confidentialité & RGPD</a>
+      </nav>
+      <div class="footer__right">
+        <span class="footer__flag">Hébergé en UE · RGPD</span>
+      </div>
+    </div>
+    <!-- MOLON LABE -->
+    <div class="molon-labe">
+      <button class="molon-btn" id="molonBtn" title="Cliquez pour découvrir l'histoire">
+        <span class="molon-greek">MOLON LABE</span>
+      </button>
+      <div class="molon-story" id="molonStory" style="display:none;">
+        <div class="molon-story__inner">
+          <button class="molon-close" onclick="closeMolon()">&times;</button>
+          <h3 class="molon-story__title">MOLON LABE</h3>
+          <p class="molon-story__subtitle">« Viens les prendre »</p>
+          <p class="molon-story__text">
+            En 480 avant J.-C., aux Thermopyles, le roi perse Xerxès ordonne au roi spartiate Léonidas de déposer les armes face à son armée d'un million d'hommes.
+          </p>
+          <p class="molon-story__text">
+            Léonidas répond par deux mots : <strong>Molon Labe</strong> — « Viens les prendre. »
+          </p>
+          <p class="molon-story__text">
+            Avec 300 spartiates, il tient le passage pendant trois jours face à l'empire le plus puissant du monde. Ce n'est pas la victoire qui a forgé la légende, mais le refus de reculer.
+          </p>
+          <p class="molon-story__text" style="color:var(--red);font-style:italic;margin-top:1rem;">
+            THYMOS porte cet esprit. Le cœur du guerrier ne se mesure pas à sa taille, mais à son refus d'abandonner.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer crossorigin="anonymous"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/landing-animations.js" defer></script>
+  <script>
+    // ─── MOLON LABE ──────────────────────────
+    document.getElementById('molonBtn')?.addEventListener('click', () => {
+      const el = document.getElementById('molonStory');
+      el.style.display = 'flex';
+      requestAnimationFrame(() => el.classList.add('open'));
+    });
+    function closeMolon() {
+      const el = document.getElementById('molonStory');
+      el.classList.remove('open');
+      setTimeout(() => el.style.display = 'none', 350);
+    }
+    document.getElementById('molonStory')?.addEventListener('click', (e) => {
+      if (e.target === document.getElementById('molonStory')) closeMolon();
+    });
+
+    // ─── PRICING TOGGLE ──────────────────────
+    const toggleBtns = document.querySelectorAll('.pricing-toggle__btn');
+    toggleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        toggleBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const period = btn.dataset.period;
+
+        document.querySelectorAll('.pcard__amount[data-monthly]').forEach(el => {
+          el.textContent = el.dataset[period];
+          el.style.animation = 'none';
+          el.offsetHeight;
+          el.style.animation = 'pricePop 0.35s var(--ease-out-expo)';
+        });
+        document.querySelectorAll('.pcard__period[data-monthly]').forEach(el => {
+          el.textContent = el.dataset[period];
+        });
+        document.querySelectorAll('.pcard__note[data-monthly]').forEach(el => {
+          el.textContent = el.dataset[period];
+        });
+        document.querySelectorAll('.pricing-cta-link').forEach(el => {
+          const url = el.dataset[period];
+          if (url) el.setAttribute('href', url);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

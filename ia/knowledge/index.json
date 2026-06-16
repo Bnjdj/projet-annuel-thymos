@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "id": "techniques",
+      "path": "techniques.txt",
+      "keywords": ["technique", "striking", "boxing", "muay thai", "kick", "punch", "jab", "cross", "hook", "uppercut", "teep", "elbow", "knee", "grappling", "wrestling", "takedown", "single leg", "double leg", "body lock", "BJJ", "jiu-jitsu", "guard", "submission", "armbar", "triangle", "guillotine", "kimura", "RNC", "choke", "heel hook", "kneebar", "sweep", "pass", "mount", "back", "clinch", "dirty boxing", "cage", "ground and pound", "GnP", "transition", "scramble", "sprawl", "defense", "counter", "combination", "combo", "distance", "footwork", "head movement", "slip", "parry"]
+    },
+    {
+      "id": "fighters",
+      "path": "fighters-and-fights.txt",
+      "keywords": ["fighter", "combattant", "champion", "UFC", "Bellator", "ONE", "PFL", "record", "palmares", "combat", "fight", "KO", "knockout", "submission", "decision", "victoire", "defaite", "titre", "ceinture", "division", "poids", "categorie", "Khabib", "McGregor", "Jones", "GSP", "Silva", "Ngannou", "Adesanya", "Volkanovski", "Makhachev", "Oliveira", "Pereira", "Topuria", "Gane", "Saint-Denis", "Imavov", "Fiorot", "Charriere", "ARES", "France", "francais", "legende", "GOAT", "classement", "ranking", "event", "evenement", "UFC 229", "UFC 300"]
+    },
+    {
+      "id": "coaching",
+      "path": "coaching-preparation.txt",
+      "keywords": ["camp", "preparation", "entrainement", "training", "periodisation", "programme", "semaine", "week", "plan", "cardio", "conditioning", "force", "strength", "puissance", "power", "explosivite", "endurance", "coupe", "poids", "weight cut", "nutrition", "regime", "calories", "proteines", "macros", "supplement", "creatine", "mental", "confiance", "stress", "anxiete", "visualisation", "motivation", "peur", "defaite", "loss", "blessure", "injury", "genou", "epaule", "dos", "main", "commotion", "recuperation", "recovery", "repos", "overtraining", "surmenage", "fatigue", "regle", "scoring", "arbitre", "round", "jugement"]
+    },
+    {
+      "id": "advanced",
+      "path": "advanced-mma.txt",
+      "keywords": ["gameplan", "strategie", "tactique", "wrestler", "striker", "lutteur", "frappeur", "JJB", "jiujiteiro", "cage", "octogone", "round", "distance", "pression", "counter", "biomecanique", "puissance", "generation", "hanches", "rotation", "killer instinct", "finish", "finir", "psychologie", "mental", "adrenaline", "dump", "anxiete", "peur", "USADA", "dopage", "suspension", "produit", "interdit", "organisation", "UFC", "Bellator", "ONE", "PFL", "ARES", "France", "legalistion", "nutrition", "supplement", "hydratation", "periodisation", "timing", "repas"]
+    }
+  ]
+}

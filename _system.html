@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THYMOS — Design System v3</title>
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=JetBrains+Mono:wght@400;500;600&family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <style>
+    body { padding: var(--space-2xl) 0; }
+    .sys-section { margin-bottom: var(--space-4xl); }
+    .sys-section__title {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: 36px;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--space-xl);
+    }
+    .sys-grid { display: grid; gap: var(--space-lg); margin-bottom: var(--space-xl); }
+    .sys-grid--2 { grid-template-columns: 1fr 1fr; }
+    .sys-grid--3 { grid-template-columns: 1fr 1fr 1fr; }
+    .sys-grid--4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .sys-grid--6 { grid-template-columns: repeat(6, 1fr); }
+    @media (max-width: 768px) {
+      .sys-grid--2, .sys-grid--3, .sys-grid--4, .sys-grid--6 { grid-template-columns: 1fr 1fr; }
+    }
+    .swatch {
+      aspect-ratio: 1;
+      border-radius: var(--r-sm);
+      border: 1px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 10px;
+    }
+    .swatch__label { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; }
+    .swatch__hex { font-family: var(--font-mono); font-size: 10px; color: var(--bone-4); margin-top: 2px; }
+    .sys-demo { padding: var(--space-lg); border: 1px solid var(--rule-soft); margin-bottom: var(--space-lg); }
+    .sys-label { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--bone-5); margin-bottom: var(--space-sm); }
+    .sys-spacer { height: var(--space-lg); }
+  </style>
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ═══ HEADER ═══ -->
+  <div class="masthead" style="margin-bottom: var(--space-2xl);">
+    <div class="masthead__brand">THYMOS</div>
+    <div style="display:flex;align-items:center;gap:var(--space-lg);">
+      <span class="eyebrow-num">Design System</span>
+      <span class="tag">v3.0</span>
+    </div>
+  </div>
+
+  <div class="edition-bar" style="margin-bottom: var(--space-3xl);">
+    <span>Direction editoriale · dark prestige · magazine guerrier</span>
+    <span>Tokens · Components · Specimens</span>
+  </div>
+
+  <!-- ═══ § I · PALETTE ═══ -->
+  <section class="sys-section">
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ I</span>
+      <span class="ed-rule__label">Palette</span>
+    </div>
+
+    <p class="sys-label" style="margin-top: var(--space-lg);">Ink — fonds</p>
+    <div class="sys-grid sys-grid--6">
+      <div class="swatch" style="background: var(--ink-0);"><span class="swatch__label" style="color:var(--bone-4)">ink-0</span><span class="swatch__hex">#0A0907</span></div>
+      <div class="swatch" style="background: var(--ink-1);"><span class="swatch__label" style="color:var(--bone-4)">ink-1</span><span class="swatch__hex">#100E0C</span></div>
+      <div class="swatch" style="background: var(--ink-2);"><span class="swatch__label" style="color:var(--bone-4)">ink-2</span><span class="swatch__hex">#15120F</span></div>
+      <div class="swatch" style="background: var(--ink-3);"><span class="swatch__label" style="color:var(--bone-4)">ink-3</span><span class="swatch__hex">#1C1917</span></div>
+      <div class="swatch" style="background: var(--ink-4);"><span class="swatch__label" style="color:var(--bone-4)">ink-4</span><span class="swatch__hex">#24211D</span></div>
+      <div class="swatch" style="background: var(--ink-5);"><span class="swatch__label" style="color:var(--bone-3)">ink-5</span><span class="swatch__hex">#2D2925</span></div>
+    </div>
+
+    <p class="sys-label">Bone — texte</p>
+    <div class="sys-grid sys-grid--6">
+      <div class="swatch" style="background: var(--bone-0);"><span class="swatch__label" style="color:var(--ink-1)">bone-0</span><span class="swatch__hex" style="color:var(--ink-3)">#F5F1EA</span></div>
+      <div class="swatch" style="background: var(--bone-1);"><span class="swatch__label" style="color:var(--ink-1)">bone-1</span><span class="swatch__hex" style="color:var(--ink-3)">#E8E3DA</span></div>
+      <div class="swatch" style="background: var(--bone-2);"><span class="swatch__label" style="color:var(--ink-1)">bone-2</span><span class="swatch__hex" style="color:var(--ink-3)">#CFC9BD</span></div>
+      <div class="swatch" style="background: var(--bone-3);"><span class="swatch__label" style="color:var(--ink-1)">bone-3</span><span class="swatch__hex" style="color:var(--ink-3)">#A8A197</span></div>
+      <div class="swatch" style="background: var(--bone-4);"><span class="swatch__label" style="color:var(--ink-1)">bone-4</span><span class="swatch__hex" style="color:var(--ink-1)">#78726A</span></div>
+      <div class="swatch" style="background: var(--bone-5);"><span class="swatch__label" style="color:var(--bone-2)">bone-5</span><span class="swatch__hex">#4E4943</span></div>
+    </div>
+
+    <p class="sys-label">Accents</p>
+    <div class="sys-grid sys-grid--4">
+      <div class="swatch" style="background: var(--blood);"><span class="swatch__label" style="color:var(--bone-0)">blood</span><span class="swatch__hex" style="color:var(--bone-2)">#A8141E</span></div>
+      <div class="swatch" style="background: var(--brass);"><span class="swatch__label" style="color:var(--ink-0)">brass</span><span class="swatch__hex" style="color:var(--ink-1)">#A8854A</span></div>
+      <div class="swatch" style="background: var(--forest);"><span class="swatch__label" style="color:var(--bone-2)">forest</span><span class="swatch__hex">#3A4A3C</span></div>
+      <div class="swatch" style="background: var(--amber);"><span class="swatch__label" style="color:var(--ink-0)">amber</span><span class="swatch__hex" style="color:var(--ink-1)">#B8893A</span></div>
+    </div>
+  </section>
+
+  <!-- ═══ § II · TYPOGRAPHIE ═══ -->
+  <section class="sys-section">
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ II</span>
+      <span class="ed-rule__label">Typographie</span>
+    </div>
+
+    <div class="sys-spacer"></div>
+
+    <p class="sys-label">Fraunces 300 — display</p>
+    <div class="sys-demo">
+      <p class="display-xl">La salle. Le combattant. <em class="italic-accent">L'instrument.</em></p>
+    </div>
+    <div class="sys-demo">
+      <p class="display-lg">Bonsoir, <em class="italic-accent">Mathieu.</em></p>
+    </div>
+    <div class="sys-demo">
+      <p class="display-md">Le coach est un artisan.</p>
+    </div>
+    <div class="sys-demo">
+      <p class="display-sm">Preparation physique et mentale.</p>
+    </div>
+
+    <p class="sys-label">Cinzel — brand</p>
+    <div class="sys-demo">
+      <p style="font-family:var(--font-brand);font-size:13px;font-weight:700;letter-spacing:var(--ls-brand);text-transform:uppercase;">THYMOS · VOLUME I · № 001</p>
+    </div>
+
+    <p class="sys-label">JetBrains Mono — eyebrow / data</p>
+    <div class="sys-demo">
+      <p class="eyebrow">Manifeste · Edition du vendredi</p>
+      <div class="sys-spacer"></div>
+      <p class="eyebrow-num">№ 047 · KA—77—M · J-12 · 14:30</p>
+    </div>
+
+    <p class="sys-label">Inter — body</p>
+    <div class="sys-demo">
+      <p style="color: var(--bone-2); max-width: 600px; line-height: 1.7;">Il ne dit rien. Il s'entraine normalement. Mais depuis sa derniere defaite, il hesite a s'engager en sparring. Vous le sentez, mais entre les 8 autres gars a gerer, vous n'avez pas le temps d'y penser.</p>
+    </div>
+
+    <p class="sys-label">Lettrine</p>
+    <div class="sys-demo">
+      <p class="lettrine" style="color: var(--bone-2); max-width: 600px; line-height: 1.7;">Le combat se prepare dans l'ombre. Pas sous les projecteurs, pas dans les interviews. Dans la salle, a 6h du matin, quand personne ne regarde. THYMOS est l'instrument de ceux qui preparent.</p>
+    </div>
+  </section>
+
+  <!-- ═══ § III · EDITORIAL RULES ═══ -->
+  <section class="sys-section">
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ III</span>
+      <span class="ed-rule__label">Filets editoriaux</span>
+    </div>
+
+    <div class="sys-spacer"></div>
+
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ I</span>
+      <span class="ed-rule__label">Le probleme</span>
+    </div>
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ II</span>
+      <span class="ed-rule__label">Fonctionnalites</span>
+    </div>
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ III</span>
+      <span class="ed-rule__label">Tarifs</span>
+    </div>
+
+    <div class="sys-spacer"></div>
+    <hr class="hairline" />
+    <div class="sys-spacer"></div>
+    <hr class="hairline--soft" />
+  </section>
+
+  <!-- ═══ § IV · TAGS ═══ -->
+  <section class="sys-section">
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ IV</span>
+      <span class="ed-rule__label">Tags</span>
+    </div>
+
+    <div class="sys-spacer"></div>
+    <div style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
+      <span class="tag">Default</span>
+      <span class="tag tag--blood">En camp</span>
+      <span class="tag tag--brass">Elite</span>
+      <span class="tag tag--live">3 coachs en ligne</span>
+      <span class="tag">MMA complet</span>
+      <span class="tag tag--blood">J-12</span>
+    </div>
+  </section>
+
+  <!-- ═══ § V · BUTTONS ═══ -->
+  <section class="sys-section">
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ V</span>
+      <span class="ed-rule__label">Boutons</span>
+    </div>
+
+    <div class="sys-spacer"></div>
+    <div style="display: flex; gap: var(--space-md); flex-wrap: wrap; align-items: center;">
+      <button class="btn btn--solid">Solid</button>
+      <button class="btn btn--solid btn--lg">Solid large</button>
+      <button class="btn btn--outline">Outline</button>
+      <button class="btn btn--ghost">Ghost</button>
+      <button class="btn btn--blood">Blood</button>
+      <button class="btn btn--solid btn--sm">Small</button>
+    </div>
+  </section>
+
+  <!-- ═══ § VI · V/D BADGES ═══ -->
+  <section class="sys-section">
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ VI</span>
+      <span class="ed-rule__label">Badges victoire / defaite</span>
+    </div>
+
+    <div class="sys-spacer"></div>
+    <div style="display: flex; gap: var(--space-md); align-items: center;">
+      <span class="v-badge v-badge--win">V</span>
+      <span class="v-badge v-badge--win">V</span>
+      <span class="v-badge v-badge--loss">D</span>
+      <span class="v-badge v-badge--win">V</span>
+      <span class="v-badge v-badge--draw">N</span>
+      <span style="font-family:var(--font-mono);font-size:var(--fs-data);color:var(--bone-4);letter-spacing:var(--ls-data);margin-left:var(--space-sm);">4V — 1D — 1N</span>
+    </div>
+  </section>
+
+  <!-- ═══ § VII · RINGS ═══ -->
+  <section class="sys-section">
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ VII</span>
+      <span class="ed-rule__label">Rings</span>
+    </div>
+
+    <div class="sys-spacer"></div>
+    <div style="display: flex; gap: var(--space-xl); flex-wrap: wrap;">
+      <!-- Ring 78% -->
+      <div style="text-align: center;">
+        <div class="ring-ed" style="width:88px;height:88px;">
+          <svg class="ring-ed__svg" viewBox="0 0 36 36" width="88" height="88">
+            <circle cx="18" cy="18" r="15.9" class="ring-ed__bg" />
+            <circle cx="18" cy="18" r="15.9" class="ring-ed__fill" stroke-dasharray="78 100" />
+          </svg>
+          <span class="ring-ed__value" style="font-size:22px;">78</span>
+        </div>
+        <div class="ring-ed__label">Physique</div>
+      </div>
+
+      <!-- Ring 62% blood -->
+      <div style="text-align: center;">
+        <div class="ring-ed" style="width:88px;height:88px;">
+          <svg class="ring-ed__svg" viewBox="0 0 36 36" width="88" height="88">
+            <circle cx="18" cy="18" r="15.9" class="ring-ed__bg" />
+            <circle cx="18" cy="18" r="15.9" class="ring-ed__fill ring-ed__fill--blood" stroke-dasharray="62 100" />
+          </svg>
+          <span class="ring-ed__value" style="font-size:22px;color:var(--blood);">62</span>
+        </div>
+        <div class="ring-ed__label">Mental</div>
+      </div>
+
+      <!-- Ring 91% brass -->
+      <div style="text-align: center;">
+        <div class="ring-ed" style="width:88px;height:88px;">
+          <svg class="ring-ed__svg" viewBox="0 0 36 36" width="88" height="88">
+            <circle cx="18" cy="18" r="15.9" class="ring-ed__bg" />
+            <circle cx="18" cy="18" r="15.9" class="ring-ed__fill ring-ed__fill--brass" stroke-dasharray="91 100" />
+          </svg>
+          <span class="ring-ed__value" style="font-size:22px;color:var(--brass-light);">91</span>
+        </div>
+        <div class="ring-ed__label">Preparation</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ § VIII · FINE BARS ═══ -->
+  <section class="sys-section">
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ VIII</span>
+      <span class="ed-rule__label">Fine bars</span>
+    </div>
+
+    <div class="sys-spacer"></div>
+    <div style="max-width: 400px; display: flex; flex-direction: column; gap: var(--space-lg);">
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+          <span class="eyebrow">Cardio-vasculaire</span>
+          <span class="eyebrow-num">82%</span>
+        </div>
+        <div class="fine-bar"><div class="fine-bar__fill" style="width:82%"></div></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+          <span class="eyebrow">Confiance en soi</span>
+          <span class="eyebrow-num" style="color:var(--blood);">47%</span>
+        </div>
+        <div class="fine-bar"><div class="fine-bar__fill fine-bar__fill--blood" style="width:47%"></div></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+          <span class="eyebrow">Force explosive</span>
+          <span class="eyebrow-num">71%</span>
+        </div>
+        <div class="fine-bar"><div class="fine-bar__fill" style="width:71%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ § IX · EDITORIAL CARDS ═══ -->
+  <section class="sys-section">
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ IX</span>
+      <span class="ed-rule__label">Cards editoriales</span>
+    </div>
+
+    <div class="sys-spacer"></div>
+    <div class="sys-grid sys-grid--3">
+      <div class="ed-card">
+        <div class="ed-card__eyebrow">№ 01 · Scenario</div>
+        <h3 class="ed-card__title">Votre combattant perd confiance.</h3>
+        <p class="ed-card__body">Il ne dit rien. Il s'entraine normalement. Mais depuis sa derniere defaite, il hesite a s'engager en sparring.</p>
+      </div>
+      <div class="ed-card">
+        <div class="ed-card__eyebrow">№ 02 · Scenario</div>
+        <h3 class="ed-card__title">Un fighter force sur une douleur.</h3>
+        <p class="ed-card__body">Il vous a dit "ca va" la semaine derniere. Depuis, il compense, sa garde change.</p>
+      </div>
+      <div class="ed-card ed-card--filled">
+        <div class="ed-card__eyebrow">№ 03 · Scenario</div>
+        <h3 class="ed-card__title">La coupe de poids deraille.</h3>
+        <p class="ed-card__body">Votre combattant devait etre a 72kg a J-7. Il est a 74. Personne n'a suivi son poids.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ § X · MASTHEAD & EDITION BAR ═══ -->
+  <section class="sys-section">
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ X</span>
+      <span class="ed-rule__label">Masthead & edition bar</span>
+    </div>
+
+    <div class="sys-spacer"></div>
+    <div style="border: 1px solid var(--rule-soft); padding: var(--space-lg);">
+      <div class="masthead">
+        <div class="masthead__brand">THYMOS</div>
+        <nav class="masthead__nav">
+          <a href="#" class="masthead__link">01 Manifeste</a>
+          <a href="#" class="masthead__link">02 Fonctionnalites</a>
+          <a href="#" class="masthead__link">03 Tarifs</a>
+          <a href="#" class="masthead__link">04 Connexion</a>
+        </nav>
+        <div style="display:flex;gap:var(--space-sm);">
+          <a href="#" class="btn btn--ghost btn--sm">Connexion</a>
+          <a href="#" class="btn btn--solid btn--sm">Essai gratuit</a>
+        </div>
+      </div>
+      <div class="edition-bar">
+        <span>Edition du vendredi · Marseille · 18°C</span>
+        <span>Index · I–V</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ § XI · FORMS ═══ -->
+  <section class="sys-section">
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ XI</span>
+      <span class="ed-rule__label">Formulaires</span>
+    </div>
+
+    <div class="sys-spacer"></div>
+    <div style="max-width: 400px; display: flex; flex-direction: column; gap: var(--space-lg);">
+      <div class="form-field">
+        <label class="form-field__label">Email</label>
+        <input type="email" class="form-field__input" placeholder="coach@masalle.fr" />
+      </div>
+      <div class="form-field">
+        <label class="form-field__label">Mot de passe</label>
+        <input type="password" class="form-field__input" placeholder="8 caracteres minimum" />
+        <span class="form-field__error">Mot de passe trop court.</span>
+      </div>
+      <div class="form-field">
+        <label class="form-field__label">Style de combat</label>
+        <select class="form-field__input form-field__select">
+          <option>Striker</option>
+          <option>Grappler</option>
+          <option>MMA complet</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ § XII · EMPTY STATE ═══ -->
+  <section class="sys-section">
+    <div class="ed-rule">
+      <span class="ed-rule__num">§ XII</span>
+      <span class="ed-rule__label">Empty state</span>
+    </div>
+
+    <div class="sys-spacer"></div>
+    <div style="border: 1px solid var(--rule-soft);">
+      <div class="empty-state">
+        <div class="empty-state__eyebrow">Ecurie</div>
+        <h3 class="empty-state__title">Aucun combattant pour le moment.</h3>
+        <button class="btn btn--outline">Ajouter un combattant</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <hr class="hairline" style="margin-top: var(--space-4xl);" />
+  <div style="padding: var(--space-lg) 0; display: flex; justify-content: space-between;">
+    <span class="eyebrow-num">THYMOS Platform · Design System v3</span>
+    <span class="eyebrow-num" style="font-style: italic;">MOLON LABE</span>
+  </div>
+
+</div>
+
+</body>
+</html>
