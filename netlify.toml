@@ -32,6 +32,17 @@
   [headers.values]
     Cache-Control = "public, max-age=3600, must-revalidate"
 
+# Service worker & manifest — toujours revalidés (pour propager les mises à jour du SW)
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
 # Block access to backup files
 [[redirects]]
   from = "/*-backup*"

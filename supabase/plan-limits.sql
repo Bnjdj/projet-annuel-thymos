@@ -55,3 +55,39 @@ BEGIN
   RETURN jsonb_build_object('allowed', true, 'plan', user_plan);
 END;
 $$;
+
+-- ═══════════════════════════════════════════
+-- Garde-fou SERVEUR (fail-closed) : empeche d'inserer un combattant
+-- au-dela de la limite du plan, meme si le client contourne la RPC.
+-- ═══════════════════════════════════════════
+CREATE OR REPLACE FUNCTION enforce_fighter_plan_limit()
+RETURNS trigger
+LANGUAGE plpgsql
+SECURITY DEFINER
+SET search_path = public, pg_temp
+AS $$
+DECLARE
+  p TEXT;
+  cnt INT;
+  maxa INT;
+BEGIN
+  SELECT plan INTO p FROM salles WHERE id = NEW.salle_id;
+  maxa := CASE COALESCE(p, 'decouverte')
+    WHEN 'decouverte' THEN 3
+    WHEN 'guerrier' THEN 15
+    WHEN 'champion' THEN 999999
+    ELSE 3
+  END;
+  SELECT COUNT(*) INTO cnt FROM combattants WHERE salle_id = NEW.salle_id;
+  IF cnt >= maxa THEN
+    RAISE EXCEPTION 'Limite de combattants atteinte pour votre plan (%).', maxa
+      USING ERRCODE = 'check_violation';
+  END IF;
+  RETURN NEW;
+END;
+$$;
+
+DROP TRIGGER IF EXISTS trg_enforce_fighter_plan_limit ON combattants;
+CREATE TRIGGER trg_enforce_fighter_plan_limit
+  BEFORE INSERT ON combattants
+  FOR EACH ROW EXECUTE FUNCTION enforce_fighter_plan_limit();

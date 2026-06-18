@@ -396,10 +396,8 @@
                 <div class="pf-item muted">Multi-coachs — <span style="color:var(--gold-light)">Elite</span></div>
               </div>
               <div style="margin-top:1.25rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
-                <a href="demo.html" class="btn btn--primary btn--sm">Passer au plan Elite</a>
-                <button class="btn btn--ghost btn--sm" id="activateManual" style="color:#4a9e5c;border-color:rgba(74,158,92,0.3);">Activer un plan (code)</button>
-                <button class="btn btn--ghost btn--sm" onclick="toast('Portail de facturation — disponible prochainement', 'info')">Gérer la facturation</button>
-                <button class="btn btn--ghost btn--sm soon-locked" id="cancelSubBtn" disabled style="border-color:var(--red-border);color:var(--red);" title="Bientôt disponible">Résilier mon abonnement <span class="badge-soon">Bientôt</span></button>
+                <a href="demo.html" class="btn btn--primary btn--sm">Découvrir les plans (bientôt)</a>
+                <button class="btn btn--ghost btn--sm" id="activateManual" style="color:#4a9e5c;border-color:rgba(74,158,92,0.3);">Activer un plan</button>
               </div>
             </div>
           </div>
@@ -422,7 +420,7 @@
                 </div>
                 <div class="pc-plan" data-plan="guerrier">
                   <div class="pc-name">Pro</div>
-                  <div class="pc-price">59 EUR <span>/mois</span></div>
+                  <div class="pc-price">59 EUR <span>/mois (prévisionnel)</span></div>
                   <ul class="pc-features">
                     <li>15 combattants</li>
                     <li>IA Coach complet 24h/24</li>
@@ -433,7 +431,7 @@
                 </div>
                 <div class="pc-plan pc-plan--premium" data-plan="champion">
                   <div class="pc-name">Elite</div>
-                  <div class="pc-price">129 EUR <span>/mois</span></div>
+                  <div class="pc-price">129 EUR <span>/mois (prévisionnel)</span></div>
                   <ul class="pc-features">
                     <li>Tout du Pro</li>
                     <li>Analyse vidéo IA</li>
@@ -644,6 +642,20 @@
             </div>
           </div>
 
+          <div class="settings-card">
+            <div class="sc-header">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <div><div class="sc-title">Mes données (RGPD)</div><div class="sc-sub">Droit d'accès et de portabilité</div></div>
+            </div>
+            <div class="sc-body">
+              <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:1rem;">Téléchargez une copie complète de vos données (salle, combattants, combats, suivis, planning…) dans un fichier JSON structuré, conformément à votre droit d'accès et de portabilité.</p>
+              <button class="btn btn--ghost btn--sm" id="exportDataBtn">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Exporter mes données
+              </button>
+            </div>
+          </div>
+
           <div class="settings-card settings-card--danger">
             <div class="sc-header">
               <svg class="icon icon--sm" aria-hidden="true" style="color:var(--red)"><use href="#ic-trash"/></svg>
@@ -651,7 +663,7 @@
             </div>
             <div class="sc-body">
               <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:1rem;">La suppression du compte supprime définitivement toutes les données des combattants, les historiques et les analyses IA. Cette action est irréversible.</p>
-              <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:1rem;">La suppression automatique n'est pas encore disponible. Pour supprimer votre compte, contactez-nous à <a href="mailto:contact@thymos.app" style="color:var(--gold-light);">contact@thymos.app</a> et nous traiterons votre demande.</p>
+              <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:1rem;">La suppression automatique n'est pas encore disponible. Pour supprimer votre compte, contactez-nous à <a href="mailto:contact@thymos-mma.fr" style="color:var(--gold-light);">contact@thymos-mma.fr</a> et nous traiterons votre demande.</p>
               <button class="btn btn--ghost btn--sm soon-locked" disabled style="border-color:var(--red-border);color:var(--red);" title="Bientôt disponible">
                 <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-trash"/></svg>
                 Supprimer le compte
@@ -1198,6 +1210,49 @@
       toast('Erreur : ' + (e?.message || 'Impossible de changer le mot de passe'), 'error');
     } finally {
       pwdBtn.disabled = false;
+    }
+  });
+
+  // ── EXPORT RGPD (droit d'accès et de portabilité) ─
+  document.getElementById('exportDataBtn')?.addEventListener('click', async (e) => {
+    const btn = e.currentTarget;
+    const original = btn.innerHTML;
+    btn.disabled = true;
+    btn.textContent = 'Export en cours…';
+    try {
+      const { data: { user } } = await window.supabase.auth.getUser();
+      const tables = ['profiles','salles','salle_members','combattants','combats','questionnaires','alertes','sessions','session_participants','blessures','camps','camp_weeks','notifications','sparring_suggestions'];
+      const out = {
+        meta: {
+          export: "THYMOS — export RGPD (droit d'accès et de portabilité)",
+          date: new Date().toISOString(),
+          compte: user ? { id: user.id, email: user.email } : null,
+        },
+        donnees: {},
+      };
+      for (const t of tables) {
+        try {
+          const { data, error } = await window.supabase.from(t).select('*');
+          out.donnees[t] = error ? { erreur: error.message } : (data || []);
+        } catch (err) {
+          out.donnees[t] = { erreur: String((err && err.message) || err) };
+        }
+      }
+      const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'thymos-mes-donnees-' + new Date().toISOString().slice(0, 10) + '.json';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      if (typeof toast === 'function') toast('Vos données ont été exportées', 'success');
+    } catch (err) {
+      if (typeof toast === 'function') toast("Erreur lors de l'export : " + ((err && err.message) || err), 'error');
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = original;
     }
   });
 

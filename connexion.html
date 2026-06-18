@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/enhancements.css" />
   <link rel="manifest" href="manifest.webmanifest" />
   <meta name="theme-color" content="#0a0a0a" />
+  <!-- Capture le contexte de réinitialisation AVANT que Supabase ne nettoie l'URL -->
+  <script>window.__thymosRecovery = (location.hash + location.search).indexOf('type=recovery') > -1;</script>
   <script src="js/pwa.js" defer></script>
 </head>
 <body class="auth-body">
@@ -237,6 +239,44 @@
           <svg class="icon icon--lg" aria-hidden="true" style="color:#4a9e5c;"><use href="#ic-check"/></svg>
           <p>Email envoyé ! Vérifiez votre boîte de réception et cliquez sur le lien pour réinitialiser votre mot de passe.</p>
         </div>
+      </div>
+
+      <!-- ═══ NOUVEAU MOT DE PASSE (retour du lien de réinitialisation) ═══ -->
+      <div class="auth-card" id="resetCard" style="display:none;">
+        <div class="auth-card__header">
+          <h2 class="auth-card__title">Nouveau mot de passe</h2>
+          <p class="auth-card__sub">Choisissez un nouveau mot de passe pour votre compte</p>
+        </div>
+
+        <form class="auth-form" id="resetForm">
+          <div class="auth-field">
+            <label for="resetPassword">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-lock"/></svg>
+              Nouveau mot de passe
+            </label>
+            <div class="auth-password-wrap">
+              <input type="password" id="resetPassword" placeholder="8 caractères minimum" required minlength="8" autocomplete="new-password" />
+              <button type="button" class="pwd-eye" data-target="resetPassword" aria-label="Afficher le mot de passe">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-eye"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="auth-field">
+            <label for="resetPassword2">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-lock"/></svg>
+              Confirmer le mot de passe
+            </label>
+            <input type="password" id="resetPassword2" placeholder="••••••••" required minlength="8" autocomplete="new-password" />
+          </div>
+
+          <div class="auth-error" id="resetError" role="alert"></div>
+
+          <button type="submit" class="btn btn--primary btn--full btn--large" id="resetBtn">
+            <span class="btn-text">Mettre à jour</span>
+            <svg class="btn-loader icon icon--sm" aria-hidden="true" style="display:none;"><use href="#ic-loader"/></svg>
+          </button>
+        </form>
       </div>
 
       <!-- FOOTER -->

@@ -10,7 +10,18 @@ async function loadDashboard() {
   showDashboardSkeletons();
 
   const salle = await getCurrentSalle();
-  if (!salle) return;
+  if (!salle) {
+    // Pas de salle (compte sans salle, trigger non exécuté, salle supprimée) :
+    // on ne laisse PAS les skeletons figés silencieusement — message explicite.
+    const host = document.querySelector('.dashboard-content') || document.querySelector('main') || document.body;
+    host.insertAdjacentHTML('afterbegin',
+      '<div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg,12px);padding:1.5rem;margin:1rem 0;text-align:center;">'
+      + '<h2 style="font-family:var(--font-display);font-size:1rem;margin-bottom:0.5rem;">Aucune salle associée à ce compte</h2>'
+      + '<p style="color:var(--muted);font-size:0.85rem;margin-bottom:1rem;">Votre espace n\'a pas encore de salle configurée. Ouvrez les paramètres pour la créer, ou déconnectez-vous puis reconnectez-vous.</p>'
+      + '<a href="parametres.html" class="btn btn--primary btn--sm">Ouvrir les paramètres</a></div>');
+    document.querySelectorAll('[class*="skeleton"], [class*="shimmer"]').forEach((el) => el.remove());
+    return;
+  }
 
   const fighters = await getCombattants(salle.id);
   const combats = await getCombats(salle.id, { upcoming: true });

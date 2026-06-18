@@ -56,9 +56,9 @@
         "url": "https://thymos-mma.fr",
         "description": "SaaS de gestion pour coachs MMA : suivi physique et mental, alertes automatiques, planning et préparation des combats.",
         "offers": [
-          { "@type": "Offer", "name": "Découverte", "price": "0", "priceCurrency": "EUR", "description": "Essai gratuit 30 jours, jusqu'à 3 combattants." },
-          { "@type": "Offer", "name": "Pro", "price": "59", "priceCurrency": "EUR", "description": "Jusqu'à 15 combattants, suivi complet, alertes et planning." },
-          { "@type": "Offer", "name": "Elite", "price": "129", "priceCurrency": "EUR", "description": "Combattants illimités et multi-coachs ; sparring et analyse vidéo à venir." }
+          { "@type": "Offer", "name": "Découverte", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "description": "Accès gratuit pendant la phase de démonstration." },
+          { "@type": "Offer", "name": "Pro", "price": "59", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "description": "Tarif prévisionnel — paiement en ligne à venir. Jusqu'à 15 combattants, suivi complet, alertes et planning." },
+          { "@type": "Offer", "name": "Elite", "price": "129", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "description": "Tarif prévisionnel — paiement en ligne à venir. Combattants illimités et multi-coachs ; sparring et analyse vidéo à venir." }
         ]
       }
     ]
@@ -493,6 +493,10 @@
             <button class="pricing-toggle__btn active" data-period="monthly">Mensuel</button>
             <button class="pricing-toggle__btn" data-period="yearly">Annuel <span class="pricing-save">-20%</span></button>
           </div>
+          <p style="font-size:0.82rem;color:var(--muted);margin:1rem auto 0;max-width:560px;">
+            <strong style="color:var(--gold-light);">Tarifs prévisionnels.</strong> Le paiement en ligne n'est pas encore ouvert :
+            THYMOS est en démonstration, toutes les fonctionnalités sont accessibles gratuitement.
+          </p>
         </div>
 
         <!-- PRICING CARDS -->
@@ -583,7 +587,7 @@
                 <span>Nutrition & gestion du poids</span>
               </li>
             </ul>
-            <p class="pcard__note" data-monthly="Soit 59 EUR/mois. Résiliable en 1 clic à tout moment." data-yearly="Soit 564 EUR/an au lieu de 708 EUR. Résiliable à tout moment.">Soit 59 EUR/mois. Résiliable en 1 clic à tout moment.</p>
+            <p class="pcard__note" data-monthly="Tarif prévisionnel — gratuit pendant la démonstration." data-yearly="Tarif annuel prévisionnel — gratuit pendant la démonstration.">Tarif prévisionnel — gratuit pendant la démonstration.</p>
           </div>
 
           <!-- ELITE -->
@@ -701,7 +705,7 @@
           </div>
           <div class="faq-item">
             <h3>"Et si je veux arrêter ?"</h3>
-            <p>Un clic dans les paramètres, c'est fini. Pas de frais cachés, pas de "période d'engagement", pas de commercial qui vous relance. Vos données restent disponibles 30 jours après la résiliation pour export.</p>
+            <p>Vous pouvez exporter vos données ou supprimer votre compte à tout moment depuis les paramètres. Pas de frais cachés, pas de "période d'engagement", pas de commercial qui vous relance.</p>
           </div>
         </div>
       </div>
@@ -724,7 +728,7 @@
               <svg class="btn-arrow icon" aria-hidden="true"><use href="#ic-arrow-right"/></svg>
             </a>
           </div>
-          <p class="cta-legal">30 jours gratuits · Sans carte bancaire · Résiliable en 1 clic<br/>En vous inscrivant, vous acceptez nos <a href="cgu.html">CGU</a> et notre <a href="confidentialite.html">politique de confidentialité</a>.</p>
+          <p class="cta-legal">Gratuit pendant la démonstration · Sans carte bancaire<br/>En vous inscrivant, vous acceptez nos <a href="cgu.html">CGU</a> et notre <a href="confidentialite.html">politique de confidentialité</a>.</p>
         </div>
       </div>
     </section>
@@ -756,7 +760,8 @@
         <span class="footer__sep"></span>
         <a href="mentions-legales.html">Mentions légales</a>
         <a href="cgu.html">CGU</a>
-        <a href="confidentialite.html">Confidentialité & RGPD</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="rgpd.html">Cookies & RGPD</a>
       </nav>
       <div class="footer__right">
         <span class="footer__flag">Hébergé en UE · RGPD</span>

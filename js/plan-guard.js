@@ -129,7 +129,7 @@ function showUpgradeModal(feature) {
       </p>
       <div class="upgrade-modal__actions">
         <button class="btn btn--ghost btn--sm" onclick="this.closest('.upgrade-overlay').remove()">Plus tard</button>
-        <a href="index.html#tarifs" class="btn btn--primary btn--sm">Voir les plans</a>
+        <a href="demo.html" class="btn btn--primary btn--sm">En savoir plus</a>
       </div>
     </div>`;
   document.body.appendChild(overlay);
@@ -152,7 +152,7 @@ function showLimitModal(current, max) {
       </p>
       <div class="upgrade-modal__actions">
         <button class="btn btn--ghost btn--sm" onclick="this.closest('.upgrade-overlay').remove()">Compris</button>
-        <a href="index.html#tarifs" class="btn btn--primary btn--sm">Voir les plans</a>
+        <a href="demo.html" class="btn btn--primary btn--sm">En savoir plus</a>
       </div>
     </div>`;
   document.body.appendChild(overlay);
@@ -189,41 +189,11 @@ async function applyPlanRestrictions() {
 }
 
 // ─── TRIAL EXPIRATION CHECK ─────────────────
+// Phase de démonstration : accès gratuit, paiement en ligne non ouvert.
+// Aucune bannière d'expiration d'essai ni d'incitation à payer (impasse en démo).
+// À réactiver lorsque les abonnements seront commercialisés.
 async function checkTrialExpiration() {
-  await loadPlan();
-  if (_currentPlanName !== 'decouverte') return;
-
-  try {
-    const { data: salles } = await window.supabase.from('salles').select('created_at').limit(1);
-    if (!salles?.[0]) return;
-
-    const created = new Date(salles[0].created_at);
-    const now = new Date();
-    const daysElapsed = Math.floor((now - created) / (1000 * 60 * 60 * 24));
-    const daysLeft = 30 - daysElapsed;
-
-    if (daysLeft <= 0) {
-      // Trial expired
-      document.querySelector('.dashboard-content')?.insertAdjacentHTML('afterbegin', `
-        <div style="background:var(--red-dim);border:1px solid var(--red-border);border-radius:var(--r-lg);padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1.25rem;">
-          <div>
-            <strong style="color:var(--red);font-size:0.88rem;">Votre essai gratuit a expire</strong>
-            <p style="color:var(--muted);font-size:0.78rem;margin-top:0.25rem;">Choisissez un abonnement pour continuer a utiliser THYMOS.</p>
-          </div>
-          <a href="index.html#tarifs" class="btn btn--primary btn--sm">Voir les plans</a>
-        </div>`);
-    } else if (daysLeft <= 7) {
-      // Trial expiring soon
-      document.querySelector('.dashboard-content')?.insertAdjacentHTML('afterbegin', `
-        <div style="background:rgba(212,160,23,0.08);border:1px solid rgba(212,160,23,0.25);border-radius:var(--r-lg);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1.25rem;">
-          <div>
-            <strong style="color:#D4A017;font-size:0.85rem;">Il vous reste ${daysLeft} jour${daysLeft > 1 ? 's' : ''} d'essai</strong>
-            <p style="color:var(--muted);font-size:0.78rem;margin-top:0.25rem;">Passez a un abonnement pour ne rien perdre.</p>
-          </div>
-          <a href="index.html#tarifs" class="btn btn--primary btn--sm">Choisir un plan</a>
-        </div>`);
-    }
-  } catch(e) {}
+  return;
 }
 
 // Auto-apply on load

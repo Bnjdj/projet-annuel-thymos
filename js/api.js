@@ -10,7 +10,7 @@ let _currentSalle = null;
 
 async function getCurrentSalle() {
   if (_currentSalle) return _currentSalle;
-  const { data, error } = await db.from('salles').select('*').limit(1).single();
+  const { data, error } = await db.from('salles').select('*').limit(1).maybeSingle();
   if (error) { console.warn('getSalle error:', error); return null; }
   _currentSalle = data;
   return data;

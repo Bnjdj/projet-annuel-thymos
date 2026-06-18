@@ -83,6 +83,16 @@ if (urlParams.get('paid') === 'true') {
   }
 }
 
+// ─── RECOVERY (retour du lien de réinitialisation du mot de passe) ───
+// __thymosRecovery est capturé dans le <head> avant que Supabase ne nettoie l'URL.
+const _recoveryInUrl = !!window.__thymosRecovery;
+try {
+  window.supabase.auth.onAuthStateChange((event) => {
+    if (event === 'PASSWORD_RECOVERY') showCard('resetCard');
+  });
+} catch (e) { /* client non prêt : on retombe sur la détection URL ci-dessous */ }
+if (_recoveryInUrl) showCard('resetCard');
+
 // ─── PASSWORD VISIBILITY ────────────────────
 document.querySelectorAll('.pwd-eye').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -267,6 +277,29 @@ if (forgotForm) {
   });
 }
 
+// ─── RESET PASSWORD (définir un nouveau mot de passe via le lien) ───
+const resetForm = document.getElementById('resetForm');
+if (resetForm) {
+  resetForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    clearError('resetError');
+    const p1 = document.getElementById('resetPassword').value;
+    const p2 = document.getElementById('resetPassword2').value;
+    if (p1.length < 8) { showError('resetError', 'Le mot de passe doit faire au moins 8 caracteres.'); return; }
+    if (p1 !== p2) { showError('resetError', 'Les mots de passe ne correspondent pas.'); return; }
+    setLoading('resetBtn', true);
+    try {
+      const { error } = await window.supabase.auth.updateUser({ password: p1 });
+      if (error) { showError('resetError', error.message); setLoading('resetBtn', false); return; }
+      if (typeof toast !== 'undefined') toast('Mot de passe mis à jour ! Redirection...', 'success');
+      setTimeout(() => { window.location.href = 'dashboard.html'; }, 800);
+    } catch (err) {
+      showError('resetError', 'Erreur. Reessayez.');
+      setLoading('resetBtn', false);
+    }
+  });
+}
+
 // ─── CHECK IF ALREADY LOGGED IN ─────────────
 (async function checkSession() {
   // Only on the connexion page
@@ -274,8 +307,8 @@ if (forgotForm) {
 
   try {
     const { data: { session } } = await window.supabase.auth.getSession();
-    if (session) {
-      // Already logged in — redirect to dashboard
+    if (session && !_recoveryInUrl && !window.location.hash.includes('type=recovery')) {
+      // Déjà connecté (hors flux de réinitialisation) — redirection vers le dashboard
       window.location.href = 'dashboard.html';
     }
   } catch (err) {

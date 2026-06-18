@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-v2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookies & RGPD — THYMOS Platform</title>
+  <meta name="description" content="Gestion des cookies et exercice de vos droits RGPD sur THYMOS Platform : accès, rectification, effacement, portabilité, opposition." />
+  <link rel="canonical" href="https://thymos-mma.fr/rgpd.html" />
+  <meta property="og:title" content="Cookies & RGPD — THYMOS Platform" />
+  <meta property="og:description" content="Gestion des cookies et exercice de vos droits RGPD sur THYMOS Platform." />
+  <meta property="og:url" content="https://thymos-mma.fr/rgpd.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://thymos-mma.fr/assets/og-image.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <style>
+    .legal-nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(20, 20, 20, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .legal-nav__logo {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-family: var(--font-display);
+      font-size: 1.1rem; font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+    .legal-nav__back {
+      font-size: 0.82rem; color: var(--muted);
+      transition: color 0.2s;
+    }
+    .legal-nav__back:hover { color: var(--red); }
+
+    .legal-page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 7rem 2rem 4rem;
+    }
+    .legal-page h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .legal-page .legal-updated {
+      font-size: 0.8rem; color: var(--subtle);
+      margin-bottom: 3rem;
+    }
+    .legal-page h2 {
+      font-family: var(--font-display);
+      font-size: 1.1rem; font-weight: 600;
+      color: var(--red);
+      margin-top: 2.5rem; margin-bottom: 1rem;
+      letter-spacing: 0.04em;
+    }
+    .legal-page h3 {
+      font-size: 0.92rem; font-weight: 600;
+      color: var(--white);
+      margin-top: 1.5rem; margin-bottom: 0.5rem;
+    }
+    .legal-page p, .legal-page li {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.75;
+      margin-bottom: 0.75rem;
+    }
+    .legal-page ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .legal-page a { color: var(--red); text-decoration: underline; }
+    .legal-page a:hover { color: var(--gold-light); }
+    .legal-page strong { color: var(--white); }
+
+    .legal-page table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.84rem;
+    }
+    .legal-page table th {
+      background: var(--surface2);
+      color: var(--white);
+      font-weight: 600;
+      text-align: left;
+      padding: 0.6rem 0.8rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .legal-page table td {
+      padding: 0.6rem 0.8rem;
+      border-bottom: 1px solid var(--border-soft);
+      color: var(--muted);
+      vertical-align: top;
+    }
+    .legal-page table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .legal-footer {
+      border-top: 1px solid var(--border);
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex; flex-wrap: wrap; gap: 1.5rem;
+      justify-content: center;
+    }
+    .legal-footer a {
+      font-size: 0.78rem; color: var(--subtle);
+      transition: color 0.2s;
+    }
+    .legal-footer a:hover { color: var(--red); }
+
+    .rgpd-note {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--red);
+      border-radius: var(--r-md, 8px);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+    }
+    .rgpd-note p:last-child { margin-bottom: 0; }
+  </style>
+  <link rel="stylesheet" href="css/enhancements.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script src="js/pwa.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu</a>
+
+  <nav class="legal-nav">
+    <a href="index.html" class="legal-nav__logo">THYMOS</a>
+    <a href="index.html" class="legal-nav__back">&larr; Retour au site</a>
+  </nav>
+
+  <main class="legal-page" id="main" role="main">
+    <h1>Cookies &amp; RGPD</h1>
+    <p class="legal-updated">Dernière mise à jour : 18 juin 2026</p>
+
+    <p>
+      Cette page résume notre usage des <strong>cookies</strong> et la façon dont vous pouvez
+      <strong>exercer vos droits</strong> sur vos données personnelles. Elle complète notre
+      <a href="confidentialite.html">politique de confidentialité</a> complète, qui fait foi.
+    </p>
+
+    <h2>1. Cookies et traceurs</h2>
+    <p>
+      THYMOS utilise <strong>uniquement des cookies strictement nécessaires</strong> au
+      fonctionnement du service. Aucun cookie n'est posé à des fins publicitaires, de profilage
+      ou de mesure d'audience.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Cookie / stockage</th>
+          <th>Rôle</th>
+          <th>Durée</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Session d'authentification (Supabase)</td>
+          <td>Maintenir votre connexion à votre espace</td>
+          <td>Durée de la session</td>
+        </tr>
+        <tr>
+          <td>Préférences locales (localStorage)</td>
+          <td>Mémoriser l'affichage de la salle (logo, fond) et l'état de l'onboarding</td>
+          <td>Jusqu'à effacement par vous</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="rgpd-note">
+      <p>
+        <strong>Pas de bannière de consentement ?</strong> Ces éléments étant
+        <strong>strictement nécessaires</strong> au service, ils ne requièrent pas de
+        consentement préalable (article 82 de la loi Informatique et Libertés). Aucun traceur
+        tiers, aucune publicité, aucune revente de données. Si un outil de mesure d'audience ou
+        marketing était ajouté un jour, une bannière de consentement serait mise en place.
+      </p>
+    </div>
+
+    <h2>2. Vos droits et comment les exercer</h2>
+    <p>
+      Conformément au RGPD, vous disposez des droits ci-dessous. La plupart sont actionnables
+      directement depuis votre espace ; les autres par simple email à notre DPO.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Droit</th>
+          <th>Comment l'exercer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Accès &amp; portabilité</strong></td>
+          <td>Bouton <strong>« Exporter mes données »</strong> dans <em>Paramètres → Sécurité &amp; confidentialité</em> (export structuré au format JSON), ou demande à <a href="mailto:dpo@thymos-mma.fr">dpo@thymos-mma.fr</a>.</td>
+        </tr>
+        <tr>
+          <td><strong>Rectification</strong></td>
+          <td>Directement dans l'application : modifiez les informations de votre salle et de vos combattants à tout moment.</td>
+        </tr>
+        <tr>
+          <td><strong>Effacement (droit à l'oubli)</strong></td>
+          <td>Bouton <strong>« Supprimer le compte »</strong> dans <em>Paramètres → Sécurité &amp; confidentialité</em>, ou demande à <a href="mailto:contact@thymos-mma.fr">contact@thymos-mma.fr</a>.</td>
+        </tr>
+        <tr>
+          <td><strong>Opposition &amp; limitation</strong></td>
+          <td>Demande à <a href="mailto:dpo@thymos-mma.fr">dpo@thymos-mma.fr</a> en précisant le traitement concerné.</td>
+        </tr>
+        <tr>
+          <td><strong>Retrait du consentement</strong></td>
+          <td>À tout moment, sans effet rétroactif (par ex. pour la communication marketing).</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Nous répondons à toute demande dans un délai maximum d'<strong>un mois</strong>. Vous pouvez
+      également saisir la <strong>CNIL</strong> :
+      <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>.
+    </p>
+
+    <h2>3. Données des combattants et mineurs</h2>
+    <p>
+      Les données des combattants sont saisies par le gérant de salle, qui en est responsable de
+      traitement (THYMOS agissant comme sous-traitant). Le gérant doit informer ses combattants
+      et recueillir leur consentement.
+    </p>
+    <p>
+      <strong>Combattants mineurs :</strong> lorsqu'un combattant est mineur, le gérant doit
+      obtenir le consentement de son représentant légal (parent ou tuteur) avant de saisir ses
+      données et exercer ses droits en son nom.
+    </p>
+
+    <h2>4. Hébergement et sous-traitants</h2>
+    <p>
+      Vos données sont hébergées dans l'Union européenne (base de données et authentification via
+      Supabase, AWS eu-west) et le site est servi par Netlify. Le détail des sous-traitants, des
+      transferts hors UE et des durées de conservation figure dans la
+      <a href="confidentialite.html">politique de confidentialité</a>.
+    </p>
+    <p>
+      Le service est actuellement en <strong>phase de démonstration</strong> : le paiement en ligne
+      n'est pas activé et aucune donnée bancaire n'est collectée.
+    </p>
+
+    <h2>5. Contact</h2>
+    <ul>
+      <li>Questions générales : <a href="mailto:contact@thymos-mma.fr">contact@thymos-mma.fr</a></li>
+      <li>Délégué à la protection des données (DPO) : <a href="mailto:dpo@thymos-mma.fr">dpo@thymos-mma.fr</a></li>
+    </ul>
+  </main>
+
+  <footer class="legal-footer">
+    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="cgu.html">Conditions générales d'utilisation</a>
+    <a href="confidentialite.html">Politique de confidentialité</a>
+    <a href="rgpd.html">Cookies &amp; RGPD</a>
+  </footer>
+
+</body>
+</html>
