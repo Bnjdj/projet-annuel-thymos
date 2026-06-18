@@ -659,14 +659,13 @@
           <div class="settings-card settings-card--danger">
             <div class="sc-header">
               <svg class="icon icon--sm" aria-hidden="true" style="color:var(--red)"><use href="#ic-trash"/></svg>
-              <div><div class="sc-title" style="color:var(--red)">Zone de danger <span class="badge-soon">Bientôt</span></div><div class="sc-sub">Actions irréversibles</div></div>
+              <div><div class="sc-title" style="color:var(--red)">Zone de danger</div><div class="sc-sub">Actions irréversibles</div></div>
             </div>
             <div class="sc-body">
-              <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:1rem;">La suppression du compte supprime définitivement toutes les données des combattants, les historiques et les analyses IA. Cette action est irréversible.</p>
-              <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:1rem;">La suppression automatique n'est pas encore disponible. Pour supprimer votre compte, contactez-nous à <a href="mailto:contact@thymos-mma.fr" style="color:var(--gold-light);">contact@thymos-mma.fr</a> et nous traiterons votre demande.</p>
-              <button class="btn btn--ghost btn--sm soon-locked" disabled style="border-color:var(--red-border);color:var(--red);" title="Bientôt disponible">
+              <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:1rem;">La suppression du compte efface <strong>définitivement</strong> votre salle, vos combattants, tous les historiques et votre compte. Cette action est <strong>irréversible</strong>. Pensez à <strong>exporter vos données</strong> avant si besoin.</p>
+              <button class="btn btn--ghost btn--sm" id="deleteAccountBtn" style="border-color:var(--red-border);color:var(--red);">
                 <svg class="icon icon--sm" aria-hidden="true"><use href="#ic-trash"/></svg>
-                Supprimer le compte
+                Supprimer mon compte
               </button>
             </div>
           </div>
@@ -1253,6 +1252,30 @@
     } finally {
       btn.disabled = false;
       btn.innerHTML = original;
+    }
+  });
+
+  // ── SUPPRESSION DE COMPTE (RGPD, via Edge Function service_role) ──
+  document.getElementById('deleteAccountBtn')?.addEventListener('click', async (e) => {
+    const btn = e.currentTarget;
+    const word = prompt('Cette action est IRRÉVERSIBLE.\n\nPour confirmer la suppression définitive de votre compte et de TOUTES vos données, tapez : SUPPRIMER');
+    if (word == null) return;
+    if (word.trim().toUpperCase() !== 'SUPPRIMER') { if (typeof toast === 'function') toast('Suppression annulée (confirmation incorrecte).', 'info'); return; }
+    const original = btn.innerHTML;
+    btn.disabled = true;
+    btn.textContent = 'Suppression…';
+    try {
+      const { error } = await window.supabase.functions.invoke('delete-account');
+      if (error) {
+        if (typeof toast === 'function') toast('Erreur : ' + (error.message || 'suppression impossible'), 'error');
+        btn.disabled = false; btn.innerHTML = original; return;
+      }
+      if (typeof toast === 'function') toast('Compte supprimé. Au revoir.', 'success');
+      try { await window.supabase.auth.signOut(); } catch (_) {}
+      setTimeout(() => { window.location.href = 'index.html'; }, 1000);
+    } catch (err) {
+      if (typeof toast === 'function') toast('Erreur : ' + ((err && err.message) || err), 'error');
+      btn.disabled = false; btn.innerHTML = original;
     }
   });
 
